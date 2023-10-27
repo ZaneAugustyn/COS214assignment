@@ -10,12 +10,4 @@ public:
     ~Patty();
 };
 
-Patty::Patty(/* args */)
-{
-}
-
-Patty::~Patty()
-{
-}
-
 #endif

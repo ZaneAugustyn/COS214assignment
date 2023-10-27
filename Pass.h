@@ -10,12 +10,4 @@ public:
     ~Pass();
 };
 
-Pass::Pass(/* args */)
-{
-}
-
-Pass::~Pass()
-{
-}
-
 #endif

@@ -10,12 +10,4 @@ public:
     ~Floor();
 };
 
-Floor::Floor(/* args */)
-{
-}
-
-Floor::~Floor()
-{
-}
-
 #endif

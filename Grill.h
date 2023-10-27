@@ -10,12 +10,4 @@ public:
     ~Grill();
 };
 
-Grill::Grill(/* args */)
-{
-}
-
-Grill::~Grill()
-{
-}
-
 #endif

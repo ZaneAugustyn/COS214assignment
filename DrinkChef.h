@@ -10,12 +10,4 @@ public:
     ~DrinkChef();
 };
 
-DrinkChef::DrinkChef(/* args */)
-{
-}
-
-DrinkChef::~DrinkChef()
-{
-}
-
 #endif

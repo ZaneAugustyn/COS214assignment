@@ -10,12 +10,4 @@ public:
     ~SidesChef();
 };
 
-SidesChef::SidesChef(/* args */)
-{
-}
-
-SidesChef::~SidesChef()
-{
-}
-
 #endif

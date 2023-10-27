@@ -10,12 +10,5 @@ public:
     ~Colleague();
 };
 
-Colleague::Colleague(/* args */)
-{
-}
-
-Colleague::~Colleague()
-{
-}
 
 #endif

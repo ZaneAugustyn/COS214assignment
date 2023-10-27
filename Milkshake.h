@@ -10,12 +10,4 @@ public:
     ~Milkshake();
 };
 
-Milkshake::Milkshake(/* args */)
-{
-}
-
-Milkshake::~Milkshake()
-{
-}
-
 #endif

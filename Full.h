@@ -10,12 +10,4 @@ public:
     ~Full();
 };
 
-Full::Full(/* args */)
-{
-}
-
-Full::~Full()
-{
-}
-
 #endif

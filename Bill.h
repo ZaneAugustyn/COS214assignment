@@ -10,12 +10,5 @@ public:
     ~Bill();
 };
 
-Bill::Bill(/* args */)
-{
-}
-
-Bill::~Bill()
-{
-}
 
 #endif

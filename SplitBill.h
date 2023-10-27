@@ -10,12 +10,4 @@ public:
     ~SplitBill();
 };
 
-SplitBill::SplitBill(/* args */)
-{
-}
-
-SplitBill::~SplitBill()
-{
-}
-
 #endif

@@ -10,12 +10,4 @@ public:
     ~OrderItem();
 };
 
-OrderItem::OrderItem(/* args */)
-{
-}
-
-OrderItem::~OrderItem()
-{
-}
-
 #endif

@@ -10,12 +10,4 @@ public:
     ~Tomato();
 };
 
-Tomato::Tomato(/* args */)
-{
-}
-
-Tomato::~Tomato()
-{
-}
-
 #endif

@@ -10,12 +10,4 @@ public:
     ~MakeTab();
 };
 
-MakeTab::MakeTab(/* args */)
-{
-}
-
-MakeTab::~MakeTab()
-{
-}
-
 #endif

@@ -10,12 +10,4 @@ public:
     ~Soda();
 };
 
-Soda::Soda(/* args */)
-{
-}
-
-Soda::~Soda()
-{
-}
-
 #endif

@@ -10,12 +10,4 @@ public:
     ~Side();
 };
 
-Side::Side(/* args */)
-{
-}
-
-Side::~Side()
-{
-}
-
 #endif

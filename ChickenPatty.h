@@ -10,12 +10,5 @@ public:
     ~ChickenPatty();
 };
 
-ChickenPatty::ChickenPatty(/* args */)
-{
-}
-
-ChickenPatty::~ChickenPatty()
-{
-}
 
 #endif

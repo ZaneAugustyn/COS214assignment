@@ -10,12 +10,5 @@ public:
     ~Bun();
 };
 
-Bun::Bun(/* args */)
-{
-}
-
-Bun::~Bun()
-{
-}
 
 #endif

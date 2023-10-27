@@ -10,12 +10,4 @@ public:
     ~Garnish();
 };
 
-Garnish::Garnish(/* args */)
-{
-}
-
-Garnish::~Garnish()
-{
-}
-
 #endif

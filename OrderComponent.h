@@ -10,12 +10,4 @@ public:
     ~OrderComponent();
 };
 
-OrderComponent::OrderComponent(/* args */)
-{
-}
-
-OrderComponent::~OrderComponent()
-{
-}
-
 #endif

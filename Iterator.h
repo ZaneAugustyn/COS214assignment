@@ -10,12 +10,4 @@ public:
     ~Iterator();
 };
 
-Iterator::Iterator(/* args */)
-{
-}
-
-Iterator::~Iterator()
-{
-}
-
 #endif

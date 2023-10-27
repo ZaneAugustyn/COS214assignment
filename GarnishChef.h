@@ -10,12 +10,4 @@ public:
     ~GarnishChef();
 };
 
-GarnishChef::GarnishChef(/* args */)
-{
-}
-
-GarnishChef::~GarnishChef()
-{
-}
-
 #endif

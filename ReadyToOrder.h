@@ -10,12 +10,4 @@ public:
     ~ReadyToOrder();
 };
 
-ReadyToOrder::ReadyToOrder(/* args */)
-{
-}
-
-ReadyToOrder::~ReadyToOrder()
-{
-}
-
 #endif

@@ -10,12 +10,4 @@ public:
     ~Group();
 };
 
-Group::Group(/* args */)
-{
-}
-
-Group::~Group()
-{
-}
-
 #endif

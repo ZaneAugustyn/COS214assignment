@@ -10,12 +10,4 @@ public:
     ~Tab();
 };
 
-Tab::Tab(/* args */)
-{
-}
-
-Tab::~Tab()
-{
-}
-
 #endif

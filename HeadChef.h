@@ -10,12 +10,4 @@ public:
     ~HeadChef();
 };
 
-HeadChef::HeadChef(/* args */)
-{
-}
-
-HeadChef::~HeadChef()
-{
-}
-
 #endif

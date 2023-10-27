@@ -10,12 +10,4 @@ public:
     ~PayTab();
 };
 
-PayTab::PayTab(/* args */)
-{
-}
-
-PayTab::~PayTab()
-{
-}
-
 #endif

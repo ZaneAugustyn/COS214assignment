@@ -10,12 +10,4 @@ public:
     ~Lettuce();
 };
 
-Lettuce::Lettuce(/* args */)
-{
-}
-
-Lettuce::~Lettuce()
-{
-}
-
 #endif

@@ -10,12 +10,4 @@ public:
     ~SpaceAvailable();
 };
 
-SpaceAvailable::SpaceAvailable(/* args */)
-{
-}
-
-SpaceAvailable::~SpaceAvailable()
-{
-}
-
 #endif

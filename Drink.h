@@ -10,12 +10,5 @@ public:
     ~Drink();
 };
 
-Drink::Drink(/* args */)
-{
-}
-
-Drink::~Drink()
-{
-}
 
 #endif

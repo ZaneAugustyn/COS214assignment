@@ -10,12 +10,4 @@ public:
     ~BeefPatty();
 };
 
-BeefPatty::BeefPatty(/* args */)
-{
-}
-
-BeefPatty::~BeefPatty()
-{
-}
-
 #endif

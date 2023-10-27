@@ -10,12 +10,4 @@ public:
     ~WaitForTable();
 };
 
-WaitForTable::WaitForTable(/* args */)
-{
-}
-
-WaitForTable::~WaitForTable()
-{
-}
-
 #endif

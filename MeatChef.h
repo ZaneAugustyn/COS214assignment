@@ -10,12 +10,4 @@ public:
     ~MeatChef();
 };
 
-MeatChef::MeatChef(/* args */)
-{
-}
-
-MeatChef::~MeatChef()
-{
-}
-
 #endif

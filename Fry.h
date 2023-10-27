@@ -10,12 +10,4 @@ public:
     ~Fry();
 };
 
-Fry::Fry(/* args */)
-{
-}
-
-Fry::~Fry()
-{
-}
-
 #endif

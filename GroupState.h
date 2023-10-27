@@ -10,12 +10,4 @@ public:
     ~GroupState();
 };
 
-GroupState::GroupState(/* args */)
-{
-}
-
-GroupState::~GroupState()
-{
-}
-
 #endif

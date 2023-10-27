@@ -10,12 +10,4 @@ public:
     ~ReadyForBill();
 };
 
-ReadyForBill::ReadyForBill(/* args */)
-{
-}
-
-ReadyForBill::~ReadyForBill()
-{
-}
-
 #endif

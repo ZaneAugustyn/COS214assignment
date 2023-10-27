@@ -10,12 +10,4 @@ public:
     ~Chef();
 };
 
-Chef::Chef(/* args */)
-{
-}
-
-Chef::~Chef()
-{
-}
-
 #endif

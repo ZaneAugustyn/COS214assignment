@@ -10,12 +10,4 @@ public:
     ~Unhappy();
 };
 
-Unhappy::Unhappy(/* args */)
-{
-}
-
-Unhappy::~Unhappy()
-{
-}
-
 #endif

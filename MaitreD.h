@@ -10,12 +10,4 @@ public:
     ~MaitreD();
 };
 
-MaitreD::MaitreD(/* args */)
-{
-}
-
-MaitreD::~MaitreD()
-{
-}
-
 #endif

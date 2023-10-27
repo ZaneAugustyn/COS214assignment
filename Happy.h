@@ -10,12 +10,5 @@ public:
     ~Happy();
 };
 
-Happy::Happy(/* args */)
-{
-}
-
-Happy::~Happy()
-{
-}
 
 #endif

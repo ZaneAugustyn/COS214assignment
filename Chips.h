@@ -10,12 +10,6 @@ public:
     ~Chips();
 };
 
-Chips::Chips(/* args */)
-{
-}
 
-Chips::~Chips()
-{
-}
 
 #endif

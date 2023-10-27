@@ -10,12 +10,4 @@ public:
     ~Waiter();
 };
 
-Waiter::Waiter(/* args */)
-{
-}
-
-Waiter::~Waiter()
-{
-}
-
 #endif

@@ -10,12 +10,5 @@ public:
     ~CustomerPays();
 };
 
-CustomerPays::CustomerPays(/* args */)
-{
-}
-
-CustomerPays::~CustomerPays()
-{
-}
 
 #endif

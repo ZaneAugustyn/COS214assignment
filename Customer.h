@@ -10,12 +10,5 @@ public:
     ~Customer();
 };
 
-Customer::Customer(/* args */)
-{
-}
-
-Customer::~Customer()
-{
-}
 
 #endif

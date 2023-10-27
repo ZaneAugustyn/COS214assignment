@@ -10,12 +10,4 @@ public:
     ~FloorState();
 };
 
-FloorState::FloorState(/* args */)
-{
-}
-
-FloorState::~FloorState()
-{
-}
-
 #endif

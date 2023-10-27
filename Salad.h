@@ -10,12 +10,4 @@ public:
     ~Salad();
 };
 
-Salad::Salad(/* args */)
-{
-}
-
-Salad::~Salad()
-{
-}
-
 #endif
