@@ -1,8 +1,21 @@
-#ifndef _FILENAME_H
-#define _FILENAME_H
+#ifndef _GROUPSTATE_H
+#define _GROUPSTATE_H
+// code here
+class GroupState
+{
+private:
+    /* data */
+public:
+    GroupState(/* args */);
+    ~GroupState();
+};
 
+GroupState::GroupState(/* args */)
+{
+}
 
-
-
+GroupState::~GroupState()
+{
+}
 
 #endif
