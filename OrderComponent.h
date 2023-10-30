@@ -8,7 +8,7 @@ class OrderComponent
 private:
 public:
     OrderComponent();
-    ~OrderComponent();
+    virtual ~OrderComponent();
     virtual double getPrice() = 0;
     Iterator* createIterator();
 };

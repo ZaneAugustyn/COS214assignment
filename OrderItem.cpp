@@ -1,9 +1,17 @@
 #include "OrderItem.h"
 
-OrderItem::OrderItem(/* args */)
+OrderItem::OrderItem(double price)
 {
+    price_ = price;
 }
 
 OrderItem::~OrderItem()
 {
+}
+
+double OrderItem::getPrice()
+{
+
+    return price_;
+
 }
