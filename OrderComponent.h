@@ -4,10 +4,10 @@
 class OrderComponent
 {
 private:
-    double price_;
 public:
     OrderComponent(/* args */);
     ~OrderComponent();
+    double getPrice();
 };
 
 #endif
