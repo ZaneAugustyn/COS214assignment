@@ -4,7 +4,7 @@
 class OrderComponent
 {
 private:
-    /* data */
+    double price_;
 public:
     OrderComponent(/* args */);
     ~OrderComponent();
