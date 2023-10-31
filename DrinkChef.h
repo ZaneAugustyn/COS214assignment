@@ -1,13 +1,14 @@
 #ifndef _DRINKCHEF_H
 #define _DRINKCHEF_H
-// code here
-class DrinkChef
+
+#include "Chef.h"
+
+class DrinkChef : public Chef
 {
-private:
-    /* data */
 public:
-    DrinkChef(/* args */);
-    ~DrinkChef();
+    DrinkChef();
+    virtual ~DrinkChef();
+    void HandleOrder(Plate* plate);
 };
 
 #endif

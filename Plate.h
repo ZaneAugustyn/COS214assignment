@@ -8,8 +8,8 @@
 class Plate
 {
   private:
-    Order* order;
-    vector<OrderItem*> burger;
+    Order* order_;
+    vector<OrderItem*> burger_;
   public:
     Plate();
     void printPlate();

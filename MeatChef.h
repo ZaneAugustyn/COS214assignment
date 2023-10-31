@@ -1,13 +1,18 @@
 #ifndef _MEATCHEF_H
 #define _MEATCHEF_H
-// code here
-class MeatChef
+
+#include "Chef.h"
+
+class MeatChef : public Chef
 {
-private:
-    /* data */
 public:
-    MeatChef(/* args */);
+    MeatChef();
     ~MeatChef();
+    void HandleOrder(Plate* plate);
+    void CookMeal();
+protected:
+    void Cook();
+
 };
 
 #endif

@@ -1,13 +1,16 @@
 #ifndef _GARNISHCHEF_H
 #define _GARNISHCHEF_H
-// code here
-class GarnishChef
+
+#include "Chef.h"
+
+class GarnishChef : public Chef
 {
 private:
     /* data */
 public:
     GarnishChef(/* args */);
-    ~GarnishChef();
+    virtual ~GarnishChef();
+    void HandleOrder(Plate* plate);
 };
 
 #endif

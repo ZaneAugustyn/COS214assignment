@@ -1,13 +1,14 @@
 #ifndef _SIDESCHEF_H
 #define _SIDESCHEF_H
-// code here
-class SidesChef
+
+#include "Chef.h"
+
+class SidesChef : public Chef
 {
-private:
-    /* data */
 public:
-    SidesChef(/* args */);
-    ~SidesChef();
+    SidesChef();
+    virtual ~SidesChef();
+    void HandleOrder(Plate* plate);
 };
 
 #endif
