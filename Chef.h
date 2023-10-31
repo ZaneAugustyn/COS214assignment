@@ -1,13 +1,16 @@
 #ifndef _CHEF_H
 #define _CHEF_H
-// code here
+
+#include <Plate.h>
+
 class Chef
 {
 private:
-    /* data */
+    Chef* nextChef_;
 public:
-    Chef(/* args */);
+    Chef(/* args */); 
     ~Chef();
+    void HandleOrder(Plate* plate);
 };
 
 #endif

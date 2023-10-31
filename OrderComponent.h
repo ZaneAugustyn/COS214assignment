@@ -1,13 +1,16 @@
 #ifndef _ORDERCOMPONENT_H
 #define _ORDERCOMPONENT_H
-// code here
+
+#include "Iterator.h"
+
 class OrderComponent
 {
 private:
-    /* data */
 public:
-    OrderComponent(/* args */);
-    ~OrderComponent();
+    OrderComponent();
+    virtual ~OrderComponent();
+    virtual double getPrice() = 0;
+    Iterator* createIterator();
 };
 
 #endif
