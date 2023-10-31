@@ -62,6 +62,7 @@
     "system_error": "cpp",
     "utility": "cpp",
     "xtr1common": "cpp",
-    "xutility": "cpp"
+    "xutility": "cpp",
+    "ostream": "cpp"
   }
 }

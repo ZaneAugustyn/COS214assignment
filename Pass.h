@@ -3,7 +3,7 @@
 
 #include <vector>
 #include <Order.h>
-#include <HeadChef.h>
+#include <Chef.h>
 #include <Waiter.h>
 #include <Plate.h>
 
@@ -16,13 +16,13 @@ class Pass
 
   protected:
     vector<Waiter*> listOfWaiters_;
-    HeadChef* headChef_;
+    Chef* headChef_;
 
   public:
     Pass();
-    Pass(vector<Waiter*> waiters, HeadChef* headChef);
-    void notifyHeadChef(HeadChef* headchef);
-    void notifyWaiter(Waiter* waiter);
+    Pass(vector<Waiter*> waiters, Chef* headChef);
+    void notifyHeadChef(Waiter* waiter);
+    void notifyWaiter(Chef* headchef);
     void addRoListOfTrays(vector<Plate*> plates);
     void addOrder(Order* order);
     virtual ~Pass();

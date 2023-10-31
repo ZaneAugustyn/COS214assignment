@@ -8,6 +8,8 @@ HeadChef::HeadChef(/* args */)
 void HeadChef::changed()
 {
   // TO DO: mediator
+
+  this->pass_.notifyWaiter(this);
 }
 
 Pass* HeadChef::get()

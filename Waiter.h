@@ -10,9 +10,9 @@ class Waiter : public Colleague
     
   public:
     Waiter(/* args */);
-    virtual void changed() = 0;
-    virtual Pass* get() = 0;
-    virtual void set(Pass* pass) = 0;
+    void changed();
+    Pass* get();
+    void set(Pass* pass);
     virtual ~Waiter();
 };
 

@@ -5,7 +5,7 @@ Pass::Pass()
 
 }
 
-Pass::Pass(vector<Waiter*> waiters, HeadChef* headChef)
+Pass::Pass(vector<Waiter*> waiters, Chef* headChef)
 {
   // this is a shallow copy for now - can change it to a deep copy if deemed necessary
   this->listOfWaiters_ = waiters; 
@@ -13,12 +13,12 @@ Pass::Pass(vector<Waiter*> waiters, HeadChef* headChef)
   this->headChef_ = headChef;
 }
 
-void Pass::notifyHeadChef(HeadChef* headchef)
+void Pass::notifyHeadChef(Waiter* waiter)
 {
 
 }
 
-void Pass::notifyWaiter(Waiter* waiter)
+void Pass::notifyWaiter(Chef* headchef)
 {
 
 }

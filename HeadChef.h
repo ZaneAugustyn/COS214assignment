@@ -4,17 +4,14 @@
 #include <vector>
 #include <Plate.h>
 #include <Pass.h>
-#include <Colleague.h>
+#include <Chef.h>
 
-class HeadChef : public Colleague
+class HeadChef : public Chef
 {
   private:
     vector<Plate*> tray_;
   public:
     HeadChef(/* args */);
-    void changed();
-    Pass* get();
-    void set(Pass* pass);
     void handleOrder(Plate* plate);
     void addToTray(Plate* plate);
     virtual ~HeadChef();
