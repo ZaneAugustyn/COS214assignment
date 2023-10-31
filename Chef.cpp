@@ -8,6 +8,23 @@ Chef::~Chef()
 {
 }
 
+void Chef::changed()
+{
+  // TO DO: mediator
+
+  this->pass_.notifyWaiter(this);
+}
+
+Pass* Chef::get()
+{
+  // TO DO: mediator
+}
+
+void Chef::set(Pass* pass)
+{
+  // TO DO: mediator
+}
+
 void Chef::setNextChef(Chef* nextChef)
 {
     if(nextChef_)

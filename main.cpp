@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 
-#include <Waiter.h>
-#include <Group.h>
-#include <Chef.h>
-#include <Pass.h>
+#include "Waiter.h"
+#include "Group.h"
+#include "Chef.h"
+#include "Pass.h"
 
 #include <vector>
 
@@ -31,7 +31,5 @@ int main() {
 
   cout<<"Create the pass:"<<endl;
   Pass* passMediator = new Pass(waiterList, chef);
-
-  
 
 }

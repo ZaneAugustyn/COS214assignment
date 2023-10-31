@@ -2,10 +2,10 @@
 #define _GROUP_H
 
 #include <vector>
-#include <GroupState.h>
-#include <Customer.h>
-#include <Bill.h>
-#include <Waiter.h>
+#include "GroupState.h"
+#include "Customer.h"
+#include "Bill.h"
+#include "Waiter.h"
 
 class Group
 {

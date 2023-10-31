@@ -1,7 +1,7 @@
 #ifndef _COLLEAGUE_H
 #define _COLLEAGUE_H
 
-#include <Pass.h>
+#include "Pass.h"
 
 class Colleague
 {
