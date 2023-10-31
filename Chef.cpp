@@ -20,7 +20,16 @@ void Chef::setNextChef(Chef* nextChef)
     }
 }
 
-void Chef::HandleOrder(Plate* plate)
+void Chef::handleOrder(Plate* plate)
 {
-    // iterate over order using the plate object -> if order is not empty -> nextChef_->HandleOrder(plate)
+    if(nextChef_)
+    {
+        nextChef_->handleOrder(plate);
+    }
+}
+
+void Chef::createGroupOrder()
+{
+    // iterate over all the customer orders in the group order
+    // Chef::handleOrder(new Plate())
 }

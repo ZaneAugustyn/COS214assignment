@@ -10,8 +10,9 @@ private:
 public:
     Chef(); 
     virtual ~Chef();
-    virtual void HandleOrder(Plate* plate);
+    virtual void handleOrder(Plate* plate);
     void setNextChef(Chef* nextChef);
+    void createGroupOrder();
 };
 
 #endif

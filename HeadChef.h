@@ -1,13 +1,23 @@
 #ifndef _HEADCHEF_H
 #define _HEADCHEF_H
-// code here
-class HeadChef
+
+#include <vector>
+#include <Plate.h>
+#include <Pass.h>
+#include "Chef.h"
+
+class HeadChef : public Chef
 {
-private:
-    /* data */
-public:
+  private:
+    vector<Plate*> tray_;
+  public:
     HeadChef(/* args */);
-    ~HeadChef();
+    void changed();
+    Pass* get();
+    void set(Pass* pass);
+    void handleOrder(Plate* plate);
+    void addToTray(Plate* plate);
+    virtual ~HeadChef();
 };
 
 #endif

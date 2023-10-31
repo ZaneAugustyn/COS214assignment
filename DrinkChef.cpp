@@ -16,5 +16,5 @@ void DrinkChef::HandleOrder(Plate* plate)
     // remove the drink from the order
     // add the drink to the plate
     cout << "The Drink Chef has added the drink to the plate" << endl;
-    Chef::HandleOrder(plate);
+    Chef::handleOrder(plate);
 }

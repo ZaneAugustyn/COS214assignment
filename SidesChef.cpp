@@ -16,5 +16,5 @@ void SidesChef::HandleOrder(Plate* plate)
     // remove the side from the order
     // add the side to the plate
     cout << "The Side Chef has added the side to the plate" << endl;
-    Chef::HandleOrder(plate);
+    Chef::handleOrder(plate);
 }

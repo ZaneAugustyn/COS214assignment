@@ -16,5 +16,5 @@ void GarnishChef::HandleOrder(Plate* plate)
     // remove the garnish from the order
     // add the garnish to the plate
     cout << "The Garnish Chef has added the garnish to the plate" << endl;
-    Chef::HandleOrder(plate);
+    Chef::handleOrder(plate);
 }
