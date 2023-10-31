@@ -1,13 +1,19 @@
 #ifndef _PLATE_H
 #define _PLATE_H
-// code here
+
+#include <vector>
+#include <Order.h>
+#include <OrderItem.h>
+
 class Plate
 {
-private:
-    /* data */
-public:
-    Plate(/* args */);
-    ~Plate();
+  private:
+    Order* order;
+    vector<OrderItem*> burger;
+  public:
+    Plate();
+    void printPlate();
+    virtual ~Plate();
 };
 
 #endif
