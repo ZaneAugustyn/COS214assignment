@@ -1,6 +1,6 @@
 CXX=g++
 TARGET=main
-OBJS= Waiter.o Group.o Chef.o Pass.o Order.o main.o
+OBJS= OrderItem.o Order.o Plate.o Pass.o Waiter.o Colleague.o Chef.o Group.o main.o
 
 all: $(OBJS)
 	$(CXX) $(OBJS) -o $(TARGET)

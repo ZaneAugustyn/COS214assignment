@@ -1,7 +1,6 @@
 #ifndef _HEADCHEF_H
 #define _HEADCHEF_H
 
-#include "Plate.h"
 #include "Chef.h"
 
 class HeadChef : public Chef

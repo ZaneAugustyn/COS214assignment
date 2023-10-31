@@ -2,10 +2,10 @@
 #define _PASS_H
 
 #include <vector>
-#include "Order.h"
-#include "Chef.h"
+
+class Chef;
+//class Order;
 #include "Waiter.h"
-#include "Plate.h"
 
 // code here
 class Pass

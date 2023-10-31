@@ -13,8 +13,10 @@ void Waiter::changed()
 
 Pass* Waiter::get()
 {
-// TO DO: mediator
+  // TO DO: mediator
+  return 0;
 }
+
 void Waiter::set(Pass* pass)
 {
 // TO DO: mediator

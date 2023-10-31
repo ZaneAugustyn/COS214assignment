@@ -1,10 +1,14 @@
 #include <iostream>
 using namespace std;
 
+#include "Order.h"
+#include "OrderItem.h"
+#include "Plate.h"
 #include "Waiter.h"
-#include "Group.h"
-#include "Chef.h"
 #include "Pass.h"
+#include "Colleague.h"
+#include "Chef.h"
+#include "Group.h"
 
 #include <vector>
 

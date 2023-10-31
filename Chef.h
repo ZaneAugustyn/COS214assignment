@@ -2,9 +2,10 @@
 #define _CHEF_H
 
 #include <vector>
+
 #include "Plate.h"
-#include "Pass.h"
 #include "Colleague.h"
+class Pass; 
 
 class Chef : public Colleague
 {
