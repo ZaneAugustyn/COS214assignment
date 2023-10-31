@@ -2,8 +2,24 @@
 
 Waiter::Waiter(/* args */)
 {
+
+}
+
+void Waiter::changed()
+{
+// TO DO: mediator
+}
+
+Pass* Waiter::get()
+{
+// TO DO: mediator
+}
+void Waiter::set(Pass* pass)
+{
+// TO DO: mediator
 }
 
 Waiter::~Waiter()
 {
+
 }
