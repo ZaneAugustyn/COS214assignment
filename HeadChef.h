@@ -8,13 +8,8 @@
 
 class HeadChef : public Chef
 {
-  private:
-    vector<Plate*> tray_;
   public:
     HeadChef(/* args */);
-    void changed();
-    Pass* get();
-    void set(Pass* pass);
     void handleOrder(Plate* plate);
     virtual ~HeadChef();
   private:
