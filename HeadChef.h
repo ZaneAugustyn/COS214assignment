@@ -16,8 +16,9 @@ class HeadChef : public Chef
     Pass* get();
     void set(Pass* pass);
     void handleOrder(Plate* plate);
-    void addToTray(Plate* plate);
     virtual ~HeadChef();
+  private:
+    void addToTray(Plate* plate);
 };
 
 #endif

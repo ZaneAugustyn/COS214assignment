@@ -31,5 +31,6 @@ void Chef::handleOrder(Plate* plate)
 void Chef::createGroupOrder()
 {
     // iterate over all the customer orders in the group order
-    // Chef::handleOrder(new Plate())
+        // if orders left -> Chef::handleOrder(plate, false)
+        // else -> Chef::handleOrder(plate, true)
 }

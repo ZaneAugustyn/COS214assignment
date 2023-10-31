@@ -9,9 +9,7 @@ public:
     MeatChef();
     ~MeatChef();
     void HandleOrder(Plate* plate);
-    void CookMeal();
-protected:
-    void Cook();
+
 
 };
 

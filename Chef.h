@@ -2,8 +2,9 @@
 #define _CHEF_H
 
 #include "Plate.h"
+#include "Colleague.h"
 
-class Chef
+class Chef : public Colleague
 {
 private:
     Chef* nextChef_;
