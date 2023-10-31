@@ -14,8 +14,13 @@ class Pass
     vector<Order*> orders_;
     vector<vector<Plate*>> listOfTrays;
 
+  protected:
+    vector<Waiter*> listOfWaiters_;
+    HeadChef* headChef_;
+
   public:
     Pass();
+    Pass(vector<Waiter*> waiters, HeadChef* headChef);
     void notifyHeadChef(HeadChef* headchef);
     void notifyWaiter(Waiter* waiter);
     void addRoListOfTrays(vector<Plate*> plates);

@@ -2,8 +2,9 @@
 #define _WAITER_H
 
 #include <Pass.h>
+#include <Colleague.h>
 
-class Waiter
+class Waiter : public Colleague
 {
   private:
     

@@ -6,6 +6,8 @@
 class Colleague
 {
   private:
+
+  protected:
     Pass pass_;
 
   public:

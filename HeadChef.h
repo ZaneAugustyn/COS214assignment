@@ -4,8 +4,9 @@
 #include <vector>
 #include <Plate.h>
 #include <Pass.h>
+#include <Colleague.h>
 
-class HeadChef
+class HeadChef : public Colleague
 {
   private:
     vector<Plate*> tray_;
