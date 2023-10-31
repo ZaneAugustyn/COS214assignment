@@ -1,12 +1,13 @@
 #ifndef _TOMATO_H
 #define _TOMATO_H
-// code here
-class Tomato
+
+#include "Garnish.h"
+
+class Tomato : public Garnish
 {
 private:
-    /* data */
 public:
-    Tomato(/* args */);
+    Tomato();
     ~Tomato();
 };
 

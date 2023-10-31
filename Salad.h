@@ -1,12 +1,13 @@
 #ifndef _SALAD_H
 #define _SALAD_H
-// code here
-class Salad
+
+#include "Side.h"
+
+class Salad : public Side
 {
 private:
-    /* data */
 public:
-    Salad(/* args */);
+    Salad();
     ~Salad();
 };
 

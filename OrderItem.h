@@ -3,12 +3,17 @@
 
 #include "OrderComponent.h"
 
+#include <string>
+
+using namespace std;
+
 class OrderItem : public OrderComponent
 {
 private:
     double price_;
+    string name_;
 public:
-    OrderItem(double price);
+    OrderItem(double price, string name);
     ~OrderItem();
     double getPrice();
 };

@@ -1,12 +1,13 @@
 #ifndef _SODA_H
 #define _SODA_H
-// code here
-class Soda
+
+#include "Drink.h"
+
+class Soda : public Drink
 {
 private:
-    /* data */
 public:
-    Soda(/* args */);
+    Soda();
     ~Soda();
 };
 

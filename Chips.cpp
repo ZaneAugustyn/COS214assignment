@@ -1,6 +1,6 @@
 #include "Chips.h"
 
-Chips::Chips(/* args */)
+Chips::Chips():Side(20, "Chips")
 {
 }
 

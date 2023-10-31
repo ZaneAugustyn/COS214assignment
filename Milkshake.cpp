@@ -1,6 +1,6 @@
 #include "Milkshake.h"
 
-Milkshake::Milkshake(/* args */)
+Milkshake::Milkshake():Drink(40, "Milkshake")
 {
 }
 

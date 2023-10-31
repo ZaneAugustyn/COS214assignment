@@ -1,6 +1,6 @@
 #include "Soda.h"
 
-Soda::Soda(/* args */)
+Soda::Soda():Drink(30, "Soda")
 {
 }
 

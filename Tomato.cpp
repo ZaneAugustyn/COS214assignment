@@ -1,6 +1,6 @@
 #include "Tomato.h"
 
-Tomato::Tomato(/* args */)
+Tomato::Tomato():Garnish(10, "Tomato")
 {
 }
 
