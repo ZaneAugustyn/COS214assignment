@@ -1,13 +1,16 @@
 #ifndef _ORDERITEM_H
 #define _ORDERITEM_H
-// code here
-class OrderItem
+
+#include <OrderComponent.h>
+
+class OrderItem : public OrderComponent
 {
 private:
-    /* data */
+    double price_;
 public:
-    OrderItem(/* args */);
+    OrderItem(double price);
     ~OrderItem();
+    double getPrice();
 };
 
 #endif
