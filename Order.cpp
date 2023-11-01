@@ -100,5 +100,4 @@ std::vector<OrderComponent*> Order::getItems()
             }
         }
         return items;
-        
 }

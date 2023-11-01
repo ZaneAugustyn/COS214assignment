@@ -3,8 +3,10 @@
 
 Colleague::Colleague(/* args */)
 {
+
 }
 
 Colleague::~Colleague()
 {
+  
 }

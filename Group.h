@@ -1,12 +1,22 @@
 #ifndef _GROUP_H
 #define _GROUP_H
-// code here
+
+#include <vector>
+
+using namespace std;
+
+class Waiter;
+
 class Group
 {
-private:
-    /* data */
-public:
+  private:
+    Waiter* waiter_;
+    int groupNumber_;
+
+  public:
     Group(/* args */);
+    void addWaiter(Waiter* waiter);
+    Waiter* getWaiter();
     ~Group();
 };
 

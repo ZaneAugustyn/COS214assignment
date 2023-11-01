@@ -1,25 +1,25 @@
 #ifndef _CHEF_H
 #define _CHEF_H
 
-class Pass;
-class Plate;
+#include <vector>
+using namespace std;
 #include "Colleague.h"
+
+class Pass;
+class Plate; 
 
 class Chef : public Colleague
 {
-private:
-    Chef* nextChef_;
-protected:
-    vector<Plate*> tray_;
-public:
-    Chef(); 
-    virtual ~Chef();
-    virtual void handleOrder(Plate* plate);
-    void add(Chef* nextChef);
-    void createGroupOrder();
-    Pass* get();
-    void set(Pass* pass);
-    void changed();
+    private:
+        Chef* nextChef_;
+        vector<Plate*> tray_;
+    public:
+        Chef(); 
+        virtual ~Chef();
+        void changed();
+        virtual void handleOrder(Plate* plate);
+        void setNextChef(Chef* nextChef);
+        void createGroupOrder();
 };
 
 #endif

@@ -14,5 +14,4 @@ public:
     // GroupIterator* createIterator();
     ItemIterator* createItemIterator();
 };
-
 #endif
