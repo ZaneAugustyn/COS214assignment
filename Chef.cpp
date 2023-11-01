@@ -11,6 +11,7 @@ using namespace std;
 Chef::Chef()
 {
     cout << "Chef Created" << endl;
+    pass_ = new Pass(); // may have to pass in the pass
 }
 
 Chef::~Chef()
@@ -54,9 +55,9 @@ void Chef::createGroupOrder(Order* order)
     if (iterator->isDone())
     {
         cout << "The kitchen is done preparing all orders for group " << order->getGroupNumber() << endl;
-        // pass_->addToListOfTrays(tray_); // add tray to list of trays
-        // tray_.clear();  // clear tray
-        // changed();
+        pass_->addToListOfTrays(tray_); // add tray to list of trays
+        tray_.clear();  // clear tray
+        changed();
     }
 }
 
