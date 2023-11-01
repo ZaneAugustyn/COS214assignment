@@ -12,8 +12,6 @@ public:
     MeatChef();
     ~MeatChef();
     void handleOrder(Plate* plate, vector<OrderComponent*> orderComp);
-
-
 };
 
 #endif

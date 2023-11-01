@@ -34,6 +34,8 @@ void DrinkChef::handleOrder(Plate *plate, vector<OrderComponent *> orderComp)
       else 
       {
         cout << "The Drink Chef adds the " << orderItem->getName() << " to the plate" << endl;
+        plate->addToPlate(orderItem);
+        plate->printPlate();
         break;
       }
     }

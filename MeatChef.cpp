@@ -37,18 +37,24 @@ void MeatChef::handleOrder(Plate *plate, vector<OrderComponent *> orderComp)
         if (chic->getGrilledStatus() == true)
         {
           cout << "The Meat Chef adds a grilled chicken patty to the plate" << endl;
+          plate->addToPlate(chic);
+          plate->printPlate();
           break;
         }
         else
         {
           cout << "The Meat Chef adds a fried chicken patty to the plate" << endl;
+          plate->addToPlate(chic);
+          plate->printPlate();
           break;
         }
       }
       else if (orderItem->getName() == "Beef Patty")
       {
         cout << "The Meat Chef a grilled beef patty to the plate" << endl;
-          break;
+        plate->addToPlate(orderItem);
+        plate->printPlate();
+        break;
       }
     }
     itemIterator->next();
