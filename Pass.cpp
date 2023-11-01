@@ -1,4 +1,8 @@
 #include "Pass.h"
+#include "Order.h"
+#include "Waiter.h"
+#include "Chef.h"
+#include "Plate.h"
 
 Pass::Pass()
 {

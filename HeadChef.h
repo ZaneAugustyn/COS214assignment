@@ -3,6 +3,7 @@
 
 #include "Chef.h"
 
+class Plate;
 class HeadChef : public Chef
 {
   private:

@@ -3,7 +3,9 @@
 
 #include <vector>
 
-#include "Waiter.h"
+using namespace std;
+
+class Waiter;
 
 class Group
 {

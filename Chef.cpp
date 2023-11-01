@@ -1,4 +1,6 @@
 #include "Chef.h"
+#include "Pass.h"
+#include "Plate.h"
 
 Chef::Chef(/* args */)
 {
@@ -12,7 +14,7 @@ void Chef::changed()
 {
   // TO DO: mediator
 
-  this->pass_.notifyWaiter(this);
+  this->pass_->notifyWaiter(this);
 }
 
 Pass* Chef::get()

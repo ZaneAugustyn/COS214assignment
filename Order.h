@@ -3,8 +3,8 @@
 
 #include <vector>
 
-#include "OrderComponent.h"
-#include "Group.h"
+#include "OrderComponent.h" // Forward declaration
+class Group;
 
 using namespace std;
 

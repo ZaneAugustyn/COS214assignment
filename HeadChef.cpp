@@ -1,4 +1,5 @@
 #include "HeadChef.h"
+#include "Plate.h"
 
 HeadChef::HeadChef(/* args */)
 {

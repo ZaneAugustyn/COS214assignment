@@ -2,8 +2,10 @@
 #define _PLATE_H
 
 #include <vector>
-#include "Order.h"
-#include "OrderItem.h"
+class Order;
+class OrderItem; 
+
+using namespace std;
 
 class Plate
 {

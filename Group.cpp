@@ -1,4 +1,5 @@
 #include "Group.h"
+#include "Waiter.h"
 
 Group::Group(/* args */)
 {

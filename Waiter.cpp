@@ -1,4 +1,5 @@
 #include "Waiter.h"
+#include "Pass.h"
 
 Waiter::Waiter(/* args */)
 {
@@ -8,7 +9,7 @@ Waiter::Waiter(/* args */)
 void Waiter::changed()
 {
   // TO DO: mediator
-  this->pass_.notifyHeadChef(this);
+  this->pass_->notifyHeadChef(this);
 }
 
 Pass* Waiter::get()

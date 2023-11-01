@@ -3,6 +3,8 @@
 
 #include "Colleague.h"
 
+class Pass;
+
 class Waiter : public Colleague
 {
   private:

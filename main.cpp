@@ -9,6 +9,8 @@ using namespace std;
 #include "Colleague.h"
 #include "Chef.h"
 #include "Group.h"
+#include "Iterator.h"
+#include "OrderComponent.h"
 
 #include <vector>
 

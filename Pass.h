@@ -2,12 +2,13 @@
 #define _PASS_H
 
 #include <vector>
+using namespace std;
 
+class Order;
+class Waiter;
 class Chef;
-//class Order;
-#include "Waiter.h"
+class Plate;
 
-// code here
 class Pass
 {
   private:

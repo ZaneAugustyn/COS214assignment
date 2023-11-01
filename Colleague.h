@@ -8,7 +8,7 @@ class Colleague
   private:
 
   protected:
-    Pass pass_;
+    Pass* pass_;
 
   public:
     Colleague(/* args */);
