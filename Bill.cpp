@@ -1,6 +1,6 @@
 #include "Bill.h"
 
-Bill::Bill(/* args */)
+Bill::Bill(float t): Total(t)
 {
 }
 

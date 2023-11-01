@@ -1,6 +1,6 @@
 #include "SplitBill.h"
 
-SplitBill::SplitBill(/* args */)
+SplitBill::SplitBill(float t): Bill(t)
 {
 }
 

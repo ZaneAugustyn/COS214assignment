@@ -1,13 +1,16 @@
 #ifndef _SPLITBILL_H
 #define _SPLITBILL_H
 // code here
-class SplitBill
+#include <Bill.h>
+class SplitBill: public Bill
 {
 private:
     /* data */
+    SplitBill* next;
 public:
-    SplitBill(/* args */);
-    ~SplitBill();
+    SplitBill(float t);
+    virtual ~SplitBill();
+    virtual void Pay(Customer* customer);
 };
 
 #endif
