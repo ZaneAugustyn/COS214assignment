@@ -7,7 +7,7 @@
 WaitForTable::WaitForTable()
 {
     stateName_ = "WaitForTable";
-    cout << "New State: " << stateName_ << endl;
+    cout << "State changed to " << stateName_ << endl;
 }
 
 WaitForTable::~WaitForTable()

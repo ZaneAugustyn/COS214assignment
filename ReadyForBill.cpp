@@ -5,7 +5,7 @@
 ReadyForBill::ReadyForBill()
 {
     stateName_ = "ReadyForBill";
-    cout << "New State: " << stateName_ << endl;
+    cout << "State changed to " << stateName_ << endl;
 }
 
 ReadyForBill::~ReadyForBill()
