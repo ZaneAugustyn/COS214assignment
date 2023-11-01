@@ -12,13 +12,14 @@ class Chef : public Colleague
 {
     private:
         Chef* nextChef_;
+    protected:
         vector<Plate*> tray_;
     public:
         Chef(); 
         virtual ~Chef();
         void changed();
         virtual void handleOrder(Plate* plate);
-        void setNextChef(Chef* nextChef);
+        void add(Chef* nextChef);
         void createGroupOrder();
 };
 

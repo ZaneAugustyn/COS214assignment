@@ -20,7 +20,7 @@
 #include "Tomato.h"
 #include "Lettuce.h"
 #include "ItemIterator.h"
-#include "GroupIterator"
+#include "GroupIterator.h"
 #include "Plate.h"
 #include "Waiter.h"
 #include "Pass.h"
