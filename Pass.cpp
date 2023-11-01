@@ -20,21 +20,23 @@ Pass::Pass(vector<Waiter*> waiters, Chef* headChef)
 void Pass::notifyHeadChef(Waiter* waiter)
 {
   cout<<"The headchef was notified of a new order"<<endl;
+
+  // add order to the order queue
 }
 
 void Pass::notifyWaiter(Chef* headchef)
 {
-
+  cout<<"Waiter fetch the plate"<<endl;
 }
 
-void Pass::addRoListOfTrays(vector<Plate*> plates)
+void Pass::addToListOfTrays(vector<Plate*> plates)
 {
-
+  this->listOfTrays_.push_back(plates);
 }
 
 void Pass::addOrder(Order* order)
 {
-
+  this->orders_.push_back(order);
 }
 
 Pass::~Pass()

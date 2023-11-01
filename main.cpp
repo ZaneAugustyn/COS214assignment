@@ -35,7 +35,11 @@ int main() {
   cout<<"Create the chef"<<endl;
   Chef* chef = new Chef();
 
-  cout<<"Create the pass:"<<endl;
+  cout<<"Create the pass"<<endl;
   Pass* passMediator = new Pass(waiterList, chef);
+
+  // create a order...
+
+  // waiter add the order to the pass and call change...
 
 }
