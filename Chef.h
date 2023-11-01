@@ -3,11 +3,15 @@
 
 #include <vector>
 using namespace std;
+
 #include "Colleague.h"
+#include "ItemIterator.h"
 
 class Pass;
 class Plate; 
 class Order;
+class OrderItem;
+class OrderComponent;
 
 class Chef : public Colleague
 {
@@ -19,7 +23,7 @@ class Chef : public Colleague
         Chef(); 
         virtual ~Chef();
         void changed();
-        virtual void handleOrder(Plate* plate);
+        virtual void handleOrder(Plate* plate, vector<OrderComponent*> orderComp);
         void add(Chef* nextChef);
         void createGroupOrder(Order* order);
 };

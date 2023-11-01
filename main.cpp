@@ -43,7 +43,7 @@ int main()
 
     //headChef->createGroupOrder();
 
-    delete headChef;
+    //delete headChef;
 
     //Create a group for Bob's Birthday
     Group* bobsBirthday = new Group();
@@ -71,31 +71,33 @@ int main()
     bobsBirthdayOrder->addComponent(bobsOrder);
     bobsBirthdayOrder->addComponent(alicesOrder);
 
-    GroupIterator* iterator = bobsBirthdayOrder->createIterator();
+    headChef->createGroupOrder(bobsBirthdayOrder);
 
-    cout << "Iterating through bobsBirthdayOrder components:" << endl;
-    while (!iterator->isDone()) {
-        Order* currentComponent = iterator->currentItem();
-        if (currentComponent) {
-            cout << "Order component price: " << currentComponent->getPrice() << endl;
+//     GroupIterator* iterator = bobsBirthdayOrder->createIterator();
 
-            // Get the items within the current component
-            vector<OrderComponent*> items = currentComponent->getItems();
+//     cout << "Iterating through bobsBirthdayOrder components:" << endl;
+//     while (!iterator->isDone()) {
+//         Order* currentComponent = iterator->currentItem();
+//         if (currentComponent) {
+//             cout << "Order component price: " << currentComponent->getPrice() << endl;
 
-            //ItemIterator to iterate through the items
-            ItemIterator* itemIterator = new ItemIterator(items);
-            while (!itemIterator->isDone()) {
-                OrderComponent* item = itemIterator->currentItem();
-                if (dynamic_cast<OrderItem*>(item)) {
-                    OrderItem* orderItem = dynamic_cast<OrderItem*>(item);
-                    cout << "Item name/type: " << orderItem->getName() << ", Price: " << item->getPrice() << endl;
-                }
-                itemIterator->next();
-            }
-            delete itemIterator;
-        }
-    iterator->next();
-}
+//             // Get the items within the current component
+//             vector<OrderComponent*> items = currentComponent->getItems();
+
+//             //ItemIterator to iterate through the items
+//             ItemIterator* itemIterator = new ItemIterator(items);
+//             while (!itemIterator->isDone()) {
+//                 OrderComponent* item = itemIterator->currentItem();
+//                 if (dynamic_cast<OrderItem*>(item)) {
+//                     OrderItem* orderItem = dynamic_cast<OrderItem*>(item);
+//                     cout << "Item name/type: " << orderItem->getName() << ", Price: " << item->getPrice() << endl;
+//                 }
+//                 itemIterator->next();
+//             }
+//             delete itemIterator;
+//         }
+//     iterator->next();
+// }
     //Print out the total cost of the order, should be 220
     cout << bobsBirthdayOrder->getPrice() << endl;
 

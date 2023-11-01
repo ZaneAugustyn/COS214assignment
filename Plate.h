@@ -15,6 +15,7 @@ class Plate
   public:
     Plate();
     void printPlate();
+    //void addToPlate(OrderItem*);
     virtual ~Plate();
 };
 

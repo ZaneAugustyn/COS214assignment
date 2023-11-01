@@ -5,10 +5,11 @@
 
 class Patty : public OrderItem
 {
-private:
+protected:
     bool grilled_;
 public:
     Patty(bool grilled, double price, string name);
+    bool getGrilledStatus();
     ~Patty();
 };
 

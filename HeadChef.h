@@ -5,12 +5,15 @@
 
 #include "Chef.h"
 class Plate;
+class OrderItem;
+
+using namespace std;
 
 class HeadChef : public Chef
 {
   public:
     HeadChef();
-    void handleOrder(Plate* plate);
+    void handleOrder(Plate* plate, vector<OrderComponent*> orderComp);
     virtual ~HeadChef();
   private:
     void addToTray(Plate* plate);
