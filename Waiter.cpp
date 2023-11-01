@@ -1,7 +1,8 @@
 #include "Waiter.h"
 
-Waiter::Waiter(/* args */)
+Waiter::Waiter(string name)
 {
+    this->name = name;
 }
 
 Waiter::~Waiter()
