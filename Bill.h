@@ -1,7 +1,8 @@
 #ifndef _BILL_H
 #define _BILL_H
-// code here
+
 #include <Customer.h>
+
 class Bill
 {
 private:
@@ -13,6 +14,5 @@ public:
     virtual void Pay(Customer* customer);
     float getTotal() { return Total; };
 };
-
 
 #endif

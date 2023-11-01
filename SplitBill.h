@@ -1,6 +1,6 @@
 #ifndef _SPLITBILL_H
 #define _SPLITBILL_H
-// code here
+
 #include <Bill.h>
 #include <iostream>
 using namespace std;
