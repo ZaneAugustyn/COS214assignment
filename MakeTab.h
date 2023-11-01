@@ -1,13 +1,20 @@
 #ifndef _MAKETAB_H
 #define _MAKETAB_H
-// code here
-class MakeTab
+
+#include <iostream>
+#include <Bill.h>
+#include <Tab.h>
+using namespace std;
+
+class MakeTab: public Bill
 {
 private:
-    /* data */
+    
 public:
-    MakeTab(/* args */);
+    MakeTab(float t);
     ~MakeTab();
+    Tab* createTab(float t);
+    void setTab(Tab* tab);
 };
 
 #endif

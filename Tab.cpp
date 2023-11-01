@@ -1,6 +1,6 @@
 #include "Tab.h"
 
-Tab::Tab(/* args */)
+Tab::Tab(float amount): TotalAmountOwed(amount)
 {
 }
 
