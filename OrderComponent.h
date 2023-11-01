@@ -1,7 +1,8 @@
 #ifndef _ORDERCOMPONENT_H
 #define _ORDERCOMPONENT_H
 
-#include "Iterator.h"
+#include "ItemIterator.h"
+// #include "GroupIterator.h"
 
 class OrderComponent
 {
@@ -10,7 +11,8 @@ public:
     OrderComponent();
     virtual ~OrderComponent();
     virtual double getPrice() = 0;
-    Iterator* createIterator();
+    // GroupIterator* createIterator();
+    ItemIterator* createItemIterator();
 };
 
 #endif

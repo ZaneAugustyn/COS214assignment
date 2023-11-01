@@ -1,9 +1,9 @@
 #ifndef _CHEF_H
 #define _CHEF_H
 
-#include "Plate.h"
+class Pass;
+class Plate;
 #include "Colleague.h"
-#include "Pass.h"
 
 class Chef : public Colleague
 {
@@ -15,7 +15,7 @@ public:
     Chef(); 
     virtual ~Chef();
     virtual void handleOrder(Plate* plate);
-    void setNextChef(Chef* nextChef);
+    void add(Chef* nextChef);
     void createGroupOrder();
     Pass* get();
     void set(Pass* pass);

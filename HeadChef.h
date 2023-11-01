@@ -2,14 +2,14 @@
 #define _HEADCHEF_H
 
 #include <vector>
-#include <Plate.h>
-#include <Pass.h>
+
 #include "Chef.h"
+class Plate;
 
 class HeadChef : public Chef
 {
   public:
-    HeadChef(/* args */);
+    HeadChef();
     void handleOrder(Plate* plate);
     virtual ~HeadChef();
   private:

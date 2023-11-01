@@ -16,6 +16,8 @@ public:
     OrderItem(double price, string name);
     ~OrderItem();
     double getPrice();
+    string getName(); 
 };
 
 #endif
+

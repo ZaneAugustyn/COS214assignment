@@ -1,4 +1,7 @@
 #include "Chef.h"
+#include "Plate.h"
+#include "Pass.h"
+
 #include <iostream>
 using namespace std;
 
@@ -11,11 +14,11 @@ Chef::~Chef()
 {
 }
 
-void Chef::setNextChef(Chef* nextChef)
+void Chef::add(Chef* nextChef)
 {
     if(nextChef_)
     {
-        nextChef_->setNextChef(nextChef);
+        nextChef_->add(nextChef);
     }
     else
     {
@@ -35,8 +38,14 @@ void Chef::createGroupOrder()
 {
     // iterate over all the customer orders in the group order
         // if orders left -> Chef::handleOrder(plate)
-        // else -> Chef::handleOrder(plate)
 
     // if no orders
+        // pass_->addToListOfTrays(tray_); // add tray to list of trays
+        // tray_.clear();  // clear tray
         // changed();
+}
+
+void Chef::changed()
+{
+    pass_->notifyWaiter(this);
 }
