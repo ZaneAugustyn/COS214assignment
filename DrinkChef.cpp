@@ -16,6 +16,12 @@ DrinkChef::~DrinkChef()
 
 void DrinkChef::handleOrder(Plate *plate, vector<OrderComponent *> orderComp)
 {
+  if (orderComp.empty())
+  {
+    Chef::handleOrder(plate,orderComp);
+    return;
+  }
+
   ItemIterator *itemIterator = new ItemIterator(orderComp);
   int counter = 0;
 

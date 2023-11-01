@@ -6,6 +6,7 @@
 
 class Group;
 class OrderItem;
+class Waiter;
 
 #include <vector>
 

@@ -21,6 +21,7 @@ class Chef : public Colleague
         vector<Plate*> tray_;
     public:
         Chef(); 
+        Chef(Pass*);
         virtual ~Chef();
         void changed();
         virtual void handleOrder(Plate* plate, vector<OrderComponent*> orderComp);

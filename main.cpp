@@ -44,12 +44,28 @@ int main()
     chef2->add(new GarnishChef());
     chef2->add(headChef);
 
+    //Waiters
+    Waiter* waiterOne = new Waiter();
+    Waiter* waiterTwo = new Waiter();
+    Waiter* waiterThree = new Waiter();
+
+    vector<Waiter*> waiterList;
+    waiterList.push_back(waiterOne);
+    waiterList.push_back(waiterTwo);
+    waiterList.push_back(waiterThree);
+
+    //Create the pass
+    //Pass* passMediator = new Pass(waiterList, chef2);
+
     //headChef->createGroupOrder();
 
     //delete headChef;
 
     //Create a group for Bob's Birthday
     Group* bobsBirthday = new Group(1);
+
+    //add waiter that is responsible for bobsbirthday group
+    bobsBirthday->addWaiter(waiterTwo);
 
     //Create an order for the group
     Order* bobsBirthdayOrder = new Order(bobsBirthday);
@@ -72,7 +88,7 @@ int main()
 
     //Add both orders to the group's order
     bobsBirthdayOrder->addComponent(bobsOrder);
-    // bobsBirthdayOrder->addComponent(alicesOrder);
+    bobsBirthdayOrder->addComponent(alicesOrder);
 
     headChef->createGroupOrder(bobsBirthdayOrder);
 

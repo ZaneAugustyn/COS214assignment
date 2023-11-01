@@ -19,14 +19,14 @@ Pass::Pass(vector<Waiter*> waiters, Chef* headChef)
 
 void Pass::notifyHeadChef(Waiter* waiter)
 {
-  cout<<"The headchef was notified of a new order"<<endl;
+  cout<<"NOTIFY: The headchef was notified of a new order"<<endl;
 
   // add order to the order queue
 }
 
 void Pass::notifyWaiter(Chef* headchef)
 {
-  cout<<"Waiter fetch the plate"<<endl;
+  cout<<"NOTIFY: Waiter fetch the plate"<<endl;
 }
 
 void Pass::addToListOfTrays(vector<Plate*> plates)

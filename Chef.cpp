@@ -10,8 +10,13 @@ using namespace std;
 
 Chef::Chef()
 {
-    cout << "Chef Created" << endl;
-    pass_ = new Pass(); // may have to pass in the pass
+  cout << "Chef Created" << endl;
+  pass_ = new Pass(); // may have to pass in the pass
+}
+
+Chef::Chef(Pass* p)
+{
+  this->pass_ = p;
 }
 
 Chef::~Chef()
@@ -49,6 +54,7 @@ void Chef::createGroupOrder(Order* order)
         if (currentComponent) {
             handleOrder(new Plate(), currentComponent->getItems());
         }
+        cout<<endl;
         iterator->next();
     }
     

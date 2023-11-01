@@ -12,6 +12,7 @@ class Colleague
 
   public:
     Colleague(/* args */);
+    Colleague(Pass*);
     virtual void changed() = 0;
     virtual ~Colleague();
 };
