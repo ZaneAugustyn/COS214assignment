@@ -9,9 +9,9 @@ class Chef : public Colleague
 {
 private:
     Chef* nextChef_;
-public:
+protected:
     vector<Plate*> tray_;
-    
+public:
     Chef(); 
     virtual ~Chef();
     virtual void handleOrder(Plate* plate);
@@ -20,7 +20,6 @@ public:
     Pass* get();
     void set(Pass* pass);
     void changed();
-
 };
 
 #endif

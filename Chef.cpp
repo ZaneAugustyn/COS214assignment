@@ -1,7 +1,10 @@
 #include "Chef.h"
+#include <iostream>
+using namespace std;
 
-Chef::Chef(/* args */)
+Chef::Chef()
 {
+    cout << "Chef Created" << endl;
 }
 
 Chef::~Chef()
