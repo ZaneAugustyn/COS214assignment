@@ -3,6 +3,9 @@
 
 #include "Chef.h"
 
+class Plate;
+class OrderItem;
+
 class GarnishChef : public Chef
 {
 private:
@@ -10,7 +13,7 @@ private:
 public:
     GarnishChef(/* args */);
     virtual ~GarnishChef();
-    void HandleOrder(Plate* plate);
+    void handleOrder(Plate* plate, vector<OrderComponent*> orderComp);
 };
 
 #endif

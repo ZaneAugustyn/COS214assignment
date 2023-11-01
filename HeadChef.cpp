@@ -9,6 +9,7 @@ HeadChef::HeadChef(/* args */)
 
 void HeadChef::handleOrder(Plate* plate, vector<OrderComponent*> orderComp)
 {
+  cout<<"HERRRREEEEE"<<endl;
   ItemIterator* itemIterator = new ItemIterator(orderComp);
   int counter = 0;
 
@@ -18,7 +19,7 @@ void HeadChef::handleOrder(Plate* plate, vector<OrderComponent*> orderComp)
     addToTray(plate);  
     return;
   }
-  
+
   while (!itemIterator->isDone()) {
       OrderComponent* item = itemIterator->currentItem();
       if (dynamic_cast<OrderItem*>(item)) {

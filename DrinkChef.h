@@ -3,12 +3,15 @@
 
 #include "Chef.h"
 
+class Plate;
+class OrderItem;
+
 class DrinkChef : public Chef
 {
 public:
     DrinkChef();
     virtual ~DrinkChef();
-    void HandleOrder(Plate* plate);
+    void handleOrder(Plate* plate, vector<OrderComponent*> orderComp);
 };
 
 #endif

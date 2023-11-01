@@ -24,7 +24,7 @@ void MeatChef::handleOrder(Plate* plate, vector<OrderComponent*> orderComp)
 
           OrderItem* orderItem = dynamic_cast<OrderItem*>(item);
           cout << "Item name/type: " << orderItem->getName() << ", Price: " << item->getPrice() << endl;
-          cout << "The Meat Chef has added the meat to the plate" << endl;
+          //cout << "The Meat Chef has added the meat to the plate" << endl;
 
           if (orderItem->getName() != "Chicken Patty")
           {

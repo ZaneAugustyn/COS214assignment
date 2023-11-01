@@ -47,7 +47,9 @@ void Chef::createGroupOrder(Order* order)
         Order* currentComponent = iterator->currentItem();
         if (currentComponent) {
             cout << "Order component price: " << currentComponent->getPrice() << endl;
+            cout<<"123"<<endl;
             Chef::handleOrder(new Plate(), currentComponent->getItems());
+            cout<<"456"<<endl;
         }
         iterator->next();
     }

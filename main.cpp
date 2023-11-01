@@ -33,13 +33,15 @@ int main()
 {
 
     // build chain
-    Chef* headChef = new HeadChef();
-
-    headChef->add(new MeatChef());
-    headChef->add(new DrinkChef());
-    headChef->add(new SidesChef());
-    headChef->add(new GarnishChef());
-    headChef->add(headChef);
+    Chef* chef2 = new Chef();
+    HeadChef* headChef = new HeadChef();
+    chef2->add(headChef);
+    //headChef->add(headChef);
+    chef2->add(new MeatChef());
+    chef2->add(new DrinkChef());
+    chef2->add(new SidesChef());
+    chef2->add(new GarnishChef());
+    chef2->add(headChef);
 
     //headChef->createGroupOrder();
 
@@ -57,7 +59,7 @@ int main()
     bobsOrder->addComponent(new ChickenPatty(false)); //cost = 30
     bobsOrder->addComponent(new Chips()); //cost = 20
     bobsOrder->addComponent(new Tomato()); //cost = 10
-    bobsOrder->addComponent(new Lettuce()); //cost = 5
+    //bobsOrder->addComponent(new Lettuce()); //cost = 5
     bobsOrder->addComponent(new Milkshake()); //cost = 40
 
     //Then get Alice's order
