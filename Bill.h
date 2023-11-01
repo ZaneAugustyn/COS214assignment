@@ -11,6 +11,7 @@ public:
     Bill(float t);
     virtual ~Bill();
     virtual void Pay(Customer* customer);
+    float getTotal() { return Total; };
 };
 
 

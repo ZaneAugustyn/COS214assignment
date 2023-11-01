@@ -2,6 +2,9 @@
 #define _SPLITBILL_H
 // code here
 #include <Bill.h>
+#include <iostream>
+using namespace std;
+
 class SplitBill: public Bill
 {
 private:
@@ -13,6 +16,9 @@ public:
     SplitBill(float t);
     ~SplitBill();
     void Pay(Customer* customer);
+    void paid(float paid);
+    void tipWaiter(float tip);
+    bool fullyPaid();
 };
 
 #endif
