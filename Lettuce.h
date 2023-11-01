@@ -1,12 +1,13 @@
 #ifndef _LETTUCE_H
 #define _LETTUCE_H
-// code here
-class Lettuce
+
+#include "Garnish.h"
+
+class Lettuce : public Garnish
 {
 private:
-    /* data */
 public:
-    Lettuce(/* args */);
+    Lettuce();
     ~Lettuce();
 };
 

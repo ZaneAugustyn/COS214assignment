@@ -1,13 +1,25 @@
 #ifndef _ORDERITEM_H
 #define _ORDERITEM_H
-// code here
-class OrderItem
+
+#include "OrderComponent.h"
+
+#include <string>
+
+using namespace std;
+
+class OrderItem : public OrderComponent
 {
 private:
-    /* data */
+    double price_;
+    string name_;
 public:
-    OrderItem(/* args */);
+    OrderItem(double price, string name);
     ~OrderItem();
+    double getPrice();
+    string getName(); 
+    Iterator* createIterator() {
+        return nullptr; 
+    }
 };
 
 #endif

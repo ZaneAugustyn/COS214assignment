@@ -1,6 +1,6 @@
 #include "Bun.h"
 
-Bun::Bun(/* args */)
+Bun::Bun():OrderItem(10, "Bun")
 {
 }
 

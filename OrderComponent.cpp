@@ -1,6 +1,6 @@
 #include "OrderComponent.h"
 
-OrderComponent::OrderComponent(/* args */)
+OrderComponent::OrderComponent()
 {
 }
 
@@ -8,3 +8,7 @@ OrderComponent::~OrderComponent()
 {
 }
 
+Iterator* OrderComponent::createIterator()
+{
+    return 0;
+}

@@ -1,6 +1,6 @@
 #include "Side.h"
 
-Side::Side(/* args */)
+Side::Side(double price, string name):OrderItem(price, name)
 {
 }
 

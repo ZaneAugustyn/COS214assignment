@@ -1,13 +1,16 @@
 #ifndef _ITERATOR_H
 #define _ITERATOR_H
-// code here
+
+class Order; // Forward declaration
+
 class Iterator
 {
-private:
-    /* data */
 public:
-    Iterator(/* args */);
-    ~Iterator();
+    Iterator();
+    virtual ~Iterator();
+    virtual Order* next() = 0;
+    virtual bool isDone() = 0;
+    virtual Order* currentItem() = 0;
 };
 
 #endif
