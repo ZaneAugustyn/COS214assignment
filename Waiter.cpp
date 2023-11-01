@@ -12,17 +12,6 @@ void Waiter::changed()
   this->pass_->notifyHeadChef(this);
 }
 
-Pass* Waiter::get()
-{
-  // TO DO: mediator
-  return 0;
-}
-
-void Waiter::set(Pass* pass)
-{
-// TO DO: mediator
-}
-
 Waiter::~Waiter()
 {
 

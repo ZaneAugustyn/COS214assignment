@@ -2,6 +2,7 @@
 #define _PASS_H
 
 #include <vector>
+#include <iostream>
 using namespace std;
 
 class Order;

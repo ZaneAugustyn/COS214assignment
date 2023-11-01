@@ -17,8 +17,6 @@ class Chef : public Colleague
         Chef(); 
         virtual ~Chef();
         void changed();
-        Pass* get();
-        void set(Pass* pass);
         virtual void handleOrder(Plate* plate);
         void setNextChef(Chef* nextChef);
         void createGroupOrder();

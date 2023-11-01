@@ -19,7 +19,7 @@ Pass::Pass(vector<Waiter*> waiters, Chef* headChef)
 
 void Pass::notifyHeadChef(Waiter* waiter)
 {
-
+  cout<<"The headchef was notified of a new order"<<endl;
 }
 
 void Pass::notifyWaiter(Chef* headchef)

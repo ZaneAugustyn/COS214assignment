@@ -12,8 +12,6 @@ class Waiter : public Colleague
   public:
     Waiter(/* args */);
     void changed();
-    Pass* get();
-    void set(Pass* pass);
     virtual ~Waiter();
 };
 

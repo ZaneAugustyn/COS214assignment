@@ -17,16 +17,6 @@ void Chef::changed()
   this->pass_->notifyWaiter(this);
 }
 
-Pass* Chef::get()
-{
-  // TO DO: mediator
-}
-
-void Chef::set(Pass* pass)
-{
-  // TO DO: mediator
-}
-
 void Chef::setNextChef(Chef* nextChef)
 {
     if(nextChef_)
