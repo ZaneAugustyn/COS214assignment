@@ -8,6 +8,7 @@ private:
 public:
     Tab(float amount);
     ~Tab();
+    float getAmount() const;
 };
 
 #endif
