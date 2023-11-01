@@ -27,6 +27,7 @@ public:
     Order* getNextComponent();
     bool isDone();
     Order* getCurrentComponent();
+    int getGroupNumber();
 };
 
 #endif

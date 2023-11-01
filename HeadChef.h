@@ -13,7 +13,7 @@ class HeadChef : public Chef
 {
   public:
     HeadChef();
-    void handleOrder(Plate* plate, vector<OrderComponent*> orderComp);
+    void handleOrder(Plate* plate, vector<OrderComponent*> orderComp) override;
     virtual ~HeadChef();
   private:
     void addToTray(Plate* plate);

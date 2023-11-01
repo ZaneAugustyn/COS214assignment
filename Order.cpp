@@ -4,20 +4,19 @@
 
 #include <algorithm>
 
-Order::Order(Group* group)
+Order::Order(Group *group)
 {
 
     group_ = group;
-
 }
 
 Order::~Order()
 {
 
-    for(OrderComponent* component : components_){
+    for (OrderComponent *component : components_)
+    {
         delete component;
     }
-
 }
 
 double Order::getPrice()
@@ -25,72 +24,73 @@ double Order::getPrice()
 
     double totalPrice = 0;
 
-    for(OrderComponent* component : components_){
+    for (OrderComponent *component : components_)
+    {
         totalPrice += component->getPrice();
     }
 
     return totalPrice;
-
 }
 
-void Order::addComponent(OrderComponent* component)
+void Order::addComponent(OrderComponent *component)
 {
 
     components_.push_back(component);
-
 }
 
-void Order::removeComponent(OrderComponent* component)
+void Order::removeComponent(OrderComponent *component)
 {
 
     components_.erase(remove(components_.begin(), components_.end(), component), components_.end());
-
 }
 
-GroupIterator* Order::createIterator()
+GroupIterator *Order::createIterator()
 {
     return new GroupIterator();
 }
 
-Order* Order::getNextComponent()
+Order *Order::getNextComponent()
 {
 
     if (currentComponentIndex_ < components_.size())
     {
-        return dynamic_cast<Order*>(components_[currentComponentIndex_++]);
+        return dynamic_cast<Order *>(components_[currentComponentIndex_++]);
     }
     return nullptr;
-
 }
 
 bool Order::isDone()
 {
 
     return currentComponentIndex_ >= components_.size();
-
 }
 
-Order* Order::getCurrentComponent()
+Order *Order::getCurrentComponent()
 {
 
     if (currentComponentIndex_ < components_.size())
     {
-        return dynamic_cast<Order*>(components_[currentComponentIndex_]);
+        return dynamic_cast<Order *>(components_[currentComponentIndex_]);
     }
     return nullptr;
-
 }
 
-std::vector<OrderComponent*> Order::getItems()
+std::vector<OrderComponent *> Order::getItems()
 {
 
-   vector<OrderComponent*> items;
-        for (OrderComponent* component : components_)
+    vector<OrderComponent *> items;
+    for (OrderComponent *component : components_)
+    {
+        if (dynamic_cast<OrderItem *>(component))
         {
-            if (dynamic_cast<OrderItem*>(component))
-            {
-                items.push_back(component);
-            }
+            items.push_back(component);
         }
-        return items;
+    }
+    return items;
+}
+
+int Order::getGroupNumber()
+{
+
+    return group_->getGroupNumber();
 }

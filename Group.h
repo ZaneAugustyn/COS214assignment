@@ -14,10 +14,11 @@ class Group
     int groupNumber_;
 
   public:
-    Group(/* args */);
+    Group(int groupNumber);
     void addWaiter(Waiter* waiter);
     Waiter* getWaiter();
     ~Group();
+    int getGroupNumber();
 };
 
 #endif

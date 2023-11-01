@@ -1,7 +1,7 @@
 #include "Group.h"
 #include "Waiter.h"
 
-Group::Group(/* args */)
+Group::Group(int groupNumber) : groupNumber_(groupNumber)
 {
 }
 
@@ -17,4 +17,9 @@ Waiter* Group::getWaiter()
 
 Group::~Group()
 {
+}
+
+int Group::getGroupNumber()
+{
+  return this->groupNumber_;
 }

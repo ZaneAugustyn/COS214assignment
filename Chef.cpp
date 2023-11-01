@@ -42,31 +42,22 @@ void Chef::createGroupOrder(Order* order)
     GroupIterator* iterator = order->createIterator();
     iterator->setOrder(order);
 
-    cout << "Iterating through bobsBirthdayOrder components:" << endl;
     while (!iterator->isDone()) {
         Order* currentComponent = iterator->currentItem();
+        cout << "The kitchen is preparing an order for group " << currentComponent->getGroupNumber() << endl;
         if (currentComponent) {
-            cout << "Order component price: " << currentComponent->getPrice() << endl;
-            cout<<"123"<<endl;
-            Chef::handleOrder(new Plate(), currentComponent->getItems());
-            cout<<"456"<<endl;
+            handleOrder(new Plate(), currentComponent->getItems());
         }
         iterator->next();
     }
     
     if (iterator->isDone())
     {
-        pass_->addToListOfTrays(tray_); // add tray to list of trays
-        tray_.clear();  // clear tray
-        changed();
-    }
-    // iterate over all the customer orders in the group order
-        // if orders left -> Chef::handleOrder(plate)
-
-    // if no orders
+        cout << "The kitchen is done preparing all orders for group " << order->getGroupNumber() << endl;
         // pass_->addToListOfTrays(tray_); // add tray to list of trays
         // tray_.clear();  // clear tray
         // changed();
+    }
 }
 
 void Chef::changed()

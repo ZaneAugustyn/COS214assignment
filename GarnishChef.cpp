@@ -24,26 +24,14 @@ void GarnishChef::handleOrder(Plate* plate, vector<OrderComponent*> orderComp)
       if (dynamic_cast<OrderItem*>(item)) {
 
           OrderItem* orderItem = dynamic_cast<OrderItem*>(item);
-          cout << "Item name/type: " << orderItem->getName() << ", Price: " << item->getPrice() << endl;
 
-          if (orderItem->getName() != "Lettuce")
+          if (orderItem->getName() != "Lettuce" && orderItem->getName() != "Tomato")
           {
             counter += 1;
           }
-          else if (orderItem->getName() == "Lettuce")
+          else 
           {
-            //add a lettuce to the plate
-            cout<<"Lettuce added to the plate"<<endl;
-            break;
-          }
-          else if (orderItem->getName() != "Tomato")
-          {
-            counter += 1;
-          }
-          else if (orderItem->getName() == "Tomato")
-          {
-            //add a tomato to the plate
-            cout<<"Tomato added to the plate"<<endl;
+            cout << "The Garnish Chef adds the " << orderItem->getName() << " to the plate" << endl;
             break;
           }
       }

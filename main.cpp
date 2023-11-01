@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <string>
 #include "Chef.h"
@@ -7,6 +8,7 @@
 #include "SidesChef.h"
 #include "GarnishChef.h"
 #include "OrderComponent.h"
+#include <vector>
 #include "Order.h"
 #include "OrderItem.h"
 #include "Group.h"
@@ -36,7 +38,6 @@ int main()
     Chef* chef2 = new Chef();
     HeadChef* headChef = new HeadChef();
     chef2->add(headChef);
-    //headChef->add(headChef);
     chef2->add(new MeatChef());
     chef2->add(new DrinkChef());
     chef2->add(new SidesChef());
@@ -48,7 +49,7 @@ int main()
     //delete headChef;
 
     //Create a group for Bob's Birthday
-    Group* bobsBirthday = new Group();
+    Group* bobsBirthday = new Group(1);
 
     //Create an order for the group
     Order* bobsBirthdayOrder = new Order(bobsBirthday);
@@ -71,74 +72,74 @@ int main()
 
     //Add both orders to the group's order
     bobsBirthdayOrder->addComponent(bobsOrder);
-    bobsBirthdayOrder->addComponent(alicesOrder);
+    // bobsBirthdayOrder->addComponent(alicesOrder);
 
     headChef->createGroupOrder(bobsBirthdayOrder);
 
-//     GroupIterator* iterator = bobsBirthdayOrder->createIterator();
+// //     GroupIterator* iterator = bobsBirthdayOrder->createIterator();
 
-//     cout << "Iterating through bobsBirthdayOrder components:" << endl;
-//     while (!iterator->isDone()) {
-//         Order* currentComponent = iterator->currentItem();
-//         if (currentComponent) {
-//             cout << "Order component price: " << currentComponent->getPrice() << endl;
+// //     cout << "Iterating through bobsBirthdayOrder components:" << endl;
+// //     while (!iterator->isDone()) {
+// //         Order* currentComponent = iterator->currentItem();
+// //         if (currentComponent) {
+// //             cout << "Order component price: " << currentComponent->getPrice() << endl;
 
-//             // Get the items within the current component
-//             vector<OrderComponent*> items = currentComponent->getItems();
+// //             // Get the items within the current component
+// //             vector<OrderComponent*> items = currentComponent->getItems();
 
-//             //ItemIterator to iterate through the items
-//             ItemIterator* itemIterator = new ItemIterator(items);
-//             while (!itemIterator->isDone()) {
-//                 OrderComponent* item = itemIterator->currentItem();
-//                 if (dynamic_cast<OrderItem*>(item)) {
-//                     OrderItem* orderItem = dynamic_cast<OrderItem*>(item);
-//                     cout << "Item name/type: " << orderItem->getName() << ", Price: " << item->getPrice() << endl;
-//                 }
-//                 itemIterator->next();
-//             }
-//             delete itemIterator;
-//         }
-//     iterator->next();
-// }
-    //Print out the total cost of the order, should be 220
-    cout << bobsBirthdayOrder->getPrice() << endl;
+// //             //ItemIterator to iterate through the items
+// //             ItemIterator* itemIterator = new ItemIterator(items);
+// //             while (!itemIterator->isDone()) {
+// //                 OrderComponent* item = itemIterator->currentItem();
+// //                 if (dynamic_cast<OrderItem*>(item)) {
+// //                     OrderItem* orderItem = dynamic_cast<OrderItem*>(item);
+// //                     cout << "Item name/type: " << orderItem->getName() << ", Price: " << item->getPrice() << endl;
+// //                 }
+// //                 itemIterator->next();
+// //             }
+// //             delete itemIterator;
+// //         }
+// //     iterator->next();
+// // }
+//     //Print out the total cost of the order, should be 220
+//     cout << bobsBirthdayOrder->getPrice() << endl;
 
-    //Remove alicesOrder
-    bobsBirthdayOrder->removeComponent(alicesOrder);
+//     //Remove alicesOrder
+//     bobsBirthdayOrder->removeComponent(alicesOrder);
 
-    //Print out the total cost of the order, should be 115
-    cout << bobsBirthdayOrder->getPrice() << endl;
+//     //Print out the total cost of the order, should be 115
+//     cout << bobsBirthdayOrder->getPrice() << endl;
 
-    delete bobsBirthdayOrder;
-    delete alicesOrder;
-    delete bobsBirthday;
+//     delete bobsBirthdayOrder;
+//     delete alicesOrder;
+//     delete bobsBirthday;
   
-    cout<<"Hello world - this is my first commit!"<<endl;
+//     cout<<"Hello world - this is my first commit!"<<endl;
 
-  cout<<"Create waiters"<<endl;
-  Waiter* waiterOne = new Waiter();
-  Waiter* waiterTwo = new Waiter();
-  Waiter* waiterThree = new Waiter();
+//   cout<<"Create waiters"<<endl;
+//   Waiter* waiterOne = new Waiter();
+//   Waiter* waiterTwo = new Waiter();
+//   Waiter* waiterThree = new Waiter();
 
-  cout<<"Create waiter list"<<endl;
-  vector<Waiter*> waiterList;
-  waiterList.push_back(waiterOne);
-  waiterList.push_back(waiterTwo);
-  waiterList.push_back(waiterThree);
+//   cout<<"Create waiter list"<<endl;
+//   vector<Waiter*> waiterList;
+//   waiterList.push_back(waiterOne);
+//   waiterList.push_back(waiterTwo);
+//   waiterList.push_back(waiterThree);
 
-  cout<<"Create a group and assign waiter to a group"<<endl;
-  Group* groupOne = new Group();
-  groupOne->addWaiter(waiterOne);
+//   cout<<"Create a group and assign waiter to a group"<<endl;
+//   Group* groupOne = new Group();
+//   groupOne->addWaiter(waiterOne);
 
-  cout<<"Create the chef"<<endl;
-  Chef* chef = new Chef();
+//   cout<<"Create the chef"<<endl;
+//   Chef* chef = new Chef();
 
-  cout<<"Create the pass"<<endl;
-  Pass* passMediator = new Pass(waiterList, chef);
+//   cout<<"Create the pass"<<endl;
+//   Pass* passMediator = new Pass(waiterList, chef);
 
-  // create a order...
+//   // create a order...
 
-  // waiter add the order to the pass and call change...
+//   // waiter add the order to the pass and call change...
 
     
 
