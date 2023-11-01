@@ -3,6 +3,7 @@
 
 #include <vector>
 using namespace std;
+
 #include "Colleague.h"
 
 class Pass;
