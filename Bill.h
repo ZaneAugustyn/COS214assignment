@@ -13,6 +13,7 @@ public:
     virtual ~Bill();
     virtual void Pay(Customer* customer);
     float getTotal() { return Total; };
+    void setTotal(float t) { Total = t; };
 };
 
 #endif

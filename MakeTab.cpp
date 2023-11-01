@@ -8,12 +8,20 @@ MakeTab::~MakeTab()
 {
 }
 
-Tab* createTab(float t)
+void MakeTab::Pay(Customer* customer)
 {
-    
+    Tab* t1 = createTab(getTotal());
+    customer->setTab(t1);
 }
 
-void setTab(Tab* tab)
+Tab* MakeTab::createTab(float t)
 {
+    Tab* tab = new Tab(t);
+    return tab;
+}
 
+void MakeTab::setTab(Tab* tab)
+{
+    // set total amount owed to total for the bill
+    setTotal(tab->getAmount());
 }

@@ -14,6 +14,7 @@ public:
     MakeTab(float t);
     ~MakeTab();
     Tab* createTab(float t);
+    void Pay(Customer* customer);
     void setTab(Tab* tab);
 };
 
