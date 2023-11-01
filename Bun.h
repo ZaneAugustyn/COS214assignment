@@ -1,12 +1,13 @@
 #ifndef _BUN_H
 #define _BUN_H
-// code here
-class Bun
+
+#include "OrderItem.h"
+
+class Bun : public OrderItem
 {
 private:
-    /* data */
 public:
-    Bun(/* args */);
+    Bun();
     ~Bun();
 };
 

@@ -1,8 +1,9 @@
-#include <OrderItem.h>
+#include "OrderItem.h"
 
-OrderItem::OrderItem(double price)
+OrderItem::OrderItem(double price, string name)
 {
     price_ = price;
+    name_ = name;
 }
 
 OrderItem::~OrderItem()

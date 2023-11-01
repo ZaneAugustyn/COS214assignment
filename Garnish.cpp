@@ -1,6 +1,6 @@
 #include "Garnish.h"
 
-Garnish::Garnish(/* args */)
+Garnish::Garnish(double price, string name):OrderItem(price, name)
 {
 }
 

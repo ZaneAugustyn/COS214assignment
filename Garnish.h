@@ -1,12 +1,13 @@
 #ifndef _GARNISH_H
 #define _GARNISH_H
-// code here
-class Garnish
+
+#include "OrderItem.h"
+
+class Garnish : public OrderItem
 {
 private:
-    /* data */
 public:
-    Garnish(/* args */);
+    Garnish(double price, string name);
     ~Garnish();
 };
 

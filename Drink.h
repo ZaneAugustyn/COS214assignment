@@ -1,12 +1,13 @@
 #ifndef _DRINK_H
 #define _DRINK_H
-// code here
-class Drink
+
+#include "OrderItem.h"
+
+class Drink : public OrderItem
 {
 private:
-    /* data */
 public:
-    Drink(/* args */);
+    Drink(double price, string name);
     ~Drink();
 };
 

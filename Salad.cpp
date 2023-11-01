@@ -1,6 +1,6 @@
 #include "Salad.h"
 
-Salad::Salad(/* args */)
+Salad::Salad():Side(25, "Salad")
 {
 }
 

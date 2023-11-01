@@ -1,12 +1,13 @@
 #ifndef _SIDE_H
 #define _SIDE_H
-// code here
-class Side
+
+#include "OrderItem.h"
+
+class Side : public OrderItem
 {
 private:
-    /* data */
 public:
-    Side(/* args */);
+    Side(double price, string name);
     ~Side();
 };
 
