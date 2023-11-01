@@ -39,6 +39,13 @@ void Pass::addOrder(Order* order)
   this->orders_.push_back(order);
 }
 
+void Pass::dequeueOrder()
+{
+  Order* order =  this->orders_.front();
+  this->orders_.erase(this->orders_.begin());
+  this->headChef_->createGroupOrder(order);
+}
+
 Pass::~Pass()
 {
 

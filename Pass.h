@@ -27,6 +27,7 @@ class Pass
     void notifyWaiter(Chef* headchef);
     void addToListOfTrays(vector<Plate*> plates);
     void addOrder(Order* order);
+    void dequeueOrder();
     virtual ~Pass();
 };
 

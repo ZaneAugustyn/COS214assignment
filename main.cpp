@@ -41,7 +41,7 @@ int main()
     headChef->add(new GarnishChef());
     headChef->add(headChef);
 
-    headChef->createGroupOrder();
+    //headChef->createGroupOrder();
 
     delete headChef;
 

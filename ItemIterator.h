@@ -14,7 +14,9 @@ private:
     int currentIndex_;
 
 public:
+    ItemIterator();
     ItemIterator(vector<OrderComponent*> items_);
+    void setOrderComponents(vector<OrderComponent*> items_);
     OrderComponent* next();
     bool isDone();
     OrderComponent* currentItem();

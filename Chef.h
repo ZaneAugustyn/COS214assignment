@@ -7,6 +7,7 @@ using namespace std;
 
 class Pass;
 class Plate; 
+class Order;
 
 class Chef : public Colleague
 {
@@ -20,7 +21,7 @@ class Chef : public Colleague
         void changed();
         virtual void handleOrder(Plate* plate);
         void add(Chef* nextChef);
-        void createGroupOrder();
+        void createGroupOrder(Order* order);
 };
 
 #endif

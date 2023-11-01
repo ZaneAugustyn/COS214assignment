@@ -1,6 +1,7 @@
 #include "Chef.h"
 #include "Plate.h"
 #include "Pass.h"
+#include "Order.h"
 
 #include <iostream>
 using namespace std;
@@ -34,8 +35,11 @@ void Chef::handleOrder(Plate* plate)
     }
 }
 
-void Chef::createGroupOrder()
+void Chef::createGroupOrder(Order* order)
 {
+    GroupIterator* gIterator = order->createIterator();
+    gIterator->setOrder(order);
+    
     // iterate over all the customer orders in the group order
         // if orders left -> Chef::handleOrder(plate)
 

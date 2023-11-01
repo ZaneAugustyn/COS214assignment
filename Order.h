@@ -3,6 +3,7 @@
 
 #include "OrderComponent.h"
 #include "GroupIterator.h"
+
 class Group;
 class OrderItem;
 
@@ -22,7 +23,6 @@ public:
     void addComponent(OrderComponent* component);
     void removeComponent(OrderComponent* component);
     virtual vector<OrderComponent*> getItems();
-    ItemIterator* createItemIterator();
     GroupIterator* createIterator();
     Order* getNextComponent();
     bool isDone();

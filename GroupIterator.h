@@ -12,11 +12,13 @@ private:
     Order* order_;
 
 public:
+    GroupIterator();
     GroupIterator(Order* order);
     ~GroupIterator();
     Order* next();
     bool isDone();
     Order* currentItem();
+    void setOrder(Order* o);
 };
 
 #endif

@@ -49,9 +49,7 @@ void Order::removeComponent(OrderComponent* component)
 
 GroupIterator* Order::createIterator()
 {
-
-    return new GroupIterator(this);
-
+    return new GroupIterator();
 }
 
 Order* Order::getNextComponent()
@@ -82,12 +80,7 @@ Order* Order::getCurrentComponent()
     return nullptr;
 
 }
-ItemIterator* Order::createItemIterator() {
 
-    vector<OrderComponent*> items = getItems();
-    return new ItemIterator(items);
-
-}
 std::vector<OrderComponent*> Order::getItems()
 {
 
