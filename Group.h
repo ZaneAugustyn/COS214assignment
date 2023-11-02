@@ -5,9 +5,12 @@ class Group
 {
 private:
     /* data */
+    int groupNumber = 10;
 public:
     Group(/* args */);
     ~Group();
+
+    int getGroupNumber();
 };
 
 #endif

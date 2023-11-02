@@ -8,10 +8,12 @@ class Full : public FloorState
 {
 private:
     /* data */
+    string name;
 public:
     Full(/* args */);
     ~Full();
 
+    string getName(){return this->name;};
     void ChangeState(Floor* floor, FloorState* state);
 };
 

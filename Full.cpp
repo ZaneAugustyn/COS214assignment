@@ -2,6 +2,7 @@
 
 Full::Full(/* args */)
 {
+    name = "FULL";
 }
 
 Full::~Full()

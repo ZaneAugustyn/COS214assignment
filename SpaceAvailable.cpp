@@ -2,6 +2,7 @@
 
 SpaceAvailable::SpaceAvailable(/* args */)
 {
+    name = "SPACEAVAILABLE";
 }
 
 SpaceAvailable::~SpaceAvailable()
