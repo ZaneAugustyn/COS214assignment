@@ -1,12 +1,15 @@
 #ifndef _PATTY_H
 #define _PATTY_H
-// code here
-class Patty
+
+#include "OrderItem.h"
+
+class Patty : public OrderItem
 {
-private:
-    /* data */
+protected:
+    bool grilled_;
 public:
-    Patty(/* args */);
+    Patty(bool grilled, double price, string name);
+    bool getGrilledStatus();
     ~Patty();
 };
 

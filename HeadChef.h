@@ -1,13 +1,24 @@
 #ifndef _HEADCHEF_H
 #define _HEADCHEF_H
-// code here
-class HeadChef
+
+#include <vector>
+
+#include "Chef.h"
+class Plate;
+class OrderItem;
+class Pass;
+
+using namespace std;
+
+class HeadChef : public Chef
 {
-private:
-    /* data */
-public:
-    HeadChef(/* args */);
-    ~HeadChef();
+  public:
+    HeadChef();
+    HeadChef(Pass* p);
+    void handleOrder(Plate* plate, vector<OrderComponent*> orderComp) override;
+    virtual ~HeadChef();
+  private:
+    void addToTray(Plate* plate);
 };
 
 #endif

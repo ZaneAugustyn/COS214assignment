@@ -1,13 +1,17 @@
 #ifndef _SIDESCHEF_H
 #define _SIDESCHEF_H
-// code here
-class SidesChef
+
+#include "Chef.h"
+
+class Plate;
+class OrderItem;
+
+class SidesChef : public Chef
 {
-private:
-    /* data */
 public:
-    SidesChef(/* args */);
-    ~SidesChef();
+    SidesChef();
+    virtual ~SidesChef();
+    void handleOrder(Plate* plate, vector<OrderComponent*> orderComp);
 };
 
 #endif

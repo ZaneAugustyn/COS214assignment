@@ -1,12 +1,13 @@
 #ifndef _CHICKENPATTY_H
 #define _CHICKENPATTY_H
-// code here
-class ChickenPatty
+
+#include "Patty.h"
+
+class ChickenPatty : public Patty
 {
 private:
-    /* data */
 public:
-    ChickenPatty(/* args */);
+    ChickenPatty(bool grilled);
     ~ChickenPatty();
 };
 

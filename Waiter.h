@@ -1,13 +1,18 @@
 #ifndef _WAITER_H
 #define _WAITER_H
-// code here
-class Waiter
+
+#include "Colleague.h"
+
+class Pass;
+
+class Waiter : public Colleague
 {
-private:
-    /* data */
-public:
+  private:
+    
+  public:
     Waiter(/* args */);
-    ~Waiter();
+    void changed();
+    virtual ~Waiter();
 };
 
 #endif

@@ -1,13 +1,17 @@
 #ifndef _DRINKCHEF_H
 #define _DRINKCHEF_H
-// code here
-class DrinkChef
+
+#include "Chef.h"
+
+class Plate;
+class OrderItem;
+
+class DrinkChef : public Chef
 {
-private:
-    /* data */
 public:
-    DrinkChef(/* args */);
-    ~DrinkChef();
+    DrinkChef();
+    virtual ~DrinkChef();
+    void handleOrder(Plate* plate, vector<OrderComponent*> orderComp);
 };
 
 #endif

@@ -1,13 +1,17 @@
 #ifndef _MEATCHEF_H
 #define _MEATCHEF_H
-// code here
-class MeatChef
+
+#include "Chef.h"
+#include "ChickenPatty.h"
+class Plate;
+class OrderItem;
+
+class MeatChef : public Chef
 {
-private:
-    /* data */
 public:
-    MeatChef(/* args */);
+    MeatChef();
     ~MeatChef();
+    void handleOrder(Plate* plate, vector<OrderComponent*> orderComp);
 };
 
 #endif
