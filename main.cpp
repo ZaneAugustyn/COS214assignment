@@ -39,6 +39,7 @@ int main()
     // build chain
     Chef* chef2 = new Chef(kitchenPass);
     HeadChef* headChef = new HeadChef(kitchenPass);
+    kitchenPass->addChef(chef2);
     chef2->add(headChef);
     chef2->add(new MeatChef());
     chef2->add(new DrinkChef());
@@ -92,7 +93,9 @@ int main()
     bobsBirthdayOrder->addComponent(bobsOrder);
     bobsBirthdayOrder->addComponent(alicesOrder);
 
-    headChef->createGroupOrder(bobsBirthdayOrder);
+    kitchenPass->addOrder(bobsBirthdayOrder);
+    // // kitchenPass->addOrder(alicesOrder);
+    // headChef->createGroupOrder(bobsBirthdayOrder);
 
 // //     GroupIterator* iterator = bobsBirthdayOrder->createIterator();
 

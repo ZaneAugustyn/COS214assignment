@@ -9,6 +9,7 @@ class Order;
 class Waiter;
 class Chef;
 class Plate;
+class Group;
 
 /**
  * @class Pass
@@ -79,6 +80,8 @@ class Pass
      * @return none
     */
     virtual ~Pass();
+
+    void addChef(Chef*);
 };
 
 #endif

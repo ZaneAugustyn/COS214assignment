@@ -35,9 +35,6 @@ double Order::getPrice()
 
 void Order::addComponent(OrderComponent *component)
 {
-  // Notify the head chef that a order was added
-  Waiter* orderWaiter = this->group_->getWaiter();
-  orderWaiter->changed();
   components_.push_back(component);
 }
 
@@ -96,4 +93,9 @@ int Order::getGroupNumber()
 {
 
   return group_->getGroupNumber();
+}
+
+Group* Order::getGroup()
+{
+  return this->group_;
 }

@@ -3,6 +3,7 @@
 #include "Waiter.h"
 #include "Chef.h"
 #include "Plate.h"
+#include "Group.h"
 
 Pass::Pass()
 {
@@ -36,7 +37,14 @@ void Pass::addToListOfTrays(vector<Plate*> plates)
 
 void Pass::addOrder(Order* order)
 {
+    // Notify the head chef that a order was added
+  Group* groups = order->getGroup();
+  Waiter* waiter = groups->getWaiter();
+  waiter->changed();
+
   this->orders_.push_back(order);
+
+  this->dequeueOrder();
 }
 
 void Pass::dequeueOrder()
@@ -49,4 +57,9 @@ void Pass::dequeueOrder()
 Pass::~Pass()
 {
 
+}
+
+void Pass::addChef(Chef* c)
+{
+  this->headChef_ = c;
 }

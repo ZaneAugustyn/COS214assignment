@@ -29,6 +29,7 @@ public:
     bool isDone();
     Order* getCurrentComponent();
     int getGroupNumber();
+    Group* getGroup();
 };
 
 #endif
