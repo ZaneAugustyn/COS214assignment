@@ -44,8 +44,16 @@ public:
      */
     bool isDone();
 
+    /**
+     * @brief Get the current component in the iteration.
+     * @return A pointer to the current OrderComponent, or nullptr if the iteration is complete.
+     */
     Order* currentItem();
 
+    /**
+     * @brief Set the Order for which components will be iterated.
+     * @param o The new Order to set for iteration.
+     */
     void setOrder(Order* o);
 };
 
