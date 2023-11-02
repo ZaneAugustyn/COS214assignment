@@ -3,6 +3,11 @@
 
 #include "Pass.h"
 
+/**
+ * @class Colleague
+ * @brief This class is a abstract colleague of the Mediator design
+*/
+
 class Colleague
 {
   private:
@@ -11,9 +16,29 @@ class Colleague
     Pass* pass_;
 
   public:
+    /**
+     * @brief default constructor
+     * @return none
+    */
     Colleague(/* args */);
-    Colleague(Pass*);
+
+    /**
+     * @brief Constructor
+     * @param p the shared pass member variable
+     * @return none
+    */    
+    Colleague(Pass* p);
+
+    /**
+     * @brief part of the mediator design pattern to delegate the appropriate notify method (abstract)
+     * @return void
+    */
     virtual void changed() = 0;
+
+    /**
+     * @brief virtual destructor
+     * @return none
+    */
     virtual ~Colleague();
 };
 
