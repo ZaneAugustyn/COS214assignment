@@ -1,19 +1,28 @@
-#ifndef GROUP_H
-#define GROUP_H
+#ifndef _GROUP_H
+#define _GROUP_H
+// code here
 
-#include "Waiter.h"
 #include <iostream>
+#include <vector>
+#include<string>
 
-using namespace std;
+#include <GroupState.h>
+#include <Customer.h>
+#include <Bill.h>
+#include <Waiter.h>
 
-class GroupState;
 
 class Group
 {
 private:
-    GroupState * groupState_;
-    Waiter * waiter_;
-    int groupNumber_;
+    /* data */
+    GroupState* groupState_;
+    std::vector<Customer*> customers_;
+    Bill* bill_;
+    Waiter* waiter_;
+    int groupNumber_ = 10;
+
+
 public:
     Group(GroupState * state, int groupNumber);
     ~Group();
@@ -27,7 +36,7 @@ public:
     void RequestBill();
     int GetGroupNumber();
     GroupState * GetState();
-    string CurrentState();
+    std::string CurrentState();
 };
 
 #endif
