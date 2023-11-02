@@ -8,6 +8,8 @@ private:
 public:
     FloorState(/* args */);
     ~FloorState();
+
+    virtual void ChangeState(Floor* floor, FloorState* state) = 0;
 };
 
 #endif
