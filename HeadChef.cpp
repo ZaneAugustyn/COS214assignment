@@ -1,9 +1,15 @@
 #include "HeadChef.h"
 #include "Plate.h"
 #include "OrderItem.h"
+#include "Pass.h"
 
 HeadChef::HeadChef(/* args */)
 {
+}
+
+HeadChef::HeadChef(Pass* pass)
+{
+  this->pass_ = pass;
 }
 
 void HeadChef::handleOrder(Plate *plate, vector<OrderComponent *> orderComp)

@@ -33,10 +33,12 @@ using namespace std;
 
 int main()
 {
+    // create the pass
+    Pass* kitchenPass = new Pass();
 
     // build chain
-    Chef* chef2 = new Chef();
-    HeadChef* headChef = new HeadChef();
+    Chef* chef2 = new Chef(kitchenPass);
+    HeadChef* headChef = new HeadChef(kitchenPass);
     chef2->add(headChef);
     chef2->add(new MeatChef());
     chef2->add(new DrinkChef());
