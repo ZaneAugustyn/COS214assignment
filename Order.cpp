@@ -44,36 +44,35 @@ void Order::removeComponent(OrderComponent *component)
   components_.erase(remove(components_.begin(), components_.end(), component), components_.end());
 }
 
-GroupIterator *Order::createIterator()
+GroupIterator* Order::createIterator()
 {
-  return new GroupIterator();
+  return new GroupIterator(this);
 }
+// Order *Order::getNextComponent()
+// {
 
-Order *Order::getNextComponent()
-{
+//   if (currentComponentIndex_ < components_.size())
+//   {
+//       return dynamic_cast<Order *>(components_[currentComponentIndex_++]);
+//   }
+//   return nullptr;
+// }
 
-  if (currentComponentIndex_ < components_.size())
-  {
-      return dynamic_cast<Order *>(components_[currentComponentIndex_++]);
-  }
-  return nullptr;
-}
+// bool Order::isDone()
+// {
 
-bool Order::isDone()
-{
+//   return currentComponentIndex_ >= components_.size();
+// }
 
-  return currentComponentIndex_ >= components_.size();
-}
+// Order *Order::getCurrentComponent()
+// {
 
-Order *Order::getCurrentComponent()
-{
-
-  if (currentComponentIndex_ < components_.size())
-  {
-      return dynamic_cast<Order *>(components_[currentComponentIndex_]);
-  }
-  return nullptr;
-}
+//   if (currentComponentIndex_ < components_.size())
+//   {
+//       return dynamic_cast<Order *>(components_[currentComponentIndex_]);
+//   }
+//   return nullptr;
+// }
 
 std::vector<OrderComponent *> Order::getItems()
 {

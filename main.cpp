@@ -97,31 +97,23 @@ int main()
     // // kitchenPass->addOrder(alicesOrder);
     // headChef->createGroupOrder(bobsBirthdayOrder);
 
-// //     GroupIterator* iterator = bobsBirthdayOrder->createIterator();
+GroupIterator* groupIterator = bobsBirthdayOrder->createIterator();
 
-// //     cout << "Iterating through bobsBirthdayOrder components:" << endl;
-// //     while (!iterator->isDone()) {
-// //         Order* currentComponent = iterator->currentItem();
-// //         if (currentComponent) {
-// //             cout << "Order component price: " << currentComponent->getPrice() << endl;
+    while (!groupIterator->isDone()) {
+        Order* customerOrder = groupIterator->currentItem();
+        if (customerOrder) {
+            cout << "Customer " << customerOrder->getGroupNumber() << " items:" << endl;
+            vector<OrderComponent*> items = customerOrder->getItems();
 
-// //             // Get the items within the current component
-// //             vector<OrderComponent*> items = currentComponent->getItems();
-
-// //             //ItemIterator to iterate through the items
-// //             ItemIterator* itemIterator = new ItemIterator(items);
-// //             while (!itemIterator->isDone()) {
-// //                 OrderComponent* item = itemIterator->currentItem();
-// //                 if (dynamic_cast<OrderItem*>(item)) {
-// //                     OrderItem* orderItem = dynamic_cast<OrderItem*>(item);
-// //                     cout << "Item name/type: " << orderItem->getName() << ", Price: " << item->getPrice() << endl;
-// //                 }
-// //                 itemIterator->next();
-// //             }
-// //             delete itemIterator;
-// //         }
-// //     iterator->next();
-// // }
+            for (OrderComponent* item : items) {
+                if (dynamic_cast<OrderItem*>(item)) {
+                    OrderItem* orderItem = dynamic_cast<OrderItem*>(item);
+                    cout << "Item name/type: " << orderItem->getName() << ", Price: " << item->getPrice() << endl;
+                }
+            }
+        }
+        groupIterator->next();
+    }
 //     //Print out the total cost of the order, should be 220
 //     cout << bobsBirthdayOrder->getPrice() << endl;
 

@@ -17,6 +17,7 @@ private:
     Group* group_;
     vector<OrderComponent*> components_;
     int currentComponentIndex_;
+    friend class GroupIterator;
 public:
     Order(Group* group);
     ~Order();
@@ -25,11 +26,12 @@ public:
     void removeComponent(OrderComponent* component);
     virtual vector<OrderComponent*> getItems();
     GroupIterator* createIterator();
-    Order* getNextComponent();
-    bool isDone();
-    Order* getCurrentComponent();
+    // Order* getNextComponent();
+    // bool isDone();
+    // Order* getCurrentComponent();
     int getGroupNumber();
     Group* getGroup();
+    
 };
 
 #endif
