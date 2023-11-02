@@ -81,6 +81,10 @@ class Pass
     */
     virtual ~Pass();
 
+    /**
+     * @brief assign chef to the member variable
+     * @return void
+    */
     void addChef(Chef*);
 };
 
