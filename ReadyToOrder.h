@@ -1,13 +1,23 @@
-#ifndef _READYTOORDER_H
-#define _READYTOORDER_H
-// code here
-class ReadyToOrder
+#ifndef READYTOORDER_H
+#define READYTOORDER_H
+
+#include "GroupState.h"
+#include <iostream>
+
+class ReadyToOrder : public GroupState
 {
 private:
-    /* data */
+    string stateName_;
 public:
-    ReadyToOrder(/* args */);
+    ReadyToOrder();
     ~ReadyToOrder();
+    virtual void RequestToOrder(Group * group);
+    virtual void WaitInQueue(Group * group);
+    virtual void MakeUnhappy(Group * group);
+    virtual void MakeHappy(Group * group);
+    virtual void RequestTab(Group * group);
+    virtual void RequestBill(Group * group);
+    virtual string ToString();
 };
 
 #endif
