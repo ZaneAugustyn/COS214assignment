@@ -4,10 +4,11 @@
 class Tab
 {
 private:
-    /* data */
+    float TotalAmountOwed;
 public:
-    Tab(/* args */);
+    Tab(float amount);
     ~Tab();
+    float getAmount() const;
 };
 
 #endif

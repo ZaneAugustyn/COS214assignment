@@ -1,13 +1,17 @@
 #ifndef _CUSTOMER_H
 #define _CUSTOMER_H
-// code here
+
+#include <Tab.h>
+
 class Customer
 {
 private:
-    /* data */
+    Tab* tab;
 public:
     Customer(/* args */);
     ~Customer();
+    Tab* getTab();
+    void setTab(Tab* tab);
 };
 
 
