@@ -20,7 +20,7 @@ private:
     std::vector<Customer*> customers_;
     Bill* bill_;
     Waiter* waiter_;
-    int groupNumber_ = 10;
+    int groupNumber_;
 
 
 public:

@@ -4,6 +4,11 @@
 
 MaitreD::MaitreD(Floor* myF)
 {
+    if(myF == nullptr)
+    {
+        return;
+    }
+
     myFloor = myF;
     availableTables = 20;
 }
@@ -28,9 +33,9 @@ bool MaitreD::checkAvailability(int groupSize)
     {
         return false;
     }
-    int numNeeded = 0;
-    numNeeded = calculateTablesNeeded(groupSize);
-    if(availableTables < numNeeded)
+    int numTablesNeeded = 0;
+    numTablesNeeded = calculateTablesNeeded(groupSize);
+    if(availableTables < numTablesNeeded)
     {
         return false;
     }
@@ -39,6 +44,11 @@ bool MaitreD::checkAvailability(int groupSize)
 
 bool MaitreD::checkCurrentFloorState(FloorState* floorState)
 {
+    if(floorState == nullptr)
+    {
+        return false;;
+    }
+
     if(floorState->getName() == "SPACEAVAILABLE")
     {
         return true;
@@ -46,21 +56,51 @@ bool MaitreD::checkCurrentFloorState(FloorState* floorState)
     return false;
 }
 
-// void MaitreD::addGroupToFloor(Group* group)
-// {
-//     if(checkAvailability(group->getGroupNumber()))
-//     {
-//         availableTables = availableTables - calculateTablesNeeded(group->getGroupNumber());
-//         //We need to decide how we want to add the groups to the floor.
-//         cout<<"Group added to the floor"<<endl;
-//     }
-// }
+void MaitreD::addGroupToFloor() {
+    if (WaitingGroups_.empty()) {
+        std::cout << "No waiting groups available." << std::endl;
+        return;
+    }
 
-// void MaitreD::removeGroupFromFloor(Group* group)
-// {
-//     availableTables = availableTables + calculateTablesNeeded(group->getGroupNumber());//update tables since group left
-//     //addGroupToFloor(add group somehow) or are we going to just use a queue and add the first one to said queue or have 
-//     //a var where we keep the group that is waiting if we need to pop the queue to be able to access the group
-//     cout<<"Group removed from floor"<<endl;
+    Group* group = WaitingGroups_.front();
 
-// }
+    if (checkAvailability(group->GetGroupNumber())) {
+        int tablesNeeded = calculateTablesNeeded(group->GetGroupNumber());
+        availableTables -= tablesNeeded;
+
+        // Decide how you want to add the group to the floor.
+
+        WaitingGroups_.erase(WaitingGroups_.begin());//remove group from waiting groups
+        myFloor->seatGroup(group);//group is seating on the floor
+
+        std::cout << "Group added to the floor." << std::endl;
+    } else {
+        std::cout << "No availability for the group." << std::endl;
+    }
+}
+
+void MaitreD::removeGroupFromFloor(Group* group)
+{
+    if(group == nullptr)
+    {
+        return;
+    }
+
+    availableTables = availableTables + calculateTablesNeeded(group->GetGroupNumber());//update tables since group left
+    //addGroupToFloor(add group somehow) or are we going to just use a queue and add the first one to said queue or have 
+    //a var where we keep the group that is waiting if we need to pop the queue to be able to access the group
+    myFloor->excuseGroup(group);//group is excused from the floor
+
+    cout<<"Group removed from floor"<<endl;
+
+}
+
+void MaitreD::addGroupToWaitingGroups(Group* group)
+{
+    if(group == nullptr)
+    {
+        return;
+    }
+
+    WaitingGroups_.push_back(group);
+}

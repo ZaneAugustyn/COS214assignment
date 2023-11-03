@@ -11,6 +11,8 @@ private:
     /* data */
     int availableTables;
     Floor* myFloor;
+    std::vector<Group*> WaitingGroups_;
+
 public:
     MaitreD(Floor* myF);
     ~MaitreD();
@@ -20,8 +22,14 @@ public:
     bool checkAvailability(int groupSize);
     bool checkCurrentFloorState(FloorState* currState);
 
-    // void addGroupToFloor(Group* group);
-    // void removeGroupFromFloor(Group* group);
+    void addGroupToFloor();
+    void removeGroupFromFloor(Group* group);
+
+
+    void addGroupToWaitingGroups(Group* group);
+
+    bool isPeopleWaiting();
+
 };
 
 #endif

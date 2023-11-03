@@ -24,6 +24,8 @@ public:
     void Request();
     FloorState* getCurrentState();
     void setCurrentState(FloorState* state);
+    void seatGroup(Group* group);
+    void excuseGroup(Group* group);
 };
 
 #endif
