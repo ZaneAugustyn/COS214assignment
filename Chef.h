@@ -32,7 +32,7 @@ class Chef : public Colleague
       Chef(); 
 
       /**
-       * @brief Constructor
+       * @brief constructor
        * @param p the shared pass member variable
        * @return none
       */

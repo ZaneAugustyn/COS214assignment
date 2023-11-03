@@ -97,7 +97,7 @@ int main()
     // // kitchenPass->addOrder(alicesOrder);
     // headChef->createGroupOrder(bobsBirthdayOrder);
 
-GroupIterator* groupIterator = bobsBirthdayOrder->createIterator();
+    GroupIterator* groupIterator = bobsBirthdayOrder->createIterator();
 
     while (!groupIterator->isDone()) {
         Order* customerOrder = groupIterator->currentItem();
