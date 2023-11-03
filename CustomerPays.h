@@ -1,7 +1,7 @@
 #ifndef _CUSTOMERPAYS_H
 #define _CUSTOMERPAYS_H
 
-#include <BillPayment.h>
+#include "BillPayment.h"
 #include <iostream>
 using namespace std;
 

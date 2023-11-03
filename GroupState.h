@@ -2,7 +2,10 @@
 #define GROUPSTATE_H
 
 #include "Group.h"
+#include <string>
+using namespace std;
 
+class Group;
 class GroupState
 {
 private:

@@ -1,7 +1,7 @@
 #ifndef _BILLPAYMENT_H
 #define _BILLPAYMENT_H
 
-#include <Customer.h>
+#include "Customer.h"
 
 class BillPayment
 {

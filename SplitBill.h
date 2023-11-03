@@ -1,7 +1,7 @@
 #ifndef _SPLITBILL_H
 #define _SPLITBILL_H
 
-#include <BillPayment.h>
+#include "BillPayment.h"
 #include <iostream>
 using namespace std;
 
