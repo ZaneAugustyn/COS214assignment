@@ -5,8 +5,8 @@
 #include <vector>
 
 #include <FloorState.h>
-#include "Group.h"
-#include "SpaceAvailable.h"
+#include <Group.h>
+#include <SpaceAvailable.h>
 
 class MaitreD;
 // code here
@@ -14,8 +14,8 @@ class Floor
 {
 private:
     /* data */
-    FloorState* floorState;
-    MaitreD* maitreD;
+    FloorState* floorState_;
+    MaitreD* maitreD_;
     std::vector<Group*> groups_;
 public:
     Floor(/* args */);

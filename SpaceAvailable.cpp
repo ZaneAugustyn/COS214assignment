@@ -1,8 +1,8 @@
-#include "SpaceAvailable.h"
+#include <SpaceAvailable.h>
 
 SpaceAvailable::SpaceAvailable(/* args */)
 {
-    name = "SPACEAVAILABLE";
+    name_ = "SPACEAVAILABLE";
 }
 
 SpaceAvailable::~SpaceAvailable()
@@ -11,5 +11,10 @@ SpaceAvailable::~SpaceAvailable()
 
 void SpaceAvailable::ChangeState(Floor* floor, FloorState* state)
 {
+    if(floor == nullptr || state == nullptr)
+    {
+        return;
+    }
+
     floor->setCurrentState(state);
 }

@@ -1,8 +1,8 @@
-#include "Floor.h"
+#include <Floor.h>
 
 Floor::Floor(/* args */)
 {
-    floorState = new SpaceAvailable();
+    floorState_ = new SpaceAvailable();
 }
 
 Floor::~Floor()
@@ -11,12 +11,12 @@ Floor::~Floor()
 
 FloorState* Floor::getCurrentState()
 { 
-    return floorState; 
+    return floorState_; 
 }
 void Floor::setCurrentState(FloorState* state)
 {
     cout<<"The floor state has been changed to "<<state->getName()<<endl;
-    this->floorState = state;
+    this->floorState_ = state;
 }
 
 void Floor::seatGroup(Group* group)
