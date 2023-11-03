@@ -46,6 +46,11 @@ void Waiter::update(Group* group)
     }
     else if(group->GetState()->ToString() == "ReadyForBill"){
         //the waiter will take the group bill and display it
+        cout << "You have to pay R " << group->getBill()->getTotal() << endl;
+        cout << "How would you like to pay it? 'S' to split, 'F' to pay in full, 'T' to put it on a tab" << endl;
+        char c;
+        cin >> c;
+        //group->getBill()->Pay()//**********Xadrian please help here.
         //and ask the group how they want to pay it
         //the waiter will then initiate the payment process
     }

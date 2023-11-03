@@ -117,6 +117,8 @@ public:
     void removeWaiter(Waiter* waiter);
 
     void setBill(Bill* bill);
+
+    Bill* getBill();
     
     void notify();
 };

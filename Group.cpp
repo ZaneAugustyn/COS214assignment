@@ -127,3 +127,9 @@ void Group::setBill(Bill* bill){
     }
 
 }
+
+Bill* Group::getBill(){
+
+    return bill_;
+
+}
