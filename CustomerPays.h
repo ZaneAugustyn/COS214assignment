@@ -1,11 +1,11 @@
 #ifndef _CUSTOMERPAYS_H
 #define _CUSTOMERPAYS_H
 
-#include <Bill.h>
+#include <BillPayment.h>
 #include <iostream>
 using namespace std;
 
-class CustomerPays: public Bill
+class CustomerPays: public BillPayment
 {
 private:
     /* data */

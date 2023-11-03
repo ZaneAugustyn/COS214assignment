@@ -1,6 +1,6 @@
 #include "MakeTab.h"
 
-MakeTab::MakeTab(float t) : Bill(t)
+MakeTab::MakeTab(float t) : BillPayment(t)
 {
 }
 

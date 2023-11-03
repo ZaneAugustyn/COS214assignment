@@ -1,6 +1,6 @@
 #include "CustomerPays.h"
 
-CustomerPays::CustomerPays(float t) : Bill(t)
+CustomerPays::CustomerPays(float t) : BillPayment(t)
 {
 }
 

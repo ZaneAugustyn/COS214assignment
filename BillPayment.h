@@ -1,16 +1,16 @@
-#ifndef _BILL_H
-#define _BILL_H
+#ifndef _BILLPAYMENT_H
+#define _BILLPAYMENT_H
 
 #include <Customer.h>
 
-class Bill
+class BillPayment
 {
 private:
     /* data */
     float Total; // total amount to be paid for a bill
 public:
-    Bill(float t);
-    virtual ~Bill();
+    BillPayment(float t);
+    virtual ~BillPayment();
     virtual void Pay(Customer* customer);
     float getTotal() { return Total; };
     void setTotal(float t) { Total = t; };

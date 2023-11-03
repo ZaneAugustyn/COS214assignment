@@ -2,11 +2,11 @@
 #define _MAKETAB_H
 
 #include <iostream>
-#include <Bill.h>
+#include <BillPayment.h>
 #include <Tab.h>
 using namespace std;
 
-class MakeTab: public Bill
+class MakeTab: public BillPayment
 {
 private:
     

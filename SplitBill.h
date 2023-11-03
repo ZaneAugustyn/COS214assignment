@@ -1,11 +1,11 @@
 #ifndef _SPLITBILL_H
 #define _SPLITBILL_H
 
-#include <Bill.h>
+#include <BillPayment.h>
 #include <iostream>
 using namespace std;
 
-class SplitBill: public Bill
+class SplitBill: public BillPayment
 {
 private:
     /* data */
