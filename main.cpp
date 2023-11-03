@@ -6,9 +6,9 @@
 #include "SpaceAvailable.h"
 
 #include <array>
-using namespace std;
 #include <iostream>
 #include <string>
+using namespace std;
 
 #define YELLOW  "\033[33m"      /* Yellow */
 #define RED     "\033[31m"      /* Red */
