@@ -2,7 +2,7 @@ CXX = g++
 CXXFLAGS = -std=c++11
 
 SRC_DIR = .
-SRC_FILES = main.cpp Floor.cpp FloorState.cpp Full.cpp SpaceAvailable.cpp MaitreD.cpp OrderComponent.cpp OrderItem.cpp Group.cpp GroupState.cpp Bun.cpp Patty.cpp BeefPatty.cpp ChickenPatty.cpp Side.cpp Salad.cpp Chips.cpp Drink.cpp Milkshake.cpp Soda.cpp Garnish.cpp Lettuce.cpp Tomato.cpp Chef.cpp HeadChef.cpp MeatChef.cpp DrinkChef.cpp SidesChef.cpp GarnishChef.cpp Pass.cpp Colleague.cpp Waiter.cpp
+SRC_FILES = floorMain.cpp Floor.cpp FloorState.cpp Full.cpp SpaceAvailable.cpp MaitreD.cpp OrderComponent.cpp OrderItem.cpp Group.cpp GroupState.cpp Bun.cpp Patty.cpp BeefPatty.cpp ChickenPatty.cpp Side.cpp Salad.cpp Chips.cpp Drink.cpp Milkshake.cpp Soda.cpp Garnish.cpp Lettuce.cpp Tomato.cpp Chef.cpp HeadChef.cpp MeatChef.cpp DrinkChef.cpp SidesChef.cpp GarnishChef.cpp Pass.cpp Colleague.cpp Waiter.cpp WaitForTable.cpp Bill.cpp BillPayment.cpp Customer.cpp CustomerPays.cpp Happy.cpp MakeTab.cpp PayTab.cpp ReadyForBill.cpp ReadyToOrder.cpp SplitBill.cpp Tab.cpp Unhappy.cpp
 OBJ_FILES = $(SRC_FILES:.cpp=.o)
 EXECUTABLE = main
 
@@ -17,7 +17,7 @@ $(EXECUTABLE): $(OBJ_FILES)
 clean:
 	rm -f $(OBJ_FILES) $(EXECUTABLE)
 
-run:
+run: all
 	./main
 
 debug:

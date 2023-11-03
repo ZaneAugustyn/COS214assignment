@@ -4,6 +4,8 @@
 #include "FloorState.h"
 #include "Floor.h"
 #include "Group.h"
+#include "Full.h"
+#include "SpaceAvailable.h"
 // code here
 class MaitreD
 {
@@ -12,6 +14,7 @@ private:
     int availableTables_;
     Floor* myFloor_;
     std::vector<Group*> WaitingGroups_;
+    std::vector<Waiter*> Waiters_;
 
 public:
     MaitreD(Floor* myF);
@@ -29,6 +32,9 @@ public:
     void addGroupToWaitingGroups(Group* group);
 
     bool isPeopleWaiting();
+
+    void setWaiterList(std::vector<Waiter*> W);
+
 
 };
 

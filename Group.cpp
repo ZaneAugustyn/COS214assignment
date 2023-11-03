@@ -1,10 +1,13 @@
 #include "Group.h"
 #include "GroupState.h"
+#include "Unhappy.h"
+#include "Waiter.h"
 
 Group::Group(GroupState * state, int groupNumber)
 {
     groupState_ = state;
     groupNumber_ = groupNumber;
+    lastEmotion = new Unhappy();
 }
 
 Group::~Group()
@@ -20,6 +23,10 @@ void Group::SetState(GroupState *state)
 {
     delete groupState_;
     groupState_ = state;
+    if(state->ToString() == "happy" || state->ToString() == "UnHappy")
+    {
+        lastEmotion = state;
+    }
 }
 
 void Group::RequestToOrder()
@@ -91,4 +98,32 @@ string Group::CurrentState()
     string ret = "Group " + to_string(this->groupNumber_);
     ret += "\n\tCurrent State: " + this->GetState()->ToString();
     return ret;
+}
+
+void Group::addWaiter(Waiter* waiter)
+{
+    waiter_ = waiter;
+    cout<<"Group has added "<<waiter->getName()<<" as their waiter."<<endl;
+}
+
+void Group::removeWaiter(Waiter* waiter)
+{
+    cout<<"Group has removed "<<waiter->getName()<<" as their waiter."<<endl;
+    waiter_ = nullptr;
+}
+    
+void Group::notify()
+{
+    waiter_->update(this);
+}
+
+void Group::setBill(Bill* bill){
+
+    if(bill_ == NULL){
+        bill_ = bill;
+    }
+    else{
+        bill_->setTotal(bill_->getTotal() + bill->getTotal());
+    }
+
 }

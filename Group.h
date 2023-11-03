@@ -9,9 +9,10 @@
 #include "GroupState.h"
 #include "Customer.h"
 #include "Bill.h"
-#include "Waiter.h"
 
 class GroupState;
+
+class Waiter;
 
 class Group
 {
@@ -22,7 +23,7 @@ private:
     Bill* bill_;
     Waiter* waiter_;
     int groupNumber_;
-
+    GroupState* lastEmotion;
 
 public:
     /**
@@ -42,6 +43,13 @@ public:
      * @param waiter the waiter to be assigned to a group
      * @return void
     */
+
+    void addCustomer(Customer* customer){
+
+        customers_.push_back(customer);
+
+    }
+
     void SetWaiter(Waiter * waiter);
 
     /**
@@ -104,6 +112,13 @@ public:
      * @return string
     */
     std::string CurrentState();
+
+    void addWaiter(Waiter* waiter);
+    void removeWaiter(Waiter* waiter);
+
+    void setBill(Bill* bill);
+    
+    void notify();
 };
 
 #endif

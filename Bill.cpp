@@ -1,4 +1,4 @@
-#include <Bill.h>
+#include "Bill.h"
 
 Bill::Bill(float t): Total(t)
 {
