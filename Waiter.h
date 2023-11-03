@@ -1,13 +1,19 @@
-#ifndef _WAITER_H
-#define _WAITER_H
-// code here
+#ifndef WAITER_H
+#define WAITER_H
+
+#include <string>
+using namespace std;
+
 class Waiter
 {
 private:
-    /* data */
+    string name;
 public:
-    Waiter(/* args */);
+    Waiter(string name);
     ~Waiter();
 };
+
+
+
 
 #endif

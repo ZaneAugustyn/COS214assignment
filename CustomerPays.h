@@ -15,5 +15,4 @@ public:
     void Pay(Customer* customer);
 };
 
-
 #endif
