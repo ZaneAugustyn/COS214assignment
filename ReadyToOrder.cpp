@@ -1,6 +1,7 @@
 #include "ReadyToOrder.h"
 #include "Happy.h"
 #include "Unhappy.h"
+#include "ReadyForBill.h"
 
 ReadyToOrder::ReadyToOrder()
 {
@@ -41,7 +42,8 @@ void ReadyToOrder::RequestTab(Group *group)
 
 void ReadyToOrder::RequestBill(Group *group)
 {
-    cout << "Move to ReadyForBill State." << endl;
+    // cout << "Move to ReadyForBill State." << endl;
+    group->SetState(new ReadyForBill());
 }
 
 string ReadyToOrder::ToString()

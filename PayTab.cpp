@@ -2,7 +2,7 @@
 
 PayTab::PayTab()
 {
-    stateName_ = "ReadyForBill";
+    stateName_ = "PayTab";
     cout << "State changed to " << stateName_ << endl;
 }
 
