@@ -16,6 +16,7 @@ Unhappy::~Unhappy()
 void Unhappy::RequestToOrder(Group *group)
 {
     group->SetState(new ReadyToOrder());
+    group->notify();
 }
 
 void Unhappy::WaitInQueue(Group *group)
@@ -41,6 +42,7 @@ void Unhappy::RequestTab(Group *group)
 void Unhappy::RequestBill(Group *group)
 {
     group->SetState(new ReadyForBill());
+    group->notify();
 }
 
 string Unhappy::ToString()

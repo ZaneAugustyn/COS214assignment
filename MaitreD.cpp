@@ -60,6 +60,10 @@ void MaitreD::addGroupToFloor() {
         std::cout << "No waiting groups available." << std::endl;
         return;
     }
+    if(availableTables_ == 0)
+    {
+        myFloor_->setCurrentState(new Full());
+    }
 
     Group* group = WaitingGroups_.front();
 
@@ -71,6 +75,15 @@ void MaitreD::addGroupToFloor() {
 
         WaitingGroups_.erase(WaitingGroups_.begin());//remove group from waiting groups
         myFloor_->seatGroup(group);//group is seating on the floor
+
+        Waiter* w1 = Waiters_.front();
+        group->addWaiter(w1);
+        //w1->addGroup(group);
+
+
+        Waiters_.erase(Waiters_.begin());
+        Waiters_.push_back(w1);
+
 
         std::cout << "Group added to the floor." << std::endl;
     } else {
@@ -102,4 +115,10 @@ void MaitreD::addGroupToWaitingGroups(Group* group)
     }
 
     WaitingGroups_.push_back(group);
+}
+
+void MaitreD::setWaiterList(std::vector<Waiter*> W)
+{
+    cout<<"Waiters have been hired"<<endl;
+    this->Waiters_ = W;
 }

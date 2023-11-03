@@ -17,6 +17,7 @@ WaitForTable::~WaitForTable()
 void WaitForTable::RequestToOrder(Group *group)
 {
     group->SetState(new ReadyToOrder());
+    group->notify();
 }
 
 void WaitForTable::WaitInQueue(Group *group)
@@ -37,6 +38,7 @@ void WaitForTable::MakeHappy(Group *group)
 void WaitForTable::RequestTab(Group *group)
 {
     group->SetState(new PayTab());
+    group->notify();
 }
 
 void WaitForTable::RequestBill(Group *group)
