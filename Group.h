@@ -11,6 +11,7 @@
 #include "Bill.h"
 #include "Waiter.h"
 
+class GroupState;
 
 class Group
 {

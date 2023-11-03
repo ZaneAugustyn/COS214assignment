@@ -1,4 +1,4 @@
-#include "BeefPatty.h";
+#include "BeefPatty.h"
 
 BeefPatty::BeefPatty(/* args */)
 {
