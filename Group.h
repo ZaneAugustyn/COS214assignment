@@ -24,18 +24,84 @@ private:
 
 
 public:
+    /**
+     * @brief parameterized constructor for Group to initialise a group
+     * @param state the initial state of the group
+     * @param groupNumber the number of the group 
+    */
     Group(GroupState * state, int groupNumber);
+
+    /**
+     * @brief destructor
+    */
     ~Group();
+
+    /**
+     * @brief set the waiter of a group
+     * @param waiter the waiter to be assigned to a group
+     * @return void
+    */
     void SetWaiter(Waiter * waiter);
+
+    /**
+     * @brief set the state of the group
+     * @param state the state to be assigned to a group
+     * @return void
+    */
     void SetState(GroupState * state);
+
+    /**
+     * @brief the Context class of the State pattern that defines the requests for the state changes
+     * @return void
+    */
     void RequestToOrder();
+
+    /**
+     * @brief the Context class of the State pattern that defines the requests for the state changes
+     * @return void
+    */
     void WaitInQueue();
+
+    /**
+     * @brief the Context class of the State pattern that defines the requests for the state changes
+     * @return void
+    */
     void MakeUnhappy();
+
+    /**
+     * @brief the Context class of the State pattern that defines the requests for the state changes
+     * @return void
+    */
     void MakeHappy();
+
+    /**
+     * @brief the Context class of the State pattern that defines the requests for the state changes
+     * @return void
+    */
     void RequestTab();
+
+    /**
+     * @brief the Context class of the State pattern that defines the requests for the state changes
+     * @return void
+    */
     void RequestBill();
+
+    /**
+     * @brief the function to return the groupNumber
+     * @return int
+    */
     int GetGroupNumber();
+
+    /**
+     * @brief the function to return the the state of the group
+     * @return GroupState*
+    */
     GroupState * GetState();
+
+    /**
+     * @brief function to create a string to show the current state of the group
+     * @return string
+    */
     std::string CurrentState();
 };
 
