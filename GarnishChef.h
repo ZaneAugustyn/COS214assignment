@@ -6,13 +6,31 @@
 class Plate;
 class OrderItem;
 
+/**
+ * @class GarnishChef
+ * @brief This class is a Concrete Handler of the Chain of Responsibility Pattern
+*/
+
 class GarnishChef : public Chef
 {
 private:
-    /* data */
 public:
-    GarnishChef(/* args */);
+    /**
+     * @brief default constructor
+     * @return none
+    */
+    GarnishChef();
+    /**
+     * @brief destructor
+     * @return none
+    */
     virtual ~GarnishChef();
+    /**
+     * @brief part of the chain of responsibility design pattern to delegate to handle the order
+     * @param plate pass the plate object to which the food will be added
+     * @param orderComp hold the group order to be handled through the chain
+     * @return void
+    */
     void handleOrder(Plate* plate, vector<OrderComponent*> orderComp);
 };
 
