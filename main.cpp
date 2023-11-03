@@ -15,7 +15,14 @@ using namespace std;
 #define RESET   "\033[0m"
 #define GREEN   "\033[32m"      /* Green */
 
-int floorTest()
+void floorTest();
+
+int main(){
+    floorTest();
+    return 0;
+}
+
+void floorTest()
 {
     
     Floor* f1 = new Floor();
@@ -67,8 +74,5 @@ int floorTest()
     // Group* g1 = new Group();
     // m1->addGroupToFloor(g1);
     // m1->removeGroupFromFloor(g1);
-
-
-
     
 }

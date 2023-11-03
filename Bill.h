@@ -1,11 +1,11 @@
 #ifndef _BILL_H
 #define _BILL_H
 
-#include <Customer.h>
-#include <BillPayment.h>
-#include <SplitBill.h>
-#include <CustomerPays.h>
-#include <MakeTab.h>
+#include "Customer.h"
+#include "BillPayment.h"
+#include "SplitBill.h"
+#include "CustomerPays.h"
+#include "MakeTab.h"
 
 class Bill
 {
