@@ -1,19 +1,19 @@
 #ifndef _SPACEAVAILABLE_H
 #define _SPACEAVAILABLE_H
 
-#include "Floor.h"
-#include "FloorState.h"
+#include <Floor.h>
+#include <FloorState.h>
 // code here
 class SpaceAvailable : public FloorState 
 {
 private:
     /* data */
-    string name;
+    string name_;
 public:
     SpaceAvailable(/* args */);
     ~SpaceAvailable();
 
-    string getName(){return this->name;};
+    string getName(){return this->name_;};
     void ChangeState(Floor* floor, FloorState* state);
 };
 

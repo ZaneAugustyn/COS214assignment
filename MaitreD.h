@@ -1,16 +1,16 @@
 #ifndef _MAITRED_H
 #define _MAITRED_H
 
-#include "FloorState.h"
-#include "Floor.h"
-#include "Group.h"
+#include <FloorState.h>
+#include <Floor.h>
+#include <Group.h>
 // code here
 class MaitreD
 {
 private:
     /* data */
-    int availableTables;
-    Floor* myFloor;
+    int availableTables_;
+    Floor* myFloor_;
     std::vector<Group*> WaitingGroups_;
 
 public:

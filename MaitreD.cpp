@@ -1,5 +1,4 @@
-#include "MaitreD.h"
-
+#include <MaitreD.h>
 #include <cmath>
 
 MaitreD::MaitreD(Floor* myF)
@@ -9,8 +8,8 @@ MaitreD::MaitreD(Floor* myF)
         return;
     }
 
-    myFloor = myF;
-    availableTables = 20;
+    myFloor_ = myF;
+    availableTables_ = 20;
 }
 
 MaitreD::~MaitreD()
@@ -29,13 +28,13 @@ int MaitreD::calculateTablesNeeded(int groupSize)
 
 bool MaitreD::checkAvailability(int groupSize)
 {
-    if(!checkCurrentFloorState(myFloor->getCurrentState()))//floor state is full
+    if(!checkCurrentFloorState(myFloor_->getCurrentState()))//floor state is full
     {
         return false;
     }
     int numTablesNeeded = 0;
     numTablesNeeded = calculateTablesNeeded(groupSize);
-    if(availableTables < numTablesNeeded)
+    if(availableTables_ < numTablesNeeded)
     {
         return false;
     }
@@ -66,12 +65,12 @@ void MaitreD::addGroupToFloor() {
 
     if (checkAvailability(group->GetGroupNumber())) {
         int tablesNeeded = calculateTablesNeeded(group->GetGroupNumber());
-        availableTables -= tablesNeeded;
+        availableTables_ -= tablesNeeded;
 
         // Decide how you want to add the group to the floor.
 
         WaitingGroups_.erase(WaitingGroups_.begin());//remove group from waiting groups
-        myFloor->seatGroup(group);//group is seating on the floor
+        myFloor_->seatGroup(group);//group is seating on the floor
 
         std::cout << "Group added to the floor." << std::endl;
     } else {
@@ -86,10 +85,10 @@ void MaitreD::removeGroupFromFloor(Group* group)
         return;
     }
 
-    availableTables = availableTables + calculateTablesNeeded(group->GetGroupNumber());//update tables since group left
+    availableTables_ = availableTables_ + calculateTablesNeeded(group->GetGroupNumber());//update tables since group left
     //addGroupToFloor(add group somehow) or are we going to just use a queue and add the first one to said queue or have 
     //a var where we keep the group that is waiting if we need to pop the queue to be able to access the group
-    myFloor->excuseGroup(group);//group is excused from the floor
+    myFloor_->excuseGroup(group);//group is excused from the floor
 
     cout<<"Group removed from floor"<<endl;
 
