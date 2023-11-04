@@ -65,6 +65,14 @@ public:
     virtual void RequestBill(Group * group) = 0;
 
     /**
+     * @brief the State participant of the State pattern that defines the interface for the MakeNeutral behaviour of the ConcreteStates
+     * @param group the group that is requesting the request
+     * @return void  
+    */
+    virtual void MakeNeutral(Group * group) = 0;
+
+
+    /**
      * @brief an interface method to return the ConcreteState name
      * @return string
     */
