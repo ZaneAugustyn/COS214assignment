@@ -8,10 +8,27 @@ MakeTab::~MakeTab()
 {
 }
 
-void MakeTab::Pay(Customer* customer)
+void MakeTab::Pay(Group* group)
 {
-    Tab* t1 = createTab(getTotal());
-    customer->setTab(t1);
+    bool TabAllocated = false;
+    int count = 0;
+    char choice;
+    Customer* customer;
+    while(!TabAllocated)
+    {
+        if(count == group->getCustomers().size()){
+            count = 0;
+        }
+        customer = (group->getCustomers())[count];
+        cout << customer->getName() << ", would you like to take the tab? (y/n)" << endl;
+        cin >> choice;
+        if (choice == 'y')
+        {
+            Tab* t1 = createTab(getTotal());    
+            customer->setTab(t1);    
+            TabAllocated = true;
+        }
+    }
 }
 
 Tab* MakeTab::createTab(float t)

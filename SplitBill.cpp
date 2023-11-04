@@ -21,7 +21,7 @@ void SplitBill::Pay(Group* group)
         }
         pay = 0;
         tip = 0;
-        cout << "Please pass the terminal to " << (group->getCustomers())[count] << endl;
+        cout << "Please pass the terminal to " << (group->getCustomers())[count]->getName() << endl;
         cout << "The bill is chosen to be paid in split payment." << endl;
         cout << "The total amount to be paid is " << this->getTotal() << endl;
         cout << "The total amount paid for the bill so far is " << this->TotalPaid << endl;
