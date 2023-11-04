@@ -1,6 +1,6 @@
 #include "Drink.h"
 
-Drink::Drink(/* args */)
+Drink::Drink(double price, string name) : OrderItem(price, name)
 {
 }
 

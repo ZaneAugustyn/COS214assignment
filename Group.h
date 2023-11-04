@@ -10,6 +10,8 @@
 #include "Customer.h"
 #include "Bill.h"
 
+using namespace std;
+
 class GroupState;
 
 class Waiter;
@@ -50,7 +52,9 @@ public:
 
     }
 
-    void SetWaiter(Waiter * waiter);
+    
+
+    Waiter* getWaiter();
 
     /**
      * @brief set the state of the group
@@ -99,7 +103,7 @@ public:
      * @brief the function to return the groupNumber
      * @return int
     */
-    int GetGroupNumber();
+    int getGroupNumber();
 
     /**
      * @brief the function to return the the state of the group

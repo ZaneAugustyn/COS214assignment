@@ -1,12 +1,28 @@
 #ifndef _CHICKENPATTY_H
 #define _CHICKENPATTY_H
-// code here
-class ChickenPatty
+
+#include "Patty.h"
+
+/**
+ * @class BeefPatty
+ * @brief This class inherits from Patty and represents a beef patty
+*/
+
+class ChickenPatty : public Patty
 {
 private:
-    /* data */
 public:
-    ChickenPatty(/* args */);
+
+    /**
+     * @brief constructor - sets Patty's attributes to the values of a chicken patty - chicken patties can be grilled or fried
+     * @return none
+    */
+    ChickenPatty(bool grilled);
+
+    /**
+     * @brief destructor
+     * @return none
+    */
     ~ChickenPatty();
 };
 

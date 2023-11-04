@@ -2,7 +2,6 @@
 #include "GroupState.h"
 #include "Unhappy.h"
 #include "Waiter.h"
-
 Group::Group(GroupState * state, int groupNumber)
 {
     groupState_ = state;
@@ -14,10 +13,6 @@ Group::~Group()
 {
 }
 
-void Group::SetWaiter(Waiter *waiter)
-{
-    this->waiter_ = waiter;
-}
 
 void Group::SetState(GroupState *state)
 {
@@ -141,4 +136,8 @@ Customer* Group::getFirstCustomer(){
             return customer;
     }
     return NULL;
+}
+
+Waiter* Group::getWaiter(){
+    return waiter_;
 }

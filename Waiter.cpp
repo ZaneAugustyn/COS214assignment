@@ -11,8 +11,7 @@ Waiter::Waiter(std::string n)
 
 void Waiter::changed()
 {
-  // TO DO: mediator
-  //this->pass_->notifyHeadChef(this);
+    this->pass_->notifyHeadChef(this);
 }
 
 Waiter::~Waiter()

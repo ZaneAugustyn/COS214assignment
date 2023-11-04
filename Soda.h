@@ -1,12 +1,28 @@
 #ifndef _SODA_H
 #define _SODA_H
-// code here
-class Soda
+
+#include "Drink.h"
+
+/**
+ * @class Soda
+ * @brief This class inherits from Drink and represents a soda
+*/
+
+class Soda : public Drink
 {
 private:
-    /* data */
 public:
-    Soda(/* args */);
+
+    /**
+     * @brief default constructor - sets Drink's attributes to the values of a soda
+     * @return none
+    */
+    Soda();
+
+    /**
+     * @brief destructor
+     * @return none
+    */
     ~Soda();
 };
 
