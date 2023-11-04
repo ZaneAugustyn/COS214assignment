@@ -74,6 +74,17 @@ void Waiter::update(Group* group)
     }
     else if(group->GetState()->ToString() == "ReadyToOrder"){
         //display menu to customers and get order
+
+        //iterate over customers
+        for(Customer* customer : group->getCustomers()){
+            char languageChoice;
+            cout << "In which language would you like your menu? ('A' for Afrikaans, 'E' for English)" << endl;
+            cin >> languageChoice;
+            
+            
+
+        }
+
         //create an order with the group pointer 
         //Iterate over all customers so that each gives an order
         //and take it to the kitchen
