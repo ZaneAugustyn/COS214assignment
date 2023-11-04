@@ -53,8 +53,13 @@ void Waiter::update(Group* group)
         cin >> c;
         // Assume we take the first customer in the group if they want to make a bill
         Customer* customer = group->getFirstCustomer();
-        if(customer == NULL){
+        if(customer == NULL)
+        {
             group->getBill()->Pay(customer,c);
+        }
+        else
+        {
+            cout << "There are no customers in this group to pay for the bill" << endl;
         }
         //**********Xadrian please help here.
         //and ask the group how they want to pay it
