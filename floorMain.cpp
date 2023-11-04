@@ -40,8 +40,8 @@ int main(){
     Group* bobsBirthdayGroup = new Group(new WaitForTable(), 2);
 
     //create two customers
-    Customer* alice = new Customer();
-    Customer* bob = new Customer();
+    Customer* alice = new Customer("Alice");
+    Customer* bob = new Customer("Bob");
 
     //add the customers to the group
     bobsBirthdayGroup->addCustomer(alice);
