@@ -14,7 +14,7 @@ private:
 public:
     BillPayment(float t);
     virtual ~BillPayment();
-    virtual void Pay(Group* group);
+    virtual void Pay(Group* group) = 0;
     float getTotal() { return Total; };
     void setTotal(float t) { Total = t; };
 };

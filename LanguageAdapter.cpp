@@ -20,7 +20,7 @@ string LanguageAdapter::getOrderItemInLanguage(char language)
   dictionary["Soda"] = "Koeldrank";
   dictionary["Tomato"] = "Tamatie";
 
-  if (language == "E")
+  if (language == 'E')
   {
     return orderItem_->getName();
   }

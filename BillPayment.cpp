@@ -7,3 +7,4 @@ BillPayment::BillPayment(float t): Total(t)
 BillPayment::~BillPayment()
 {
 }
+

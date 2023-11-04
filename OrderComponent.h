@@ -1,9 +1,7 @@
 #ifndef _ORDERCOMPONENT_H
 #define _ORDERCOMPONENT_H
 
-#include "ItemIterator.h"
-// #include "GroupIterator.h"
-
+class ItemIterator;
 /**
  * @class OrderComponent
  * @brief This class acts as the (abstract) Component participant of the Composite design pattern, and represents any node in the resulting tree structure of orders.
