@@ -9,7 +9,6 @@ class SplitBill: public BillPayment
 {
 private:
     /* data */
-    SplitBill* next;
     float TotalPaid = 0;
     float TipAmount = 0;
 public:

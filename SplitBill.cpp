@@ -10,13 +10,18 @@ SplitBill::~SplitBill()
 
 void SplitBill::Pay(Customer* customer)
 {
-    float pay = 0;
-    float tip = 0;
-    char choice = 0;
-    while (fullyPaid())
+    float pay;
+    float tip;
+    char choice;
+    while (!fullyPaid())
     {
+        pay = 0;
+        tip = 0;
         cout << "Please pass the terminal to the customer." << endl;
         cout << "The bill is chosen to be paid in split payment." << endl;
+        cout << "The total amount to be paid is " << this->getTotal() << endl;
+        cout << "The total amount paid for the bill so far is " << this->TotalPaid << endl;
+        cout << "The total amount paid as tip so far is " << this->TipAmount << endl;
         cout << "Please enter the amount you'd like to pay (excluding the tip amount)." << endl;
         cin >> pay;
         cout << "Would you like to add a tip? (y/n)" << endl;
@@ -29,10 +34,9 @@ void SplitBill::Pay(Customer* customer)
 
         paid(pay);
         tipWaiter(tip);
-        cout << "Thank you" << endl;
     }
     
-    cout << "Thank you for the full payment of " << this->TotalPaid + this->TipAmount;
+    cout << "Thank you for the full payment of " << this->TotalPaid + this->TipAmount << endl;
     if (this->TipAmount > 0)
     {
         cout << "Thank you fot the tip" << endl;

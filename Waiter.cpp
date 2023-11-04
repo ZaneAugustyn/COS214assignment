@@ -53,7 +53,7 @@ void Waiter::update(Group* group)
         cin >> c;
         // Assume we take the first customer in the group if they want to make a bill
         Customer* customer = group->getFirstCustomer();
-        if(customer == NULL)
+        if(customer != NULL)
         {
             group->getBill()->Pay(customer,c);
         }

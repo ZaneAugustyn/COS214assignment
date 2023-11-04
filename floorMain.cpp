@@ -68,4 +68,15 @@ int main(){
     bobsBirthdayGroup->RequestBill();
     cout << bobsBirthdayGroup->GetState()->ToString() << endl;
 
+    // just need to test the tab was made for the first person
+    Customer* c1 = bobsBirthdayGroup->getFirstCustomer();
+    Tab* checkTab = c1->getTab();
+    if (checkTab == NULL) 
+    {
+        cout << "No tab available" << endl;
+    }
+    else{
+        cout << "the tab amount to be paid is " << checkTab->getAmount() << endl;
+    } 
+
 }

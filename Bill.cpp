@@ -14,15 +14,15 @@ void Bill::Pay(Customer* customer, char choice)
     switch (choice)
     {
     case 'S': // Split bill
-        payment = new SplitBill(getTotal());
+        payment = new SplitBill(this->getTotal());
         break;
 
     case 'F': // Full payment
-        payment = new CustomerPays(getTotal());
+        payment = new CustomerPays(this->getTotal());
         break;
 
     case 'T': // Tab payment
-        payment = new MakeTab(getTotal());
+        payment = new MakeTab(this->getTotal());
         break;
     }
 
