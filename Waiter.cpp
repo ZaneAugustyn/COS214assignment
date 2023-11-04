@@ -19,6 +19,7 @@
 #include "Bun.h"
 #include <iostream>
 #include <string>
+#include <limits> 
 
 Waiter::Waiter(std::string n, Pass* pass):Colleague(pass)
 {
@@ -102,11 +103,15 @@ void Waiter::update(Group* group)
                 int choice;
                 cin >> choice;
 
-                while (choice != 1 && choice != 2) // TO DO: check that input is of type int
+                while (!cin.good() || (choice != 1 && choice != 2)) // check that input is of type int
                 {
+                    cin.clear();
+                    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
                     cout<<"WARNING! You entered the wrong menu option. Please try again."<<endl;
                     cout << messages[i] << endl;
                     cout << (iterator->currentItem())->formatOrder(la, languageChoice);
+                    
                     cin >> choice;
                 }
                 //cout << dynamic_cast<OrderItem*>((iterator->currentItem())->getItems()[choice - 1])->getName();
@@ -135,6 +140,13 @@ void Waiter::update(Group* group)
         char c;
         // TODO: need to check inputs
         cin >> c;
+
+        while ((c != 'S') && (c != 'F') && (c != 'T'))
+        {
+            cout<<"WARNING! You entered the wrong bill option. Please try again."<<endl;
+            cout << "How would you like to pay it? 'S' to split, 'F' to pay in full, 'T' to put it on a tab" << endl;
+            cin >> c;
+        }
         // Assume we take the first customer in the group if they want to make a bill
         //**********Check group last emotion for tip.*********************
         

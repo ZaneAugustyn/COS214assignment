@@ -20,12 +20,12 @@ string LanguageAdapter::getOrderItemInLanguage(char language)
   dictionary["Soda"] = "Koeldrank";
   dictionary["Tomato"] = "Tamatie";
 
-  if (language == 'E')
+  if (language == 'A')
+  {
+    return dictionary[orderItem_->getName()];    
+  }
+  else // english is the default language
   {
     return orderItem_->getName();
-  }
-  else
-  {
-    return dictionary[orderItem_->getName()];
   }
 }
