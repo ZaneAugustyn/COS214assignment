@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "BillPayment.h"
+#include "Group.h"
 #include "Tab.h"
 using namespace std;
 
@@ -14,7 +15,7 @@ public:
     MakeTab(float t);
     ~MakeTab();
     Tab* createTab(float t);
-    void Pay(Customer* customer);
+    void Pay(Group* group);
     void setTab(Tab* tab);
 };
 

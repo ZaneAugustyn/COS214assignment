@@ -52,6 +52,11 @@ public:
 
     }
 
+
+    std::vector<Customer*> getCustomers()
+    {
+        return customers_;
+    }
     
 
     Waiter* getWaiter();

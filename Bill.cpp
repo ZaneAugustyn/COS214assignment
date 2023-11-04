@@ -8,7 +8,7 @@ Bill::~Bill()
 {
 }
 
-void Bill::Pay(Customer* customer, char choice)
+void Bill::Pay(Group* group, char choice)
 {
     BillPayment* payment;
     switch (choice)
@@ -27,7 +27,7 @@ void Bill::Pay(Customer* customer, char choice)
     }
 
     if(payment != NULL){
-        payment->Pay(customer);
+        payment->Pay(group);
         delete payment;
     }
 }

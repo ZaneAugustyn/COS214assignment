@@ -2,6 +2,7 @@
 #define _SPLITBILL_H
 
 #include "BillPayment.h"
+#include "Group.h"
 #include <iostream>
 using namespace std;
 
@@ -14,7 +15,7 @@ private:
 public:
     SplitBill(float t);
     ~SplitBill();
-    void Pay(Customer* customer);
+    void Pay(Group* group);
     void paid(float paid);
     void tipWaiter(float tip);
     bool fullyPaid();

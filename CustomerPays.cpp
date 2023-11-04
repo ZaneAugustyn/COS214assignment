@@ -8,7 +8,7 @@ CustomerPays::~CustomerPays()
 {
 }
 
-void CustomerPays::Pay(Customer* customer)
+void CustomerPays::Pay(Group* group)
 {
     float paid = 0;
     while(paid < getTotal()){
@@ -17,6 +17,8 @@ void CustomerPays::Pay(Customer* customer)
         cin >> paid;
         if (paid > getTotal())
             cout << "Thank you fot the Tip!" << endl;
+        else if(paid < getTotal())
+            cout << "Payment failed! Please pay the full amount as R" << paid << " is less than R" << getTotal() << endl;
     }
     cout << "Thank you for the support" << endl;
 }

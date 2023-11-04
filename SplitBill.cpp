@@ -8,16 +8,20 @@ SplitBill::~SplitBill()
 {
 }
 
-void SplitBill::Pay(Customer* customer)
+void SplitBill::Pay(Group* group)
 {
     float pay;
     float tip;
     char choice;
+    int count = 0;
     while (!fullyPaid())
     {
+        if(count == group->getCustomers().size()){
+            count = 0;
+        }
         pay = 0;
         tip = 0;
-        cout << "Please pass the terminal to the customer." << endl;
+        cout << "Please pass the terminal to " << (group->getCustomers())[count] << endl;
         cout << "The bill is chosen to be paid in split payment." << endl;
         cout << "The total amount to be paid is " << this->getTotal() << endl;
         cout << "The total amount paid for the bill so far is " << this->TotalPaid << endl;
@@ -34,6 +38,7 @@ void SplitBill::Pay(Customer* customer)
 
         paid(pay);
         tipWaiter(tip);
+        count++;
     }
     
     cout << "Thank you for the full payment of " << this->TotalPaid + this->TipAmount << endl;

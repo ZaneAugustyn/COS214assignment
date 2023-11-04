@@ -2,6 +2,7 @@
 #define _BILL_H
 
 #include "Customer.h"
+#include "Group.h"
 #include "BillPayment.h"
 #include "SplitBill.h"
 #include "CustomerPays.h"
@@ -15,7 +16,7 @@ private:
 public:
     Bill(float t);
     ~Bill();
-    void Pay(Customer* customer, char choice);
+    void Pay(Group* group, char choice);
     float getTotal() { return Total; };
     void setTotal(float t) { Total = t; };
 };
