@@ -42,7 +42,7 @@
 #include "SplitBill.h"
 #include "Tab.h"
 #include "Unhappy.h"
-
+#include "Neutral.h"
 int main(){
 
     //create the restaurant floor
