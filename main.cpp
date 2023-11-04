@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <string>
 #include "Chef.h"
@@ -27,21 +26,21 @@
 #include "Waiter.h"
 #include "Pass.h"
 #include "Colleague.h"
-#include "LanguageTarget.h"
-#include "LanguageAdapter.h"
+#include "Happy.h"
+
 
 using namespace std;
 
 int main()
 {
-    // Testing the adapter
+      // Testing the adapter
     cout << "======================================"<<endl;
     LanguageTarget* adapter = new LanguageAdapter();
     adapter->setOrderItems(new Tomato());
     cout<<adapter->getOrderItemInLanguage("A")<<endl;
     cout<<adapter->getOrderItemInLanguage("E")<<endl;
     cout << "======================================"<<endl;
-
+  
     // create the pass
     Pass* kitchenPass = new Pass();
 
@@ -57,9 +56,9 @@ int main()
     chef2->add(headChef);
 
     //Waiters
-    Waiter* waiterOne = new Waiter();
-    Waiter* waiterTwo = new Waiter();
-    Waiter* waiterThree = new Waiter();
+    Waiter* waiterOne = new Waiter("Bob");
+    Waiter* waiterTwo = new Waiter("Alice");
+    Waiter* waiterThree = new Waiter("John");
 
     vector<Waiter*> waiterList;
     waiterList.push_back(waiterOne);
@@ -74,7 +73,7 @@ int main()
     //delete headChef;
 
     //Create a group for Bob's Birthday
-    Group* bobsBirthday = new Group(1);
+    Group* bobsBirthday = new Group(new Happy(), 1);
 
     //add waiter that is responsible for bobsbirthday group
     bobsBirthday->addWaiter(waiterTwo);
@@ -106,31 +105,23 @@ int main()
     // // kitchenPass->addOrder(alicesOrder);
     // headChef->createGroupOrder(bobsBirthdayOrder);
 
-// //     GroupIterator* iterator = bobsBirthdayOrder->createIterator();
+    GroupIterator* groupIterator = bobsBirthdayOrder->createIterator();
 
-// //     cout << "Iterating through bobsBirthdayOrder components:" << endl;
-// //     while (!iterator->isDone()) {
-// //         Order* currentComponent = iterator->currentItem();
-// //         if (currentComponent) {
-// //             cout << "Order component price: " << currentComponent->getPrice() << endl;
+    while (!groupIterator->isDone()) {
+        Order* customerOrder = groupIterator->currentItem();
+        if (customerOrder) {
+            cout << "Customer " << customerOrder->getGroupNumber() << " items:" << endl;
+            vector<OrderComponent*> items = customerOrder->getItems();
 
-// //             // Get the items within the current component
-// //             vector<OrderComponent*> items = currentComponent->getItems();
-
-// //             //ItemIterator to iterate through the items
-// //             ItemIterator* itemIterator = new ItemIterator(items);
-// //             while (!itemIterator->isDone()) {
-// //                 OrderComponent* item = itemIterator->currentItem();
-// //                 if (dynamic_cast<OrderItem*>(item)) {
-// //                     OrderItem* orderItem = dynamic_cast<OrderItem*>(item);
-// //                     cout << "Item name/type: " << orderItem->getName() << ", Price: " << item->getPrice() << endl;
-// //                 }
-// //                 itemIterator->next();
-// //             }
-// //             delete itemIterator;
-// //         }
-// //     iterator->next();
-// // }
+            for (OrderComponent* item : items) {
+                if (dynamic_cast<OrderItem*>(item)) {
+                    OrderItem* orderItem = dynamic_cast<OrderItem*>(item);
+                    cout << "Item name/type: " << orderItem->getName() << ", Price: " << item->getPrice() << endl;
+                }
+            }
+        }
+        groupIterator->next();
+    }
 //     //Print out the total cost of the order, should be 220
 //     cout << bobsBirthdayOrder->getPrice() << endl;
 

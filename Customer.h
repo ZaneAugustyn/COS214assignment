@@ -1,13 +1,21 @@
 #ifndef _CUSTOMER_H
 #define _CUSTOMER_H
-// code here
+
+#include "Tab.h"
+#include <string>
+using namespace std;
+
 class Customer
 {
 private:
-    /* data */
+    Tab* tab_;
+    string name_;
 public:
-    Customer(/* args */);
+    Customer(string name);
     ~Customer();
+    Tab* getTab();
+    void setTab(Tab* tab);
+    string getName();
 };
 
 

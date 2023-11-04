@@ -3,11 +3,26 @@
 
 #include "Garnish.h"
 
+/**
+ * @class Lettuce
+ * @brief This class inherits from Garnish and represents lettuce to garnish a burger
+*/
+
 class Lettuce : public Garnish
 {
 private:
 public:
+
+    /**
+     * @brief default constructor - sets Garnish's attributes to the values of lettuce
+     * @return none
+    */
     Lettuce();
+
+    /**
+     * @brief destructor
+     * @return none
+    */
     ~Lettuce();
 };
 

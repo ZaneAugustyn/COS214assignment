@@ -14,7 +14,7 @@ using namespace std;
 class GroupIterator {
 private:
     Order* order_; /**< The Order for which components are being iterated. */
-
+    int current_position;
 public:
     /**
      * @brief Default constructor for GroupIterator.

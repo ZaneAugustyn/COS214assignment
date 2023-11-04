@@ -56,7 +56,11 @@ void Pass::dequeueOrder()
 
 Pass::~Pass()
 {
+}
 
+void Pass::addChef(Chef* c)
+{
+  this->headChef_ = c;
 }
 
 void Pass::addChef(Chef* c)
