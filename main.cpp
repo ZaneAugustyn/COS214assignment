@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <string>
 #include "Chef.h"
@@ -34,6 +33,14 @@ using namespace std;
 
 int main()
 {
+      // Testing the adapter
+    cout << "======================================"<<endl;
+    LanguageTarget* adapter = new LanguageAdapter();
+    adapter->setOrderItems(new Tomato());
+    cout<<adapter->getOrderItemInLanguage("A")<<endl;
+    cout<<adapter->getOrderItemInLanguage("E")<<endl;
+    cout << "======================================"<<endl;
+  
     // create the pass
     Pass* kitchenPass = new Pass();
 
