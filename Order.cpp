@@ -3,10 +3,10 @@
 #include "OrderItem.h"
 #include "Waiter.h"
 #include "ItemIterator.h"
-#include <cmath>
-
-
 #include <algorithm>
+#include <iostream>
+#include <iomanip>
+#include <sstream>
 
 Order::Order(Group *group)
 {
@@ -85,9 +85,17 @@ string Order::formatOrder(LanguageTarget* lt, char lang)
   ItemIterator* iterator = new ItemIterator(components_);
 
   while(!iterator->isDone()){
+
     OrderItem* currentItem = dynamic_cast<OrderItem *>(iterator->currentItem());
     lt->setOrderItems(currentItem);
-    formattedOrder += to_string(counter) + " " + lt->getOrderItemInLanguage(lang) + "\t\t\tR" + to_string(trunc(currentItem->getPrice())) + ".00\n";
+
+    std::ostringstream formattedStream;
+    
+    string item = to_string(counter) + ". " + lt->getOrderItemInLanguage(lang);
+
+    formattedStream << left << setfill('.') << setw(20) << item << right << setfill('.') << setw(20) << currentItem->getPrice()  << endl;
+    formattedOrder += formattedStream.str();
+
     counter++;
     iterator->next();
   }

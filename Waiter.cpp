@@ -111,7 +111,7 @@ void Waiter::update(Group* group)
                     cout<<"WARNING! You entered the wrong menu option. Please try again."<<endl;
                     cout << messages[i] << endl;
                     cout << (iterator->currentItem())->formatOrder(la, languageChoice);
-                    
+
                     cin >> choice;
                 }
                 //cout << dynamic_cast<OrderItem*>((iterator->currentItem())->getItems()[choice - 1])->getName();
