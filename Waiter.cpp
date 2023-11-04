@@ -17,6 +17,7 @@
 #include "Tomato.h"
 #include "Bill.h"
 #include <iostream>
+#include <string>
 
 Waiter::Waiter(std::string n)
 {
@@ -77,20 +78,33 @@ void Waiter::update(Group* group)
         //display menu to customers and get order
 
         LanguageAdapter* la = new LanguageAdapter();
+        Order* groupOrder = new Order(group);
 
         //iterate over customers
         for(Customer* customer : group->getCustomers()){
+            Order* customerOrder = new Order(group);
+            groupOrder->addComponent(customerOrder);
             char languageChoice;
             cout << "In which language would you like your menu? ('A' for Afrikaans, 'E' for English)" << endl;
             cin >> languageChoice;
             
-            cout << menu_->formatOrder(la, languageChoice);
+            GroupIterator* iterator = menu_->createIterator();
+            string messages[] = {"Please select a meat", "Please select a side", "Please select a garnish", "Please select a drink"};
+            int i = 0;
+
+            while (!iterator->isDone()) {
+                cout << messages[i] << endl;
+                i++;
+                cout << (iterator->currentItem())->formatOrder(la, languageChoice);
+                int choice;
+                cin >> choice;
+                customerOrder->addComponent((iterator->currentItem())->getItems()[choice - 1]);
+                iterator->next(); 
+            }
 
         }
 
-        //create an order with the group pointer 
-        //Iterate over all customers so that each gives an order
-        //and take it to the kitchen
+        pass_->addOrder(groupOrder);
     }
     else if(group->GetState()->ToString() == "ReadyForBill"){
         //the waiter will take the group bill and display it

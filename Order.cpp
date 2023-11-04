@@ -3,6 +3,7 @@
 #include "OrderItem.h"
 #include "Waiter.h"
 #include "ItemIterator.h"
+#include <cmath>
 
 
 #include <algorithm>
@@ -50,31 +51,6 @@ GroupIterator* Order::createIterator()
 {
   return new GroupIterator(this);
 }
-// Order *Order::getNextComponent()
-// {
-
-//   if (currentComponentIndex_ < components_.size())
-//   {
-//       return dynamic_cast<Order *>(components_[currentComponentIndex_++]);
-//   }
-//   return nullptr;
-// }
-
-// bool Order::isDone()
-// {
-
-//   return currentComponentIndex_ >= components_.size();
-// }
-
-// Order *Order::getCurrentComponent()
-// {
-
-//   if (currentComponentIndex_ < components_.size())
-//   {
-//       return dynamic_cast<Order *>(components_[currentComponentIndex_]);
-//   }
-//   return nullptr;
-// }
 
 std::vector<OrderComponent *> Order::getItems()
 {
@@ -103,15 +79,17 @@ Group* Order::getGroup()
 
 string Order::formatOrder(LanguageTarget* lt, char lang)
 {
-
-  string formattedOrder;
+  string formattedOrder = "";
+  int counter = 1;
 
   ItemIterator* iterator = new ItemIterator(components_);
 
   while(!iterator->isDone()){
     OrderItem* currentItem = dynamic_cast<OrderItem *>(iterator->currentItem());
     lt->setOrderItems(currentItem);
-    formattedOrder += lt->getOrderItemInLanguage(lang) + "\tR" + to_string(currentItem->getPrice()) + ".00";
+    formattedOrder += to_string(counter) + " " + lt->getOrderItemInLanguage(lang) + "\t\t\tR" + to_string(trunc(currentItem->getPrice())) + ".00\n";
+    counter++;
+    iterator->next();
   }
 
   return formattedOrder;
