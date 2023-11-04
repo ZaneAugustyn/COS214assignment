@@ -36,8 +36,7 @@ void Pass::addToListOfTrays(vector<Plate*> plates)
 
 void Pass::addOrder(Order* order)
 {
-  
-    // Notify the head chef that a order was added
+  // Notify the head chef that a order was added
   Group* groups = order->getGroup();
   Waiter* waiter = groups->getWaiter();
 
@@ -50,19 +49,19 @@ void Pass::addOrder(Order* order)
 void Pass::dequeueOrder()
 {
   Order* order =  this->orders_.front();
-  cout << "DEQ1" << endl;
+  //cout << "DEQ1" << endl;
   this->orders_.erase(this->orders_.begin());
-  cout << "DEQ2" << endl;
+  //cout << "DEQ2" << endl;
 
-  ItemIterator* it = order->createItemIterator();
-  while(!it->isDone()){
-    cout << "loop" << endl;
-    cout << it->currentItem()->getPrice();
-    it->next();
-  }
+  // ItemIterator* it = order->createItemIterator();
+  // while(!it->isDone()){
+  //   cout << "loop" << endl;
+  //   cout << it->currentItem()->getPrice();
+  //   it->next();
+  // }
 
   this->headChef_->createGroupOrder(order);
-  cout << "DEQ3" << endl;
+  //cout << "DEQ3" << endl;
 }
 
 Pass::~Pass()

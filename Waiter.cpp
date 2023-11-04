@@ -101,6 +101,14 @@ void Waiter::update(Group* group)
                 cout << (iterator->currentItem())->formatOrder(la, languageChoice);
                 int choice;
                 cin >> choice;
+
+                while (choice != 1 && choice != 2) // TO DO: check that input is of type int
+                {
+                    cout<<"WARNING! You entered the wrong menu option. Please try again."<<endl;
+                    cout << messages[i] << endl;
+                    cout << (iterator->currentItem())->formatOrder(la, languageChoice);
+                    cin >> choice;
+                }
                 //cout << dynamic_cast<OrderItem*>((iterator->currentItem())->getItems()[choice - 1])->getName();
                 //customerOrder->addComponent(new Tomato());
                 customerOrder->addComponent((iterator->currentItem())->getItems()[choice - 1]);
@@ -111,12 +119,12 @@ void Waiter::update(Group* group)
 
         }
 
-        GroupIterator* it = groupOrder->createIterator();
-        while(!it->isDone()){
-            cout << "loop" << endl;
-            cout << it->currentItem()->getPrice() << endl;
-            it->next();
-        }
+        // GroupIterator* it = groupOrder->createIterator();
+        // while(!it->isDone()){
+        //     cout << "loop" << endl;
+        //     cout << it->currentItem()->getPrice() << endl;
+        //     it->next();
+        // }
 
         pass_->addOrder(groupOrder);
     }
