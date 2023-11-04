@@ -2,6 +2,9 @@
 #define _WAITER_H
 
 #include "Colleague.h"
+#include "Group.h"
+#include <string>
+#include <vector>
 
 class Pass;
 
@@ -10,16 +13,19 @@ class Pass;
  * @brief This class is a concrete colleague of the Mediator design and the Handler participant of the Chain of Responsibility Pattern
 */
 
+//class Group;
+
 class Waiter : public Colleague
 {
   private:
-    
+    std::string name_;
+
   public:
     /**
      * @brief default constructor
      * @return none
     */
-    Waiter(/* args */);
+    Waiter(std::string n);
 
     /**
      * @brief part of the mediator design pattern to delegate the appropriate notify method
@@ -32,6 +38,13 @@ class Waiter : public Colleague
      * @return none
     */
     virtual ~Waiter();
+
+    std::string getName();
+
+    // void addGroup(Group* group);
+    // void removeGroup(Group* group);
+
+    void update(Group* group);
 };
 
 #endif

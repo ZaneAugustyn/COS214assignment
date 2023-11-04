@@ -27,6 +27,7 @@
 #include "Waiter.h"
 #include "Pass.h"
 #include "Colleague.h"
+#include "Happy.h"
 
 
 using namespace std;
@@ -48,9 +49,9 @@ int main()
     chef2->add(headChef);
 
     //Waiters
-    Waiter* waiterOne = new Waiter();
-    Waiter* waiterTwo = new Waiter();
-    Waiter* waiterThree = new Waiter();
+    Waiter* waiterOne = new Waiter("Bob");
+    Waiter* waiterTwo = new Waiter("Alice");
+    Waiter* waiterThree = new Waiter("John");
 
     vector<Waiter*> waiterList;
     waiterList.push_back(waiterOne);
@@ -65,7 +66,7 @@ int main()
     //delete headChef;
 
     //Create a group for Bob's Birthday
-    Group* bobsBirthday = new Group(1);
+    Group* bobsBirthday = new Group(new Happy(), 1);
 
     //add waiter that is responsible for bobsbirthday group
     bobsBirthday->addWaiter(waiterTwo);

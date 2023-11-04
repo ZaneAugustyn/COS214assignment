@@ -21,3 +21,15 @@ string OrderItem::getName()
 {
     return name_;
 }
+
+double OrderItem::getPrice()
+{
+
+    return price_;
+
+}
+
+string OrderItem::getName()
+{
+    return name_;
+}
