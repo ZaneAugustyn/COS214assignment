@@ -43,11 +43,17 @@ class Waiter : public Colleague
     */
     virtual ~Waiter();
 
+    /**
+     * @brief Get the name of the waiter.
+     * @return The name of the waiter.
+     */
     std::string getName();
 
-    // void addGroup(Group* group);
-    // void removeGroup(Group* group);
-
+    /**
+     * @brief Update the waiter with changes in the group's state.
+     * @param group The group whose state has changed.
+     * @return void
+     */
     void update(Group* group);
 };
 
