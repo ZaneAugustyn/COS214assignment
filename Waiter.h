@@ -8,6 +8,8 @@
 
 class Pass;
 
+class Order;
+
 /**
  * @class Waiter
  * @brief This class is a concrete colleague of the Mediator design and the Handler participant of the Chain of Responsibility Pattern
@@ -19,6 +21,7 @@ class Waiter : public Colleague
 {
   private:
     std::string name_;
+    Order* menu_;
 
   public:
     /**

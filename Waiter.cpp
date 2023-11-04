@@ -2,11 +2,52 @@
 #include "Pass.h"
 #include "Group.h"
 #include "BillPayment.h"
+#include "Order.h"
+#include "Patty.h"
+#include "BeefPatty.h"
+#include "ChickenPatty.h"
+#include "Side.h"
+#include "Salad.h"
+#include "Chips.h"
+#include "Drink.h"
+#include "Milkshake.h"
+#include "Soda.h"
+#include "Garnish.h"
+#include "Lettuce.h"
+#include "Tomato.h"
 #include <iostream>
 
 Waiter::Waiter(std::string n)
 {
     this->name_ = n;
+
+        this->menu_ = new Order(NULL);
+
+    //meats
+    Order* meats = new Order(NULL);
+    meats->addComponent(new ChickenPatty(true));
+    meats->addComponent(new BeefPatty());
+
+    //sides
+    Order* sides = new Order(NULL);
+    sides->addComponent(new Chips());
+    sides->addComponent(new Salad());
+
+    //garnish
+    Order* garnish = new Order(NULL);
+    garnish->addComponent(new Lettuce());
+    garnish->addComponent(new Tomato());
+
+    //drinks
+    Order* drinks = new Order(NULL);
+    drinks->addComponent(new Milkshake());
+    drinks->addComponent(new Soda());
+
+    this->menu_->addComponent(meats);
+    this->menu_->addComponent(sides);
+    this->menu_->addComponent(garnish);
+    this->menu_->addComponent(drinks);
+
 }
 
 void Waiter::changed()
