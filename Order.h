@@ -14,12 +14,17 @@ class ItemIterator;
 
 using namespace std;
 
+/**
+ * @class Order
+ * @brief Represents an order containing a list of order components.
+ */
 class Order : public OrderComponent {
 private:
-    Group* group_; /**< Pointer to the group associated with this order. */
-    vector<OrderComponent*> components_; /**< List of order components within this order. */
-    int currentComponentIndex_; /**< Index of the current order component when iterating. */
+    Group* group_;
+    vector<OrderComponent*> components_; 
+    int currentComponentIndex_;
     friend class GroupIterator;
+
 public:
     /**
      * @brief Constructor for an Order.
@@ -41,12 +46,14 @@ public:
     /**
      * @brief Add an order component to this order.
      * @param component The order component to add.
+     * @return void
      */
     void addComponent(OrderComponent* component);
 
     /**
      * @brief Remove an order component from this order.
      * @param component The order component to remove.
+     * @return void
      */
     void removeComponent(OrderComponent* component);
 
@@ -74,7 +81,13 @@ public:
      */
     Group* getGroup();
 
-    string formatOrder(LanguageTarget*, char);
+    /**
+     * @brief Format the order in the specified language.
+     * @param lt The language target for formatting.
+     * @param lang The language code.
+     * @return The formatted order as a string.
+     */
+    string formatOrder(LanguageTarget* lt, char lang);
 };
 
 #endif

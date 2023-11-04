@@ -41,24 +41,29 @@ public:
     ~Group();
 
     /**
-     * @brief set the waiter of a group
-     * @param waiter the waiter to be assigned to a group
+     * @brief Add a customer to the group.
+     * @param customer The customer to be added.
      * @return void
-    */
-
+     */
     void addCustomer(Customer* customer){
 
         customers_.push_back(customer);
 
     }
 
-
+    /**
+     * @brief Get the customers in the group.
+     * @return A vector of Customer pointers.
+     */
     std::vector<Customer*> getCustomers()
     {
         return customers_;
     }
     
-
+    /**
+     * @brief Get the waiter serving the group.
+     * @return The waiter serving the group.
+     */
     Waiter* getWaiter();
 
     /**
@@ -128,13 +133,37 @@ public:
     */
     Customer* getFirstCustomer();
 
+    /**
+     * @brief Add a waiter to serve the group.
+     * @param waiter The waiter to be assigned to the group.
+     * @return void
+     */
     void addWaiter(Waiter* waiter);
+
+     /**
+     * @brief Remove the waiter serving the group.
+     * @param waiter The waiter to be removed from the group.
+     * @return void
+     */
     void removeWaiter(Waiter* waiter);
 
+     /**
+     * @brief Set the bill associated with the group.
+     * @param bill The bill to be associated with the group.
+     * @return void
+     */
     void setBill(Bill* bill);
 
+     /**
+     * @brief Get the bill associated with the group.
+     * @return The bill associated with the group.
+     */
     Bill* getBill();
     
+     /**
+     * @brief Notify the waiter about group updates.
+     * @return void
+     */
     void notify();
 };
 
