@@ -3,10 +3,12 @@
 
 #include "OrderComponent.h"
 #include "GroupIterator.h"
+#include "LanguageTarget.h"
 
 class Group;
 class OrderItem;
 class Waiter;
+class ItemIterator;
 
 #include <vector>
 
@@ -71,6 +73,8 @@ public:
      * @return A pointer to the associated group.
      */
     Group* getGroup();
+
+    string formatOrder(LanguageTarget*, char);
 };
 
 #endif

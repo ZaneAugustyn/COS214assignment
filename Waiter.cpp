@@ -75,13 +75,15 @@ void Waiter::update(Group* group)
     else if(group->GetState()->ToString() == "ReadyToOrder"){
         //display menu to customers and get order
 
+        LanguageAdapter* la = new LanguageAdapter();
+
         //iterate over customers
         for(Customer* customer : group->getCustomers()){
             char languageChoice;
             cout << "In which language would you like your menu? ('A' for Afrikaans, 'E' for English)" << endl;
             cin >> languageChoice;
             
-            
+            cout << menu_->formatOrder(la, languageChoice);
 
         }
 

@@ -72,9 +72,9 @@ void MaitreD::addGroupToFloor()
 
     Group* group = WaitingGroups_.front();
 
-    if (checkAvailability(group->GetGroupNumber())) 
+    if (checkAvailability(group->getGroupNumber())) 
     {
-        int tablesNeeded = calculateTablesNeeded(group->GetGroupNumber());
+        int tablesNeeded = calculateTablesNeeded(group->getGroupNumber());
         availableTables_ -= tablesNeeded;
 
         // Decide how you want to add the group to the floor.
@@ -105,7 +105,7 @@ void MaitreD::removeGroupFromFloor(Group* group)
         return;
     }
 
-    availableTables_ = availableTables_ + calculateTablesNeeded(group->GetGroupNumber());//update tables since group left
+    availableTables_ = availableTables_ + calculateTablesNeeded(group->getGroupNumber());//update tables since group left
     //addGroupToFloor(add group somehow) or are we going to just use a queue and add the first one to said queue or have 
     //a var where we keep the group that is waiting if we need to pop the queue to be able to access the group
     myFloor_->excuseGroup(group);//group is excused from the floor

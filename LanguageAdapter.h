@@ -10,7 +10,7 @@ class LanguageAdapter : public LanguageTarget
     OrderItem* orderItem_;
   public:
     void setOrderItems(OrderItem* orderitem);
-    string getOrderItemInLanguage(string language);
+    string getOrderItemInLanguage(char language);
 };
 
 #endif

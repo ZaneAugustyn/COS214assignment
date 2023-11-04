@@ -13,7 +13,7 @@ class LanguageTarget
 
   public:
     virtual void setOrderItems(OrderItem* orderitem) = 0;
-    virtual string getOrderItemInLanguage(string language) = 0;
+    virtual string getOrderItemInLanguage(char language) = 0;
 };
 
 

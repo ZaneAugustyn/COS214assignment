@@ -3,6 +3,7 @@
 
 #include "Colleague.h"
 #include "Group.h"
+#include "LanguageAdapter.h"
 #include <string>
 #include <vector>
 

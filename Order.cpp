@@ -2,6 +2,8 @@
 #include "Group.h"
 #include "OrderItem.h"
 #include "Waiter.h"
+#include "ItemIterator.h"
+
 
 #include <algorithm>
 
@@ -97,4 +99,21 @@ int Order::getGroupNumber()
 Group* Order::getGroup()
 {
   return this->group_;
+}
+
+string Order::formatOrder(LanguageTarget* lt, char lang)
+{
+
+  string formattedOrder;
+
+  ItemIterator* iterator = new ItemIterator(components_);
+
+  while(!iterator->isDone()){
+    OrderItem* currentItem = dynamic_cast<OrderItem *>(iterator->currentItem());
+    lt->setOrderItems(currentItem);
+    formattedOrder += lt->getOrderItemInLanguage(lang) + "\tR" + to_string(currentItem->getPrice()) + ".00";
+  }
+
+  return formattedOrder;
+
 }

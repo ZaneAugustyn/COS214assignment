@@ -78,7 +78,7 @@ void Group::RequestBill()
     groupState_->RequestBill(this);
 }
 
-int Group::GetGroupNumber()
+int Group::getGroupNumber()
 {
     return groupNumber_;
 }

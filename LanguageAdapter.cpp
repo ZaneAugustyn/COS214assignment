@@ -6,7 +6,7 @@ void LanguageAdapter::setOrderItems(OrderItem* orderitem)
   orderItem_ = orderitem;
 }
 
-string LanguageAdapter::getOrderItemInLanguage(string language)
+string LanguageAdapter::getOrderItemInLanguage(char language)
 {
   map<string, string> dictionary;
   dictionary["Beef Patty"] = "Beesvleis patty";
@@ -29,4 +29,3 @@ string LanguageAdapter::getOrderItemInLanguage(string language)
     return dictionary[orderItem_->getName()];
   }
 }
-
