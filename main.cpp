@@ -33,13 +33,6 @@ using namespace std;
 
 int main()
 {
-      // Testing the adapter
-    cout << "======================================"<<endl;
-    LanguageTarget* adapter = new LanguageAdapter();
-    adapter->setOrderItems(new Tomato());
-    cout<<adapter->getOrderItemInLanguage("A")<<endl;
-    cout<<adapter->getOrderItemInLanguage("E")<<endl;
-    cout << "======================================"<<endl;
   
     // create the pass
     Pass* kitchenPass = new Pass();
@@ -56,9 +49,9 @@ int main()
     chef2->add(headChef);
 
     //Waiters
-    Waiter* waiterOne = new Waiter("Bob");
-    Waiter* waiterTwo = new Waiter("Alice");
-    Waiter* waiterThree = new Waiter("John");
+    Waiter* waiterOne = new Waiter("Bob", kitchenPass);
+    Waiter* waiterTwo = new Waiter("Alice", kitchenPass);
+    Waiter* waiterThree = new Waiter("John", kitchenPass);
 
     vector<Waiter*> waiterList;
     waiterList.push_back(waiterOne);

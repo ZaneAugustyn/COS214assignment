@@ -45,6 +45,10 @@ void MeatChef::handleOrder(Plate *plate, vector<OrderComponent *> orderComp)
           cout << "The Meat Chef adds a grilled chicken patty to the plate" << endl;
           plate->addToPlate(chic);
           plate->printPlate();
+
+          // remove bun from orderComp
+          orderComp.erase(orderComp.begin() + counter);
+
           break;
         }
         else
@@ -52,6 +56,10 @@ void MeatChef::handleOrder(Plate *plate, vector<OrderComponent *> orderComp)
           cout << "The Meat Chef adds a fried chicken patty to the plate" << endl;
           plate->addToPlate(chic);
           plate->printPlate();
+
+          // remove bun from orderComp
+          orderComp.erase(orderComp.begin() + counter);
+
           break;
         }
       }
@@ -60,14 +68,15 @@ void MeatChef::handleOrder(Plate *plate, vector<OrderComponent *> orderComp)
         cout << "The Meat Chef a grilled beef patty to the plate" << endl;
         plate->addToPlate(orderItem);
         plate->printPlate();
+
+        // remove bun from orderComp
+        orderComp.erase(orderComp.begin() + counter);
+
         break;
       }
     }
     itemIterator->next();
   }
-
-  // remove bun from orderComp
-  orderComp.erase(orderComp.begin() + counter);
 
   // send to the next chef
   Chef::handleOrder(plate, orderComp);

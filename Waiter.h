@@ -29,7 +29,7 @@ class Waiter : public Colleague
      * @brief default constructor
      * @return none
     */
-    Waiter(std::string n);
+    Waiter(std::string n, Pass* pass);
 
     /**
      * @brief part of the mediator design pattern to delegate the appropriate notify method

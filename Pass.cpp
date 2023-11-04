@@ -40,18 +40,29 @@ void Pass::addOrder(Order* order)
     // Notify the head chef that a order was added
   Group* groups = order->getGroup();
   Waiter* waiter = groups->getWaiter();
-  waiter->changed();
 
   this->orders_.push_back(order);
 
-  this->dequeueOrder();
+  waiter->changed();
+
 }
 
 void Pass::dequeueOrder()
 {
   Order* order =  this->orders_.front();
+  cout << "DEQ1" << endl;
   this->orders_.erase(this->orders_.begin());
+  cout << "DEQ2" << endl;
+
+  ItemIterator* it = order->createItemIterator();
+  while(!it->isDone()){
+    cout << "loop" << endl;
+    cout << it->currentItem()->getPrice();
+    it->next();
+  }
+
   this->headChef_->createGroupOrder(order);
+  cout << "DEQ3" << endl;
 }
 
 Pass::~Pass()

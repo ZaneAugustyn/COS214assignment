@@ -16,14 +16,15 @@
 #include "Lettuce.h"
 #include "Tomato.h"
 #include "Bill.h"
+#include "Bun.h"
 #include <iostream>
 #include <string>
 
-Waiter::Waiter(std::string n)
+Waiter::Waiter(std::string n, Pass* pass):Colleague(pass)
 {
     this->name_ = n;
 
-        this->menu_ = new Order(NULL);
+    this->menu_ = new Order(NULL);
 
     //meats
     Order* meats = new Order(NULL);
@@ -83,7 +84,9 @@ void Waiter::update(Group* group)
         //iterate over customers
         for(Customer* customer : group->getCustomers()){
             Order* customerOrder = new Order(group);
-            groupOrder->addComponent(customerOrder);
+
+            customerOrder->addComponent(new Bun());
+
             char languageChoice;
             cout << "In which language would you like your menu? ('A' for Afrikaans, 'E' for English)" << endl;
             cin >> languageChoice;
@@ -98,10 +101,21 @@ void Waiter::update(Group* group)
                 cout << (iterator->currentItem())->formatOrder(la, languageChoice);
                 int choice;
                 cin >> choice;
+                //cout << dynamic_cast<OrderItem*>((iterator->currentItem())->getItems()[choice - 1])->getName();
+                //customerOrder->addComponent(new Tomato());
                 customerOrder->addComponent((iterator->currentItem())->getItems()[choice - 1]);
                 iterator->next(); 
             }
 
+            groupOrder->addComponent(customerOrder);
+
+        }
+
+        GroupIterator* it = groupOrder->createIterator();
+        while(!it->isDone()){
+            cout << "loop" << endl;
+            cout << it->currentItem()->getPrice() << endl;
+            it->next();
         }
 
         pass_->addOrder(groupOrder);

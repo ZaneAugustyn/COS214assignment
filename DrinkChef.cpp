@@ -42,14 +42,15 @@ void DrinkChef::handleOrder(Plate *plate, vector<OrderComponent *> orderComp)
         cout << "The Drink Chef adds the " << orderItem->getName() << " to the plate" << endl;
         plate->addToPlate(orderItem);
         plate->printPlate();
+
+        // remove bun from orderComp
+        orderComp.erase(orderComp.begin() + counter);
+
         break;
       }
     }
     itemIterator->next();
   }
-
-  // remove bun from orderComp
-  orderComp.erase(orderComp.begin() + counter);
 
   // send to the next chef
   Chef::handleOrder(plate, orderComp);

@@ -38,14 +38,13 @@ void HeadChef::handleOrder(Plate *plate, vector<OrderComponent *> orderComp)
       else
       {
         cout << "The Head Chef adds the bun to the plate" << endl;
+        // remove bun from orderComp
+        orderComp.erase(orderComp.begin() + counter);
         break;
       }
     }
     itemIterator->next();
   }
-
-  // remove bun from orderComp
-  orderComp.erase(orderComp.begin() + counter);
 
   // send to the next chef
   Chef::handleOrder(plate, orderComp);
