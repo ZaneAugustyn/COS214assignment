@@ -6,6 +6,7 @@
 #include "WaitForTable.h"
 #include "Customer.h"
 #include "Waiter.h"
+#include "Bill.h"
 
 int main(){
 

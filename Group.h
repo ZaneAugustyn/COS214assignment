@@ -8,13 +8,13 @@
 
 #include "GroupState.h"
 #include "Customer.h"
-#include "Bill.h"
 
 using namespace std;
 
 class GroupState;
 
 class Waiter;
+class Bill;
 
 class Group
 {

@@ -15,6 +15,7 @@
 #include "Garnish.h"
 #include "Lettuce.h"
 #include "Tomato.h"
+#include "Bill.h"
 #include <iostream>
 
 Waiter::Waiter(std::string n)

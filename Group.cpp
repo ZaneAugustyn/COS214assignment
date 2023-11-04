@@ -2,6 +2,8 @@
 #include "GroupState.h"
 #include "Unhappy.h"
 #include "Waiter.h"
+#include "Bill.h"
+
 Group::Group(GroupState * state, int groupNumber)
 {
     groupState_ = state;

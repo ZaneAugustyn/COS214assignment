@@ -8,7 +8,7 @@
 #include <vector>
 
 class Pass;
-
+class Bill;
 class Order;
 
 /**
