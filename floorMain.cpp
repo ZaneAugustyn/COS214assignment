@@ -13,7 +13,7 @@ int main(){
     Floor* floor = new Floor();
 
     //set the floor state to empty
-    floor->setCurrentState(new SpaceAvailable());
+    floor->setSpaceAvailable();
 
     //create the maitre'd
     MaitreD* maitred = new MaitreD(floor);
@@ -26,7 +26,7 @@ int main(){
     for (int i = 0; i < numWaiters; i++)
     {
         std::string wName;
-        cout<<"Please enter a name for waiter number "<<i;
+        cout<<"Please enter a name for waiter number "<<i<<": ";
         cin>>wName;
 
         waiters.push_back(new Waiter(wName));

@@ -4,6 +4,9 @@
 #include "Unhappy.h"
 #include "PayTab.h"
 
+//*****code added by zane
+#include "GroupState.h"
+
 WaitForTable::WaitForTable()
 {
     stateName_ = "WaitForTable";

@@ -1,4 +1,6 @@
 #include "Floor.h"
+#include "Full.h"
+#include "SpaceAvailable.h"
 
 Floor::Floor(/* args */)
 {
@@ -36,4 +38,14 @@ void Floor::excuseGroup(Group* group)
                 }
             }
     }
+}
+
+void Floor::setFull()
+{
+    this->setCurrentState(new Full());
+}
+
+void Floor::setSpaceAvailable()
+{
+    this->setCurrentState(new SpaceAvailable());
 }

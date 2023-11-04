@@ -28,6 +28,7 @@ int MaitreD::calculateTablesNeeded(int groupSize)
 
 bool MaitreD::checkAvailability(int groupSize)
 {
+    this->tableChecker();//makes sure that the floor state is up to date
     if(!checkCurrentFloorState(myFloor_->getCurrentState()))//floor state is full
     {
         return false;
@@ -55,19 +56,24 @@ bool MaitreD::checkCurrentFloorState(FloorState* floorState)
     return false;
 }
 
-void MaitreD::addGroupToFloor() {
-    if (WaitingGroups_.empty()) {
+void MaitreD::addGroupToFloor()
+{
+    if (WaitingGroups_.empty()) 
+    {
         std::cout << "No waiting groups available." << std::endl;
         return;
     }
-    if(availableTables_ == 0)
+    this->tableChecker();//sets table to full or spaceavailable if needed
+
+    if(!this->checkCurrentFloorState(myFloor_->getCurrentState()))//this checks if the curent floorstate is full 
     {
-        myFloor_->setCurrentState(new Full());
+        return;//state is full
     }
 
     Group* group = WaitingGroups_.front();
 
-    if (checkAvailability(group->GetGroupNumber())) {
+    if (checkAvailability(group->GetGroupNumber())) 
+    {
         int tablesNeeded = calculateTablesNeeded(group->GetGroupNumber());
         availableTables_ -= tablesNeeded;
 
@@ -86,7 +92,8 @@ void MaitreD::addGroupToFloor() {
 
 
         std::cout << "Group added to the floor." << std::endl;
-    } else {
+    } else 
+    {
         std::cout << "No availability for the group." << std::endl;
     }
 }
@@ -121,4 +128,24 @@ void MaitreD::setWaiterList(std::vector<Waiter*> W)
 {
     cout<<"Waiters have been hired"<<endl;
     this->Waiters_ = W;
+}
+
+void MaitreD::tableChecker()
+{
+    if(availableTables_ == 0)
+    {
+        if(myFloor_->getCurrentState()->getName() == "FULL")
+            {
+                return;
+            }
+        myFloor_->setFull();
+    }
+    else if(availableTables_ >= 1)
+    {
+        if(myFloor_->getCurrentState()->getName() == "SPACEAVAILABLE")
+            {
+                return;
+            }
+        myFloor_->setSpaceAvailable();
+    }
 }
