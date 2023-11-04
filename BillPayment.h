@@ -2,6 +2,9 @@
 #define _BILLPAYMENT_H
 
 #include "Customer.h"
+#include "Group.h"
+
+class Group;
 
 class BillPayment
 {

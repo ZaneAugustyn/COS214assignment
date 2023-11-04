@@ -7,6 +7,8 @@
 #include "Tab.h"
 using namespace std;
 
+class Group;
+
 class MakeTab: public BillPayment
 {
 private:

@@ -6,6 +6,8 @@
 #include <iostream>
 using namespace std;
 
+class Group;
+
 class SplitBill: public BillPayment
 {
 private:

@@ -6,6 +6,9 @@
 #include <iostream>
 using namespace std;
 
+class Group;
+
+
 class CustomerPays: public BillPayment
 {
 private:
