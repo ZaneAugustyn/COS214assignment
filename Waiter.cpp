@@ -38,12 +38,6 @@ void Waiter::update(Group* group)
         //Iterate over all customers so that each gives an order
         //and take it to the kitchen
     }
-    else if(group->GetState()->ToString() == "Happy"){//*************************************************
-
-    }
-    else if(group->GetState()->ToString() == "Unhappy"){//*************************************************
-
-    }
     else if(group->GetState()->ToString() == "ReadyForBill"){
         //the waiter will take the group bill and display it
         cout << "You have to pay R " << group->getBill()->getTotal() << endl;
@@ -52,6 +46,7 @@ void Waiter::update(Group* group)
         // TODO: need to check inputs
         cin >> c;
         // Assume we take the first customer in the group if they want to make a bill
+        //**********Check group last emotion for tip.*********************
         Customer* customer = group->getFirstCustomer();
         if(customer != NULL)
         {
