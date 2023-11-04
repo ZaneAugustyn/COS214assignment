@@ -35,6 +35,11 @@ void PayTab::RequestTab(Group *group)
     cout << "Currently in the PayTab state." << endl;
 }
 
+void PayTab::MakeNeutral(Group *group)
+{
+    cout << "Cannot change state to Neutral." << endl;
+}
+
 void PayTab::RequestBill(Group *group)
 {
     cout << "Cannot request a bill - have to pay tab." << endl;

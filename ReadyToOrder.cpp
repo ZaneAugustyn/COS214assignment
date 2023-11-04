@@ -2,6 +2,7 @@
 #include "Happy.h"
 #include "Unhappy.h"
 #include "ReadyForBill.h"
+#include "Neutral.h"
 
 ReadyToOrder::ReadyToOrder()
 {
@@ -33,6 +34,11 @@ void ReadyToOrder::MakeHappy(Group *group)
 {
     // cout << "in ReadyToOrder: Move to Happy State." << endl;
     group->SetState(new Happy());
+}
+
+void ReadyToOrder::MakeNeutral(Group * group)
+{
+    group->SetState(new Neutral());
 }
 
 void ReadyToOrder::RequestTab(Group *group)

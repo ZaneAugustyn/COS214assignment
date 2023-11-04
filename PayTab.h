@@ -55,6 +55,13 @@ public:
     virtual void RequestTab(Group * group);
 
     /**
+     * @brief the ConcreteClass method to handle the Neutral request
+     * @param group the group to update the state of
+     * @return void  
+    */
+    virtual void MakeNeutral(Group * group);
+
+    /**
      * @brief the ConcreteClass method to handle the RequestBill request
      * @param group the group to update the state of
      * @return void  

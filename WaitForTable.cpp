@@ -3,9 +3,11 @@
 #include "Happy.h"
 #include "Unhappy.h"
 #include "PayTab.h"
+#include "Neutral.h"
 
 //*****code added by zane
 #include "GroupState.h"
+//
 
 WaitForTable::WaitForTable()
 {
@@ -31,6 +33,11 @@ void WaitForTable::WaitInQueue(Group *group)
 void WaitForTable::MakeUnhappy(Group *group)
 {
     group->SetState(new Unhappy());
+}
+
+void WaitForTable::MakeNeutral(Group *group)
+{
+    group->SetState(new Neutral());
 }
 
 void WaitForTable::MakeHappy(Group *group)

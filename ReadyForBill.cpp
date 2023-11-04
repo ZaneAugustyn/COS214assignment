@@ -1,6 +1,7 @@
 #include "ReadyForBill.h"
 #include "Happy.h"
 #include "Unhappy.h"
+#include "Neutral.h"
 
 ReadyForBill::ReadyForBill()
 {
@@ -30,6 +31,11 @@ void ReadyForBill::MakeUnhappy(Group *group)
 void ReadyForBill::MakeHappy(Group *group)
 {
     group->SetState(new Happy());
+}
+
+void ReadyForBill::MakeNeutral(Group *group)
+{
+    group->SetState(new Neutral());
 }
 
 void ReadyForBill::RequestTab(Group *group)
