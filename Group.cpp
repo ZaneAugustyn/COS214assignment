@@ -133,3 +133,12 @@ Bill* Group::getBill(){
     return bill_;
 
 }
+
+Customer* Group::getFirstCustomer(){
+    if(customers_.size() > 0){
+        Customer* customer = this->customers_[0];
+        if (customer != NULL)
+            return customer;
+    }
+    return NULL;
+}

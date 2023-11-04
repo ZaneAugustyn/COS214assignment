@@ -113,6 +113,12 @@ public:
     */
     std::string CurrentState();
 
+    /**
+     * @brief function to return the first customer in the group
+     * @return Customer*
+    */
+    Customer* getFirstCustomer();
+
     void addWaiter(Waiter* waiter);
     void removeWaiter(Waiter* waiter);
 
