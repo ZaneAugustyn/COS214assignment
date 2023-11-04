@@ -7,14 +7,24 @@
 
 using namespace std;
 
-class LanguageTarget
-{
-  private:
+/**
+ * @class LanguageTarget
+ * @brief Abstract class for translating order items into different languages.
+ */
+class LanguageTarget {
+public:
+    /**
+     * @brief Set the order item to be translated.
+     * @param orderItem The order item to be translated.
+     */
+    virtual void setOrderItems(OrderItem* orderItem) = 0;
 
-  public:
-    virtual void setOrderItems(OrderItem* orderitem) = 0;
+    /**
+     * @brief Get the translated order item in the specified language.
+     * @param language The language code
+     * @return The translated order item.
+     */
     virtual string getOrderItemInLanguage(char language) = 0;
 };
-
 
 #endif

@@ -4,12 +4,27 @@
 #include "LanguageTarget.h"
 class OrderItem;
 
-class LanguageAdapter : public LanguageTarget
-{
-  private:
-    OrderItem* orderItem_;
-  public:
-    void setOrderItems(OrderItem* orderitem);
+/**
+ * @class LanguageAdapter
+ * @brief Adapter class for translating order items into different languages.
+ */
+class LanguageAdapter : public LanguageTarget {
+private:
+    OrderItem* orderItem_; 
+
+public:
+    /**
+     * @brief Set the order item to be translated.
+     * @param orderItem The order item to be translated.
+     * @return void
+     */
+    void setOrderItems(OrderItem* orderItem);
+
+    /**
+     * @brief Get the translated order item in the specified language.
+     * @param language The language code 
+     * @return The translated order item.
+     */
     string getOrderItemInLanguage(char language);
 };
 
