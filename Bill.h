@@ -8,17 +8,47 @@
 #include "CustomerPays.h"
 #include "MakeTab.h"
 
+/**
+ * @class Bill
+ * @brief Represents a bill for a group of customers.
+ */
 class Bill
 {
 private:
-    /* data */
-    float Total; // total amount to be paid for a bill
+    float Total;
+
 public:
+    /**
+     * @brief Constructor for the Bill class.
+     * @param t The total amount to be paid for the bill.
+     */
     Bill(float t);
+
+    /**
+     * @brief Destructor for the Bill class.
+     */
     ~Bill();
+
+    /**
+     * @brief Pay the bill for a group of customers.
+     * @param group The group of customers.
+     * @param choice The payment choice ('S' for split, 'F' for full, 'T' for tab).
+     * @return void
+     */
     void Pay(Group* group, char choice);
-    float getTotal() { return Total; };
-    void setTotal(float t) { Total = t; };
+
+    /**
+     * @brief Get the total amount of the bill.
+     * @return The total amount of the bill in float format.
+     */
+    float getTotal() { return Total; }
+
+    /**
+     * @brief Set the total amount of the bill.
+     * @param t The new total amount for the bill.
+     * @return void
+     */
+    void setTotal(float t) { Total = t; }
 };
 
 #endif
