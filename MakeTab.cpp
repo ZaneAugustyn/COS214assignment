@@ -28,6 +28,7 @@ void MakeTab::Pay(Group* group)
             customer->setTab(t1);    
             TabAllocated = true;
         }
+        count++;
     }
 }
 
