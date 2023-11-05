@@ -165,6 +165,19 @@ public:
      * @return void
      */
     void notify();
+
+    /**
+     * @brief Update last emotion
+     * @param State to update the lastEmotion to
+     * @return void
+     */
+    void updateLastEmotion(GroupState* State);
+
+    /**
+     * @brief Update last emotion
+     * @return GroupState*
+     */
+    GroupState* getLastEmotion();
 };
 
 #endif

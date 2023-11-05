@@ -7,7 +7,7 @@
 ReadyToOrder::ReadyToOrder()
 {
     stateName_ = "ReadyToOrder";
-    cout << "State changed to " << stateName_ << endl;
+    cout << "State changed to CONSTRUCTOR" << stateName_ << endl;
 }
 
 ReadyToOrder::~ReadyToOrder()
@@ -28,17 +28,20 @@ void ReadyToOrder::MakeUnhappy(Group *group)
 {
     // cout << "Move to Unhappy State." << endl;
     group->SetState(new Unhappy());
+    group->updateLastEmotion(new Unhappy());
 }
 
 void ReadyToOrder::MakeHappy(Group *group)
 {
     // cout << "in ReadyToOrder: Move to Happy State." << endl;
     group->SetState(new Happy());
+    group->updateLastEmotion(new Happy());
 }
 
 void ReadyToOrder::MakeNeutral(Group * group)
 {
     group->SetState(new Neutral());
+    group->updateLastEmotion(new Neutral());
 }
 
 void ReadyToOrder::RequestTab(Group *group)

@@ -8,6 +8,7 @@ Happy::Happy()
 {
     stateName_ = "Happy";
     cout << "State changed to " << stateName_ << endl;
+    
 }
 
 Happy::~Happy()
@@ -28,6 +29,8 @@ void Happy::WaitInQueue(Group *group)
 void Happy::MakeUnhappy(Group *group)
 {
     group->SetState(new Unhappy());
+    group->updateLastEmotion(new Unhappy());
+    
 }
 
 void Happy::MakeHappy(Group *group)
@@ -38,6 +41,7 @@ void Happy::MakeHappy(Group *group)
 void Happy::MakeNeutral(Group *group)
 {
     group->SetState(new Neutral());
+    group->updateLastEmotion(new Neutral());
 }
 
 void Happy::RequestTab(Group *group)

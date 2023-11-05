@@ -3,12 +3,13 @@
 #include "Unhappy.h"
 #include "Waiter.h"
 #include "Bill.h"
+#include "Neutral.h"
 
 Group::Group(GroupState * state, int groupNumber)
 {
     groupState_ = state;
     groupNumber_ = groupNumber;
-    lastEmotion = new Unhappy();
+    lastEmotion = new Neutral();
 }
 
 Group::~Group()
@@ -22,7 +23,7 @@ void Group::SetState(GroupState *state)
     groupState_ = state;
     if(state->ToString() == "happy" || state->ToString() == "UnHappy")
     {
-        lastEmotion = state;
+        updateLastEmotion(state);
     }
 }
 
@@ -142,4 +143,15 @@ Customer* Group::getFirstCustomer(){
 
 Waiter* Group::getWaiter(){
     return waiter_;
+}
+
+void Group::updateLastEmotion(GroupState* State)
+{
+    this->lastEmotion = State; 
+    cout<<"LAST EMOTION UPDATED TO "<<State->ToString()<<endl;
+}
+
+GroupState* Group::getLastEmotion()
+{
+    return this->lastEmotion;
 }

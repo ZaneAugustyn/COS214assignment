@@ -4,15 +4,12 @@
 #include "Unhappy.h"
 #include "PayTab.h"
 #include "Neutral.h"
-
-//*****code added by zane
 #include "GroupState.h"
-//
 
 WaitForTable::WaitForTable()
 {
     stateName_ = "WaitForTable";
-    cout << "State changed to " << stateName_ << endl;
+    cout << "State changed to CONSTRUCTOR" << stateName_ << endl;
 }
 
 WaitForTable::~WaitForTable()
@@ -33,16 +30,19 @@ void WaitForTable::WaitInQueue(Group *group)
 void WaitForTable::MakeUnhappy(Group *group)
 {
     group->SetState(new Unhappy());
+    group->updateLastEmotion(new Unhappy());
 }
 
 void WaitForTable::MakeNeutral(Group *group)
 {
     group->SetState(new Neutral());
+    group->updateLastEmotion(new Neutral());
 }
 
 void WaitForTable::MakeHappy(Group *group)
 {
     group->SetState(new Happy());
+    group->updateLastEmotion(new Happy());
 }
 
 void WaitForTable::RequestTab(Group *group)

@@ -68,6 +68,7 @@ int main()
     //Create a group for Bob's Birthday
     Group* bobsBirthday = new Group(new Happy(), 1);
 
+
     //add waiter that is responsible for bobsbirthday group
     bobsBirthday->addWaiter(waiterTwo);
 
@@ -115,6 +116,11 @@ int main()
         }
         groupIterator->next();
     }
+
+    //Testing lastemotion
+    cout<<"TEST********************************************************";
+    bobsBirthday->MakeUnhappy();;
+    bobsBirthday->MakeHappy();
 //     //Print out the total cost of the order, should be 220
 //     cout << bobsBirthdayOrder->getPrice() << endl;
 
