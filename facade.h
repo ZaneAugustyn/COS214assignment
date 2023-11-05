@@ -47,6 +47,9 @@
 #include "Unhappy.h"
 #include "Neutral.h"
 
+using namespace std;
+#include <string>
+
 class facade
 {
 private:
@@ -57,6 +60,7 @@ private:
     HeadChef* headChef;
     Pass* kitchenPass;
     int numGroups;
+   // std::vector<Group*> groups;
 public:
     facade(/* args */);
     ~facade();
