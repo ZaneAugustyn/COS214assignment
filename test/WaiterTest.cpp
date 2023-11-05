@@ -63,9 +63,9 @@ void createMockPass()
     global_Pass = new Pass();
 }
 
-void createMockGroup()
+void createMockGroup(GroupState *state)
 {
-    global_Group = new Group(new ReadyToOrder(), 1);
+    global_Group = new Group(state, 1);
     global_Group->addCustomer(new Customer("John"));
     global_Group->addCustomer(new Customer("Jane"));
 }
@@ -106,7 +106,7 @@ Waiter *createMockWaiter()
 }
 
 // Mock update function
-void update(Group *group, Waiter *w, char languageChoice, int inputChoices[])
+void mockOrderUpdate(Group *group, Waiter *w, char languageChoice, int inputChoices[])
 {
     if (group->GetState()->ToString() == "WaitForTable")
     {
@@ -177,6 +177,85 @@ void update(Group *group, Waiter *w, char languageChoice, int inputChoices[])
     }
 }
 
+void mockBillUpdate(Group *group, Waiter *w, char billOption) {
+    if (group->GetState()->ToString() == "WaitForTable")
+    {
+        return;
+    }
+    else if(group->GetState()->ToString() == "ReadyToOrder"){
+        //display menu to customers and get order
+
+        LanguageAdapter* la = new LanguageAdapter();
+        Order* groupOrder = new Order(group);
+
+        //iterate over customers
+        for(Customer* customer : group->getCustomers()){
+            Order* customerOrder = new Order(group);
+
+            customerOrder->addComponent(new Bun());
+
+            char languageChoice;
+            cout << "In which language would you like your menu? ('A' for Afrikaans, 'E' for English)" << endl;
+            cin >> languageChoice;
+            
+            GroupIterator* iterator = global_Menu->createIterator();
+            string messages[] = {"Please select a meat", "Please select a side", "Please select a garnish", "Please select a drink"};
+            int i = 0;
+
+            while (!iterator->isDone()) {
+                cout << messages[i] << endl;
+                i++;
+                cout << (iterator->currentItem())->formatOrder(la, languageChoice);
+                int choice;
+                cin >> choice;
+
+                while (!cin.good() || (choice != 1 && choice != 2)) // check that input is of type int
+                {
+                    cin.clear();
+                    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+                    cout<<"WARNING! You entered the wrong menu option. Please try again."<<endl;
+                    cout << messages[i] << endl;
+                    cout << (iterator->currentItem())->formatOrder(la, languageChoice);
+
+                    cin >> choice;
+                }
+                //cout << dynamic_cast<OrderItem*>((iterator->currentItem())->getItems()[choice - 1])->getName();
+                //customerOrder->addComponent(new Tomato());
+                customerOrder->addComponent((iterator->currentItem())->getItems()[choice - 1]);
+                iterator->next(); 
+            }
+
+            groupOrder->addComponent(customerOrder);
+
+        }
+
+        // pass_->addOrder(groupOrder);
+    }
+    else if (group->GetState()->ToString() == "ReadyForBill")
+    {
+        
+        char c = billOption;
+
+        if ((c != 'S') && (c != 'F') && (c != 'T'))
+        {
+            global_errorMessage =  "WARNING! You entered the wrong bill option. Please try again.";
+        }
+
+        if (group != NULL)
+        {
+            return;
+        }
+        else
+        {
+            global_errorMessage = "There are no customers in this group to pay for the bill";
+        }
+    }
+    else if (group->GetState()->ToString() == "PayTab")
+    {
+    }
+}
+
 TEST(BasicTests, getName)
 { 
     createMockPass();
@@ -187,17 +266,17 @@ TEST(BasicTests, getName)
         w->getName());
 }
 
-TEST(TestUpdate, update)
+TEST(TestOrderUpdate, mockOrderUpdate)
 {
     createMockMenu();
     createMockPass();
-    createMockGroup();
+    createMockGroup(new ReadyToOrder());
 
     Waiter *w = createMockWaiter();
 
     // with valid int inputs
     global_Order = new Order(global_Group);
-    update(global_Group, w, 'E', new int[5]{1, 1, 1, 1, 1});
+    mockOrderUpdate(global_Group, w, 'E', new int[5]{1, 1, 1, 1, 1});
 
     // check if order is built properly
     GroupIterator *it = global_Order->createIterator();
@@ -221,7 +300,7 @@ TEST(TestUpdate, update)
 
     // check with invalid int inputs
     global_Order = new Order(global_Group);
-    update(global_Group, w, 'E', new int[5]{9, 8, 1, 1, 1});
+    mockOrderUpdate(global_Group, w, 'E', new int[5]{9, 8, 1, 1, 1});
 
     EXPECT_EQ(
         "WARNING! You entered the wrong menu option. Please try again.",
@@ -229,7 +308,7 @@ TEST(TestUpdate, update)
 
     // test with invalid language input
     global_Order = new Order(global_Group);
-    update(global_Group, w, 'Z', new int[5]{1, 1, 1, 1, 1});
+    mockOrderUpdate(global_Group, w, 'Z', new int[5]{1, 1, 1, 1, 1});
     // should work fine - default to english
     // check if order is built properly
     GroupIterator *it3 = global_Order->createIterator();
@@ -250,4 +329,28 @@ TEST(TestUpdate, update)
         2,
         numOrders);
 
+}
+
+TEST(TestBillUpdate, mockBillUpdate){
+    createMockMenu();
+    createMockPass();
+    createMockGroup(new ReadyForBill());
+
+    Waiter *w = createMockWaiter();
+
+    // with valid billOption
+    global_Order = new Order(global_Group);
+    global_errorMessage = "";
+    mockBillUpdate(global_Group, w, 'S');
+    EXPECT_EQ(
+        "",
+        global_errorMessage);
+
+    // with invalid billOption
+    global_Order = new Order(global_Group);
+    global_errorMessage = "";
+    mockBillUpdate(global_Group, w, 'Z');
+    EXPECT_EQ(
+        "WARNING! You entered the wrong bill option. Please try again.",
+        global_errorMessage);
 }
