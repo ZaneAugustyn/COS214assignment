@@ -54,3 +54,8 @@ std::vector<Group*> Floor::getGroups()
 {
     return groups_;
 }
+
+void Floor::setGroups(std::vector<Group*> g)
+{
+    groups_ = g;
+}

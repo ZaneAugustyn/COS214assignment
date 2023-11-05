@@ -237,6 +237,7 @@ void facade::option5()
             // Remove the selected group from the vector
             delete g[c - 1]; // Assuming you need to deallocate the memory if it was dynamically allocated
             g.erase(g.begin() + c - 1);
+            floor->setGroups(g);
 
             cout << "Group " << c << " has been excused from the floor." << endl;
             break;

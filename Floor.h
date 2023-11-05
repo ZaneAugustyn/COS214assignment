@@ -45,6 +45,13 @@ public:
     */
     std::vector<Group*> getGroups();
 
+     /**
+     * @brief this method sets the std::vector<Group*> groups_ of the floor
+     * @param std::vector<Group*>
+     * @return void
+    */
+    void setGroups(std::vector<Group*> g);
+
     /**
      * @brief this method sets the current state of the floor
      * @param state of the floor to which floor must be updated to
