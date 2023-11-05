@@ -5,6 +5,7 @@
 Floor::Floor(/* args */)
 {
     floorState_ = new SpaceAvailable();
+    cout<<"Floor Created"<<endl;
 }
 
 Floor::~Floor()

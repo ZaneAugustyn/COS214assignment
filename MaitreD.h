@@ -22,7 +22,7 @@ public:
      * @param myF is the floor that the maitreD will be working on
      * @return none
     */
-    MaitreD(Floor* myF);
+    MaitreD(Floor* myF, int tables);
 
     /**
      * @brief destructor

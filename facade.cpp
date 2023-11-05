@@ -1,5 +1,11 @@
 #include "facade.h"
 
+#define YELLOW  "\033[93m"      /* Yellow */
+#define RED     "\033[31m"      /* Red */
+#define RESET   "\033[0m"
+#define LIGHT_GREEN "\033[92m"  /* Light Green */
+#define PINK    "\033[38;5;206m"  /* Pink */
+
 facade::facade(/* args */)
 {
     initBasic();
@@ -14,76 +20,99 @@ void facade::run()
 {
     bool loop = true;
     int mostRecent = 0;
+    cout<<endl;
+    cout<<endl;
+    cout<<YELLOW<<"Welcome Le McDonalds please select on of the following options to begin: "<<RESET<<endl;
     while (loop)
     {
         int choice;
-        cout<<"Welcome Le McDonalds please select on of the following options to begin: "<<endl;
-        cout<<"1. Add a group to the queue outside"<<endl;
+        cout<<endl;
+        cout<<YELLOW<<"1. Add a group to the queue outside"<<RESET<<endl;
         if(mostRecent >= 1)
         {
-            cout<<"2. Let a group inside the restaurant"<<endl;
+            cout<<YELLOW<<"2. Let a group inside the restaurant"<<RESET<<endl;
         }
         if(mostRecent >= 2)
         {
-            cout<<"3. Let a group order"<<endl;
+            cout<<YELLOW<<"3. Let a group order"<<RESET<<endl;
         }
         if(mostRecent >= 3)
         {
-            cout<<"4. Let a group pay the bill"<<endl;
+            cout<<YELLOW<<"4. Let a group pay the bill"<<RESET<<endl;
         }
         if(mostRecent >= 4)
         {
-            cout<<"5. Remove group from restaurant"<<endl;
+            cout<<YELLOW<<"5. Remove group from restaurant"<<RESET<<endl;
         }
-        cout<<"6. Exit Simulation"<<endl;
+        cout<<YELLOW<<"6. Exit Simulation"<<RESET<<endl;
         
-        cout<<"Please select an option : ";
+        cout<<YELLOW<<"Please select an option : "<<RESET;
         cin>>choice;
     
 
         switch (choice)
         {
             case 1:
+                if (choice > mostRecent)
+                        {
+                            mostRecent = choice;
+                        }
                 option1();
                 break;
             case 2:
                 if (mostRecent >= 1)
                 {
+                    if (choice > mostRecent)
+                        {
+                            mostRecent = choice;
+                        }
                     option2();
                 }
                 else
                 {
-                    cout << "Option 2 is not available yet. Please select a valid option." << endl;
+                    cout <<RED<< "Option 2 is not available yet. Please select a valid option." <<RESET<< endl;
                 }
                 break;
             case 3:
                 if (mostRecent >= 2)
                 {
+                    if (choice > mostRecent)
+                        {
+                            mostRecent = choice;
+                        }
                     option3();
                 }
                 else
                 {
-                    cout << "Option 3 is not available yet. Please select a valid option." << endl;
+                    cout <<RED<< "Option 3 is not available yet. Please select a valid option." <<RESET<< endl;
                 }
                 break;
             case 4:
                 if (mostRecent >= 3)
                 {
+                    if (choice > mostRecent)
+                        {
+                            mostRecent = choice;
+                        }
                     option4();
                 }
                 else
                 {
-                    cout << "Option 4 is not available yet. Please select a valid option." << endl;
+                    cout <<RED<< "Option 4 is not available yet. Please select a valid option." <<RESET<< endl;
                 }
                 break;
             case 5:
                 if (mostRecent >= 4)
-                {
+                {   
+                    if (choice > mostRecent)
+                        {
+                            mostRecent = choice;
+                        }
                     option5();
                 }
                 else
                 {
-                    cout << "Option 5 is not available yet. Please select a valid option." << endl;
+                    cout <<RED<< "Option 5 is not available yet. Please select a valid option." <<RESET<< endl;
                 }
                 break;
             case 6:
@@ -91,12 +120,7 @@ void facade::run()
                 loop = false;
                 break;
             default:
-                cout << "Invalid option. Please select a valid option." << endl;
-        }
-
-        if (choice > mostRecent)
-        {
-            mostRecent = choice;
+                cout <<RED<< "Invalid option. Please select a valid option." <<RESET<< endl;
         }
     }
 
@@ -112,14 +136,14 @@ void facade::option1()
     while (loop)
     {
         string name;
-        cout<<"Please enter customers name: ";
+        cout<<YELLOW<<"Please enter customers name: "<<RESET;
         cin>>name;
         Customer* newCustomer = new Customer(name);
         newGroup->addCustomer(newCustomer);
 
         while (true)
         {
-            cout<<"Would you like to add another customer? (Y/N): ";
+            cout<<YELLOW<<"Would you like to add another customer? (Y/N): "<<RESET;
             char c;
             cin>>c;
             if(c == 'Y' || c == 'y')
@@ -152,32 +176,37 @@ void facade::option2()
 
 void facade::option3()
 {
-    cout << "List of group numbers: "<<endl;
+    cout <<YELLOW<< "List of group numbers: "<<RESET<<endl;
     
     int numGroups = floor->getGroups().size();
     std::vector<Group*> g = floor->getGroups();
     int c;
     for (int i = 0; i < numGroups; i++)
     {
-        cout<<i+1<<". Group number: "<<g[i]->getGroupNumber()<<endl;
+        cout<<"Group number: "<<g[i]->getGroupNumber()<<endl;
     }
 
-    int selectedGroupNumber;
-    cout << "Enter the group number that wants to order: ";
-    cin >> selectedGroupNumber;
 
-    Group* selectedGroup = nullptr;
-    for (auto& group : g) {
-        if (group->getGroupNumber() == selectedGroupNumber) {
-            selectedGroup = group;
-            break;
+    while (true)
+    {
+        int selectedGroupNumber;
+        cout <<YELLOW<< "Enter the group number that wants to order: "<<RESET;
+        cin >> selectedGroupNumber;
+        Group* selectedGroup = nullptr;
+        for (auto& group : g) {
+            if (group->getGroupNumber() == selectedGroupNumber) {
+                selectedGroup = group;
+                break;
+            }
         }
-    }
-    if (selectedGroup) {
-        selectedGroup->RequestToOrder();
-        cout << "Ordering process initiated for group " << selectedGroupNumber << endl;
-    } else {
-        cout << "Group with the selected number does not exist." << endl;
+        if (selectedGroup) {
+            selectedGroup->RequestToOrder();
+            break;
+            // cout << "Ordering process initiated for group " << selectedGroupNumber << endl;
+        } else {
+            cout <<RED<< "Group with the selected number does not exist." <<RESET<< endl;
+            continue;
+        }
     }
 
 }
@@ -185,7 +214,7 @@ void facade::option3()
 
 void facade::option4()
 {
-    cout << "List of group numbers: "<<endl;
+    cout <<YELLOW<< "List of group numbers: "<<RESET<<endl;
     
     int numGroups = floor->getGroups().size();
     std::vector<Group*> g = floor->getGroups();
@@ -193,60 +222,66 @@ void facade::option4()
     for (int i = 0; i < numGroups; i++)
     {
 
-        cout<<i+1<<". Group number: "<<g[i]->getGroupNumber()<<endl;
+        cout<<"Group number: "<<g[i]->getGroupNumber()<<endl;
     }
 
-    int selectedGroupNumber;
-    cout << "Enter the group number that wants to pay their bill: ";
-    cin >> selectedGroupNumber;
 
-    Group* selectedGroup = nullptr;
-    for (auto& group : g) {
-        if (group->getGroupNumber() == selectedGroupNumber) {
-            selectedGroup = group;
+    while (true)
+    {
+        int selectedGroupNumber;
+        cout <<YELLOW<< "Enter the group number that wants to pay their bill: "<<RESET;
+        cin >> selectedGroupNumber;
+        Group* selectedGroup = nullptr;
+        for (auto& group : g) {
+            if (group->getGroupNumber() == selectedGroupNumber) {
+                selectedGroup = group;
+                break;
+            }
+        }
+        if (selectedGroup) {
+            selectedGroup->RequestBill();
             break;
+            // cout << "Bill process initiated for group " << selectedGroupNumber << endl;
+        } else {
+            cout <<RED<< "Group with the selected number does not exist." <<RESET<< endl;
+            continue;
         }
     }
-    if (selectedGroup) {
-        selectedGroup->RequestBill();
-        // cout << "Bill process initiated for group " << selectedGroupNumber << endl;
-    } else {
-        cout << "Group with the selected number does not exist." << endl;
-    }
+    
     
 }
 
 
 void facade::option5()
 {
-    cout<<"Please select the group you would like to excuse from the floor: ";
+    cout<<YELLOW<<"Please select the group you would like to excuse from the floor: "<<RESET<<endl;
     int numGroups = floor->getGroups().size();
     std::vector<Group*> g = floor->getGroups();
     int c;
     for (int i = 0; i < numGroups; i++)
     {
-        cout<<i+1<<". Group number: "<<g[i]->getGroupNumber()<<endl;
+        cout<<"Group number: "<<g[i]->getGroupNumber()<<endl;
     }
     while (true)
     {
-        cout<<"Please choose a number :";
+        cout<<YELLOW<<"Please choose a Group number :"<<RESET;
         cin>>c;
-        //code to remove the specific group chosen from vector
         if (c >= 1 && c <= numGroups)
         {
-            // Remove the selected group from the vector
-            delete g[c - 1]; // Assuming you need to deallocate the memory if it was dynamically allocated
+
+            delete g[c - 1];
             g.erase(g.begin() + c - 1);
             floor->setGroups(g);
 
-            cout << "Group " << c << " has been excused from the floor." << endl;
+            cout<<LIGHT_GREEN<< "Group " << c << " has been excused from the floor." <<RESET<< endl;
             break;
         }
         else
         {
-            cout << "Invalid group number. Please choose a valid number." << endl;
+            cout <<RED<< "Invalid group number. Please choose a valid number." <<RESET<< endl;
             continue;
         }
+        numGroups = floor->getGroups().size();
     }
 
 }
@@ -277,18 +312,19 @@ void facade::initBasic()
     chef2->add(headChef);
 
     //set the floor state to empty
-    floor->setSpaceAvailable();
+    //floor->setSpaceAvailable();
+    //IS AVAILABLE AS STANDARD
 
-    maitreD = new MaitreD(floor);
+    maitreD = new MaitreD(floor,20);
 
     vector<Waiter*> waiters;
     int numWaiters;
-    cout<<"Please select number of waiters: ";
+    cout<<YELLOW<<"Please select number of waiters: "<<RESET;
     cin>>numWaiters;
     for (int i = 0; i < numWaiters; i++)
     {
         std::string wName;
-        cout<<"Please enter a name for waiter number "<<i<<": ";
+        cout<<YELLOW<<"Please enter a name for waiter number "<<i+1<<": "<<RESET;
         cin>>wName;
 
         waiters.push_back(new Waiter(wName, kitchenPass));

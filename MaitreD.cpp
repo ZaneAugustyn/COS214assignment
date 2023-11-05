@@ -1,7 +1,13 @@
 #include "MaitreD.h"
 #include <cmath>
 
-MaitreD::MaitreD(Floor* myF)
+#define YELLOW  "\033[33m"      /* Yellow */
+#define RED     "\033[31m"      /* Red */
+#define RESET   "\033[0m"
+#define LIGHT_GREEN "\033[92m"  /* Light Green */
+#define PINK    "\033[38;5;206m"  /* Pink */
+
+MaitreD::MaitreD(Floor* myF, int tables)
 {
     if(myF == nullptr)
     {
@@ -9,7 +15,7 @@ MaitreD::MaitreD(Floor* myF)
     }
 
     myFloor_ = myF;
-    availableTables_ = 20;
+    availableTables_ = tables;
 }
 
 MaitreD::~MaitreD()
@@ -72,9 +78,9 @@ void MaitreD::addGroupToFloor()
 
     Group* group = WaitingGroups_.front();
 
-    if (checkAvailability(group->getGroupNumber())) 
+    if (checkAvailability(group->getCustomers().size())) 
     {
-        int tablesNeeded = calculateTablesNeeded(group->getGroupNumber());
+        int tablesNeeded = calculateTablesNeeded(group->getCustomers().size());
         availableTables_ -= tablesNeeded;
 
         // Decide how you want to add the group to the floor.
@@ -91,10 +97,10 @@ void MaitreD::addGroupToFloor()
         Waiters_.push_back(w1);
 
 
-        std::cout << "Group added to the floor." << std::endl;
+        std::cout <<LIGHT_GREEN<< "Group "<<group->getGroupNumber()<<" added to the floor." <<RESET<< std::endl;
     } else 
     {
-        std::cout << "No availability for the group." << std::endl;
+        std::cout <<RED<< "No availability for the group." <<RESET<< std::endl;
     }
 }
 
@@ -105,12 +111,12 @@ void MaitreD::removeGroupFromFloor(Group* group)
         return;
     }
 
-    availableTables_ = availableTables_ + calculateTablesNeeded(group->getGroupNumber());//update tables since group left
+    availableTables_ = availableTables_ + calculateTablesNeeded(group->getCustomers().size());//update tables since group left
     //addGroupToFloor(add group somehow) or are we going to just use a queue and add the first one to said queue or have 
     //a var where we keep the group that is waiting if we need to pop the queue to be able to access the group
     myFloor_->excuseGroup(group);//group is excused from the floor
 
-    cout<<"Group removed from floor"<<endl;
+    cout<<LIGHT_GREEN<<"Group  "<<group->getGroupNumber()<<" removed from floor"<<RESET<<endl;
 
 }
 
@@ -126,7 +132,7 @@ void MaitreD::addGroupToWaitingGroups(Group* group)
 
 void MaitreD::setWaiterList(std::vector<Waiter*> W)
 {
-    cout<<"Waiters have been hired"<<endl;
+    cout<<LIGHT_GREEN<<"Waiters have been hired"<<RESET<<endl;
     this->Waiters_ = W;
 }
 
