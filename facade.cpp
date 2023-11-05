@@ -254,37 +254,43 @@ void facade::option4()
 
 void facade::option5()
 {
-    cout<<YELLOW<<"Please select the group you would like to excuse from the floor: "<<RESET<<endl;
+    cout << YELLOW << "Please select the group you would like to excuse from the floor: " << RESET << endl;
     int numGroups = floor->getGroups().size();
     std::vector<Group*> g = floor->getGroups();
     int c;
+
     for (int i = 0; i < numGroups; i++)
     {
-        cout<<"Group number: "<<g[i]->getGroupNumber()<<endl;
+        cout << "Group number: " << g[i]->getGroupNumber() << endl;
     }
-    while (true)
+
+    bool l = true;
+    while (l)
     {
-        cout<<YELLOW<<"Please choose a Group number :"<<RESET;
-        cin>>c;
-        if (c >= 1 && c <= numGroups)
-        {
+        cout << YELLOW << "Please choose a number: " << RESET;
+        cin >> c;
 
-            delete g[c - 1];
-            g.erase(g.begin() + c - 1);
-            floor->setGroups(g);
-
-            cout<<LIGHT_GREEN<< "Group " << c << " has been excused from the floor." <<RESET<< endl;
-            break;
-        }
-        else
+        for (int i = 0; i < numGroups; i++)
         {
-            cout <<RED<< "Invalid group number. Please choose a valid number." <<RESET<< endl;
-            continue;
+            if (g[i]->getGroupNumber() == c)
+            {
+                auto it = g.begin() + i;
+                g.erase(it);
+                floor->setGroups(g);
+
+                cout << LIGHT_GREEN << "Group " << c << " has been excused from the floor." << RESET << endl;
+                l = false;
+                break;
+            }
         }
-        numGroups = floor->getGroups().size();
+
+        if (l) // Only execute if the loop did not break
+        {
+            cout << RED << "Invalid group number. Please choose a valid number." << RESET << endl;
+        }
     }
-
 }
+
 
 
 
