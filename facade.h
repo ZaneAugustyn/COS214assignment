@@ -50,34 +50,85 @@
 using namespace std;
 #include <string>
 
+/**
+ * @class facade
+ * @brief Facade class that provides a simplified interface for managing a restaurant simulation.
+ */
 class facade
 {
 private:
     /* data */
-    Floor* floor;
-    MaitreD* maitreD;
-    Chef* chef2;
-    HeadChef* headChef;
-    Pass* kitchenPass;
-    int numGroups=0;
-   // std::vector<Group*> groups;
+    Floor* floor;         
+    MaitreD* maitreD;      
+    Chef* chef2;          
+    HeadChef* headChef;    
+    Pass* kitchenPass;    
+    int numGroups = 0;     
+
 public:
+    /**
+     * @brief Constructor for the facade class.
+     */
     facade(/* args */);
+
+    /**
+     * @brief Destructor for the facade class.
+     */
     ~facade();
 
+    /**
+     * @brief Run the restaurant simulation.
+     */
     void run();
 
+    /**
+     * @brief Option 1: Add a group to the queue outside the restaurant.
+     * @return void
+     */
     void option1();
+
+    /**
+     * @brief Option 2: Let a group inside the restaurant.
+     * @return void
+     */
     void option2();
+
+    /**
+     * @brief Option 3: Let a group place an order.
+     * @return void
+     */
     void option3();
+
+    /**
+     * @brief Option 4: Let a group pay their bill.
+     * @return void
+     */
     void option4();
+
+    /**
+     * @brief Option 5: Remove a group from the restaurant.
+     * @return void
+     */
     void option5();
+
+    /**
+     * @brief Option 6: Exit the simulation.
+     * @return void
+     */
     void option6();
 
+    /**
+     * @brief Initialize basic components and setup for the restaurant simulation.
+     * @return void
+     */
     void initBasic();
+
+    /**
+     * @brief Ask the group for their satisfaction with the service and update their status accordingly.
+     * @param selectedGroup The selected group to ask for satisfaction.
+     * @return void
+     */
     void askForHappiness(Group* selectedGroup);
-
 };
-
 
 #endif
