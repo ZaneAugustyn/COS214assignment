@@ -156,10 +156,10 @@ void facade::option3()
     
     int numGroups = floor->getGroups().size();
     std::vector<Group*> g = floor->getGroups();
-
+    int c;
     for (int i = 0; i < numGroups; i++)
     {
-        cout<<"Group "<<i+1<<endl;
+        cout<<i+1<<". Group number: "<<g[i]->getGroupNumber()<<endl;
     }
 
     int selectedGroupNumber;
@@ -180,26 +180,20 @@ void facade::option3()
         cout << "Group with the selected number does not exist." << endl;
     }
 
-    char Status;
-    cout <<"Are you happy/unhappy with the service? (H/U) ";
-    cin>>Status;
-    if (Status ='H')
-        selectedGroup->MakeHappy();
-    else if (Status ='U')
-        selectedGroup->MakeUnhappy();
-    else selectedGroup->MakeNeutral();
-
 }
 
 
 void facade::option4()
 {
     cout << "List of group numbers: "<<endl;
+    
     int numGroups = floor->getGroups().size();
     std::vector<Group*> g = floor->getGroups();
+    int c;
     for (int i = 0; i < numGroups; i++)
     {
-        cout<<"Group "<<i+1<<endl;
+
+        cout<<i+1<<". Group number: "<<g[i]->getGroupNumber()<<endl;
     }
 
     int selectedGroupNumber;
@@ -215,21 +209,12 @@ void facade::option4()
     }
     if (selectedGroup) {
         selectedGroup->RequestBill();
-        cout << "Bill process initiated for group " << selectedGroupNumber << endl;
+        // cout << "Bill process initiated for group " << selectedGroupNumber << endl;
     } else {
         cout << "Group with the selected number does not exist." << endl;
     }
-
-    char Status;
-    cout <<"Are you happy/unhappy with the service? (H/U) ";
-    cin>>Status;
-    if (Status ='H')
-        selectedGroup->MakeHappy();
-    else if (Status ='U')
-        selectedGroup->MakeUnhappy();
-    else selectedGroup->MakeNeutral();
+    
 }
-
 
 
 void facade::option5()
@@ -240,7 +225,7 @@ void facade::option5()
     int c;
     for (int i = 0; i < numGroups; i++)
     {
-        cout<<"Group number: "<<g[i]->getGroupNumber()<<endl;
+        cout<<i+1<<". Group number: "<<g[i]->getGroupNumber()<<endl;
     }
     while (true)
     {
@@ -269,7 +254,7 @@ void facade::option5()
 
 void facade::option6()
 {
-
+    cout<<"Option6 done";
 }
 
 void facade::initBasic()
@@ -310,4 +295,15 @@ void facade::initBasic()
 
     //add the waiters to the maitre'd
     maitreD->setWaiterList(waiters);
+}
+void facade::askForHappiness(Group* selectedGroup)
+{
+    char Status;
+    cout <<"Are you happy/unhappy with the service? (H/U) ";
+    cin>>Status;
+    if (Status ='H')
+        selectedGroup->MakeHappy();
+    else if (Status ='U')
+        selectedGroup->MakeUnhappy();
+    else selectedGroup->MakeNeutral();
 }
