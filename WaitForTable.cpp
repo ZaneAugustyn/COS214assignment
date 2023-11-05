@@ -9,7 +9,7 @@
 WaitForTable::WaitForTable()
 {
     stateName_ = "WaitForTable";
-    cout << "State changed to CONSTRUCTOR" << stateName_ << endl;
+    cout << "State changed to " << stateName_ << endl;
 }
 
 WaitForTable::~WaitForTable()
