@@ -111,9 +111,7 @@ int main(){
     //THE KITCHEN WILL GENERATE THE BILL AND ADD IT TO THE GROUP
     //DUMMY BILL FOR TEST PURPOSES:
 
-    Bill* dummyBill = new Bill(200);
-    bobsBirthdayGroup->setBill(dummyBill);
-    
+   
     //the group requests to pay
     bobsBirthdayGroup->RequestBill();
     cout << bobsBirthdayGroup->GetState()->ToString() << endl;

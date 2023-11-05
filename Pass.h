@@ -4,6 +4,7 @@
 #include <vector>
 #include <iostream>
 using namespace std;
+#include "Bill.h"
 
 class Order;
 class Waiter;

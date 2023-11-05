@@ -10,7 +10,7 @@ OrderItem::~OrderItem()
 {
 }
 
-double OrderItem::getPrice()
+float OrderItem::getPrice()
 {
 
     return price_;
