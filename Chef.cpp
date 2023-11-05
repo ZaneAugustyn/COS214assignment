@@ -4,6 +4,8 @@
 #include "Order.h"
 #include "OrderComponent.h"
 #include "OrderItem.h"
+#include "Group.h"
+#include "Waiter.h"
 
 #include <iostream>
 using namespace std;
@@ -62,6 +64,7 @@ void Chef::createGroupOrder(Order* order)
         cout << "The kitchen is done preparing all orders for group " << order->getGroupNumber() << endl;
         pass_->addToListOfTrays(tray_); // add tray to list of trays
         tray_.clear();  // clear tray
+        cout<<"Waiter name: "<<order->getGroup()->getWaiter()->getName()<<endl;
         changed();
     }
 }

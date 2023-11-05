@@ -10,6 +10,8 @@ using namespace std;
 class Pass;
 class Plate; 
 class Order;
+class Group;
+class Waiter;
 class OrderItem;
 class OrderComponent;
 
