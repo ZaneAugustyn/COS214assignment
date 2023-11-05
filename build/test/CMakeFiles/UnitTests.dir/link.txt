@@ -1,1 +1,1 @@
-/usr/bin/g++ -g CMakeFiles/UnitTests.dir/WaiterTest.cpp.o -o UnitTests  ../lib/libgtest_main.a ../libWaiter.a ../lib/libgtest.a 
+/usr/bin/g++ -g CMakeFiles/UnitTests.dir/WaiterTest.cpp.o -o UnitTests  ../lib/libgtest_main.a ../libUnitTesting.a ../lib/libgtest.a 

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.22.1)
 
-set(This Waiter) # set project name
+set(This UnitTesting) # set project name
 
 project(${This} C CXX)
 

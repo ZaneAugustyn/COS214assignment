@@ -10,7 +10,7 @@ add_executable(${This} ${Sources}) # add executable - making program from source
 
 target_link_libraries(${This} PUBLIC
     gtest_main # provided by googletest
-    Waiter
+    UnitTesting
 
 )
 

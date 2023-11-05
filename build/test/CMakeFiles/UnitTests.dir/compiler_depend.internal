@@ -267,6 +267,8 @@ test/CMakeFiles/UnitTests.dir/WaiterTest.cpp.o
  /home/cait/COS214assignment/COS214assignment-1/Tab.h
  /home/cait/COS214assignment/COS214assignment-1/Unhappy.h
  /home/cait/COS214assignment/COS214assignment-1/Neutral.h
+ /home/cait/COS214assignment/COS214assignment-1/Order.h
+ /home/cait/COS214assignment/COS214assignment-1/GroupIterator.h
  /home/cait/COS214assignment/COS214assignment-1/googletest/googletest/include/gtest/gtest.h
  /usr/include/c++/11/cstddef
  /usr/include/c++/11/limits

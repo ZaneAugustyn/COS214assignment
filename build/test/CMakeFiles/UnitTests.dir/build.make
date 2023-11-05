@@ -93,7 +93,7 @@ UnitTests_EXTERNAL_OBJECTS =
 test/UnitTests: test/CMakeFiles/UnitTests.dir/WaiterTest.cpp.o
 test/UnitTests: test/CMakeFiles/UnitTests.dir/build.make
 test/UnitTests: lib/libgtest_main.a
-test/UnitTests: libWaiter.a
+test/UnitTests: libUnitTesting.a
 test/UnitTests: lib/libgtest.a
 test/UnitTests: test/CMakeFiles/UnitTests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cait/COS214assignment/COS214assignment-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable UnitTests"

@@ -14,7 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/cait/COS214assignment/COS214assignment-1/build/googletest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
-  "/home/cait/COS214assignment/COS214assignment-1/build/CMakeFiles/Waiter.dir/DependInfo.cmake"
+  "/home/cait/COS214assignment/COS214assignment-1/build/CMakeFiles/UnitTesting.dir/DependInfo.cmake"
   "/home/cait/COS214assignment/COS214assignment-1/build/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 

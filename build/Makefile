@@ -172,17 +172,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Waiter
+# Target rules for targets named UnitTesting
 
 # Build rule for target.
-Waiter: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Waiter
-.PHONY : Waiter
+UnitTesting: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 UnitTesting
+.PHONY : UnitTesting
 
 # fast build rule for target.
-Waiter/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/build
-.PHONY : Waiter/fast
+UnitTesting/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/build
+.PHONY : UnitTesting/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -254,7 +254,7 @@ BeefPatty.o: BeefPatty.cpp.o
 
 # target to build an object file
 BeefPatty.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/BeefPatty.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/BeefPatty.cpp.o
 .PHONY : BeefPatty.cpp.o
 
 BeefPatty.i: BeefPatty.cpp.i
@@ -262,7 +262,7 @@ BeefPatty.i: BeefPatty.cpp.i
 
 # target to preprocess a source file
 BeefPatty.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/BeefPatty.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/BeefPatty.cpp.i
 .PHONY : BeefPatty.cpp.i
 
 BeefPatty.s: BeefPatty.cpp.s
@@ -270,7 +270,7 @@ BeefPatty.s: BeefPatty.cpp.s
 
 # target to generate assembly for a file
 BeefPatty.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/BeefPatty.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/BeefPatty.cpp.s
 .PHONY : BeefPatty.cpp.s
 
 Bill.o: Bill.cpp.o
@@ -278,7 +278,7 @@ Bill.o: Bill.cpp.o
 
 # target to build an object file
 Bill.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Bill.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Bill.cpp.o
 .PHONY : Bill.cpp.o
 
 Bill.i: Bill.cpp.i
@@ -286,7 +286,7 @@ Bill.i: Bill.cpp.i
 
 # target to preprocess a source file
 Bill.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Bill.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Bill.cpp.i
 .PHONY : Bill.cpp.i
 
 Bill.s: Bill.cpp.s
@@ -294,7 +294,7 @@ Bill.s: Bill.cpp.s
 
 # target to generate assembly for a file
 Bill.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Bill.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Bill.cpp.s
 .PHONY : Bill.cpp.s
 
 BillPayment.o: BillPayment.cpp.o
@@ -302,7 +302,7 @@ BillPayment.o: BillPayment.cpp.o
 
 # target to build an object file
 BillPayment.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/BillPayment.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/BillPayment.cpp.o
 .PHONY : BillPayment.cpp.o
 
 BillPayment.i: BillPayment.cpp.i
@@ -310,7 +310,7 @@ BillPayment.i: BillPayment.cpp.i
 
 # target to preprocess a source file
 BillPayment.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/BillPayment.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/BillPayment.cpp.i
 .PHONY : BillPayment.cpp.i
 
 BillPayment.s: BillPayment.cpp.s
@@ -318,7 +318,7 @@ BillPayment.s: BillPayment.cpp.s
 
 # target to generate assembly for a file
 BillPayment.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/BillPayment.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/BillPayment.cpp.s
 .PHONY : BillPayment.cpp.s
 
 Bun.o: Bun.cpp.o
@@ -326,7 +326,7 @@ Bun.o: Bun.cpp.o
 
 # target to build an object file
 Bun.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Bun.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Bun.cpp.o
 .PHONY : Bun.cpp.o
 
 Bun.i: Bun.cpp.i
@@ -334,7 +334,7 @@ Bun.i: Bun.cpp.i
 
 # target to preprocess a source file
 Bun.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Bun.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Bun.cpp.i
 .PHONY : Bun.cpp.i
 
 Bun.s: Bun.cpp.s
@@ -342,7 +342,7 @@ Bun.s: Bun.cpp.s
 
 # target to generate assembly for a file
 Bun.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Bun.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Bun.cpp.s
 .PHONY : Bun.cpp.s
 
 Chef.o: Chef.cpp.o
@@ -350,7 +350,7 @@ Chef.o: Chef.cpp.o
 
 # target to build an object file
 Chef.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Chef.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Chef.cpp.o
 .PHONY : Chef.cpp.o
 
 Chef.i: Chef.cpp.i
@@ -358,7 +358,7 @@ Chef.i: Chef.cpp.i
 
 # target to preprocess a source file
 Chef.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Chef.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Chef.cpp.i
 .PHONY : Chef.cpp.i
 
 Chef.s: Chef.cpp.s
@@ -366,7 +366,7 @@ Chef.s: Chef.cpp.s
 
 # target to generate assembly for a file
 Chef.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Chef.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Chef.cpp.s
 .PHONY : Chef.cpp.s
 
 ChickenPatty.o: ChickenPatty.cpp.o
@@ -374,7 +374,7 @@ ChickenPatty.o: ChickenPatty.cpp.o
 
 # target to build an object file
 ChickenPatty.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/ChickenPatty.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/ChickenPatty.cpp.o
 .PHONY : ChickenPatty.cpp.o
 
 ChickenPatty.i: ChickenPatty.cpp.i
@@ -382,7 +382,7 @@ ChickenPatty.i: ChickenPatty.cpp.i
 
 # target to preprocess a source file
 ChickenPatty.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/ChickenPatty.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/ChickenPatty.cpp.i
 .PHONY : ChickenPatty.cpp.i
 
 ChickenPatty.s: ChickenPatty.cpp.s
@@ -390,7 +390,7 @@ ChickenPatty.s: ChickenPatty.cpp.s
 
 # target to generate assembly for a file
 ChickenPatty.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/ChickenPatty.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/ChickenPatty.cpp.s
 .PHONY : ChickenPatty.cpp.s
 
 Chips.o: Chips.cpp.o
@@ -398,7 +398,7 @@ Chips.o: Chips.cpp.o
 
 # target to build an object file
 Chips.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Chips.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Chips.cpp.o
 .PHONY : Chips.cpp.o
 
 Chips.i: Chips.cpp.i
@@ -406,7 +406,7 @@ Chips.i: Chips.cpp.i
 
 # target to preprocess a source file
 Chips.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Chips.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Chips.cpp.i
 .PHONY : Chips.cpp.i
 
 Chips.s: Chips.cpp.s
@@ -414,7 +414,7 @@ Chips.s: Chips.cpp.s
 
 # target to generate assembly for a file
 Chips.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Chips.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Chips.cpp.s
 .PHONY : Chips.cpp.s
 
 Colleague.o: Colleague.cpp.o
@@ -422,7 +422,7 @@ Colleague.o: Colleague.cpp.o
 
 # target to build an object file
 Colleague.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Colleague.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Colleague.cpp.o
 .PHONY : Colleague.cpp.o
 
 Colleague.i: Colleague.cpp.i
@@ -430,7 +430,7 @@ Colleague.i: Colleague.cpp.i
 
 # target to preprocess a source file
 Colleague.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Colleague.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Colleague.cpp.i
 .PHONY : Colleague.cpp.i
 
 Colleague.s: Colleague.cpp.s
@@ -438,7 +438,7 @@ Colleague.s: Colleague.cpp.s
 
 # target to generate assembly for a file
 Colleague.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Colleague.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Colleague.cpp.s
 .PHONY : Colleague.cpp.s
 
 Customer.o: Customer.cpp.o
@@ -446,7 +446,7 @@ Customer.o: Customer.cpp.o
 
 # target to build an object file
 Customer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Customer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Customer.cpp.o
 .PHONY : Customer.cpp.o
 
 Customer.i: Customer.cpp.i
@@ -454,7 +454,7 @@ Customer.i: Customer.cpp.i
 
 # target to preprocess a source file
 Customer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Customer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Customer.cpp.i
 .PHONY : Customer.cpp.i
 
 Customer.s: Customer.cpp.s
@@ -462,7 +462,7 @@ Customer.s: Customer.cpp.s
 
 # target to generate assembly for a file
 Customer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Customer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Customer.cpp.s
 .PHONY : Customer.cpp.s
 
 CustomerPays.o: CustomerPays.cpp.o
@@ -470,7 +470,7 @@ CustomerPays.o: CustomerPays.cpp.o
 
 # target to build an object file
 CustomerPays.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/CustomerPays.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/CustomerPays.cpp.o
 .PHONY : CustomerPays.cpp.o
 
 CustomerPays.i: CustomerPays.cpp.i
@@ -478,7 +478,7 @@ CustomerPays.i: CustomerPays.cpp.i
 
 # target to preprocess a source file
 CustomerPays.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/CustomerPays.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/CustomerPays.cpp.i
 .PHONY : CustomerPays.cpp.i
 
 CustomerPays.s: CustomerPays.cpp.s
@@ -486,7 +486,7 @@ CustomerPays.s: CustomerPays.cpp.s
 
 # target to generate assembly for a file
 CustomerPays.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/CustomerPays.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/CustomerPays.cpp.s
 .PHONY : CustomerPays.cpp.s
 
 Drink.o: Drink.cpp.o
@@ -494,7 +494,7 @@ Drink.o: Drink.cpp.o
 
 # target to build an object file
 Drink.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Drink.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Drink.cpp.o
 .PHONY : Drink.cpp.o
 
 Drink.i: Drink.cpp.i
@@ -502,7 +502,7 @@ Drink.i: Drink.cpp.i
 
 # target to preprocess a source file
 Drink.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Drink.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Drink.cpp.i
 .PHONY : Drink.cpp.i
 
 Drink.s: Drink.cpp.s
@@ -510,7 +510,7 @@ Drink.s: Drink.cpp.s
 
 # target to generate assembly for a file
 Drink.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Drink.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Drink.cpp.s
 .PHONY : Drink.cpp.s
 
 DrinkChef.o: DrinkChef.cpp.o
@@ -518,7 +518,7 @@ DrinkChef.o: DrinkChef.cpp.o
 
 # target to build an object file
 DrinkChef.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/DrinkChef.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/DrinkChef.cpp.o
 .PHONY : DrinkChef.cpp.o
 
 DrinkChef.i: DrinkChef.cpp.i
@@ -526,7 +526,7 @@ DrinkChef.i: DrinkChef.cpp.i
 
 # target to preprocess a source file
 DrinkChef.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/DrinkChef.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/DrinkChef.cpp.i
 .PHONY : DrinkChef.cpp.i
 
 DrinkChef.s: DrinkChef.cpp.s
@@ -534,7 +534,7 @@ DrinkChef.s: DrinkChef.cpp.s
 
 # target to generate assembly for a file
 DrinkChef.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/DrinkChef.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/DrinkChef.cpp.s
 .PHONY : DrinkChef.cpp.s
 
 Floor.o: Floor.cpp.o
@@ -542,7 +542,7 @@ Floor.o: Floor.cpp.o
 
 # target to build an object file
 Floor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Floor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Floor.cpp.o
 .PHONY : Floor.cpp.o
 
 Floor.i: Floor.cpp.i
@@ -550,7 +550,7 @@ Floor.i: Floor.cpp.i
 
 # target to preprocess a source file
 Floor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Floor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Floor.cpp.i
 .PHONY : Floor.cpp.i
 
 Floor.s: Floor.cpp.s
@@ -558,7 +558,7 @@ Floor.s: Floor.cpp.s
 
 # target to generate assembly for a file
 Floor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Floor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Floor.cpp.s
 .PHONY : Floor.cpp.s
 
 FloorState.o: FloorState.cpp.o
@@ -566,7 +566,7 @@ FloorState.o: FloorState.cpp.o
 
 # target to build an object file
 FloorState.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/FloorState.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/FloorState.cpp.o
 .PHONY : FloorState.cpp.o
 
 FloorState.i: FloorState.cpp.i
@@ -574,7 +574,7 @@ FloorState.i: FloorState.cpp.i
 
 # target to preprocess a source file
 FloorState.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/FloorState.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/FloorState.cpp.i
 .PHONY : FloorState.cpp.i
 
 FloorState.s: FloorState.cpp.s
@@ -582,7 +582,7 @@ FloorState.s: FloorState.cpp.s
 
 # target to generate assembly for a file
 FloorState.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/FloorState.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/FloorState.cpp.s
 .PHONY : FloorState.cpp.s
 
 Full.o: Full.cpp.o
@@ -590,7 +590,7 @@ Full.o: Full.cpp.o
 
 # target to build an object file
 Full.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Full.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Full.cpp.o
 .PHONY : Full.cpp.o
 
 Full.i: Full.cpp.i
@@ -598,7 +598,7 @@ Full.i: Full.cpp.i
 
 # target to preprocess a source file
 Full.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Full.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Full.cpp.i
 .PHONY : Full.cpp.i
 
 Full.s: Full.cpp.s
@@ -606,7 +606,7 @@ Full.s: Full.cpp.s
 
 # target to generate assembly for a file
 Full.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Full.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Full.cpp.s
 .PHONY : Full.cpp.s
 
 Garnish.o: Garnish.cpp.o
@@ -614,7 +614,7 @@ Garnish.o: Garnish.cpp.o
 
 # target to build an object file
 Garnish.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Garnish.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Garnish.cpp.o
 .PHONY : Garnish.cpp.o
 
 Garnish.i: Garnish.cpp.i
@@ -622,7 +622,7 @@ Garnish.i: Garnish.cpp.i
 
 # target to preprocess a source file
 Garnish.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Garnish.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Garnish.cpp.i
 .PHONY : Garnish.cpp.i
 
 Garnish.s: Garnish.cpp.s
@@ -630,7 +630,7 @@ Garnish.s: Garnish.cpp.s
 
 # target to generate assembly for a file
 Garnish.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Garnish.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Garnish.cpp.s
 .PHONY : Garnish.cpp.s
 
 GarnishChef.o: GarnishChef.cpp.o
@@ -638,7 +638,7 @@ GarnishChef.o: GarnishChef.cpp.o
 
 # target to build an object file
 GarnishChef.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/GarnishChef.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/GarnishChef.cpp.o
 .PHONY : GarnishChef.cpp.o
 
 GarnishChef.i: GarnishChef.cpp.i
@@ -646,7 +646,7 @@ GarnishChef.i: GarnishChef.cpp.i
 
 # target to preprocess a source file
 GarnishChef.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/GarnishChef.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/GarnishChef.cpp.i
 .PHONY : GarnishChef.cpp.i
 
 GarnishChef.s: GarnishChef.cpp.s
@@ -654,7 +654,7 @@ GarnishChef.s: GarnishChef.cpp.s
 
 # target to generate assembly for a file
 GarnishChef.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/GarnishChef.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/GarnishChef.cpp.s
 .PHONY : GarnishChef.cpp.s
 
 Group.o: Group.cpp.o
@@ -662,7 +662,7 @@ Group.o: Group.cpp.o
 
 # target to build an object file
 Group.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Group.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Group.cpp.o
 .PHONY : Group.cpp.o
 
 Group.i: Group.cpp.i
@@ -670,7 +670,7 @@ Group.i: Group.cpp.i
 
 # target to preprocess a source file
 Group.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Group.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Group.cpp.i
 .PHONY : Group.cpp.i
 
 Group.s: Group.cpp.s
@@ -678,7 +678,7 @@ Group.s: Group.cpp.s
 
 # target to generate assembly for a file
 Group.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Group.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Group.cpp.s
 .PHONY : Group.cpp.s
 
 GroupIterator.o: GroupIterator.cpp.o
@@ -686,7 +686,7 @@ GroupIterator.o: GroupIterator.cpp.o
 
 # target to build an object file
 GroupIterator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/GroupIterator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/GroupIterator.cpp.o
 .PHONY : GroupIterator.cpp.o
 
 GroupIterator.i: GroupIterator.cpp.i
@@ -694,7 +694,7 @@ GroupIterator.i: GroupIterator.cpp.i
 
 # target to preprocess a source file
 GroupIterator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/GroupIterator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/GroupIterator.cpp.i
 .PHONY : GroupIterator.cpp.i
 
 GroupIterator.s: GroupIterator.cpp.s
@@ -702,7 +702,7 @@ GroupIterator.s: GroupIterator.cpp.s
 
 # target to generate assembly for a file
 GroupIterator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/GroupIterator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/GroupIterator.cpp.s
 .PHONY : GroupIterator.cpp.s
 
 GroupState.o: GroupState.cpp.o
@@ -710,7 +710,7 @@ GroupState.o: GroupState.cpp.o
 
 # target to build an object file
 GroupState.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/GroupState.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/GroupState.cpp.o
 .PHONY : GroupState.cpp.o
 
 GroupState.i: GroupState.cpp.i
@@ -718,7 +718,7 @@ GroupState.i: GroupState.cpp.i
 
 # target to preprocess a source file
 GroupState.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/GroupState.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/GroupState.cpp.i
 .PHONY : GroupState.cpp.i
 
 GroupState.s: GroupState.cpp.s
@@ -726,7 +726,7 @@ GroupState.s: GroupState.cpp.s
 
 # target to generate assembly for a file
 GroupState.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/GroupState.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/GroupState.cpp.s
 .PHONY : GroupState.cpp.s
 
 Happy.o: Happy.cpp.o
@@ -734,7 +734,7 @@ Happy.o: Happy.cpp.o
 
 # target to build an object file
 Happy.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Happy.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Happy.cpp.o
 .PHONY : Happy.cpp.o
 
 Happy.i: Happy.cpp.i
@@ -742,7 +742,7 @@ Happy.i: Happy.cpp.i
 
 # target to preprocess a source file
 Happy.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Happy.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Happy.cpp.i
 .PHONY : Happy.cpp.i
 
 Happy.s: Happy.cpp.s
@@ -750,7 +750,7 @@ Happy.s: Happy.cpp.s
 
 # target to generate assembly for a file
 Happy.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Happy.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Happy.cpp.s
 .PHONY : Happy.cpp.s
 
 HeadChef.o: HeadChef.cpp.o
@@ -758,7 +758,7 @@ HeadChef.o: HeadChef.cpp.o
 
 # target to build an object file
 HeadChef.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/HeadChef.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/HeadChef.cpp.o
 .PHONY : HeadChef.cpp.o
 
 HeadChef.i: HeadChef.cpp.i
@@ -766,7 +766,7 @@ HeadChef.i: HeadChef.cpp.i
 
 # target to preprocess a source file
 HeadChef.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/HeadChef.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/HeadChef.cpp.i
 .PHONY : HeadChef.cpp.i
 
 HeadChef.s: HeadChef.cpp.s
@@ -774,7 +774,7 @@ HeadChef.s: HeadChef.cpp.s
 
 # target to generate assembly for a file
 HeadChef.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/HeadChef.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/HeadChef.cpp.s
 .PHONY : HeadChef.cpp.s
 
 ItemIterator.o: ItemIterator.cpp.o
@@ -782,7 +782,7 @@ ItemIterator.o: ItemIterator.cpp.o
 
 # target to build an object file
 ItemIterator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/ItemIterator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/ItemIterator.cpp.o
 .PHONY : ItemIterator.cpp.o
 
 ItemIterator.i: ItemIterator.cpp.i
@@ -790,7 +790,7 @@ ItemIterator.i: ItemIterator.cpp.i
 
 # target to preprocess a source file
 ItemIterator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/ItemIterator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/ItemIterator.cpp.i
 .PHONY : ItemIterator.cpp.i
 
 ItemIterator.s: ItemIterator.cpp.s
@@ -798,7 +798,7 @@ ItemIterator.s: ItemIterator.cpp.s
 
 # target to generate assembly for a file
 ItemIterator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/ItemIterator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/ItemIterator.cpp.s
 .PHONY : ItemIterator.cpp.s
 
 LanguageAdapter.o: LanguageAdapter.cpp.o
@@ -806,7 +806,7 @@ LanguageAdapter.o: LanguageAdapter.cpp.o
 
 # target to build an object file
 LanguageAdapter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/LanguageAdapter.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/LanguageAdapter.cpp.o
 .PHONY : LanguageAdapter.cpp.o
 
 LanguageAdapter.i: LanguageAdapter.cpp.i
@@ -814,7 +814,7 @@ LanguageAdapter.i: LanguageAdapter.cpp.i
 
 # target to preprocess a source file
 LanguageAdapter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/LanguageAdapter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/LanguageAdapter.cpp.i
 .PHONY : LanguageAdapter.cpp.i
 
 LanguageAdapter.s: LanguageAdapter.cpp.s
@@ -822,7 +822,7 @@ LanguageAdapter.s: LanguageAdapter.cpp.s
 
 # target to generate assembly for a file
 LanguageAdapter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/LanguageAdapter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/LanguageAdapter.cpp.s
 .PHONY : LanguageAdapter.cpp.s
 
 LanguageTarget.o: LanguageTarget.cpp.o
@@ -830,7 +830,7 @@ LanguageTarget.o: LanguageTarget.cpp.o
 
 # target to build an object file
 LanguageTarget.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/LanguageTarget.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/LanguageTarget.cpp.o
 .PHONY : LanguageTarget.cpp.o
 
 LanguageTarget.i: LanguageTarget.cpp.i
@@ -838,7 +838,7 @@ LanguageTarget.i: LanguageTarget.cpp.i
 
 # target to preprocess a source file
 LanguageTarget.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/LanguageTarget.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/LanguageTarget.cpp.i
 .PHONY : LanguageTarget.cpp.i
 
 LanguageTarget.s: LanguageTarget.cpp.s
@@ -846,7 +846,7 @@ LanguageTarget.s: LanguageTarget.cpp.s
 
 # target to generate assembly for a file
 LanguageTarget.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/LanguageTarget.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/LanguageTarget.cpp.s
 .PHONY : LanguageTarget.cpp.s
 
 Lettuce.o: Lettuce.cpp.o
@@ -854,7 +854,7 @@ Lettuce.o: Lettuce.cpp.o
 
 # target to build an object file
 Lettuce.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Lettuce.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Lettuce.cpp.o
 .PHONY : Lettuce.cpp.o
 
 Lettuce.i: Lettuce.cpp.i
@@ -862,7 +862,7 @@ Lettuce.i: Lettuce.cpp.i
 
 # target to preprocess a source file
 Lettuce.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Lettuce.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Lettuce.cpp.i
 .PHONY : Lettuce.cpp.i
 
 Lettuce.s: Lettuce.cpp.s
@@ -870,7 +870,7 @@ Lettuce.s: Lettuce.cpp.s
 
 # target to generate assembly for a file
 Lettuce.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Lettuce.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Lettuce.cpp.s
 .PHONY : Lettuce.cpp.s
 
 MaitreD.o: MaitreD.cpp.o
@@ -878,7 +878,7 @@ MaitreD.o: MaitreD.cpp.o
 
 # target to build an object file
 MaitreD.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/MaitreD.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/MaitreD.cpp.o
 .PHONY : MaitreD.cpp.o
 
 MaitreD.i: MaitreD.cpp.i
@@ -886,7 +886,7 @@ MaitreD.i: MaitreD.cpp.i
 
 # target to preprocess a source file
 MaitreD.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/MaitreD.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/MaitreD.cpp.i
 .PHONY : MaitreD.cpp.i
 
 MaitreD.s: MaitreD.cpp.s
@@ -894,7 +894,7 @@ MaitreD.s: MaitreD.cpp.s
 
 # target to generate assembly for a file
 MaitreD.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/MaitreD.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/MaitreD.cpp.s
 .PHONY : MaitreD.cpp.s
 
 MakeTab.o: MakeTab.cpp.o
@@ -902,7 +902,7 @@ MakeTab.o: MakeTab.cpp.o
 
 # target to build an object file
 MakeTab.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/MakeTab.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/MakeTab.cpp.o
 .PHONY : MakeTab.cpp.o
 
 MakeTab.i: MakeTab.cpp.i
@@ -910,7 +910,7 @@ MakeTab.i: MakeTab.cpp.i
 
 # target to preprocess a source file
 MakeTab.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/MakeTab.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/MakeTab.cpp.i
 .PHONY : MakeTab.cpp.i
 
 MakeTab.s: MakeTab.cpp.s
@@ -918,7 +918,7 @@ MakeTab.s: MakeTab.cpp.s
 
 # target to generate assembly for a file
 MakeTab.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/MakeTab.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/MakeTab.cpp.s
 .PHONY : MakeTab.cpp.s
 
 MeatChef.o: MeatChef.cpp.o
@@ -926,7 +926,7 @@ MeatChef.o: MeatChef.cpp.o
 
 # target to build an object file
 MeatChef.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/MeatChef.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/MeatChef.cpp.o
 .PHONY : MeatChef.cpp.o
 
 MeatChef.i: MeatChef.cpp.i
@@ -934,7 +934,7 @@ MeatChef.i: MeatChef.cpp.i
 
 # target to preprocess a source file
 MeatChef.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/MeatChef.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/MeatChef.cpp.i
 .PHONY : MeatChef.cpp.i
 
 MeatChef.s: MeatChef.cpp.s
@@ -942,7 +942,7 @@ MeatChef.s: MeatChef.cpp.s
 
 # target to generate assembly for a file
 MeatChef.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/MeatChef.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/MeatChef.cpp.s
 .PHONY : MeatChef.cpp.s
 
 Milkshake.o: Milkshake.cpp.o
@@ -950,7 +950,7 @@ Milkshake.o: Milkshake.cpp.o
 
 # target to build an object file
 Milkshake.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Milkshake.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Milkshake.cpp.o
 .PHONY : Milkshake.cpp.o
 
 Milkshake.i: Milkshake.cpp.i
@@ -958,7 +958,7 @@ Milkshake.i: Milkshake.cpp.i
 
 # target to preprocess a source file
 Milkshake.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Milkshake.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Milkshake.cpp.i
 .PHONY : Milkshake.cpp.i
 
 Milkshake.s: Milkshake.cpp.s
@@ -966,7 +966,7 @@ Milkshake.s: Milkshake.cpp.s
 
 # target to generate assembly for a file
 Milkshake.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Milkshake.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Milkshake.cpp.s
 .PHONY : Milkshake.cpp.s
 
 Neutral.o: Neutral.cpp.o
@@ -974,7 +974,7 @@ Neutral.o: Neutral.cpp.o
 
 # target to build an object file
 Neutral.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Neutral.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Neutral.cpp.o
 .PHONY : Neutral.cpp.o
 
 Neutral.i: Neutral.cpp.i
@@ -982,7 +982,7 @@ Neutral.i: Neutral.cpp.i
 
 # target to preprocess a source file
 Neutral.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Neutral.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Neutral.cpp.i
 .PHONY : Neutral.cpp.i
 
 Neutral.s: Neutral.cpp.s
@@ -990,7 +990,7 @@ Neutral.s: Neutral.cpp.s
 
 # target to generate assembly for a file
 Neutral.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Neutral.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Neutral.cpp.s
 .PHONY : Neutral.cpp.s
 
 Order.o: Order.cpp.o
@@ -998,7 +998,7 @@ Order.o: Order.cpp.o
 
 # target to build an object file
 Order.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Order.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Order.cpp.o
 .PHONY : Order.cpp.o
 
 Order.i: Order.cpp.i
@@ -1006,7 +1006,7 @@ Order.i: Order.cpp.i
 
 # target to preprocess a source file
 Order.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Order.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Order.cpp.i
 .PHONY : Order.cpp.i
 
 Order.s: Order.cpp.s
@@ -1014,7 +1014,7 @@ Order.s: Order.cpp.s
 
 # target to generate assembly for a file
 Order.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Order.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Order.cpp.s
 .PHONY : Order.cpp.s
 
 OrderComponent.o: OrderComponent.cpp.o
@@ -1022,7 +1022,7 @@ OrderComponent.o: OrderComponent.cpp.o
 
 # target to build an object file
 OrderComponent.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/OrderComponent.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/OrderComponent.cpp.o
 .PHONY : OrderComponent.cpp.o
 
 OrderComponent.i: OrderComponent.cpp.i
@@ -1030,7 +1030,7 @@ OrderComponent.i: OrderComponent.cpp.i
 
 # target to preprocess a source file
 OrderComponent.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/OrderComponent.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/OrderComponent.cpp.i
 .PHONY : OrderComponent.cpp.i
 
 OrderComponent.s: OrderComponent.cpp.s
@@ -1038,7 +1038,7 @@ OrderComponent.s: OrderComponent.cpp.s
 
 # target to generate assembly for a file
 OrderComponent.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/OrderComponent.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/OrderComponent.cpp.s
 .PHONY : OrderComponent.cpp.s
 
 OrderItem.o: OrderItem.cpp.o
@@ -1046,7 +1046,7 @@ OrderItem.o: OrderItem.cpp.o
 
 # target to build an object file
 OrderItem.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/OrderItem.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/OrderItem.cpp.o
 .PHONY : OrderItem.cpp.o
 
 OrderItem.i: OrderItem.cpp.i
@@ -1054,7 +1054,7 @@ OrderItem.i: OrderItem.cpp.i
 
 # target to preprocess a source file
 OrderItem.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/OrderItem.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/OrderItem.cpp.i
 .PHONY : OrderItem.cpp.i
 
 OrderItem.s: OrderItem.cpp.s
@@ -1062,7 +1062,7 @@ OrderItem.s: OrderItem.cpp.s
 
 # target to generate assembly for a file
 OrderItem.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/OrderItem.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/OrderItem.cpp.s
 .PHONY : OrderItem.cpp.s
 
 Pass.o: Pass.cpp.o
@@ -1070,7 +1070,7 @@ Pass.o: Pass.cpp.o
 
 # target to build an object file
 Pass.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Pass.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Pass.cpp.o
 .PHONY : Pass.cpp.o
 
 Pass.i: Pass.cpp.i
@@ -1078,7 +1078,7 @@ Pass.i: Pass.cpp.i
 
 # target to preprocess a source file
 Pass.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Pass.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Pass.cpp.i
 .PHONY : Pass.cpp.i
 
 Pass.s: Pass.cpp.s
@@ -1086,7 +1086,7 @@ Pass.s: Pass.cpp.s
 
 # target to generate assembly for a file
 Pass.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Pass.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Pass.cpp.s
 .PHONY : Pass.cpp.s
 
 Patty.o: Patty.cpp.o
@@ -1094,7 +1094,7 @@ Patty.o: Patty.cpp.o
 
 # target to build an object file
 Patty.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Patty.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Patty.cpp.o
 .PHONY : Patty.cpp.o
 
 Patty.i: Patty.cpp.i
@@ -1102,7 +1102,7 @@ Patty.i: Patty.cpp.i
 
 # target to preprocess a source file
 Patty.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Patty.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Patty.cpp.i
 .PHONY : Patty.cpp.i
 
 Patty.s: Patty.cpp.s
@@ -1110,7 +1110,7 @@ Patty.s: Patty.cpp.s
 
 # target to generate assembly for a file
 Patty.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Patty.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Patty.cpp.s
 .PHONY : Patty.cpp.s
 
 PayTab.o: PayTab.cpp.o
@@ -1118,7 +1118,7 @@ PayTab.o: PayTab.cpp.o
 
 # target to build an object file
 PayTab.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/PayTab.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/PayTab.cpp.o
 .PHONY : PayTab.cpp.o
 
 PayTab.i: PayTab.cpp.i
@@ -1126,7 +1126,7 @@ PayTab.i: PayTab.cpp.i
 
 # target to preprocess a source file
 PayTab.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/PayTab.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/PayTab.cpp.i
 .PHONY : PayTab.cpp.i
 
 PayTab.s: PayTab.cpp.s
@@ -1134,7 +1134,7 @@ PayTab.s: PayTab.cpp.s
 
 # target to generate assembly for a file
 PayTab.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/PayTab.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/PayTab.cpp.s
 .PHONY : PayTab.cpp.s
 
 Plate.o: Plate.cpp.o
@@ -1142,7 +1142,7 @@ Plate.o: Plate.cpp.o
 
 # target to build an object file
 Plate.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Plate.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Plate.cpp.o
 .PHONY : Plate.cpp.o
 
 Plate.i: Plate.cpp.i
@@ -1150,7 +1150,7 @@ Plate.i: Plate.cpp.i
 
 # target to preprocess a source file
 Plate.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Plate.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Plate.cpp.i
 .PHONY : Plate.cpp.i
 
 Plate.s: Plate.cpp.s
@@ -1158,7 +1158,7 @@ Plate.s: Plate.cpp.s
 
 # target to generate assembly for a file
 Plate.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Plate.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Plate.cpp.s
 .PHONY : Plate.cpp.s
 
 ReadyForBill.o: ReadyForBill.cpp.o
@@ -1166,7 +1166,7 @@ ReadyForBill.o: ReadyForBill.cpp.o
 
 # target to build an object file
 ReadyForBill.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/ReadyForBill.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/ReadyForBill.cpp.o
 .PHONY : ReadyForBill.cpp.o
 
 ReadyForBill.i: ReadyForBill.cpp.i
@@ -1174,7 +1174,7 @@ ReadyForBill.i: ReadyForBill.cpp.i
 
 # target to preprocess a source file
 ReadyForBill.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/ReadyForBill.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/ReadyForBill.cpp.i
 .PHONY : ReadyForBill.cpp.i
 
 ReadyForBill.s: ReadyForBill.cpp.s
@@ -1182,7 +1182,7 @@ ReadyForBill.s: ReadyForBill.cpp.s
 
 # target to generate assembly for a file
 ReadyForBill.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/ReadyForBill.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/ReadyForBill.cpp.s
 .PHONY : ReadyForBill.cpp.s
 
 ReadyToOrder.o: ReadyToOrder.cpp.o
@@ -1190,7 +1190,7 @@ ReadyToOrder.o: ReadyToOrder.cpp.o
 
 # target to build an object file
 ReadyToOrder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/ReadyToOrder.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/ReadyToOrder.cpp.o
 .PHONY : ReadyToOrder.cpp.o
 
 ReadyToOrder.i: ReadyToOrder.cpp.i
@@ -1198,7 +1198,7 @@ ReadyToOrder.i: ReadyToOrder.cpp.i
 
 # target to preprocess a source file
 ReadyToOrder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/ReadyToOrder.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/ReadyToOrder.cpp.i
 .PHONY : ReadyToOrder.cpp.i
 
 ReadyToOrder.s: ReadyToOrder.cpp.s
@@ -1206,7 +1206,7 @@ ReadyToOrder.s: ReadyToOrder.cpp.s
 
 # target to generate assembly for a file
 ReadyToOrder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/ReadyToOrder.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/ReadyToOrder.cpp.s
 .PHONY : ReadyToOrder.cpp.s
 
 Salad.o: Salad.cpp.o
@@ -1214,7 +1214,7 @@ Salad.o: Salad.cpp.o
 
 # target to build an object file
 Salad.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Salad.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Salad.cpp.o
 .PHONY : Salad.cpp.o
 
 Salad.i: Salad.cpp.i
@@ -1222,7 +1222,7 @@ Salad.i: Salad.cpp.i
 
 # target to preprocess a source file
 Salad.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Salad.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Salad.cpp.i
 .PHONY : Salad.cpp.i
 
 Salad.s: Salad.cpp.s
@@ -1230,7 +1230,7 @@ Salad.s: Salad.cpp.s
 
 # target to generate assembly for a file
 Salad.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Salad.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Salad.cpp.s
 .PHONY : Salad.cpp.s
 
 Side.o: Side.cpp.o
@@ -1238,7 +1238,7 @@ Side.o: Side.cpp.o
 
 # target to build an object file
 Side.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Side.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Side.cpp.o
 .PHONY : Side.cpp.o
 
 Side.i: Side.cpp.i
@@ -1246,7 +1246,7 @@ Side.i: Side.cpp.i
 
 # target to preprocess a source file
 Side.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Side.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Side.cpp.i
 .PHONY : Side.cpp.i
 
 Side.s: Side.cpp.s
@@ -1254,7 +1254,7 @@ Side.s: Side.cpp.s
 
 # target to generate assembly for a file
 Side.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Side.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Side.cpp.s
 .PHONY : Side.cpp.s
 
 SidesChef.o: SidesChef.cpp.o
@@ -1262,7 +1262,7 @@ SidesChef.o: SidesChef.cpp.o
 
 # target to build an object file
 SidesChef.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/SidesChef.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/SidesChef.cpp.o
 .PHONY : SidesChef.cpp.o
 
 SidesChef.i: SidesChef.cpp.i
@@ -1270,7 +1270,7 @@ SidesChef.i: SidesChef.cpp.i
 
 # target to preprocess a source file
 SidesChef.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/SidesChef.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/SidesChef.cpp.i
 .PHONY : SidesChef.cpp.i
 
 SidesChef.s: SidesChef.cpp.s
@@ -1278,7 +1278,7 @@ SidesChef.s: SidesChef.cpp.s
 
 # target to generate assembly for a file
 SidesChef.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/SidesChef.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/SidesChef.cpp.s
 .PHONY : SidesChef.cpp.s
 
 Soda.o: Soda.cpp.o
@@ -1286,7 +1286,7 @@ Soda.o: Soda.cpp.o
 
 # target to build an object file
 Soda.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Soda.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Soda.cpp.o
 .PHONY : Soda.cpp.o
 
 Soda.i: Soda.cpp.i
@@ -1294,7 +1294,7 @@ Soda.i: Soda.cpp.i
 
 # target to preprocess a source file
 Soda.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Soda.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Soda.cpp.i
 .PHONY : Soda.cpp.i
 
 Soda.s: Soda.cpp.s
@@ -1302,7 +1302,7 @@ Soda.s: Soda.cpp.s
 
 # target to generate assembly for a file
 Soda.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Soda.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Soda.cpp.s
 .PHONY : Soda.cpp.s
 
 SpaceAvailable.o: SpaceAvailable.cpp.o
@@ -1310,7 +1310,7 @@ SpaceAvailable.o: SpaceAvailable.cpp.o
 
 # target to build an object file
 SpaceAvailable.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/SpaceAvailable.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/SpaceAvailable.cpp.o
 .PHONY : SpaceAvailable.cpp.o
 
 SpaceAvailable.i: SpaceAvailable.cpp.i
@@ -1318,7 +1318,7 @@ SpaceAvailable.i: SpaceAvailable.cpp.i
 
 # target to preprocess a source file
 SpaceAvailable.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/SpaceAvailable.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/SpaceAvailable.cpp.i
 .PHONY : SpaceAvailable.cpp.i
 
 SpaceAvailable.s: SpaceAvailable.cpp.s
@@ -1326,7 +1326,7 @@ SpaceAvailable.s: SpaceAvailable.cpp.s
 
 # target to generate assembly for a file
 SpaceAvailable.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/SpaceAvailable.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/SpaceAvailable.cpp.s
 .PHONY : SpaceAvailable.cpp.s
 
 SplitBill.o: SplitBill.cpp.o
@@ -1334,7 +1334,7 @@ SplitBill.o: SplitBill.cpp.o
 
 # target to build an object file
 SplitBill.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/SplitBill.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/SplitBill.cpp.o
 .PHONY : SplitBill.cpp.o
 
 SplitBill.i: SplitBill.cpp.i
@@ -1342,7 +1342,7 @@ SplitBill.i: SplitBill.cpp.i
 
 # target to preprocess a source file
 SplitBill.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/SplitBill.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/SplitBill.cpp.i
 .PHONY : SplitBill.cpp.i
 
 SplitBill.s: SplitBill.cpp.s
@@ -1350,7 +1350,7 @@ SplitBill.s: SplitBill.cpp.s
 
 # target to generate assembly for a file
 SplitBill.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/SplitBill.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/SplitBill.cpp.s
 .PHONY : SplitBill.cpp.s
 
 Tab.o: Tab.cpp.o
@@ -1358,7 +1358,7 @@ Tab.o: Tab.cpp.o
 
 # target to build an object file
 Tab.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Tab.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Tab.cpp.o
 .PHONY : Tab.cpp.o
 
 Tab.i: Tab.cpp.i
@@ -1366,7 +1366,7 @@ Tab.i: Tab.cpp.i
 
 # target to preprocess a source file
 Tab.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Tab.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Tab.cpp.i
 .PHONY : Tab.cpp.i
 
 Tab.s: Tab.cpp.s
@@ -1374,7 +1374,7 @@ Tab.s: Tab.cpp.s
 
 # target to generate assembly for a file
 Tab.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Tab.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Tab.cpp.s
 .PHONY : Tab.cpp.s
 
 Tomato.o: Tomato.cpp.o
@@ -1382,7 +1382,7 @@ Tomato.o: Tomato.cpp.o
 
 # target to build an object file
 Tomato.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Tomato.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Tomato.cpp.o
 .PHONY : Tomato.cpp.o
 
 Tomato.i: Tomato.cpp.i
@@ -1390,7 +1390,7 @@ Tomato.i: Tomato.cpp.i
 
 # target to preprocess a source file
 Tomato.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Tomato.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Tomato.cpp.i
 .PHONY : Tomato.cpp.i
 
 Tomato.s: Tomato.cpp.s
@@ -1398,7 +1398,7 @@ Tomato.s: Tomato.cpp.s
 
 # target to generate assembly for a file
 Tomato.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Tomato.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Tomato.cpp.s
 .PHONY : Tomato.cpp.s
 
 Unhappy.o: Unhappy.cpp.o
@@ -1406,7 +1406,7 @@ Unhappy.o: Unhappy.cpp.o
 
 # target to build an object file
 Unhappy.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Unhappy.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Unhappy.cpp.o
 .PHONY : Unhappy.cpp.o
 
 Unhappy.i: Unhappy.cpp.i
@@ -1414,7 +1414,7 @@ Unhappy.i: Unhappy.cpp.i
 
 # target to preprocess a source file
 Unhappy.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Unhappy.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Unhappy.cpp.i
 .PHONY : Unhappy.cpp.i
 
 Unhappy.s: Unhappy.cpp.s
@@ -1422,7 +1422,7 @@ Unhappy.s: Unhappy.cpp.s
 
 # target to generate assembly for a file
 Unhappy.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Unhappy.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Unhappy.cpp.s
 .PHONY : Unhappy.cpp.s
 
 WaitForTable.o: WaitForTable.cpp.o
@@ -1430,7 +1430,7 @@ WaitForTable.o: WaitForTable.cpp.o
 
 # target to build an object file
 WaitForTable.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/WaitForTable.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/WaitForTable.cpp.o
 .PHONY : WaitForTable.cpp.o
 
 WaitForTable.i: WaitForTable.cpp.i
@@ -1438,7 +1438,7 @@ WaitForTable.i: WaitForTable.cpp.i
 
 # target to preprocess a source file
 WaitForTable.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/WaitForTable.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/WaitForTable.cpp.i
 .PHONY : WaitForTable.cpp.i
 
 WaitForTable.s: WaitForTable.cpp.s
@@ -1446,7 +1446,7 @@ WaitForTable.s: WaitForTable.cpp.s
 
 # target to generate assembly for a file
 WaitForTable.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/WaitForTable.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/WaitForTable.cpp.s
 .PHONY : WaitForTable.cpp.s
 
 Waiter.o: Waiter.cpp.o
@@ -1454,7 +1454,7 @@ Waiter.o: Waiter.cpp.o
 
 # target to build an object file
 Waiter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Waiter.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Waiter.cpp.o
 .PHONY : Waiter.cpp.o
 
 Waiter.i: Waiter.cpp.i
@@ -1462,7 +1462,7 @@ Waiter.i: Waiter.cpp.i
 
 # target to preprocess a source file
 Waiter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Waiter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Waiter.cpp.i
 .PHONY : Waiter.cpp.i
 
 Waiter.s: Waiter.cpp.s
@@ -1470,7 +1470,7 @@ Waiter.s: Waiter.cpp.s
 
 # target to generate assembly for a file
 Waiter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/Waiter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Waiter.cpp.s
 .PHONY : Waiter.cpp.s
 
 # Help Target
@@ -1486,8 +1486,8 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... UnitTesting"
 	@echo "... UnitTests"
-	@echo "... Waiter"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"

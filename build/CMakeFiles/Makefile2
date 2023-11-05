@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/cait/COS214assignment/COS214assignment-1/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Waiter.dir/all
+all: CMakeFiles/UnitTesting.dir/all
 all: googletest/all
 all: test/all
 .PHONY : all
@@ -74,7 +74,7 @@ preinstall: test/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Waiter.dir/clean
+clean: CMakeFiles/UnitTesting.dir/clean
 clean: googletest/clean
 clean: test/clean
 .PHONY : clean
@@ -146,30 +146,30 @@ test/clean: test/CMakeFiles/UnitTests.dir/clean
 .PHONY : test/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Waiter.dir
+# Target rules for target CMakeFiles/UnitTesting.dir
 
 # All Build rule for target.
-CMakeFiles/Waiter.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cait/COS214assignment/COS214assignment-1/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54 "Built target Waiter"
-.PHONY : CMakeFiles/Waiter.dir/all
+CMakeFiles/UnitTesting.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cait/COS214assignment/COS214assignment-1/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52 "Built target UnitTesting"
+.PHONY : CMakeFiles/UnitTesting.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Waiter.dir/rule: cmake_check_build_system
+CMakeFiles/UnitTesting.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-1/build/CMakeFiles 52
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Waiter.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/UnitTesting.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-1/build/CMakeFiles 0
-.PHONY : CMakeFiles/Waiter.dir/rule
+.PHONY : CMakeFiles/UnitTesting.dir/rule
 
 # Convenience name for target.
-Waiter: CMakeFiles/Waiter.dir/rule
-.PHONY : Waiter
+UnitTesting: CMakeFiles/UnitTesting.dir/rule
+.PHONY : UnitTesting
 
 # clean rule for target.
-CMakeFiles/Waiter.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Waiter.dir/build.make CMakeFiles/Waiter.dir/clean
-.PHONY : CMakeFiles/Waiter.dir/clean
+CMakeFiles/UnitTesting.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/clean
+.PHONY : CMakeFiles/UnitTesting.dir/clean
 
 #=============================================================================
 # Target rules for target googletest/googlemock/CMakeFiles/gmock.dir
@@ -280,12 +280,12 @@ googletest/googletest/CMakeFiles/gtest_main.dir/clean:
 # Target rules for target test/CMakeFiles/UnitTests.dir
 
 # All Build rule for target.
-test/CMakeFiles/UnitTests.dir/all: CMakeFiles/Waiter.dir/all
+test/CMakeFiles/UnitTests.dir/all: CMakeFiles/UnitTesting.dir/all
 test/CMakeFiles/UnitTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 test/CMakeFiles/UnitTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/UnitTests.dir/build.make test/CMakeFiles/UnitTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/UnitTests.dir/build.make test/CMakeFiles/UnitTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cait/COS214assignment/COS214assignment-1/build/CMakeFiles --progress-num=1,2 "Built target UnitTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cait/COS214assignment/COS214assignment-1/build/CMakeFiles --progress-num=53,54 "Built target UnitTests"
 .PHONY : test/CMakeFiles/UnitTests.dir/all
 
 # Build rule for subdir invocation for target.
