@@ -101,6 +101,12 @@ public:
      * @brief the Context class of the State pattern that defines the requests for the state changes
      * @return void
     */
+    void MakeNeutral();
+
+    /**
+     * @brief the Context class of the State pattern that defines the requests for the state changes
+     * @return void
+    */
     void RequestTab();
 
     /**

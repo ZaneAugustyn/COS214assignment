@@ -49,19 +49,11 @@ void Pass::addOrder(Order* order)
 void Pass::dequeueOrder()
 {
   Order* order =  this->orders_.front();
-  //cout << "DEQ1" << endl;
+  Bill* groupBill = new Bill(order->getPrice());
+  order->getGroup()->setBill(groupBill);
   this->orders_.erase(this->orders_.begin());
-  //cout << "DEQ2" << endl;
-
-  // ItemIterator* it = order->createItemIterator();
-  // while(!it->isDone()){
-  //   cout << "loop" << endl;
-  //   cout << it->currentItem()->getPrice();
-  //   it->next();
-  // }
 
   this->headChef_->createGroupOrder(order);
-  //cout << "DEQ3" << endl;
 }
 
 Pass::~Pass()

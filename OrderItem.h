@@ -37,7 +37,7 @@ public:
      * @brief getter for price
      * @return the price of the OrderItem
     */
-    double getPrice();
+    float getPrice();
 
     /**
      * @brief getter for name

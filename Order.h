@@ -41,7 +41,7 @@ public:
      * @brief Calculate and return the total price of the order.
      * @return The total price of the order.
      */
-    double getPrice();
+    float getPrice();
 
     /**
      * @brief Add an order component to this order.

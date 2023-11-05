@@ -28,7 +28,7 @@ public:
      * @brief pure virtual getter for price that will be implemented differently in derived classes
      * @return total price of the OrderComponent and any of its children
     */
-    virtual double getPrice() = 0;
+    virtual float getPrice() = 0;
 
     // GroupIterator* createIterator();
 

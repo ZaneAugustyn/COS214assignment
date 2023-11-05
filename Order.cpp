@@ -23,10 +23,10 @@ Order::~Order()
   }
 }
 
-double Order::getPrice()
+float Order::getPrice()
 {
 
-  double totalPrice = 0;
+  float totalPrice = 0;
 
   for (OrderComponent *component : components_)
   {

@@ -1,6 +1,8 @@
 #include "Group.h"
 #include "GroupState.h"
 #include "Unhappy.h"
+#include "Happy.h"
+#include "Neutral.h"
 #include "Waiter.h"
 #include "Bill.h"
 #include "Neutral.h"
@@ -21,7 +23,7 @@ void Group::SetState(GroupState *state)
 {
     delete groupState_;
     groupState_ = state;
-    if(state->ToString() == "happy" || state->ToString() == "UnHappy")
+    if(state->ToString() == "Happy" || state->ToString() == "UnHappy" || state->ToString() == "Neutral")
     {
         updateLastEmotion(state);
     }
@@ -52,6 +54,7 @@ void Group::MakeUnhappy()
         return;
     }
     groupState_->MakeUnhappy(this);
+    lastEmotion = new Unhappy();
 }
 
 void Group::MakeHappy()
@@ -61,6 +64,17 @@ void Group::MakeHappy()
         return;
     }
     groupState_->MakeHappy(this);
+    lastEmotion = new Happy();
+}
+
+void Group::MakeNeutral()
+{
+    if (waiter_ == NULL) {
+        cout << "Can't have Happy state when in the queue." << endl;
+        return;
+    }
+    groupState_->MakeNeutral(this);
+    lastEmotion = new Neutral();
 }
 
 void Group::RequestTab()
