@@ -59,7 +59,7 @@ private:
     Chef* chef2;
     HeadChef* headChef;
     Pass* kitchenPass;
-    int numGroups;
+    int numGroups = 0;
    // std::vector<Group*> groups;
 public:
     facade(/* args */);
