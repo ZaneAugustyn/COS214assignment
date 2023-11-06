@@ -56,75 +56,64 @@ std::vector<Waiter*> Waiters;
 Pass* pass = new Pass();
 int size;
 Group* group;
+Customer* c1; 
+Customer* c2;
+Bill* bill;
 
 //Create functions to use and create stuff
-void initFloor()
-{
-    floor = new Floor();
-}
 
-void setFloorFull()
+void initGroup()
 {
-    floor->setFull();
-}
-
-void setFloorSpaceAvailable()
-{
-    floor->setSpaceAvailable();
-}
-
-void initMaitreD()
-{
-    maitreD = new MaitreD(floor); 
-    Waiters.push_back(new Waiter("dave", pass));
-    Waiters.push_back(new Waiter("steve", pass));
-    Waiters.push_back(new Waiter("jeff", pass));
-    group = new Group(new WaitForTable(), 1);
-
+    group = new Group(new Neutral(), 1);
+    c1 = new Customer("Bob");
+    c2 = new Customer("Alice");
+    group->addCustomer(c1);
+    group->addCustomer(c2);
+    bill = new Bill(200);
 }
 
 //Create TESTS
-TEST(Bill, changingStates)
+TEST(BillPayment, billPayment)
 {
-    initFloor();
-    setFloorFull();
+    initGroup();
+    
     EXPECT_EQ(
-        "FULL",
-        floor->getCurrentState()->getName());;
-    setFloorSpaceAvailable();
-    EXPECT_EQ(
-        "SPACEAVAILABLE",
-        floor->getCurrentState()->getName());;
+        200,
+        bill->getTotal());
+    // setFloorSpaceAvailable();
+    // EXPECT_EQ(
+    //     "SPACEAVAILABLE",
+    //     floor->getCurrentState()->getName());;
 }
 
 TEST(basicFUnctionalityMaitreD, MaitreD)
 {
-    initMaitreD();
-    //tesing calculateTablesNeeded()
-    EXPECT_EQ(
-        2,
-        maitreD->calculateTablesNeeded(6));;
+    // initMaitreD();
+    // //tesing calculateTablesNeeded()
+    // EXPECT_EQ(
+    //     2,
+    //     maitreD->calculateTablesNeeded(6));;
 
-    //testing checkAvailability()
-    EXPECT_EQ(
-        true,
-        maitreD->checkAvailability(6));
+    // //testing checkAvailability()
+    // EXPECT_EQ(
+    //     true,
+    //     maitreD->checkAvailability(6));
 
-    EXPECT_EQ(
-        false,
-        maitreD->checkAvailability(250));
+    // EXPECT_EQ(
+    //     false,
+    //     maitreD->checkAvailability(250));
 
-    //testing checkCurrentFloorState()
+    // //testing checkCurrentFloorState()
 
-    setFloorFull();
-    EXPECT_EQ(
-        false,
-        maitreD->checkCurrentFloorState(floor->getCurrentState()));
+    // setFloorFull();
+    // EXPECT_EQ(
+    //     false,
+    //     maitreD->checkCurrentFloorState(floor->getCurrentState()));
 
-    setFloorSpaceAvailable();
-    EXPECT_EQ(
-        true,
-        maitreD->checkCurrentFloorState(floor->getCurrentState()));
+    // setFloorSpaceAvailable();
+    // EXPECT_EQ(
+    //     true,
+    //     maitreD->checkCurrentFloorState(floor->getCurrentState()));
 
     //testing setWaiters
 

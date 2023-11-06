@@ -181,8 +181,8 @@ CMakeFiles/UnitTesting.dir/clean:
 # Target rules for target googletest/googlemock/CMakeFiles/gmock_main.dir
 
 # All Build rule for target.
-googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googlemock/CMakeFiles/gmock.dir/all
+googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/xadrian/COS 214/GroupProject/COS214assignment/build/CMakeFiles" --progress-num=57,58 "Built target gmock_main"
@@ -290,9 +290,9 @@ googletest/googletest/CMakeFiles/gtest.dir/clean:
 # Target rules for target XadrianTesting/CMakeFiles/XadrianTesting.dir
 
 # All Build rule for target.
+XadrianTesting/CMakeFiles/XadrianTesting.dir/all: CMakeFiles/UnitTesting.dir/all
 XadrianTesting/CMakeFiles/XadrianTesting.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
 XadrianTesting/CMakeFiles/XadrianTesting.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
-XadrianTesting/CMakeFiles/XadrianTesting.dir/all: CMakeFiles/UnitTesting.dir/all
 	$(MAKE) -f XadrianTesting/CMakeFiles/XadrianTesting.dir/build.make XadrianTesting/CMakeFiles/XadrianTesting.dir/depend
 	$(MAKE) -f XadrianTesting/CMakeFiles/XadrianTesting.dir/build.make XadrianTesting/CMakeFiles/XadrianTesting.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/xadrian/COS 214/GroupProject/COS214assignment/build/CMakeFiles" --progress-num=53,54 "Built target XadrianTesting"
