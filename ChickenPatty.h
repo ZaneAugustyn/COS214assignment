@@ -4,9 +4,10 @@
 #include "Patty.h"
 
 /**
- * @class BeefPatty
- * @brief This class inherits from Patty and represents a beef patty
+ * @class ChickenPatty
+ * @brief This class inherits from Patty and represents a chicken patty
 */
+
 
 class ChickenPatty : public Patty
 {

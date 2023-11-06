@@ -9,7 +9,10 @@
 #include "SpaceAvailable.h"
 
 class MaitreD;
-// code here
+    /**
+    * @class Floor
+    * @brief This class represents the floor of the restaurant
+    */
 class Floor
 {
 private:
@@ -55,7 +58,7 @@ public:
     /**
      * @brief this method sets the current state of the floor
      * @param state of the floor to which floor must be updated to
-     * @return FloorState*
+     * @return void
     */
     void setCurrentState(FloorState* state);
 

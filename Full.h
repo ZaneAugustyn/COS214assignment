@@ -2,7 +2,10 @@
 #define _FULL_H
 
 #include "FloorState.h"
-// code here
+    /**
+    * @class Full
+    * @brief This class represents a state whether the restaurant is full or not
+    */
 class Full : public FloorState
 {
 private:

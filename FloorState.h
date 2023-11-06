@@ -8,7 +8,10 @@ class Floor;
 using namespace std;
 #include <iostream>
 #include <string>
-
+/**
+ * @class FloorState
+ * @brief This class represents the state of the floor in the restaurant
+*/
 class FloorState
 {
 private:
