@@ -15,7 +15,6 @@ class Floor
 private:
     /* data */
     FloorState* floorState_;
-    MaitreD* maitreD_;
     std::vector<Group*> groups_;
 public:
     /**
@@ -72,6 +71,13 @@ public:
      * @return void
     */
     void setSpaceAvailable();
+
+    /**
+     * @brief This method is used to get the groups vector that holds all the groups in the floor
+     * @param  none
+     * @return std::vector<Group*>
+    */
+    std::vector<Group*> getGroups();
 };
 
 #endif

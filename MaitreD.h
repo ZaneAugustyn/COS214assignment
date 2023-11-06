@@ -81,6 +81,20 @@ public:
     void setWaiterList(std::vector<Waiter*> W);
 
     /**
+     * @brief This method is used to get the waiterList vector that holds all the waiters
+     * @param  none
+     * @return std::vector<Waiter*>
+    */
+    std::vector<Waiter*> getWaiterList();
+
+    /**
+     * @brief This method is used to get the waitingGroup vector that holds all the groups that are waiting to enter the floor
+     * @param  none
+     * @return std::vector<Group*>
+    */
+    std::vector<Group*> getWaitingGroups();
+
+    /**
      * @brief This method checks if tables are available if not it sets the floor state to full
      * @param  none
      * @return void

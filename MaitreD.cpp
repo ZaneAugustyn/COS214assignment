@@ -149,3 +149,13 @@ void MaitreD::tableChecker()
         myFloor_->setSpaceAvailable();
     }
 }
+
+std::vector<Waiter*> MaitreD::getWaiterList()
+{
+    return this->Waiters_;
+}
+
+std::vector<Group*> MaitreD::getWaitingGroups()
+{
+    return this->WaitingGroups_;
+}

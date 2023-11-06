@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/ZaneTesting.dir/ZaneTesting.cpp.o  -o ZaneTesting  ../lib/libgtest_main.a ../libUnitTesting.a ../lib/libgtest.a -lpthread 

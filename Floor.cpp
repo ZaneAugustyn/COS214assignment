@@ -49,3 +49,8 @@ void Floor::setSpaceAvailable()
 {
     this->setCurrentState(new SpaceAvailable());
 }
+
+ std::vector<Group*> Floor::getGroups()
+ {
+    return this->groups_;
+ }
