@@ -73,7 +73,7 @@ void MaitreD::addGroupToFloor()
     
     if(WaitingGroups_.front()->GetState()->ToString() == "PayTab") 
     {
-        cout<<PINK<<"Welcome back to Le McDonalds - thank you for coming to settle the tab"<<RESET<<endl;
+        cout<<endl<<PINK<<"Welcome back to Le McDonalds - thank you for coming to settle the tab"<<RESET<<endl;
         WaitingGroups_.front()->getBill()->Pay(WaitingGroups_.front(), 'F');
         WaitingGroups_.erase(WaitingGroups_.begin());
         return;
