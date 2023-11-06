@@ -1,4 +1,7 @@
 #include "facade.h"
+#include <iostream>
+#include <limits>
+#include <string>
 
 #define YELLOW  "\033[93m"      /* Yellow */
 #define RED     "\033[31m"      /* Red */
@@ -48,6 +51,14 @@ void facade::run()
         
         cout<<YELLOW<<"Please select an option : "<<RESET;
         cin>>choice;
+
+        while(!cin.good())
+        {
+            cout<<RED<<"Please enter a valid number: "<<RESET;
+            cin.clear();
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            cin>>choice;
+        }
     
 
         switch (choice)
@@ -138,6 +149,14 @@ void facade::option1()
     cout << YELLOW << "How many customers are in the group? " << RESET;
     int numCustomers;
     cin >> numCustomers;
+
+    while (!cin.good())
+    {
+        cout << RED << "Please enter a valid number: " << RESET;
+        cin.clear();
+        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        cin >> numCustomers;
+    }
     
     //create customers
     for (int i = 0; i < numCustomers; i++)
@@ -182,6 +201,15 @@ void facade::option3()
         int selectedGroupNumber;
         cout <<YELLOW<< "Enter the group number that wants to order: "<<RESET;
         cin >> selectedGroupNumber;
+
+        while(!cin.good())
+        {
+            cout<<RED<<"Please enter a valid number: "<<RESET;
+            cin.clear();
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            cin>>selectedGroupNumber;
+        }
+
         Group* selectedGroup = nullptr;
         for (auto& group : g) {
             if (group->getGroupNumber() == selectedGroupNumber) {
@@ -220,7 +248,15 @@ void facade::option4()
         int selectedGroupNumber;
         cout <<YELLOW<< "Enter the group number that wants to pay their bill: "<<RESET;
         cin >> selectedGroupNumber;
+
+        while(!cin.good()){
+            cout<<RED<<"Please enter a valid number: "<<RESET;
+            cin.clear();
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            cin>>selectedGroupNumber;
+        }
         Group* selectedGroup = nullptr;
+
         for (auto& group : g) {
             if (group->getGroupNumber() == selectedGroupNumber) {
                 selectedGroup = group;
@@ -257,6 +293,12 @@ void facade::option5()
     {
         cout << YELLOW << "Please choose a number: " << RESET;
         cin >> c;
+        while (!cin.good()){
+            cout<<RED<<"Please enter a valid number: "<<RESET;
+            cin.clear();
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            cin>>c;
+        }
 
         for (int i = 0; i < numGroups; i++)
         {
@@ -308,6 +350,13 @@ void facade::initBasic()
     int numWaiters;
     cout<<YELLOW<<"Please select number of waiters: "<<RESET;
     cin>>numWaiters;
+    while (!cin.good())
+    {
+        cout<<RED<<"Please enter a valid number: "<<RESET;
+        cin.clear();
+        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        cin>>numWaiters;
+    }
     for (int i = 0; i < numWaiters; i++)
     {
         std::string wName;

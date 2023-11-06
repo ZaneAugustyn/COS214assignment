@@ -88,7 +88,7 @@ void Waiter::update(Group* group)
             customerOrder->addComponent(new Bun());
 
             char languageChoice;
-            cout << "In which language would you like your menu? ('A' for Afrikaans, 'E' for English)" << endl;
+            cout << customer->getName() << ", in which language would you like your menu? ('A' for Afrikaans, 'E' for English)" << endl;
             cin >> languageChoice;
             
             GroupIterator* iterator = menu_->createIterator();
@@ -132,7 +132,7 @@ void Waiter::update(Group* group)
         // TODO: need to check inputs
         cin >> c;
 
-        while ((c != 'S') && (c != 'F') && (c != 'T'))
+        while ((c != 'S') && (c != 'F') && (c != 'T') && (c != 's') && (c != 'f') && (c != 't'))
         {
             cout<<"WARNING! You entered the wrong bill option. Please try again."<<endl;
             cout << "How would you like to pay it? 'S' to split, 'F' to pay in full, 'T' to put it on a tab" << endl;
