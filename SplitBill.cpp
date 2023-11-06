@@ -27,14 +27,33 @@ void SplitBill::Pay(Group* group)
         cout << "The total amount paid for the bill so far is " << this->TotalPaid << endl;
         cout << "The total amount paid as tip so far is " << this->TipAmount << endl;
         cout << "Please enter the amount you'd like to pay (excluding the tip amount)." << endl;
-        cin >> pay;
+        bool invalid = true; 
+        while(invalid) {
+            if (cin >> pay){
+                invalid = false;
+            }
+            else{
+                cout << "Please enter a valid amount." << endl;
+            }
+        }
+        
         cout << "Would you like to add a tip? (y/n)" << endl;
         cin >> choice;
-        if (choice == 'y')
-        {
-            cout << "Please enter the amount you'd like to tip the waiter." << endl;
-            cin >> tip;
+
+        invalid = true;
+        while(invalid){
+            if (choice == 'y' || choice == 'Y' || choice == 'n' || choice == 'N')
+            {
+                invalid = false;
+                cout << "Please enter the amount you'd like to tip the waiter." << endl;
+                cin >> tip;
+            }
+            else{
+                cout << "Please enter a valid choice for the tip." << endl;
+            }
         }
+
+        
 
         paid(pay);
         tipWaiter(tip);
