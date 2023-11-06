@@ -51,6 +51,8 @@ using namespace std;
 
 //global variables for testing
 Order* globalOrder;
+Order* globalCustomerOrderA;
+Order* globalCustomerOrderB;
 
 //functions for testing
 void createMockOrder(){
@@ -58,22 +60,24 @@ void createMockOrder(){
     globalOrder = new Order(NULL);
 
     //add orders for two customers
-    Order* customerOrderA = new Order(NULL);
-    customerOrderA->addComponent(new Bun()); //cost = 0
-    customerOrderA->addComponent(new ChickenPatty(true)); //cost = 30
-    customerOrderA->addComponent(new Lettuce()); //cost = 5
-    customerOrderA->addComponent(new Salad()); //cost = 25
-    customerOrderA->addComponent(new Milkshake()); //cost = 40
+    globalCustomerOrderA = new Order(NULL);
+    globalCustomerOrderA->addComponent(new Bun()); //cost = 0
+    globalCustomerOrderA->addComponent(new ChickenPatty(true)); //cost = 30
+    globalCustomerOrderA->addComponent(new Tomato()); //cost = 10
+    globalCustomerOrderA->addComponent(new Salad()); //cost = 25
+    globalCustomerOrderA->addComponent(new Milkshake()); //cost = 40
+    //total cost of OrderA is 105
 
-    Order* customerOrderB = new Order(NULL);
-    customerOrderB->addComponent(new Bun()); //cost = 0
-    customerOrderB->addComponent(new BeefPatty()); //cost = 40
-    customerOrderB->addComponent(new Tomato()); //cost = 10
-    customerOrderB->addComponent(new Chips()); //cost = 20
-    customerOrderB->addComponent(new Soda()); //cost = 30
+    globalCustomerOrderB = new Order(NULL);
+    globalCustomerOrderB->addComponent(new Bun()); //cost = 0
+    globalCustomerOrderB->addComponent(new BeefPatty()); //cost = 40
+    globalCustomerOrderB->addComponent(new Lettuce()); //cost = 5
+    globalCustomerOrderB->addComponent(new Chips()); //cost = 20
+    globalCustomerOrderB->addComponent(new Soda()); //cost = 30
+    //total cost of OrderB is 95
 
-    globalOrder->addComponent(customerOrderA);
-    globalOrder->addComponent(customerOrderB);
+    globalOrder->addComponent(globalCustomerOrderA);
+    globalOrder->addComponent(globalCustomerOrderB);
 
     //total cost of globalOrder should be 200
 
@@ -82,6 +86,15 @@ void createMockOrder(){
 TEST(TestOrderPrice, getPrice){
     createMockOrder();
     float price = 200;
+    EXPECT_EQ(
+        price,
+        globalOrder->getPrice());
+}
+
+TEST(TestOrderRemoveComponentAndPrice, removeComponent){
+    createMockOrder();
+    float price = 105;
+    globalOrder->removeComponent(globalCustomerOrderB);
     EXPECT_EQ(
         price,
         globalOrder->getPrice());
