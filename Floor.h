@@ -18,7 +18,6 @@ class Floor
 private:
     /* data */
     FloorState* floorState_;
-    MaitreD* maitreD_;
     std::vector<Group*> groups_;
 public:
     /**

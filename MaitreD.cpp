@@ -1,4 +1,5 @@
 #include "MaitreD.h"
+#include "Bill.h"
 #include <cmath>
 
 #define YELLOW  "\033[33m"      /* Yellow */
@@ -69,6 +70,15 @@ void MaitreD::addGroupToFloor()
         std::cout << "No waiting groups available." << std::endl;
         return;
     }
+    
+    if(WaitingGroups_.front()->GetState()->ToString() == "PayTab") 
+    {
+
+        WaitingGroups_.front()->getBill()->Pay(WaitingGroups_.front(), 'F');
+        Waiters_.erase(Waiters_.begin());
+        return;
+    }
+
     this->tableChecker();//sets table to full or spaceavailable if needed
 
     if(!this->checkCurrentFloorState(myFloor_->getCurrentState()))//this checks if the curent floorstate is full 
@@ -109,6 +119,11 @@ void MaitreD::removeGroupFromFloor(Group* group)
     if(group == nullptr)
     {
         return;
+    }
+
+    if(group->GetState()->ToString() == "PayTab") 
+    {
+        addGroupToWaitingGroups(group);
     }
 
     availableTables_ = availableTables_ + calculateTablesNeeded(group->getCustomers().size());//update tables since group left

@@ -1,4 +1,5 @@
 #include "Bill.h"
+#include "PayTab.h"
 
 
 Bill::Bill(float t): Total(t)

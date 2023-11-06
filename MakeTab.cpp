@@ -1,4 +1,5 @@
 #include "MakeTab.h"
+#include "PayTab.h"
 
 MakeTab::MakeTab(float t) : BillPayment(t)
 {
@@ -32,6 +33,7 @@ void MakeTab::Pay(Group* group)
                     Tab* t1 = createTab(getTotal());    
                     customer->setTab(t1);    
                     TabAllocated = true;
+                    group->SetState(new PayTab());
                 }
             }
             else{
