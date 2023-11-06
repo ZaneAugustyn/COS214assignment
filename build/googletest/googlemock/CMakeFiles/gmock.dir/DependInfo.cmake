@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/cait/COS214assignment/COS214assignment-2/googletest/googlemock/src/gmock-all.cc" "googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o" "gcc" "googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o.d"
+  "/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/googletest/googlemock/src/gmock-all.cc" "googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o" "gcc" "googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/cait/COS214assignment/COS214assignment-2/build/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

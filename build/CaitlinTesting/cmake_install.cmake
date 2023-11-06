@@ -1,4 +1,4 @@
-# Install script for directory: /home/cait/COS214assignment/COS214assignment-2/CaitlinTesting
+# Install script for directory: /mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/CaitlinTesting
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

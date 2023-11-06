@@ -1,4 +1,4 @@
-# Install script for directory: /home/cait/COS214assignment/COS214assignment-2/googletest
+# Install script for directory: /mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/googletest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/cait/COS214assignment/COS214assignment-2/build/googletest/googlemock/cmake_install.cmake")
+  include("/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/googletest/googlemock/cmake_install.cmake")
 
 endif()
 

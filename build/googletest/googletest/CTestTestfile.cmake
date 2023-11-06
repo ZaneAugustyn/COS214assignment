@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/cait/COS214assignment/COS214assignment-2/googletest/googletest
-# Build directory: /home/cait/COS214assignment/COS214assignment-2/build/googletest/googletest
+# Source directory: /mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/googletest/googletest
+# Build directory: /mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/googletest/googletest
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

@@ -9,7 +9,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
   "../CaitlinTesting/CMakeLists.txt"
-  "../adapterTest/CMakeLists.txt"
+  "../MignonTesting/CMakeLists.txt"
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
@@ -74,7 +74,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "googletest/googletest/generated/gtest_main.pc"
   "googletest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "CaitlinTesting/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "adapterTest/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "MignonTesting/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -85,5 +85,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   "googletest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   "CaitlinTesting/CMakeFiles/WaiterTests.dir/DependInfo.cmake"
-  "adapterTest/CMakeFiles/AdapterTests.dir/DependInfo.cmake"
+  "MignonTesting/CMakeFiles/AdapterTests.dir/DependInfo.cmake"
   )

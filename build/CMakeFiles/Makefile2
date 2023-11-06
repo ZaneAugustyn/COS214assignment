@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cait/COS214assignment/COS214assignment-2
+CMAKE_SOURCE_DIR = "/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cait/COS214assignment/COS214assignment-2/build
+CMAKE_BINARY_DIR = "/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -66,20 +66,20 @@ CMAKE_BINARY_DIR = /home/cait/COS214assignment/COS214assignment-2/build
 all: CMakeFiles/UnitTesting.dir/all
 all: googletest/all
 all: CaitlinTesting/all
-all: adapterTest/all
+all: MignonTesting/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: googletest/preinstall
 preinstall: CaitlinTesting/preinstall
-preinstall: adapterTest/preinstall
+preinstall: MignonTesting/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/UnitTesting.dir/clean
 clean: googletest/clean
 clean: CaitlinTesting/clean
-clean: adapterTest/clean
+clean: MignonTesting/clean
 .PHONY : clean
 
 #=============================================================================
@@ -98,19 +98,19 @@ CaitlinTesting/clean: CaitlinTesting/CMakeFiles/WaiterTests.dir/clean
 .PHONY : CaitlinTesting/clean
 
 #=============================================================================
-# Directory level rules for directory adapterTest
+# Directory level rules for directory MignonTesting
 
 # Recursive "all" directory target.
-adapterTest/all: adapterTest/CMakeFiles/AdapterTests.dir/all
-.PHONY : adapterTest/all
+MignonTesting/all: MignonTesting/CMakeFiles/AdapterTests.dir/all
+.PHONY : MignonTesting/all
 
 # Recursive "preinstall" directory target.
-adapterTest/preinstall:
-.PHONY : adapterTest/preinstall
+MignonTesting/preinstall:
+.PHONY : MignonTesting/preinstall
 
 # Recursive "clean" directory target.
-adapterTest/clean: adapterTest/CMakeFiles/AdapterTests.dir/clean
-.PHONY : adapterTest/clean
+MignonTesting/clean: MignonTesting/CMakeFiles/AdapterTests.dir/clean
+.PHONY : MignonTesting/clean
 
 #=============================================================================
 # Directory level rules for directory googletest
@@ -170,14 +170,14 @@ googletest/googletest/clean: googletest/googletest/CMakeFiles/gtest_main.dir/cle
 CMakeFiles/UnitTesting.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54 "Built target UnitTesting"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/CMakeFiles" --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54 "Built target UnitTesting"
 .PHONY : CMakeFiles/UnitTesting.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/UnitTesting.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/CMakeFiles" 52
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/UnitTesting.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/CMakeFiles" 0
 .PHONY : CMakeFiles/UnitTesting.dir/rule
 
 # Convenience name for target.
@@ -196,14 +196,14 @@ CMakeFiles/UnitTesting.dir/clean:
 googletest/googlemock/CMakeFiles/gmock.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest/googlemock/CMakeFiles/gmock.dir/build.make googletest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest/googlemock/CMakeFiles/gmock.dir/build.make googletest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles --progress-num=57,58 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/CMakeFiles" --progress-num=57,58 "Built target gmock"
 .PHONY : googletest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 googletest/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/CMakeFiles" 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 googletest/googlemock/CMakeFiles/gmock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/CMakeFiles" 0
 .PHONY : googletest/googlemock/CMakeFiles/gmock.dir/rule
 
 # Convenience name for target.
@@ -223,14 +223,14 @@ googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googlemock/CMake
 googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles --progress-num=59,60 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/CMakeFiles" --progress-num=59,60 "Built target gmock_main"
 .PHONY : googletest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 googletest/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/CMakeFiles" 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 googletest/googlemock/CMakeFiles/gmock_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/CMakeFiles" 0
 .PHONY : googletest/googlemock/CMakeFiles/gmock_main.dir/rule
 
 # Convenience name for target.
@@ -249,14 +249,14 @@ googletest/googlemock/CMakeFiles/gmock_main.dir/clean:
 googletest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles --progress-num=61,62 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/CMakeFiles" --progress-num=61,62 "Built target gtest"
 .PHONY : googletest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 googletest/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/CMakeFiles" 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 googletest/googletest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/CMakeFiles" 0
 .PHONY : googletest/googletest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -275,14 +275,14 @@ googletest/googletest/CMakeFiles/gtest.dir/clean:
 googletest/googletest/CMakeFiles/gtest_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles --progress-num=63,64 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/CMakeFiles" --progress-num=63,64 "Built target gtest_main"
 .PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 googletest/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/CMakeFiles" 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 googletest/googletest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/CMakeFiles" 0
 .PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
@@ -303,14 +303,14 @@ CaitlinTesting/CMakeFiles/WaiterTests.dir/all: googletest/googletest/CMakeFiles/
 CaitlinTesting/CMakeFiles/WaiterTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CaitlinTesting/CMakeFiles/WaiterTests.dir/build.make CaitlinTesting/CMakeFiles/WaiterTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CaitlinTesting/CMakeFiles/WaiterTests.dir/build.make CaitlinTesting/CMakeFiles/WaiterTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles --progress-num=55,56 "Built target WaiterTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/CMakeFiles" --progress-num=55,56 "Built target WaiterTests"
 .PHONY : CaitlinTesting/CMakeFiles/WaiterTests.dir/all
 
 # Build rule for subdir invocation for target.
 CaitlinTesting/CMakeFiles/WaiterTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles 58
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/CMakeFiles" 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CaitlinTesting/CMakeFiles/WaiterTests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/CMakeFiles" 0
 .PHONY : CaitlinTesting/CMakeFiles/WaiterTests.dir/rule
 
 # Convenience name for target.
@@ -323,32 +323,32 @@ CaitlinTesting/CMakeFiles/WaiterTests.dir/clean:
 .PHONY : CaitlinTesting/CMakeFiles/WaiterTests.dir/clean
 
 #=============================================================================
-# Target rules for target adapterTest/CMakeFiles/AdapterTests.dir
+# Target rules for target MignonTesting/CMakeFiles/AdapterTests.dir
 
 # All Build rule for target.
-adapterTest/CMakeFiles/AdapterTests.dir/all: CMakeFiles/UnitTesting.dir/all
-adapterTest/CMakeFiles/AdapterTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
-adapterTest/CMakeFiles/AdapterTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
-	$(MAKE) $(MAKESILENT) -f adapterTest/CMakeFiles/AdapterTests.dir/build.make adapterTest/CMakeFiles/AdapterTests.dir/depend
-	$(MAKE) $(MAKESILENT) -f adapterTest/CMakeFiles/AdapterTests.dir/build.make adapterTest/CMakeFiles/AdapterTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles --progress-num=1,2 "Built target AdapterTests"
-.PHONY : adapterTest/CMakeFiles/AdapterTests.dir/all
+MignonTesting/CMakeFiles/AdapterTests.dir/all: CMakeFiles/UnitTesting.dir/all
+MignonTesting/CMakeFiles/AdapterTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+MignonTesting/CMakeFiles/AdapterTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f MignonTesting/CMakeFiles/AdapterTests.dir/build.make MignonTesting/CMakeFiles/AdapterTests.dir/depend
+	$(MAKE) $(MAKESILENT) -f MignonTesting/CMakeFiles/AdapterTests.dir/build.make MignonTesting/CMakeFiles/AdapterTests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/CMakeFiles" --progress-num=1,2 "Built target AdapterTests"
+.PHONY : MignonTesting/CMakeFiles/AdapterTests.dir/all
 
 # Build rule for subdir invocation for target.
-adapterTest/CMakeFiles/AdapterTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles 58
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 adapterTest/CMakeFiles/AdapterTests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles 0
-.PHONY : adapterTest/CMakeFiles/AdapterTests.dir/rule
+MignonTesting/CMakeFiles/AdapterTests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/CMakeFiles" 58
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MignonTesting/CMakeFiles/AdapterTests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/build/CMakeFiles" 0
+.PHONY : MignonTesting/CMakeFiles/AdapterTests.dir/rule
 
 # Convenience name for target.
-AdapterTests: adapterTest/CMakeFiles/AdapterTests.dir/rule
+AdapterTests: MignonTesting/CMakeFiles/AdapterTests.dir/rule
 .PHONY : AdapterTests
 
 # clean rule for target.
-adapterTest/CMakeFiles/AdapterTests.dir/clean:
-	$(MAKE) $(MAKESILENT) -f adapterTest/CMakeFiles/AdapterTests.dir/build.make adapterTest/CMakeFiles/AdapterTests.dir/clean
-.PHONY : adapterTest/CMakeFiles/AdapterTests.dir/clean
+MignonTesting/CMakeFiles/AdapterTests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f MignonTesting/CMakeFiles/AdapterTests.dir/build.make MignonTesting/CMakeFiles/AdapterTests.dir/clean
+.PHONY : MignonTesting/CMakeFiles/AdapterTests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

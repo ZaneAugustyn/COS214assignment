@@ -123,8 +123,3 @@ add_library(${This} STATIC ${Sources} ${Headers}) # create static library
 
 add_subdirectory(CaitlinTesting) # add test directory
 add_subdirectory(MignonTesting) # add test directory
-add_subdirectory(JohaneTesting) # add test directory
-add_subdirectory(ZaneTesting) # add test directory
-add_subdirectory(XadrianTesting) # add test directory
-add_subdirectory(LaylaTesting) # add test directory
-add_subdirectory(KeanuTesting) # add test directory
