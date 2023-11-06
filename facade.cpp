@@ -1,4 +1,7 @@
 #include "facade.h"
+#include <iostream>
+#include <limits>
+#include <string>
 
 #define YELLOW  "\033[93m"      /* Yellow */
 #define RED     "\033[31m"      /* Red */
@@ -22,7 +25,7 @@ void facade::run()
     int mostRecent = 0;
     cout<<endl;
     cout<<endl;
-    cout<<YELLOW<<"Welcome Le McDonalds please select on of the following options to begin: "<<RESET<<endl;
+    cout<<PINK<<"Welcome to Le McDonalds please select one of the following options to begin: "<<RESET<<endl;
     while (loop)
     {
         int choice;
@@ -48,6 +51,14 @@ void facade::run()
         
         cout<<YELLOW<<"Please select an option : "<<RESET;
         cin>>choice;
+
+        while(!cin.good())
+        {
+            cout<<RED<<"Please enter a valid number: "<<RESET;
+            cin.clear();
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            cin>>choice;
+        }
     
 
         switch (choice)
@@ -109,6 +120,10 @@ void facade::run()
                             mostRecent = choice;
                         }
                     option5();
+                    if (floor->getGroups().size() == 0)
+                    {
+                        mostRecent = 0;
+                    }
                 }
                 else
                 {
@@ -128,51 +143,45 @@ void facade::run()
 
 void facade::option1()
 {
+    string names[] = {"John", "Jane", "Bob", "Alice", "Joe", "Jill", "Bill", "Sally", "Jack", "Jill", "Tom", "Tim", "Tina", "Terry", "Trevor", "Tiffany", "Tina", "Terry", "Trevor", "Tiffany"};
     numGroups++;
     Group* newGroup = new Group(new WaitForTable(), numGroups);
+    cout << YELLOW << "How many customers are in the group? " << RESET;
+    int numCustomers;
+    cin >> numCustomers;
 
-    //create customers
-    bool loop = true;
-    while (loop)
+    while (!cin.good())
     {
-        string name;
-        cout<<YELLOW<<"Please enter customers name: "<<RESET;
-        cin>>name;
-        Customer* newCustomer = new Customer(name);
-        newGroup->addCustomer(newCustomer);
-
-        while (true)
-        {
-            cout<<YELLOW<<"Would you like to add another customer? (Y/N): "<<RESET;
-            char c;
-            cin>>c;
-            if(c == 'Y' || c == 'y')
-            {
-                break;
-            }
-            else if(c == 'N' || c == 'n')
-            {
-                loop = false;
-                break;
-            }
-            else
-            {
-                continue;
-            }
-        }  
+        cout << RED << "Please enter a valid number: " << RESET;
+        cin.clear();
+        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        cin >> numCustomers;
     }
+    
+    //create customers
+    for (int i = 0; i < numCustomers; i++)
+    {
+        int randomName = rand() % 20;
+        Customer* newCustomer = new Customer(names[randomName]);
+        newGroup->addCustomer(newCustomer);
+    }
+    // print group
+    cout << LIGHT_GREEN << "Group " << numGroups << " :";
+    for (int i = 0; i < numCustomers; i++)
+    {
+        cout << " " << newGroup->getCustomers()[i]->getName();
+    }
+    cout << RESET << endl;
 
     //add the group to the maitre'd's queue
     maitreD->addGroupToWaitingGroups(newGroup);
+    // print the queue
 }
-
-
 
 void facade::option2()
 {
     maitreD->addGroupToFloor();
 }
-
 
 void facade::option3()
 {
@@ -192,6 +201,15 @@ void facade::option3()
         int selectedGroupNumber;
         cout <<YELLOW<< "Enter the group number that wants to order: "<<RESET;
         cin >> selectedGroupNumber;
+
+        while(!cin.good())
+        {
+            cout<<RED<<"Please enter a valid number: "<<RESET;
+            cin.clear();
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            cin>>selectedGroupNumber;
+        }
+
         Group* selectedGroup = nullptr;
         for (auto& group : g) {
             if (group->getGroupNumber() == selectedGroupNumber) {
@@ -210,7 +228,6 @@ void facade::option3()
     }
 
 }
-
 
 void facade::option4()
 {
@@ -231,7 +248,15 @@ void facade::option4()
         int selectedGroupNumber;
         cout <<YELLOW<< "Enter the group number that wants to pay their bill: "<<RESET;
         cin >> selectedGroupNumber;
+
+        while(!cin.good()){
+            cout<<RED<<"Please enter a valid number: "<<RESET;
+            cin.clear();
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            cin>>selectedGroupNumber;
+        }
         Group* selectedGroup = nullptr;
+
         for (auto& group : g) {
             if (group->getGroupNumber() == selectedGroupNumber) {
                 selectedGroup = group;
@@ -251,7 +276,6 @@ void facade::option4()
     
 }
 
-
 void facade::option5()
 {
     cout << YELLOW << "Please select the group you would like to excuse from the floor: " << RESET << endl;
@@ -269,6 +293,12 @@ void facade::option5()
     {
         cout << YELLOW << "Please choose a number: " << RESET;
         cin >> c;
+        while (!cin.good()){
+            cout<<RED<<"Please enter a valid number: "<<RESET;
+            cin.clear();
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            cin>>c;
+        }
 
         for (int i = 0; i < numGroups; i++)
         {
@@ -290,9 +320,6 @@ void facade::option5()
         }
     }
 }
-
-
-
 
 void facade::option6()
 {
@@ -317,16 +344,19 @@ void facade::initBasic()
     chef2->add(new GarnishChef());
     chef2->add(headChef);
 
-    //set the floor state to empty
-    //floor->setSpaceAvailable();
-    //IS AVAILABLE AS STANDARD
-
     maitreD = new MaitreD(floor,20);
 
     vector<Waiter*> waiters;
     int numWaiters;
     cout<<YELLOW<<"Please select number of waiters: "<<RESET;
     cin>>numWaiters;
+    while (!cin.good())
+    {
+        cout<<RED<<"Please enter a valid number: "<<RESET;
+        cin.clear();
+        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        cin>>numWaiters;
+    }
     for (int i = 0; i < numWaiters; i++)
     {
         std::string wName;
@@ -339,6 +369,7 @@ void facade::initBasic()
     //add the waiters to the maitre'd
     maitreD->setWaiterList(waiters);
 }
+
 void facade::askForHappiness(Group* selectedGroup)
 {
     char Status;

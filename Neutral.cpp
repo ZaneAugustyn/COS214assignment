@@ -7,7 +7,7 @@
 Neutral::Neutral()
 {
     stateName_ = "Neutral";
-    cout << "State changed to " << stateName_ << endl;
+    cout << "Group emotional state changed to " << stateName_ << endl;
 }
 
 Neutral::~Neutral()

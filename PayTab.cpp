@@ -3,7 +3,7 @@
 PayTab::PayTab()
 {
     stateName_ = "PayTab";
-    cout << "State changed to " << stateName_ << endl;
+    cout << "Group state changed to " << stateName_ << endl;
 }
 
 PayTab::~PayTab()
