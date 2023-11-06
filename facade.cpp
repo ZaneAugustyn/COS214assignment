@@ -264,9 +264,9 @@ void facade::option4()
             }
         }
         if (selectedGroup) {
+            askForHappiness(selectedGroup);
             selectedGroup->RequestBill();
             break;
-            // cout << "Bill process initiated for group " << selectedGroupNumber << endl;
         } else {
             cout <<RED<< "Group with the selected number does not exist." <<RESET<< endl;
             continue;
@@ -372,12 +372,16 @@ void facade::initBasic()
 
 void facade::askForHappiness(Group* selectedGroup)
 {
-    char Status;
+    char status;
     cout <<"Are you happy/unhappy with the service? (H/U) ";
-    cin>>Status;
-    if (Status ='H')
+    cin>>status;
+    while (status != 'H' && status != 'U')
+    {
+        cout << RED << "Please enter a valid choice (H/U) " << RESET;
+        cin>>status;
+    }
+    if (status =='H')
         selectedGroup->MakeHappy();
-    else if (Status ='U')
+    else if (status =='U')
         selectedGroup->MakeUnhappy();
-    else selectedGroup->MakeNeutral();
 }

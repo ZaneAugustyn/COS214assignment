@@ -6,9 +6,7 @@
 
 Happy::Happy()
 {
-    stateName_ = "Happy";
-    cout << "Group emotional state changed to " << stateName_ << endl;
-    
+    stateName_ = "Happy";    
 }
 
 Happy::~Happy()
@@ -17,7 +15,6 @@ Happy::~Happy()
 
 void Happy::RequestToOrder(Group *group)
 {
-    // cout << "in Happy: Move to RequestToOrder state" << endl;
     group->SetState(new ReadyToOrder());
 }
 
@@ -29,7 +26,6 @@ void Happy::WaitInQueue(Group *group)
 void Happy::MakeUnhappy(Group *group)
 {
     group->SetState(new Unhappy());
-    group->updateLastEmotion(new Unhappy());
     
 }
 
@@ -41,7 +37,6 @@ void Happy::MakeHappy(Group *group)
 void Happy::MakeNeutral(Group *group)
 {
     group->SetState(new Neutral());
-    group->updateLastEmotion(new Neutral());
 }
 
 void Happy::RequestTab(Group *group)
@@ -52,6 +47,7 @@ void Happy::RequestTab(Group *group)
 void Happy::RequestBill(Group *group)
 {
     group->SetState(new ReadyForBill());
+    group->notify();
 }
 
 string Happy::ToString()

@@ -162,7 +162,7 @@ Waiter* Group::getWaiter(){
 void Group::updateLastEmotion(GroupState* State)
 {
     this->lastEmotion = State; 
-    cout<<"LAST EMOTION UPDATED TO "<<State->ToString()<<endl;
+    cout<<"Group emotion changed to "<<State->ToString()<<endl;
 }
 
 GroupState* Group::getLastEmotion()

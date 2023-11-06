@@ -26,22 +26,17 @@ void ReadyToOrder::WaitInQueue(Group *group)
 
 void ReadyToOrder::MakeUnhappy(Group *group)
 {
-    // cout << "Move to Unhappy State." << endl;
     group->SetState(new Unhappy());
-    group->updateLastEmotion(new Unhappy());
 }
 
 void ReadyToOrder::MakeHappy(Group *group)
 {
-    // cout << "in ReadyToOrder: Move to Happy State." << endl;
     group->SetState(new Happy());
-    group->updateLastEmotion(new Happy());
 }
 
 void ReadyToOrder::MakeNeutral(Group * group)
 {
     group->SetState(new Neutral());
-    group->updateLastEmotion(new Neutral());
 }
 
 void ReadyToOrder::RequestTab(Group *group)

@@ -7,7 +7,6 @@
 Neutral::Neutral()
 {
     stateName_ = "Neutral";
-    cout << "Group emotional state changed to " << stateName_ << endl;
 }
 
 Neutral::~Neutral()
@@ -27,13 +26,11 @@ void Neutral::WaitInQueue(Group *group)
 void Neutral::MakeUnhappy(Group *group)
 {
     group->SetState(new Unhappy());
-    group->updateLastEmotion(new Unhappy());
 }
 
 void Neutral::MakeHappy(Group * group) 
 {
     group->SetState(new Happy());
-    group->updateLastEmotion(new Happy());
 }
 
 void Neutral::MakeNeutral(Group *group)

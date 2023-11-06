@@ -26,19 +26,16 @@ void ReadyForBill::WaitInQueue(Group *group)
 void ReadyForBill::MakeUnhappy(Group *group)
 {
     group->SetState(new Unhappy());
-    group->updateLastEmotion(new Unhappy());
 }
 
 void ReadyForBill::MakeHappy(Group *group)
 {
     group->SetState(new Happy());
-    group->updateLastEmotion(new Happy());
 }
 
 void ReadyForBill::MakeNeutral(Group *group)
 {
     group->SetState(new Neutral());
-    group->updateLastEmotion(new Neutral());
 }
 
 void ReadyForBill::RequestTab(Group *group)

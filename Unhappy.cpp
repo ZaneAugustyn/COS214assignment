@@ -7,7 +7,6 @@
 Unhappy::Unhappy()
 {
     stateName_ = "Unhappy";
-    cout << "Group emotional state changed to " << stateName_ << endl;
 }
 
 Unhappy::~Unhappy()
@@ -33,13 +32,11 @@ void Unhappy::MakeUnhappy(Group *group)
 void Unhappy::MakeHappy(Group *group)
 {
     group->SetState(new Happy());
-    group->updateLastEmotion(new Happy());
 }
 
 void Unhappy::MakeNeutral(Group *group)
 {
     group->SetState(new Neutral());
-    group->updateLastEmotion(new Neutral());
 }
 
 void Unhappy::RequestTab(Group *group)
