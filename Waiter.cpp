@@ -122,7 +122,7 @@ void Waiter::update(Group* group)
 
                     while ((chicOption != 'F' && chicOption != 'G')) // check that input is of type int
                     {
-                        cout<<"Would you like your chicken patty fried or grilled? (F/G)"<<endl;
+                        cout<<"Please enter a valid option: ";
                         cin>>chicOption;
                     }
 
