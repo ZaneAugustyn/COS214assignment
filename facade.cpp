@@ -22,7 +22,6 @@ facade::~facade()
 void facade::run()
 {
     bool loop = true;
-    int mostRecent = 0;
     cout<<endl;
     cout<<endl;
     cout<<PINK<<"Welcome to Le McDonalds please select one of the following options to begin: "<<RESET<<endl;
@@ -31,19 +30,19 @@ void facade::run()
         int choice;
         cout<<endl;
         cout<<YELLOW<<"1. Add a group to the queue outside"<<RESET<<endl;
-        if(mostRecent >= 1)
+        if(maitreD->getAwaitingGroup().size() > 0)
         {
             cout<<YELLOW<<"2. Let a group inside the restaurant"<<RESET<<endl;
         }
-        if(mostRecent >= 2)
+        if(maitreD->getFloor()->getGroups().size() > 0)
         {
             cout<<YELLOW<<"3. Let a group order"<<RESET<<endl;
         }
-        if(mostRecent >= 3)
+        if(maitreD->getFloor()->getGroups().size() > 0)
         {
             cout<<YELLOW<<"4. Let a group pay the bill"<<RESET<<endl;
         }
-        if(mostRecent >= 4)
+        if(maitreD->getFloor()->getGroups().size() > 0)
         {
             cout<<YELLOW<<"5. Remove group from restaurant"<<RESET<<endl;
         }
@@ -64,19 +63,11 @@ void facade::run()
         switch (choice)
         {
             case 1:
-                if (choice > mostRecent)
-                        {
-                            mostRecent = choice;
-                        }
                 option1();
                 break;
             case 2:
-                if (mostRecent >= 1)
+                if (maitreD->getAwaitingGroup().size() > 0)
                 {
-                    if (choice > mostRecent)
-                        {
-                            mostRecent = choice;
-                        }
                     option2();
                 }
                 else
@@ -85,12 +76,8 @@ void facade::run()
                 }
                 break;
             case 3:
-                if (mostRecent >= 2)
+                if (maitreD->getFloor()->getGroups().size() > 0)
                 {
-                    if (choice > mostRecent)
-                        {
-                            mostRecent = choice;
-                        }
                     option3();
                 }
                 else
@@ -99,12 +86,8 @@ void facade::run()
                 }
                 break;
             case 4:
-                if (mostRecent >= 3)
+                if (maitreD->getFloor()->getGroups().size() > 0)
                 {
-                    if (choice > mostRecent)
-                        {
-                            mostRecent = choice;
-                        }
                     option4();
                 }
                 else
@@ -113,17 +96,9 @@ void facade::run()
                 }
                 break;
             case 5:
-                if (mostRecent >= 4)
+                if (maitreD->getFloor()->getGroups().size() > 0)
                 {   
-                    if (choice > mostRecent)
-                        {
-                            mostRecent = choice;
-                        }
                     option5();
-                    if (floor->getGroups().size() == 0)
-                    {
-                        mostRecent = 0;
-                    }
                 }
                 else
                 {
@@ -288,6 +263,7 @@ void facade::option5()
         cout << "Group number: " << g[i]->getGroupNumber() << endl;
     }
 
+
     bool l = true;
     while (l)
     {
@@ -305,8 +281,10 @@ void facade::option5()
             if (g[i]->getGroupNumber() == c)
             {
                 auto it = g.begin() + i;
-                g.erase(it);
-                floor->setGroups(g);
+                // g.erase(it);
+                // floor->setGroups(g);
+                Group* group = g[i];
+                maitreD->removeGroupFromFloor(group);
 
                 cout << LIGHT_GREEN << "Group " << c << " has been excused from the floor." << RESET << endl;
                 l = false;

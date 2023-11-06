@@ -93,6 +93,18 @@ public:
     */
     void tableChecker();
 
+    /**
+     * @brief This method returns the groups waiting to enter the floor
+     * @param  none
+     * @return std::vector<Group*>
+    */
+    std::vector<Group*> getAwaitingGroup();
+    /**
+     * @brief This method returns floor that the maitreD is on
+     * @param  none
+     * @return Floor*
+    */
+    Floor* getFloor();
 };
 
 #endif

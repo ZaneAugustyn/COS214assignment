@@ -46,7 +46,7 @@ public:
      * @return std::vector<Group*>
     */
     std::vector<Group*> getGroups();
-
+    
      /**
      * @brief this method sets the std::vector<Group*> groups_ of the floor
      * @param std::vector<Group*>
