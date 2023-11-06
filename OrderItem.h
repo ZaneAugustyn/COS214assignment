@@ -16,6 +16,7 @@ class OrderItem : public OrderComponent
 {
 private:
     double price_;
+protected:
     string name_;
 public:
 

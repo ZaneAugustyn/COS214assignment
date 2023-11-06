@@ -100,7 +100,7 @@ void Waiter::update(Group* group)
                
                 cout << (iterator->currentItem())->formatOrder(la, languageChoice);
                 int choice;
-                cin >> choice;
+                cin >> choice;                
 
                 while (!cin.good() || (choice != 1 && choice != 2)) // check that input is of type int
                 {
@@ -113,9 +113,35 @@ void Waiter::update(Group* group)
 
                     cin >> choice;
                 }
+
+                if (i==0 && choice==1)
+                {
+                    char chicOption;
+                    cout<<"Would you like your chicken patty fried or grilled? (F/G)"<<endl;
+                    cin>>chicOption;
+
+                    while ((chicOption != 'F' && chicOption != 'G')) // check that input is of type int
+                    {
+                        cout<<"Would you like your chicken patty fried or grilled? (F/G)"<<endl;
+                        cin>>chicOption;
+                    }
+
+                    if (chicOption == 'F')
+                    {
+                        customerOrder->addComponent(new ChickenPatty(0));
+                    }
+                    else
+                    {
+                        customerOrder->addComponent(new ChickenPatty(1));
+                    }
+                    
+                }
+                else
+                {
+                    customerOrder->addComponent((iterator->currentItem())->getItems()[choice - 1]);
+                }
+
                 i++;
-        
-                customerOrder->addComponent((iterator->currentItem())->getItems()[choice - 1]);
                 iterator->next(); 
             }
 
