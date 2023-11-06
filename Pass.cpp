@@ -27,6 +27,9 @@ void Pass::notifyHeadChef(Waiter* waiter)
 void Pass::notifyWaiter(Chef* headchef)
 {
   cout<<"NOTIFY: Waiter fetch the plate"<<endl;
+
+  cout<<"The group has been served their meal." << endl;
+
 }
 
 void Pass::addToListOfTrays(vector<Plate*> plates)
