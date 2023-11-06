@@ -1,0 +1,4 @@
+<map id="OrderPrint" name="OrderPrint">
+<area shape="rect" id="node1" title="Will print the order of the bill." alt="" coords="5,80,93,107"/>
+<area shape="rect" id="node2" href="$classPrintBill.html" title="Will be the representation and printing of a bill." alt="" coords="13,5,86,32"/>
+</map>

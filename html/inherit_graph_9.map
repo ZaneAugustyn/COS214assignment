@@ -1,0 +1,10 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classGroupState.html" title="This class represents the group&#39;s state." alt="" coords="5,157,100,184"/>
+<area shape="rect" id="node2" href="$classHappy.html" title="This class is represents the group&#39;s happy state." alt="" coords="173,5,237,32"/>
+<area shape="rect" id="node3" href="$classNeutral.html" title="This class is represent the neutral state of the group." alt="" coords="169,56,240,83"/>
+<area shape="rect" id="node4" href="$classPayTab.html" title="This class is used for managing the tab of customers that can be payed at a later stage." alt="" coords="171,107,238,133"/>
+<area shape="rect" id="node5" href="$classReadyForBill.html" title="This class represent the readyForBill state of the customer." alt="" coords="153,157,257,184"/>
+<area shape="rect" id="node6" href="$classReadyToOrder.html" title="This class represent the ReadyToOrder state of the customer." alt="" coords="148,208,261,235"/>
+<area shape="rect" id="node7" href="$classUnhappy.html" title="This class represents a type of state of the group&#45;that they are currently unhappy with the service." alt="" coords="165,259,245,285"/>
+<area shape="rect" id="node8" href="$classWaitForTable.html" title="This class represents that the group should wait for a table (that is their state)" alt="" coords="152,309,257,336"/>
+</map>

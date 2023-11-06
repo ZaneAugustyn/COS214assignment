@@ -1,0 +1,102 @@
+\hypertarget{classOrderComponent}{}\doxysection{Order\+Component Class Reference}
+\label{classOrderComponent}\index{OrderComponent@{OrderComponent}}
+
+
+This class acts as the (abstract) Component participant of the Composite design pattern, and represents any node in the resulting tree structure of orders.  
+
+
+
+
+{\ttfamily \#include $<$Order\+Component.\+h$>$}
+
+
+
+Inheritance diagram for Order\+Component\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOrderComponent__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classOrderComponent_aeb7728523848a0c98ea2da6d2dcdcf71}{Order\+Component}} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classOrderComponent_ae34387b6199e6d630b142267bea199ff}{$\sim$\+Order\+Component}} ()
+\begin{DoxyCompactList}\small\item\em virtual destructor \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classOrderComponent_a48279fea0b6c417bd5bcab81f4a0d520}{get\+Price}} ()=0
+\begin{DoxyCompactList}\small\item\em pure virtual getter for price that will be implemented differently in derived classes \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classItemIterator}{Item\+Iterator}} $\ast$ \mbox{\hyperlink{classOrderComponent_a04da1a75781a58182ab459dab14e74d2}{create\+Item\+Iterator}} ()
+\begin{DoxyCompactList}\small\item\em function that creates an \mbox{\hyperlink{classItemIterator}{Item\+Iterator}} object to iterate over the individual Order\+Items in the \mbox{\hyperlink{classOrder}{Order}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class acts as the (abstract) Component participant of the Composite design pattern, and represents any node in the resulting tree structure of orders. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classOrderComponent_aeb7728523848a0c98ea2da6d2dcdcf71}\label{classOrderComponent_aeb7728523848a0c98ea2da6d2dcdcf71}} 
+\index{OrderComponent@{OrderComponent}!OrderComponent@{OrderComponent}}
+\index{OrderComponent@{OrderComponent}!OrderComponent@{OrderComponent}}
+\doxysubsubsection{\texorpdfstring{OrderComponent()}{OrderComponent()}}
+{\footnotesize\ttfamily Order\+Component\+::\+Order\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+default constructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOrderComponent_ae34387b6199e6d630b142267bea199ff}\label{classOrderComponent_ae34387b6199e6d630b142267bea199ff}} 
+\index{OrderComponent@{OrderComponent}!````~OrderComponent@{$\sim$OrderComponent}}
+\index{````~OrderComponent@{$\sim$OrderComponent}!OrderComponent@{OrderComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$OrderComponent()}{~OrderComponent()}}
+{\footnotesize\ttfamily Order\+Component\+::$\sim$\+Order\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+virtual destructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOrderComponent_a04da1a75781a58182ab459dab14e74d2}\label{classOrderComponent_a04da1a75781a58182ab459dab14e74d2}} 
+\index{OrderComponent@{OrderComponent}!createItemIterator@{createItemIterator}}
+\index{createItemIterator@{createItemIterator}!OrderComponent@{OrderComponent}}
+\doxysubsubsection{\texorpdfstring{createItemIterator()}{createItemIterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classItemIterator}{Item\+Iterator}} $\ast$ Order\+Component\+::create\+Item\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+function that creates an \mbox{\hyperlink{classItemIterator}{Item\+Iterator}} object to iterate over the individual Order\+Items in the \mbox{\hyperlink{classOrder}{Order}} 
+
+\begin{DoxyReturn}{Returns}
+a pointer to the \mbox{\hyperlink{classItemIterator}{Item\+Iterator}} object that is created 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOrderComponent_a48279fea0b6c417bd5bcab81f4a0d520}\label{classOrderComponent_a48279fea0b6c417bd5bcab81f4a0d520}} 
+\index{OrderComponent@{OrderComponent}!getPrice@{getPrice}}
+\index{getPrice@{getPrice}!OrderComponent@{OrderComponent}}
+\doxysubsubsection{\texorpdfstring{getPrice()}{getPrice()}}
+{\footnotesize\ttfamily virtual float Order\+Component\+::get\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+pure virtual getter for price that will be implemented differently in derived classes 
+
+\begin{DoxyReturn}{Returns}
+total price of the \mbox{\hyperlink{classOrderComponent}{Order\+Component}} and any of its children 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classOrderItem_adcee3c2356292e129b8d416c1c0191bf}{Order\+Item}}, and \mbox{\hyperlink{classOrder_a4de1d0c213d5286362a97b7138f943e7}{Order}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Order\+Component.\+h\item 
+Order\+Component.\+cpp\end{DoxyCompactItemize}

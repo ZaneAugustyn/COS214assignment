@@ -1,0 +1,6 @@
+<map id="BillPayment" name="BillPayment">
+<area shape="rect" id="node1" title="Represents a method of payment for a bill." alt="" coords="134,5,234,32"/>
+<area shape="rect" id="node2" href="$classCustomerPays.html" title="Represents a bill payment method where a customer pays their bill in the group." alt="" coords="5,80,120,107"/>
+<area shape="rect" id="node3" href="$classMakeTab.html" title="A class for handling tab payments in a group." alt="" coords="145,80,223,107"/>
+<area shape="rect" id="node4" href="$classSplitBill.html" title="Represents a bill payment method where the bill is split among customers." alt="" coords="248,80,320,107"/>
+</map>

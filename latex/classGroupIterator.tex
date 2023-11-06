@@ -1,0 +1,114 @@
+\hypertarget{classGroupIterator}{}\doxysection{Group\+Iterator Class Reference}
+\label{classGroupIterator}\index{GroupIterator@{GroupIterator}}
+
+
+A class for iterating through the components of an \mbox{\hyperlink{classOrder}{Order}}.  
+
+
+
+
+{\ttfamily \#include $<$Group\+Iterator.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGroupIterator_ad1a2316db14508c197c444322f709028}\label{classGroupIterator_ad1a2316db14508c197c444322f709028}} 
+\mbox{\hyperlink{classGroupIterator_ad1a2316db14508c197c444322f709028}{Group\+Iterator}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \mbox{\hyperlink{classGroupIterator}{Group\+Iterator}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGroupIterator_a76c0babe8da534dd43f648eb2bfe77aa}{Group\+Iterator}} (\mbox{\hyperlink{classOrder}{Order}} $\ast$order)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor for \mbox{\hyperlink{classGroupIterator}{Group\+Iterator}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGroupIterator_a596747baa613e44590f96da747dd9af7}\label{classGroupIterator_a596747baa613e44590f96da747dd9af7}} 
+\mbox{\hyperlink{classGroupIterator_a596747baa613e44590f96da747dd9af7}{$\sim$\+Group\+Iterator}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classGroupIterator}{Group\+Iterator}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOrder}{Order}} $\ast$ \mbox{\hyperlink{classGroupIterator_aca05a5ee059dc4f16d9132adeddd0d66}{next}} ()
+\begin{DoxyCompactList}\small\item\em Get the next component in the iteration. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGroupIterator_a46e45c536c54b334d2a88d676e024213}{is\+Done}} ()
+\begin{DoxyCompactList}\small\item\em Check if the iteration is complete. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOrder}{Order}} $\ast$ \mbox{\hyperlink{classGroupIterator_ac7c9dc004a1aa40b11b5b405f008d018}{current\+Item}} ()
+\begin{DoxyCompactList}\small\item\em Get the current component in the iteration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGroupIterator_ae2b7dcf589e9d5b774b54272c7eb1c07}{set\+Order}} (\mbox{\hyperlink{classOrder}{Order}} $\ast$o)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classOrder}{Order}} for which components will be iterated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class for iterating through the components of an \mbox{\hyperlink{classOrder}{Order}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGroupIterator_a76c0babe8da534dd43f648eb2bfe77aa}\label{classGroupIterator_a76c0babe8da534dd43f648eb2bfe77aa}} 
+\index{GroupIterator@{GroupIterator}!GroupIterator@{GroupIterator}}
+\index{GroupIterator@{GroupIterator}!GroupIterator@{GroupIterator}}
+\doxysubsubsection{\texorpdfstring{GroupIterator()}{GroupIterator()}}
+{\footnotesize\ttfamily Group\+Iterator\+::\+Group\+Iterator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOrder}{Order}} $\ast$}]{order }\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor for \mbox{\hyperlink{classGroupIterator}{Group\+Iterator}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em order} & The \mbox{\hyperlink{classOrder}{Order}} for which components will be iterated. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGroupIterator_ac7c9dc004a1aa40b11b5b405f008d018}\label{classGroupIterator_ac7c9dc004a1aa40b11b5b405f008d018}} 
+\index{GroupIterator@{GroupIterator}!currentItem@{currentItem}}
+\index{currentItem@{currentItem}!GroupIterator@{GroupIterator}}
+\doxysubsubsection{\texorpdfstring{currentItem()}{currentItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classOrder}{Order}} $\ast$ Group\+Iterator\+::current\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current component in the iteration. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the current \mbox{\hyperlink{classOrderComponent}{Order\+Component}}, or nullptr if the iteration is complete. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroupIterator_a46e45c536c54b334d2a88d676e024213}\label{classGroupIterator_a46e45c536c54b334d2a88d676e024213}} 
+\index{GroupIterator@{GroupIterator}!isDone@{isDone}}
+\index{isDone@{isDone}!GroupIterator@{GroupIterator}}
+\doxysubsubsection{\texorpdfstring{isDone()}{isDone()}}
+{\footnotesize\ttfamily bool Group\+Iterator\+::is\+Done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if the iteration is complete. 
+
+\begin{DoxyReturn}{Returns}
+True if the iteration is complete, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroupIterator_aca05a5ee059dc4f16d9132adeddd0d66}\label{classGroupIterator_aca05a5ee059dc4f16d9132adeddd0d66}} 
+\index{GroupIterator@{GroupIterator}!next@{next}}
+\index{next@{next}!GroupIterator@{GroupIterator}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classOrder}{Order}} $\ast$ Group\+Iterator\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the next component in the iteration. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the next \mbox{\hyperlink{classOrderComponent}{Order\+Component}}, or nullptr if the iteration is complete. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroupIterator_ae2b7dcf589e9d5b774b54272c7eb1c07}\label{classGroupIterator_ae2b7dcf589e9d5b774b54272c7eb1c07}} 
+\index{GroupIterator@{GroupIterator}!setOrder@{setOrder}}
+\index{setOrder@{setOrder}!GroupIterator@{GroupIterator}}
+\doxysubsubsection{\texorpdfstring{setOrder()}{setOrder()}}
+{\footnotesize\ttfamily void Group\+Iterator\+::set\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOrder}{Order}} $\ast$}]{o }\end{DoxyParamCaption})}
+
+
+
+Set the \mbox{\hyperlink{classOrder}{Order}} for which components will be iterated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & The new \mbox{\hyperlink{classOrder}{Order}} to set for iteration. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Group\+Iterator.\+h\item 
+Group\+Iterator.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,92 @@
+\hypertarget{classLanguageAdapter}{}\doxysection{Language\+Adapter Class Reference}
+\label{classLanguageAdapter}\index{LanguageAdapter@{LanguageAdapter}}
+
+
+Adapter class for translating order items into different languages.  
+
+
+
+
+{\ttfamily \#include $<$Language\+Adapter.\+h$>$}
+
+
+
+Inheritance diagram for Language\+Adapter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classLanguageAdapter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Language\+Adapter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classLanguageAdapter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classLanguageAdapter_ab26b5631c6d7e11b2c0652a9a05304fb}{set\+Order\+Items}} (\mbox{\hyperlink{classOrderItem}{Order\+Item}} $\ast$order\+Item)
+\begin{DoxyCompactList}\small\item\em Set the order item to be translated. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classLanguageAdapter_ac75dfc8966663877699268056035d75f}{get\+Order\+Item\+In\+Language}} (char language)
+\begin{DoxyCompactList}\small\item\em Get the translated order item in the specified language. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Adapter class for translating order items into different languages. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLanguageAdapter_ac75dfc8966663877699268056035d75f}\label{classLanguageAdapter_ac75dfc8966663877699268056035d75f}} 
+\index{LanguageAdapter@{LanguageAdapter}!getOrderItemInLanguage@{getOrderItemInLanguage}}
+\index{getOrderItemInLanguage@{getOrderItemInLanguage}!LanguageAdapter@{LanguageAdapter}}
+\doxysubsubsection{\texorpdfstring{getOrderItemInLanguage()}{getOrderItemInLanguage()}}
+{\footnotesize\ttfamily string Language\+Adapter\+::get\+Order\+Item\+In\+Language (\begin{DoxyParamCaption}\item[{char}]{language }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the translated order item in the specified language. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em language} & The language code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The translated order item. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLanguageTarget_a247792812013234a9edec6f90362326b}{Language\+Target}}.
+
+\mbox{\Hypertarget{classLanguageAdapter_ab26b5631c6d7e11b2c0652a9a05304fb}\label{classLanguageAdapter_ab26b5631c6d7e11b2c0652a9a05304fb}} 
+\index{LanguageAdapter@{LanguageAdapter}!setOrderItems@{setOrderItems}}
+\index{setOrderItems@{setOrderItems}!LanguageAdapter@{LanguageAdapter}}
+\doxysubsubsection{\texorpdfstring{setOrderItems()}{setOrderItems()}}
+{\footnotesize\ttfamily void Language\+Adapter\+::set\+Order\+Items (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOrderItem}{Order\+Item}} $\ast$}]{order\+Item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the order item to be translated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em order\+Item} & The order item to be translated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classLanguageTarget_ab57d8184d60c3f72f6ccff084b6d2938}{Language\+Target}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Language\+Adapter.\+h\item 
+Language\+Adapter.\+cpp\end{DoxyCompactItemize}

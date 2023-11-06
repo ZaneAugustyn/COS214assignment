@@ -1,0 +1,4 @@
+<map id="Order" name="Order">
+<area shape="rect" id="node1" title="Represents an order containing a list of order components." alt="" coords="43,80,101,107"/>
+<area shape="rect" id="node2" href="$classOrderComponent.html" title="This class acts as the (abstract) Component participant of the Composite design pattern,..." alt="" coords="5,5,139,32"/>
+</map>

@@ -1,0 +1,124 @@
+\hypertarget{classHeadChef}{}\doxysection{Head\+Chef Class Reference}
+\label{classHeadChef}\index{HeadChef@{HeadChef}}
+
+
+This class is a Concrete Handler of the Chain of Responsibility Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Head\+Chef.\+h$>$}
+
+
+
+Inheritance diagram for Head\+Chef\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classHeadChef__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Head\+Chef\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{classHeadChef__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHeadChef_ac95033bbe3361915ef93af66d162579b}{Head\+Chef}} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHeadChef_a83869afe7737340aa69aa717a23794b8}{Head\+Chef}} (\mbox{\hyperlink{classPass}{Pass}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHeadChef_aa7fa73357a731b404e8ffc98637ff463}{handle\+Order}} (\mbox{\hyperlink{classPlate}{Plate}} $\ast$plate, vector$<$ \mbox{\hyperlink{classOrderComponent}{Order\+Component}} $\ast$ $>$ order\+Comp) override
+\begin{DoxyCompactList}\small\item\em part of the chain of responsibility design pattern to delegate to handle the order \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classHeadChef_a3a14c3f5a5355b116129d49c83f059e9}{$\sim$\+Head\+Chef}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class is a Concrete Handler of the Chain of Responsibility Pattern. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHeadChef_ac95033bbe3361915ef93af66d162579b}\label{classHeadChef_ac95033bbe3361915ef93af66d162579b}} 
+\index{HeadChef@{HeadChef}!HeadChef@{HeadChef}}
+\index{HeadChef@{HeadChef}!HeadChef@{HeadChef}}
+\doxysubsubsection{\texorpdfstring{HeadChef()}{HeadChef()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Head\+Chef\+::\+Head\+Chef (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+default constructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHeadChef_a83869afe7737340aa69aa717a23794b8}\label{classHeadChef_a83869afe7737340aa69aa717a23794b8}} 
+\index{HeadChef@{HeadChef}!HeadChef@{HeadChef}}
+\index{HeadChef@{HeadChef}!HeadChef@{HeadChef}}
+\doxysubsubsection{\texorpdfstring{HeadChef()}{HeadChef()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Head\+Chef\+::\+Head\+Chef (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPass}{Pass}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the shared pass member variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHeadChef_a3a14c3f5a5355b116129d49c83f059e9}\label{classHeadChef_a3a14c3f5a5355b116129d49c83f059e9}} 
+\index{HeadChef@{HeadChef}!````~HeadChef@{$\sim$HeadChef}}
+\index{````~HeadChef@{$\sim$HeadChef}!HeadChef@{HeadChef}}
+\doxysubsubsection{\texorpdfstring{$\sim$HeadChef()}{~HeadChef()}}
+{\footnotesize\ttfamily Head\+Chef\+::$\sim$\+Head\+Chef (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+destructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHeadChef_aa7fa73357a731b404e8ffc98637ff463}\label{classHeadChef_aa7fa73357a731b404e8ffc98637ff463}} 
+\index{HeadChef@{HeadChef}!handleOrder@{handleOrder}}
+\index{handleOrder@{handleOrder}!HeadChef@{HeadChef}}
+\doxysubsubsection{\texorpdfstring{handleOrder()}{handleOrder()}}
+{\footnotesize\ttfamily void Head\+Chef\+::handle\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlate}{Plate}} $\ast$}]{plate,  }\item[{vector$<$ \mbox{\hyperlink{classOrderComponent}{Order\+Component}} $\ast$ $>$}]{order\+Comp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+part of the chain of responsibility design pattern to delegate to handle the order 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plate} & pass the plate object to which the food will be added \\
+\hline
+{\em order\+Comp} & hold the group order to be handled through the chain \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classChef_a07f0cc4acdbe7c1ac9996eac15aabbb8}{Chef}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Head\+Chef.\+h\item 
+Head\+Chef.\+cpp\end{DoxyCompactItemize}

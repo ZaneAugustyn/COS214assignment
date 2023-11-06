@@ -3,7 +3,12 @@
 
 #include "Floor.h"
 #include "FloorState.h"
-// code here
+
+/**
+ * @class SpaceAvailable
+ * @brief This class represent the SpaceAvailable state of the customer
+*/
+
 class SpaceAvailable : public FloorState 
 {
 private:

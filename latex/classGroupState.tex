@@ -1,0 +1,230 @@
+\hypertarget{classGroupState}{}\doxysection{Group\+State Class Reference}
+\label{classGroupState}\index{GroupState@{GroupState}}
+
+
+This class represents the group\textquotesingle{}s state.  
+
+
+
+
+{\ttfamily \#include $<$Group\+State.\+h$>$}
+
+
+
+Inheritance diagram for Group\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGroupState__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGroupState_abd63266166b098086d0ccebf98b0e269}\label{classGroupState_abd63266166b098086d0ccebf98b0e269}} 
+\mbox{\hyperlink{classGroupState_abd63266166b098086d0ccebf98b0e269}{Group\+State}} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGroupState_a63180bf53078d0a1c89a3a6d08dc4be4}\label{classGroupState_a63180bf53078d0a1c89a3a6d08dc4be4}} 
+virtual \mbox{\hyperlink{classGroupState_a63180bf53078d0a1c89a3a6d08dc4be4}{$\sim$\+Group\+State}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classGroupState_aff4a24d2821282afc2b210fd4248afbd}{Request\+To\+Order}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)=0
+\begin{DoxyCompactList}\small\item\em the State participant of the State pattern that defines the interface for the Request\+To\+Order behaviour of the Concrete\+States \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classGroupState_a3189f08b482dc9d528df5bc1263c6dc9}{Wait\+In\+Queue}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)=0
+\begin{DoxyCompactList}\small\item\em the State participant of the State pattern that defines the interface for the Wait\+In\+Queue behaviour of the Concrete\+States \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classGroupState_a02f7ffc469e8d474ed547a6d0f161096}{Make\+Unhappy}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)=0
+\begin{DoxyCompactList}\small\item\em the State participant of the State pattern that defines the interface for the Make\+Unhappy behaviour of the Concrete\+States \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classGroupState_a6f656d36478df3813b49a643f842dce1}{Make\+Happy}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)=0
+\begin{DoxyCompactList}\small\item\em the State participant of the State pattern that defines the interface for the Make\+Happy behaviour of the Concrete\+States \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classGroupState_abaa00ecfeeff67144884aba156ef6e48}{Request\+Tab}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)=0
+\begin{DoxyCompactList}\small\item\em the State participant of the State pattern that defines the interface for the Request\+Tab behaviour of the Concrete\+States \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classGroupState_ada5a23937d06e17439336af3f9045426}{Request\+Bill}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)=0
+\begin{DoxyCompactList}\small\item\em the State participant of the State pattern that defines the interface for the Request\+Bill behaviour of the Concrete\+States \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classGroupState_a4f27694a8a88c832cbefc0f1be290a95}{Make\+Neutral}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)=0
+\begin{DoxyCompactList}\small\item\em the State participant of the State pattern that defines the interface for the Make\+Neutral behaviour of the Concrete\+States \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classGroupState_a939244f42e418fcb401a98dbabb2109d}{To\+String}} ()=0
+\begin{DoxyCompactList}\small\item\em an interface method to return the Concrete\+State name \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the group\textquotesingle{}s state. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGroupState_a6f656d36478df3813b49a643f842dce1}\label{classGroupState_a6f656d36478df3813b49a643f842dce1}} 
+\index{GroupState@{GroupState}!MakeHappy@{MakeHappy}}
+\index{MakeHappy@{MakeHappy}!GroupState@{GroupState}}
+\doxysubsubsection{\texorpdfstring{MakeHappy()}{MakeHappy()}}
+{\footnotesize\ttfamily virtual void Group\+State\+::\+Make\+Happy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+the State participant of the State pattern that defines the interface for the Make\+Happy behaviour of the Concrete\+States 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group that is requesting the request \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classWaitForTable_a7d92b2419f938df79473977f82c78a8a}{Wait\+For\+Table}}, \mbox{\hyperlink{classUnhappy_a6f53147ef6ca1ecc14793bf59155faaa}{Unhappy}}, \mbox{\hyperlink{classReadyToOrder_a31a86affd853ff880c2823161330e66e}{Ready\+To\+Order}}, \mbox{\hyperlink{classReadyForBill_afda9aff55e1621d33e01298ade1d1029}{Ready\+For\+Bill}}, \mbox{\hyperlink{classPayTab_ae5f10070da346fd3bd8fa9a7d764aa38}{Pay\+Tab}}, \mbox{\hyperlink{classNeutral_a38e3df242a1182e24290fdc65db2a39d}{Neutral}}, and \mbox{\hyperlink{classHappy_a32bafa7adc64d0bc976e97fa197724ac}{Happy}}.
+
+\mbox{\Hypertarget{classGroupState_a4f27694a8a88c832cbefc0f1be290a95}\label{classGroupState_a4f27694a8a88c832cbefc0f1be290a95}} 
+\index{GroupState@{GroupState}!MakeNeutral@{MakeNeutral}}
+\index{MakeNeutral@{MakeNeutral}!GroupState@{GroupState}}
+\doxysubsubsection{\texorpdfstring{MakeNeutral()}{MakeNeutral()}}
+{\footnotesize\ttfamily virtual void Group\+State\+::\+Make\+Neutral (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+the State participant of the State pattern that defines the interface for the Make\+Neutral behaviour of the Concrete\+States 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group that is requesting the request \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classWaitForTable_ab370e72e0e7ba0c2b39b775dba7827e3}{Wait\+For\+Table}}, \mbox{\hyperlink{classUnhappy_aa5d097ffaf12db211c8a2f226f193a64}{Unhappy}}, \mbox{\hyperlink{classReadyToOrder_ae35a0a92e4588617c6517184db9b3e70}{Ready\+To\+Order}}, \mbox{\hyperlink{classReadyForBill_a7ca13e051b87d46c5bb579d4ebf70ec8}{Ready\+For\+Bill}}, \mbox{\hyperlink{classPayTab_a5e1b416ff7bb139500a9624491a3afdc}{Pay\+Tab}}, \mbox{\hyperlink{classNeutral_a8cd1ca651fa2f98427c9526125f18a48}{Neutral}}, and \mbox{\hyperlink{classHappy_a5556023acb0cf05f88e5e6e7816597e5}{Happy}}.
+
+\mbox{\Hypertarget{classGroupState_a02f7ffc469e8d474ed547a6d0f161096}\label{classGroupState_a02f7ffc469e8d474ed547a6d0f161096}} 
+\index{GroupState@{GroupState}!MakeUnhappy@{MakeUnhappy}}
+\index{MakeUnhappy@{MakeUnhappy}!GroupState@{GroupState}}
+\doxysubsubsection{\texorpdfstring{MakeUnhappy()}{MakeUnhappy()}}
+{\footnotesize\ttfamily virtual void Group\+State\+::\+Make\+Unhappy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+the State participant of the State pattern that defines the interface for the Make\+Unhappy behaviour of the Concrete\+States 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group that is requesting the request \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classWaitForTable_aea9823815558ec6931245f37e8093333}{Wait\+For\+Table}}, \mbox{\hyperlink{classUnhappy_a45d3f3ec399fcf1aac65584217d2efb7}{Unhappy}}, \mbox{\hyperlink{classReadyToOrder_a00f8a267439afd75176ea20e7b2e0299}{Ready\+To\+Order}}, \mbox{\hyperlink{classReadyForBill_af92dcac7b92546b28c60d09775d96dd6}{Ready\+For\+Bill}}, \mbox{\hyperlink{classPayTab_a6202e5a2bce8e2922d33b76155732707}{Pay\+Tab}}, \mbox{\hyperlink{classNeutral_acc42fcb473aa4e7a83e672595c852f27}{Neutral}}, and \mbox{\hyperlink{classHappy_ab6b4c8de5abafe23d87959a6e593866e}{Happy}}.
+
+\mbox{\Hypertarget{classGroupState_ada5a23937d06e17439336af3f9045426}\label{classGroupState_ada5a23937d06e17439336af3f9045426}} 
+\index{GroupState@{GroupState}!RequestBill@{RequestBill}}
+\index{RequestBill@{RequestBill}!GroupState@{GroupState}}
+\doxysubsubsection{\texorpdfstring{RequestBill()}{RequestBill()}}
+{\footnotesize\ttfamily virtual void Group\+State\+::\+Request\+Bill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+the State participant of the State pattern that defines the interface for the Request\+Bill behaviour of the Concrete\+States 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group that is requesting the request \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classWaitForTable_a342192a0bc45bf0569e7cf9101bd2e65}{Wait\+For\+Table}}, \mbox{\hyperlink{classUnhappy_ae7bc9577aa5d1b9ec1e9fc28c7e26458}{Unhappy}}, \mbox{\hyperlink{classReadyToOrder_a86323e77b20f06839f5cafa214aa227b}{Ready\+To\+Order}}, \mbox{\hyperlink{classReadyForBill_a345a471bbd46f16393f133a6156be316}{Ready\+For\+Bill}}, \mbox{\hyperlink{classPayTab_a296f26258c86922600fef0d3a12e334c}{Pay\+Tab}}, \mbox{\hyperlink{classNeutral_a8391c5316912ffaeb7920f7a07404c93}{Neutral}}, and \mbox{\hyperlink{classHappy_ac8c75267e85c6860068553d6f03bb26b}{Happy}}.
+
+\mbox{\Hypertarget{classGroupState_abaa00ecfeeff67144884aba156ef6e48}\label{classGroupState_abaa00ecfeeff67144884aba156ef6e48}} 
+\index{GroupState@{GroupState}!RequestTab@{RequestTab}}
+\index{RequestTab@{RequestTab}!GroupState@{GroupState}}
+\doxysubsubsection{\texorpdfstring{RequestTab()}{RequestTab()}}
+{\footnotesize\ttfamily virtual void Group\+State\+::\+Request\+Tab (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+the State participant of the State pattern that defines the interface for the Request\+Tab behaviour of the Concrete\+States 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group that is requesting the request \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classWaitForTable_a5ee94704b73e4cc95cabf4149aa043ad}{Wait\+For\+Table}}, \mbox{\hyperlink{classUnhappy_a1906d4f46aec807ebad0c3caf264803a}{Unhappy}}, \mbox{\hyperlink{classReadyToOrder_a1b64d6f365ce488c9865ebcd81586bde}{Ready\+To\+Order}}, \mbox{\hyperlink{classReadyForBill_ab898636aa3574180f266dc72ba75ed86}{Ready\+For\+Bill}}, \mbox{\hyperlink{classPayTab_a392b0aba7ec959aec4e1c4c4dd7d7619}{Pay\+Tab}}, \mbox{\hyperlink{classNeutral_af2fdd3c654189ce8019da5f8e813ff3f}{Neutral}}, and \mbox{\hyperlink{classHappy_a04d83e661bb37ab788e92a6de1ea0c90}{Happy}}.
+
+\mbox{\Hypertarget{classGroupState_aff4a24d2821282afc2b210fd4248afbd}\label{classGroupState_aff4a24d2821282afc2b210fd4248afbd}} 
+\index{GroupState@{GroupState}!RequestToOrder@{RequestToOrder}}
+\index{RequestToOrder@{RequestToOrder}!GroupState@{GroupState}}
+\doxysubsubsection{\texorpdfstring{RequestToOrder()}{RequestToOrder()}}
+{\footnotesize\ttfamily virtual void Group\+State\+::\+Request\+To\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+the State participant of the State pattern that defines the interface for the Request\+To\+Order behaviour of the Concrete\+States 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group that is requesting the request \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classWaitForTable_a0dcd6b406d825ea1a79358d2360b3cb2}{Wait\+For\+Table}}, \mbox{\hyperlink{classUnhappy_ae4362c6cb2f32e8c737e0b2867042889}{Unhappy}}, \mbox{\hyperlink{classReadyToOrder_a1209c0871e15c935040a555da4c86bbd}{Ready\+To\+Order}}, \mbox{\hyperlink{classReadyForBill_ab21ccd63234cb579a0448a7117643f59}{Ready\+For\+Bill}}, \mbox{\hyperlink{classPayTab_a1be3589a911ec6298ffed8000b37ddb3}{Pay\+Tab}}, \mbox{\hyperlink{classNeutral_a9d836cb440b856580901bfc9566e62b6}{Neutral}}, and \mbox{\hyperlink{classHappy_a7f4abd75e3ce0125c5a0407195ac1af0}{Happy}}.
+
+\mbox{\Hypertarget{classGroupState_a939244f42e418fcb401a98dbabb2109d}\label{classGroupState_a939244f42e418fcb401a98dbabb2109d}} 
+\index{GroupState@{GroupState}!ToString@{ToString}}
+\index{ToString@{ToString}!GroupState@{GroupState}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily virtual string Group\+State\+::\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+an interface method to return the Concrete\+State name 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classWaitForTable_a2fa2bdb516d8edb99da7c5f66eb1810c}{Wait\+For\+Table}}, \mbox{\hyperlink{classUnhappy_af01e8ec3aa6f8292d08a1646c63ef112}{Unhappy}}, \mbox{\hyperlink{classReadyToOrder_a20e0d6b78c39621589d168aa8c1a97c8}{Ready\+To\+Order}}, \mbox{\hyperlink{classReadyForBill_a95fb3422fdd692aa3388ba7a3a704284}{Ready\+For\+Bill}}, \mbox{\hyperlink{classPayTab_a39abb95606954eadebf8ed2c50d13ba9}{Pay\+Tab}}, \mbox{\hyperlink{classNeutral_aa59fa4909feaa9c520afe145b2624cb8}{Neutral}}, and \mbox{\hyperlink{classHappy_a10d5d5d291f86af4f4c0492823f36a80}{Happy}}.
+
+\mbox{\Hypertarget{classGroupState_a3189f08b482dc9d528df5bc1263c6dc9}\label{classGroupState_a3189f08b482dc9d528df5bc1263c6dc9}} 
+\index{GroupState@{GroupState}!WaitInQueue@{WaitInQueue}}
+\index{WaitInQueue@{WaitInQueue}!GroupState@{GroupState}}
+\doxysubsubsection{\texorpdfstring{WaitInQueue()}{WaitInQueue()}}
+{\footnotesize\ttfamily virtual void Group\+State\+::\+Wait\+In\+Queue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+the State participant of the State pattern that defines the interface for the Wait\+In\+Queue behaviour of the Concrete\+States 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group that is requesting the request \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classWaitForTable_a871bf1c474f0c960bf9f412f61647283}{Wait\+For\+Table}}, \mbox{\hyperlink{classUnhappy_a4db8a93496c48c139bff678ad6b495ef}{Unhappy}}, \mbox{\hyperlink{classReadyToOrder_a3a3663ca2b295cdbbd2d8d6344c4a8ff}{Ready\+To\+Order}}, \mbox{\hyperlink{classReadyForBill_abfc3ca0aef894f27a50e24ccf297c922}{Ready\+For\+Bill}}, \mbox{\hyperlink{classPayTab_a3ce906767fdc0c1d10b179ad44fca717}{Pay\+Tab}}, \mbox{\hyperlink{classNeutral_a60b9f2d240e704d6477bfc01b5a371a9}{Neutral}}, and \mbox{\hyperlink{classHappy_a80c77e2e86da052ebec1571c4dcee030}{Happy}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Group\+State.\+h\item 
+Group\+State.\+cpp\end{DoxyCompactItemize}
