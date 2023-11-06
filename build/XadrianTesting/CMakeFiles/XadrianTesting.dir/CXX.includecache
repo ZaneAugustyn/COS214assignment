@@ -863,10 +863,10 @@ vector
 /home/xadrian/COS 214/GroupProject/COS214assignment/Order.h
 ../PrintBill.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
-../OrderPrint.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.h
 ../Marginals.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
+../OrderPrint.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.h
 ../HeaderBill.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.h
 ../FooterBill.h
