@@ -7,7 +7,7 @@
 Unhappy::Unhappy()
 {
     stateName_ = "Unhappy";
-    cout << "State changed to " << stateName_ << endl;
+    cout << "Group emotional state changed to " << stateName_ << endl;
 }
 
 Unhappy::~Unhappy()

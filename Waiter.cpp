@@ -78,7 +78,6 @@ void Waiter::update(Group* group)
     }
     else if(group->GetState()->ToString() == "ReadyToOrder"){
         //display menu to customers and get order
-
         LanguageAdapter* la = new LanguageAdapter();
         Order* groupOrder = new Order(group);
 
@@ -98,7 +97,7 @@ void Waiter::update(Group* group)
 
             while (!iterator->isDone()) {
                 cout << messages[i] << endl;
-                i++;
+               
                 cout << (iterator->currentItem())->formatOrder(la, languageChoice);
                 int choice;
                 cin >> choice;
@@ -114,8 +113,8 @@ void Waiter::update(Group* group)
 
                     cin >> choice;
                 }
-                //cout << dynamic_cast<OrderItem*>((iterator->currentItem())->getItems()[choice - 1])->getName();
-                //customerOrder->addComponent(new Tomato());
+                i++;
+        
                 customerOrder->addComponent((iterator->currentItem())->getItems()[choice - 1]);
                 iterator->next(); 
             }
@@ -123,14 +122,6 @@ void Waiter::update(Group* group)
             groupOrder->addComponent(customerOrder);
 
         }
-
-        // GroupIterator* it = groupOrder->createIterator();
-        // while(!it->isDone()){
-        //     cout << "loop" << endl;
-        //     cout << it->currentItem()->getPrice() << endl;
-        //     it->next();
-        // }
-
         pass_->addOrder(groupOrder);
     }
     else if(group->GetState()->ToString() == "ReadyForBill"){
@@ -167,27 +158,3 @@ void Waiter::update(Group* group)
     }
     
 }
-
-// void Waiter::addGroup(Group* group)
-// {
-//   if(group == nullptr)
-//     {
-//         return;
-//     }
-
-//     myGroups.push_back(group);
-// }
-
-// void Waiter::removeGroup(Group* group)
-// {
-//   if(group != nullptr)
-//     {
-//         for (auto it = myGroups.begin(); it != myGroups.end(); ++it) {
-//                 if (*it == group) {
-//                     // Remove the element from the vector
-//                     myGroups.erase(it);
-//                     break;  // Break to avoid further unnecessary iterations
-//                 }
-//             }
-//     }
-// }

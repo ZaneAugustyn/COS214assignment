@@ -115,7 +115,7 @@ string Group::CurrentState()
 void Group::addWaiter(Waiter* waiter)
 {
     waiter_ = waiter;
-    cout<<"Group has added "<<waiter->getName()<<" as their waiter."<<endl;
+    cout<<"Group has been assigned "<<waiter->getName()<<" as their waiter."<<endl;
 }
 
 void Group::removeWaiter(Waiter* waiter)

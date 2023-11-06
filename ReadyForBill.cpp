@@ -6,7 +6,7 @@
 ReadyForBill::ReadyForBill()
 {
     stateName_ = "ReadyForBill";
-    cout << "State changed to " << stateName_ << endl;
+    cout << "Group state changed to " << stateName_ << endl;
 }
 
 ReadyForBill::~ReadyForBill()

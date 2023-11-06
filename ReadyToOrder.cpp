@@ -7,7 +7,7 @@
 ReadyToOrder::ReadyToOrder()
 {
     stateName_ = "ReadyToOrder";
-    cout << "State changed to " << stateName_ << endl;
+    cout << "Group state changed to " << stateName_ << endl;
 }
 
 ReadyToOrder::~ReadyToOrder()

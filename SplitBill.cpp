@@ -53,10 +53,9 @@ void SplitBill::Pay(Group* group)
             }
             else{
                 cout << "Please enter a valid choice for the tip." << endl;
+                cin >> choice;
             }
         }
-
-        
 
         paid(pay);
         tipWaiter(tip);
@@ -66,7 +65,7 @@ void SplitBill::Pay(Group* group)
     cout << "Thank you for the full payment of " << this->TotalPaid + this->TipAmount << endl;
     if (this->TipAmount > 0)
     {
-        cout << "Thank you fot the tip" << endl;
+        cout << "Thank you for the tip" << endl;
     }
 }
 
