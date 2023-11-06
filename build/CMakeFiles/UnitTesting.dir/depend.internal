@@ -13,9 +13,15 @@ CMakeFiles/UnitTesting.dir/Bill.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/BillPayment.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Customer.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/CustomerPays.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Group.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/MakeTab.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/PayTab.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/SplitBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Tab.h
 CMakeFiles/UnitTesting.dir/BillPayment.cpp.o
@@ -38,18 +44,23 @@ CMakeFiles/UnitTesting.dir/Chef.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/Colleague.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Customer.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/CustomerPays.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Group.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/GroupIterator.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/ItemIterator.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/LanguageAdapter.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/LanguageTarget.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/MakeTab.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Order.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderComponent.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderItem.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Pass.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Plate.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/SplitBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Tab.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Waiter.h
@@ -72,10 +83,15 @@ CMakeFiles/UnitTesting.dir/Colleague.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/Colleague.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Customer.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/CustomerPays.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Group.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/MakeTab.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Pass.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/SplitBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Tab.h
 CMakeFiles/UnitTesting.dir/Customer.cpp.o
@@ -104,14 +120,19 @@ CMakeFiles/UnitTesting.dir/DrinkChef.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/CustomerPays.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/DrinkChef.cpp
  /home/xadrian/COS 214/GroupProject/COS214assignment/DrinkChef.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Group.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/ItemIterator.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/MakeTab.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderComponent.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderItem.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Pass.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Plate.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/SplitBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Tab.h
 CMakeFiles/UnitTesting.dir/Floor.cpp.o
@@ -149,16 +170,21 @@ CMakeFiles/UnitTesting.dir/GarnishChef.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/Colleague.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Customer.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/CustomerPays.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/GarnishChef.cpp
  /home/xadrian/COS 214/GroupProject/COS214assignment/GarnishChef.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Group.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/ItemIterator.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/MakeTab.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderComponent.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderItem.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Pass.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Plate.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/SplitBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Tab.h
 CMakeFiles/UnitTesting.dir/Group.cpp.o
@@ -167,15 +193,20 @@ CMakeFiles/UnitTesting.dir/Group.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/Colleague.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Customer.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/CustomerPays.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Group.cpp
  /home/xadrian/COS 214/GroupProject/COS214assignment/Group.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/LanguageAdapter.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/LanguageTarget.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/MakeTab.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderComponent.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderItem.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Pass.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/SplitBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Tab.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Unhappy.h
@@ -211,16 +242,21 @@ CMakeFiles/UnitTesting.dir/HeadChef.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/Colleague.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Customer.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/CustomerPays.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Group.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/HeadChef.cpp
  /home/xadrian/COS 214/GroupProject/COS214assignment/HeadChef.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/ItemIterator.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/MakeTab.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderComponent.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderItem.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Pass.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Plate.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/SplitBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Tab.h
 CMakeFiles/UnitTesting.dir/ItemIterator.cpp.o
@@ -272,17 +308,22 @@ CMakeFiles/UnitTesting.dir/MeatChef.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/Colleague.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Customer.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/CustomerPays.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Group.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/ItemIterator.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/MakeTab.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/MeatChef.cpp
  /home/xadrian/COS 214/GroupProject/COS214assignment/MeatChef.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderComponent.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderItem.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Pass.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Patty.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Plate.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/SplitBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Tab.h
 CMakeFiles/UnitTesting.dir/Milkshake.cpp.o
@@ -308,18 +349,23 @@ CMakeFiles/UnitTesting.dir/Order.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/Colleague.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Customer.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/CustomerPays.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Group.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/GroupIterator.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/ItemIterator.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/LanguageAdapter.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/LanguageTarget.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/MakeTab.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Order.cpp
  /home/xadrian/COS 214/GroupProject/COS214assignment/Order.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderComponent.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderItem.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Pass.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/SplitBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Tab.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Waiter.h
@@ -338,19 +384,24 @@ CMakeFiles/UnitTesting.dir/Pass.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/Colleague.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Customer.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/CustomerPays.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Group.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/GroupIterator.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/ItemIterator.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/LanguageAdapter.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/LanguageTarget.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/MakeTab.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Order.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderComponent.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderItem.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Pass.cpp
  /home/xadrian/COS 214/GroupProject/COS214assignment/Pass.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Plate.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/SplitBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Tab.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Waiter.h
@@ -413,14 +464,19 @@ CMakeFiles/UnitTesting.dir/SidesChef.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/Colleague.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Customer.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/CustomerPays.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Group.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/ItemIterator.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/MakeTab.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderComponent.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderItem.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Pass.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Plate.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/SidesChef.cpp
  /home/xadrian/COS 214/GroupProject/COS214assignment/SidesChef.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/SplitBill.h
@@ -491,20 +547,25 @@ CMakeFiles/UnitTesting.dir/Waiter.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/Customer.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/CustomerPays.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Drink.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Garnish.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Group.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/GroupIterator.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/LanguageAdapter.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/LanguageTarget.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Lettuce.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/MakeTab.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Milkshake.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Order.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderComponent.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderItem.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Pass.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Patty.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Salad.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Side.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Soda.h

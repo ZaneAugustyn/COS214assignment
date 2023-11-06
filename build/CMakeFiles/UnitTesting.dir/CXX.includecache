@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/xadrian/COS 214/GroupProject/COS214assignment/BeefPatty.cpp
-BeefPatty.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/BeefPatty.h
-
 /home/xadrian/COS 214/GroupProject/COS214assignment/BeefPatty.h
 Patty.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Patty.h
@@ -17,6 +13,14 @@ Patty.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Bill.cpp
 Bill.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Bill.h
+PayTab.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/PayTab.h
+OrderPrint.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.h
+FooterBill.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.h
+HeaderBill.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.h
 
 /home/xadrian/COS 214/GroupProject/COS214assignment/Bill.h
 Customer.h
@@ -31,20 +35,22 @@ CustomerPays.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/CustomerPays.h
 MakeTab.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/MakeTab.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/BillPayment.cpp
-BillPayment.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/BillPayment.h
+PrintBill.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
+OrderPrint.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.h
+Marginals.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
+FooterBill.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.h
+HeaderBill.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.h
 
 /home/xadrian/COS 214/GroupProject/COS214assignment/BillPayment.h
 Customer.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Customer.h
 Group.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Group.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/Bun.cpp
-Bun.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Bun.h
 
 /home/xadrian/COS 214/GroupProject/COS214assignment/Bun.h
 OrderItem.h
@@ -78,17 +84,9 @@ Colleague.h
 ItemIterator.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/ItemIterator.h
 
-/home/xadrian/COS 214/GroupProject/COS214assignment/ChickenPatty.cpp
-ChickenPatty.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/ChickenPatty.h
-
 /home/xadrian/COS 214/GroupProject/COS214assignment/ChickenPatty.h
 Patty.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Patty.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/Chips.cpp
-Chips.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Chips.h
 
 /home/xadrian/COS 214/GroupProject/COS214assignment/Chips.h
 Side.h
@@ -102,19 +100,11 @@ Colleague.h
 Pass.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Pass.h
 
-/home/xadrian/COS 214/GroupProject/COS214assignment/Customer.cpp
-Customer.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Customer.h
-
 /home/xadrian/COS 214/GroupProject/COS214assignment/Customer.h
 Tab.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Tab.h
 string
 -
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/CustomerPays.cpp
-CustomerPays.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/CustomerPays.h
 
 /home/xadrian/COS 214/GroupProject/COS214assignment/CustomerPays.h
 BillPayment.h
@@ -123,10 +113,6 @@ Group.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Group.h
 iostream
 -
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/Drink.cpp
-Drink.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Drink.h
 
 /home/xadrian/COS 214/GroupProject/COS214assignment/Drink.h
 OrderItem.h
@@ -146,51 +132,11 @@ iostream
 Chef.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Chef.h
 
-/home/xadrian/COS 214/GroupProject/COS214assignment/Floor.cpp
-Floor.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Floor.h
-Full.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Full.h
-SpaceAvailable.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/SpaceAvailable.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/Floor.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.h
+Marginals.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
 iostream
 -
-vector
--
-FloorState.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/FloorState.h
-Group.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Group.h
-SpaceAvailable.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/SpaceAvailable.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/FloorState.cpp
-FloorState.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/FloorState.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/FloorState.h
-array
--
-iostream
--
-string
--
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/Full.cpp
-Full.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Full.h
-Floor.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Floor.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/Full.h
-FloorState.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/FloorState.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/Garnish.cpp
-Garnish.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Garnish.h
 
 /home/xadrian/COS 214/GroupProject/COS214assignment/Garnish.h
 OrderItem.h
@@ -234,44 +180,16 @@ GroupState.h
 Customer.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Customer.h
 
-/home/xadrian/COS 214/GroupProject/COS214assignment/GroupIterator.cpp
-GroupIterator.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/GroupIterator.h
-Order.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Order.h
-
 /home/xadrian/COS 214/GroupProject/COS214assignment/GroupIterator.h
 OrderComponent.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/OrderComponent.h
 vector
 -
 
-/home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.cpp
-GroupState.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
-
 /home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
 Group.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Group.h
 string
--
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/Happy.cpp
-Happy.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Happy.h
-ReadyToOrder.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/ReadyToOrder.h
-Unhappy.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Unhappy.h
-ReadyForBill.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/ReadyForBill.h
-Neutral.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Neutral.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/Happy.h
-GroupState.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
-iostream
 -
 
 /home/xadrian/COS 214/GroupProject/COS214assignment/HeadChef.cpp
@@ -290,29 +208,19 @@ vector
 Chef.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Chef.h
 
-/home/xadrian/COS 214/GroupProject/COS214assignment/ItemIterator.cpp
-ItemIterator.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/ItemIterator.h
-Order.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Order.h
-OrderComponent.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/OrderComponent.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.h
+Marginals.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
+iostream
+-
 
 /home/xadrian/COS 214/GroupProject/COS214assignment/ItemIterator.h
 vector
 -
 
-/home/xadrian/COS 214/GroupProject/COS214assignment/LanguageAdapter.cpp
-LanguageAdapter.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/LanguageAdapter.h
-OrderItem.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/OrderItem.h
-
 /home/xadrian/COS 214/GroupProject/COS214assignment/LanguageAdapter.h
 LanguageTarget.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/LanguageTarget.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/LanguageTarget.cpp
 
 /home/xadrian/COS 214/GroupProject/COS214assignment/LanguageTarget.h
 string
@@ -322,35 +230,9 @@ map
 OrderItem.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/OrderItem.h
 
-/home/xadrian/COS 214/GroupProject/COS214assignment/Lettuce.cpp
-Lettuce.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Lettuce.h
-
 /home/xadrian/COS 214/GroupProject/COS214assignment/Lettuce.h
 Garnish.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Garnish.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/MaitreD.cpp
-MaitreD.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/MaitreD.h
-cmath
--
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/MaitreD.h
-FloorState.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/FloorState.h
-Floor.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Floor.h
-Group.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Group.h
-Full.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Full.h
-SpaceAvailable.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/SpaceAvailable.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/MakeTab.cpp
-MakeTab.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/MakeTab.h
 
 /home/xadrian/COS 214/GroupProject/COS214assignment/MakeTab.h
 iostream
@@ -361,6 +243,12 @@ Group.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Group.h
 Tab.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Tab.h
+
+/home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
+PrintBill.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
+iostream
+-
 
 /home/xadrian/COS 214/GroupProject/COS214assignment/MeatChef.cpp
 MeatChef.h
@@ -378,31 +266,9 @@ Chef.h
 ChickenPatty.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/ChickenPatty.h
 
-/home/xadrian/COS 214/GroupProject/COS214assignment/Milkshake.cpp
-Milkshake.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Milkshake.h
-
 /home/xadrian/COS 214/GroupProject/COS214assignment/Milkshake.h
 Drink.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Drink.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/Neutral.cpp
-Neutral.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Neutral.h
-Happy.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Happy.h
-ReadyToOrder.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/ReadyToOrder.h
-Unhappy.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Unhappy.h
-ReadyForBill.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/ReadyForBill.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/Neutral.h
-GroupState.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
-iostream
--
 
 /home/xadrian/COS 214/GroupProject/COS214assignment/Order.cpp
 Order.h
@@ -434,22 +300,18 @@ LanguageTarget.h
 vector
 -
 
-/home/xadrian/COS 214/GroupProject/COS214assignment/OrderComponent.cpp
-OrderComponent.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/OrderComponent.h
-ItemIterator.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/ItemIterator.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/OrderComponent.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/OrderItem.cpp
-OrderItem.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/OrderItem.h
 
 /home/xadrian/COS 214/GroupProject/COS214assignment/OrderItem.h
 OrderComponent.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/OrderComponent.h
 string
+-
+
+/home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.h
+PrintBill.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
+iostream
 -
 
 /home/xadrian/COS 214/GroupProject/COS214assignment/Pass.cpp
@@ -474,81 +336,25 @@ iostream
 Bill.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Bill.h
 
-/home/xadrian/COS 214/GroupProject/COS214assignment/Patty.cpp
-Patty.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Patty.h
-
 /home/xadrian/COS 214/GroupProject/COS214assignment/Patty.h
 OrderItem.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/OrderItem.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/PayTab.cpp
-PayTab.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/PayTab.h
 
 /home/xadrian/COS 214/GroupProject/COS214assignment/PayTab.h
 GroupState.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
 iostream
 -
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/Plate.cpp
-iostream
--
-Plate.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Plate.h
-Order.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Order.h
-OrderItem.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/OrderItem.h
 
 /home/xadrian/COS 214/GroupProject/COS214assignment/Plate.h
 vector
 -
 
-/home/xadrian/COS 214/GroupProject/COS214assignment/ReadyForBill.cpp
-ReadyForBill.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/ReadyForBill.h
-Happy.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Happy.h
-Unhappy.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Unhappy.h
-Neutral.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Neutral.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/ReadyForBill.h
-GroupState.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
 iostream
 -
 
-/home/xadrian/COS 214/GroupProject/COS214assignment/ReadyToOrder.cpp
-ReadyToOrder.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/ReadyToOrder.h
-Happy.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Happy.h
-Unhappy.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Unhappy.h
-ReadyForBill.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/ReadyForBill.h
-Neutral.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Neutral.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/ReadyToOrder.h
-GroupState.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
-iostream
--
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/Salad.cpp
-Salad.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Salad.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/Salad.h
-Side.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Side.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/Side.cpp
 Side.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Side.h
 
@@ -570,27 +376,9 @@ iostream
 Chef.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Chef.h
 
-/home/xadrian/COS 214/GroupProject/COS214assignment/Soda.cpp
-Soda.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Soda.h
-
 /home/xadrian/COS 214/GroupProject/COS214assignment/Soda.h
 Drink.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Drink.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/SpaceAvailable.cpp
-SpaceAvailable.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/SpaceAvailable.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/SpaceAvailable.h
-Floor.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Floor.h
-FloorState.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/FloorState.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/SplitBill.cpp
-SplitBill.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/SplitBill.h
 
 /home/xadrian/COS 214/GroupProject/COS214assignment/SplitBill.h
 BillPayment.h
@@ -600,55 +388,13 @@ Group.h
 iostream
 -
 
-/home/xadrian/COS 214/GroupProject/COS214assignment/Tab.cpp
-Tab.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Tab.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/Tab.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/Tomato.cpp
-Tomato.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Tomato.h
 
 /home/xadrian/COS 214/GroupProject/COS214assignment/Tomato.h
 Garnish.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Garnish.h
 
-/home/xadrian/COS 214/GroupProject/COS214assignment/Unhappy.cpp
-Unhappy.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Unhappy.h
-ReadyToOrder.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/ReadyToOrder.h
-Happy.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Happy.h
-ReadyForBill.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/ReadyForBill.h
-Neutral.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Neutral.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/Unhappy.h
-GroupState.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
-iostream
--
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/WaitForTable.cpp
-WaitForTable.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/WaitForTable.h
-ReadyToOrder.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/ReadyToOrder.h
-Happy.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Happy.h
-Unhappy.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Unhappy.h
-PayTab.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/PayTab.h
-Neutral.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/Neutral.h
-GroupState.h
-/home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
-
-/home/xadrian/COS 214/GroupProject/COS214assignment/WaitForTable.h
 GroupState.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
 iostream

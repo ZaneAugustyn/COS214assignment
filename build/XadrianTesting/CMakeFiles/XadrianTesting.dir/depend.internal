@@ -37,6 +37,7 @@ XadrianTesting/CMakeFiles/XadrianTesting.dir/XadrianTesting.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/DrinkChef.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Floor.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/FloorState.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Full.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Garnish.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/GarnishChef.h
@@ -45,21 +46,25 @@ XadrianTesting/CMakeFiles/XadrianTesting.dir/XadrianTesting.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Happy.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/HeadChef.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/ItemIterator.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/LanguageAdapter.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/LanguageTarget.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Lettuce.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/MaitreD.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/MakeTab.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/MeatChef.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Milkshake.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Neutral.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Order.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderComponent.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderItem.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Pass.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Patty.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/PayTab.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/ReadyForBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/ReadyToOrder.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Salad.h

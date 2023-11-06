@@ -443,6 +443,16 @@ CustomerPays.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/CustomerPays.h
 MakeTab.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/MakeTab.h
+PrintBill.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
+OrderPrint.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.h
+Marginals.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
+FooterBill.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.h
+HeaderBill.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.h
 
 /home/xadrian/COS 214/GroupProject/COS214assignment/BillPayment.h
 Customer.h
@@ -516,6 +526,12 @@ iostream
 string
 -
 
+/home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.h
+Marginals.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
+iostream
+-
+
 /home/xadrian/COS 214/GroupProject/COS214assignment/Full.h
 FloorState.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/FloorState.h
@@ -564,6 +580,12 @@ vector
 Chef.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Chef.h
 
+/home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.h
+Marginals.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
+iostream
+-
+
 /home/xadrian/COS 214/GroupProject/COS214assignment/ItemIterator.h
 vector
 -
@@ -606,6 +628,12 @@ Group.h
 Tab.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Tab.h
 
+/home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
+PrintBill.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
+iostream
+-
+
 /home/xadrian/COS 214/GroupProject/COS214assignment/MeatChef.h
 Chef.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Chef.h
@@ -640,6 +668,12 @@ OrderComponent.h
 string
 -
 
+/home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.h
+PrintBill.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
+iostream
+-
+
 /home/xadrian/COS 214/GroupProject/COS214assignment/Pass.h
 vector
 -
@@ -655,6 +689,10 @@ OrderItem.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/PayTab.h
 GroupState.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/GroupState.h
+iostream
+-
+
+/home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
 iostream
 -
 
@@ -823,6 +861,16 @@ vector
 /home/xadrian/COS 214/GroupProject/COS214assignment/Neutral.h
 ../Order.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/Order.h
+../PrintBill.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
+../OrderPrint.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.h
+../Marginals.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
+../HeaderBill.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.h
+../FooterBill.h
+/home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.h
 gtest/gtest.h
 /home/xadrian/COS 214/GroupProject/COS214assignment/XadrianTesting/gtest/gtest.h
 

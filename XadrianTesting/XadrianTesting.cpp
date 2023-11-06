@@ -44,6 +44,11 @@
 #include "../Unhappy.h"
 #include "../Neutral.h"
 #include "../Order.h"
+#include "../PrintBill.h"
+#include "../OrderPrint.h"
+#include "../Marginals.h"
+#include "../HeaderBill.h"
+#include "../FooterBill.h"
 
 #include "gtest/gtest.h"
 
@@ -86,8 +91,8 @@ TEST(BillPayment, billPayment)
     //     floor->getCurrentState()->getName());;
 }
 
-TEST(basicFUnctionalityMaitreD, MaitreD)
-{
+// TEST(basicFUnctionalityMaitreD, MaitreD)
+// {
     // initMaitreD();
     // //tesing calculateTablesNeeded()
     // EXPECT_EQ(
@@ -163,4 +168,4 @@ TEST(basicFUnctionalityMaitreD, MaitreD)
     // EXPECT_EQ(
     //     0,
     //     size);
-}
+// }

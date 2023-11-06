@@ -1,5 +1,9 @@
 #include "Bill.h"
 #include "PayTab.h"
+#include "OrderPrint.h"
+// #include "Marginals.h"
+#include "FooterBill.h"
+#include "HeaderBill.h"
 
 
 Bill::Bill(float t): Total(t)
