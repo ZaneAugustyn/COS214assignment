@@ -22,13 +22,24 @@ void MakeTab::Pay(Group* group)
         customer = (group->getCustomers())[count];
         cout << customer->getName() << ", would you like to take the tab? (y/n)" << endl;
         cin >> choice;
-        if (choice == 'y')
-        {
-            Tab* t1 = createTab(getTotal());    
-            customer->setTab(t1);    
-            TabAllocated = true;
+        bool invalid = true;
+        while(invalid){
+            if (choice == 'y' || choice == 'Y' || choice == 'n' || choice == 'N')
+            {
+                invalid = false;
+                if (choice == 'y' || choice == 'Y')
+                {
+                    Tab* t1 = createTab(getTotal());    
+                    customer->setTab(t1);    
+                    TabAllocated = true;
+                }
+            }
+            else{
+                cout << "Please enter a valid choice." << endl;
+            }
         }
-        count++;
+        
+        ++count;
     }
 }
 
