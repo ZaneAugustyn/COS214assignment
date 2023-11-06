@@ -45,8 +45,11 @@ void SplitBill::Pay(Group* group)
             if (choice == 'y' || choice == 'Y' || choice == 'n' || choice == 'N')
             {
                 invalid = false;
-                cout << "Please enter the amount you'd like to tip the waiter." << endl;
-                cin >> tip;
+                if(choice == 'y' || choice == 'Y')
+                {
+                    cout << "Please enter the amount you'd like to tip the waiter." << endl;
+                    cin >> tip;
+                }
             }
             else{
                 cout << "Please enter a valid choice for the tip." << endl;
