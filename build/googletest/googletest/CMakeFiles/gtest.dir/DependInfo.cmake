@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/cait/COS214assignment/COS214assignment-2/googletest/googletest/src/gtest-all.cc" "googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o" "gcc" "googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d"
+  "/mnt/c/Users/keanu/OneDrive/Documents/University/BSc Computer Science/Year 2/Semester 2/COS214/Practicals/Project/Code/googletest/googletest/src/gtest-all.cc" "googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o" "gcc" "googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d"
   )
 
 # Targets to which this target links.

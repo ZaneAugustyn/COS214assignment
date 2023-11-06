@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /home/cait/COS214assignment/COS214assignment-2/googletest/googletest/include -isystem /home/cait/COS214assignment/COS214assignment-2/googletest/googletest
+CXX_INCLUDES = -isystem "/mnt/c/Users/keanu/OneDrive/Documents/University/BSc Computer Science/Year 2/Semester 2/COS214/Practicals/Project/Code/googletest/googletest/include" -isystem "/mnt/c/Users/keanu/OneDrive/Documents/University/BSc Computer Science/Year 2/Semester 2/COS214/Practicals/Project/Code/googletest/googletest"
 
 CXX_FLAGS = -g -fPIC -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14
 

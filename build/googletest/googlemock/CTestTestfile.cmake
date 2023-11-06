@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/cait/COS214assignment/COS214assignment-2/googletest/googlemock
-# Build directory: /home/cait/COS214assignment/COS214assignment-2/build/googletest/googlemock
+# Source directory: /mnt/c/Users/keanu/OneDrive/Documents/University/BSc Computer Science/Year 2/Semester 2/COS214/Practicals/Project/Code/googletest/googlemock
+# Build directory: /mnt/c/Users/keanu/OneDrive/Documents/University/BSc Computer Science/Year 2/Semester 2/COS214/Practicals/Project/Code/build/googletest/googlemock
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

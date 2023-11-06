@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cait/COS214assignment/COS214assignment-2
+CMAKE_SOURCE_DIR = "/mnt/c/Users/keanu/OneDrive/Documents/University/BSc Computer Science/Year 2/Semester 2/COS214/Practicals/Project/Code"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cait/COS214assignment/COS214assignment-2/build
+CMAKE_BINARY_DIR = "/mnt/c/Users/keanu/OneDrive/Documents/University/BSc Computer Science/Year 2/Semester 2/COS214/Practicals/Project/Code/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,8 +77,8 @@ test/fast: test
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles /home/cait/COS214assignment/COS214assignment-2/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/keanu/OneDrive/Documents/University/BSc Computer Science/Year 2/Semester 2/COS214/Practicals/Project/Code/build/CMakeFiles" "/mnt/c/Users/keanu/OneDrive/Documents/University/BSc Computer Science/Year 2/Semester 2/COS214/Practicals/Project/Code/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/keanu/OneDrive/Documents/University/BSc Computer Science/Year 2/Semester 2/COS214/Practicals/Project/Code/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -237,30 +237,17 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
-# Target rules for targets named WaiterTests
+# Target rules for targets named OrderTests
 
 # Build rule for target.
-WaiterTests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 WaiterTests
-.PHONY : WaiterTests
+OrderTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 OrderTests
+.PHONY : OrderTests
 
 # fast build rule for target.
-WaiterTests/fast:
-	$(MAKE) $(MAKESILENT) -f CaitlinTesting/CMakeFiles/WaiterTests.dir/build.make CaitlinTesting/CMakeFiles/WaiterTests.dir/build
-.PHONY : WaiterTests/fast
-
-#=============================================================================
-# Target rules for targets named AdapterTests
-
-# Build rule for target.
-AdapterTests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AdapterTests
-.PHONY : AdapterTests
-
-# fast build rule for target.
-AdapterTests/fast:
-	$(MAKE) $(MAKESILENT) -f adapterTest/CMakeFiles/AdapterTests.dir/build.make adapterTest/CMakeFiles/AdapterTests.dir/build
-.PHONY : AdapterTests/fast
+OrderTests/fast:
+	$(MAKE) $(MAKESILENT) -f KeanuTesting/CMakeFiles/OrderTests.dir/build.make KeanuTesting/CMakeFiles/OrderTests.dir/build
+.PHONY : OrderTests/fast
 
 BeefPatty.o: BeefPatty.cpp.o
 .PHONY : BeefPatty.o
@@ -1499,9 +1486,8 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... AdapterTests"
+	@echo "... OrderTests"
 	@echo "... UnitTesting"
-	@echo "... WaiterTests"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"

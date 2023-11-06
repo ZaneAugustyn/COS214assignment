@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.16)
 
-set(This <put name>) # set project name
+set(This OrderTests) # set project name
 
 set(Sources
-    <put name>
+    OrderTest.cpp
 )
 
 add_executable(${This} ${Sources}) # add executable - making program from sources
