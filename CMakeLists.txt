@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.22.1)
+cmake_minimum_required(VERSION 3.16)
 
 set(This UnitTesting) # set project name
 
@@ -121,5 +121,10 @@ set(Sources
 
 add_library(${This} STATIC ${Sources} ${Headers}) # create static library
 
-add_subdirectory(waiterTest) # add test directory
-add_subdirectory(adapterTest) # add test directory
+add_subdirectory(CaitlinTesting) # add test directory
+add_subdirectory(MignonTesting) # add test directory
+add_subdirectory(JohaneTesting) # add test directory
+add_subdirectory(ZaneTesting) # add test directory
+add_subdirectory(XadrianTesting) # add test directory
+add_subdirectory(LaylaTesting) # add test directory
+add_subdirectory(KeanuTesting) # add test directory

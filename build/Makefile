@@ -246,7 +246,7 @@ WaiterTests: cmake_check_build_system
 
 # fast build rule for target.
 WaiterTests/fast:
-	$(MAKE) $(MAKESILENT) -f waiterTest/CMakeFiles/WaiterTests.dir/build.make waiterTest/CMakeFiles/WaiterTests.dir/build
+	$(MAKE) $(MAKESILENT) -f CaitlinTesting/CMakeFiles/WaiterTests.dir/build.make CaitlinTesting/CMakeFiles/WaiterTests.dir/build
 .PHONY : WaiterTests/fast
 
 #=============================================================================

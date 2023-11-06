@@ -16,7 +16,7 @@
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.22.1"
+						"string" : "3.16"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -80,15 +80,15 @@
 					]
 				},
 				{
-					"build" : "waiterTest",
-					"jsonFile" : "directory-waiterTest-Debug-43b031aaefb8a28d379b.json",
+					"build" : "CaitlinTesting",
+					"jsonFile" : "directory-CaitlinTesting-Debug-a943ff50d3cad8a8e6ef.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.22.1"
+						"string" : "3.16"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
-					"source" : "waiterTest",
+					"source" : "CaitlinTesting",
 					"targetIndexes" : 
 					[
 						2
@@ -99,7 +99,7 @@
 					"jsonFile" : "directory-adapterTest-Debug-994c538d75d695652615.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.22.1"
+						"string" : "3.16"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
@@ -193,8 +193,8 @@
 				},
 				{
 					"directoryIndex" : 4,
-					"id" : "WaiterTests::@c63d01c2f69ea0b0a4b1",
-					"jsonFile" : "target-WaiterTests-Debug-dbe892d30575f043c3da.json",
+					"id" : "WaiterTests::@b375f2a26d4b6f8571e2",
+					"jsonFile" : "target-WaiterTests-Debug-fce820d99c66d5975ef8.json",
 					"name" : "WaiterTests",
 					"projectIndex" : 0
 				},

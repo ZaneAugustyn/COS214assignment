@@ -275,9 +275,9 @@
   "file": "/home/cait/COS214assignment/COS214assignment-2/googletest/googletest/src/gtest_main.cc"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-2/build/waiterTest",
-  "command": "/usr/bin/g++  -isystem /home/cait/COS214assignment/COS214assignment-2/googletest/googletest/include -isystem /home/cait/COS214assignment/COS214assignment-2/googletest/googletest -g -fPIE -std=gnu++14 -o CMakeFiles/WaiterTests.dir/WaiterTest.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/waiterTest/WaiterTest.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-2/waiterTest/WaiterTest.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build/CaitlinTesting",
+  "command": "/usr/bin/g++  -isystem /home/cait/COS214assignment/COS214assignment-2/googletest/googletest/include -isystem /home/cait/COS214assignment/COS214assignment-2/googletest/googletest -g -fPIE -std=gnu++14 -o CMakeFiles/WaiterTests.dir/WaiterTest.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/CaitlinTesting/WaiterTest.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/CaitlinTesting/WaiterTest.cpp"
 },
 {
   "directory": "/home/cait/COS214assignment/COS214assignment-2/build/adapterTest",

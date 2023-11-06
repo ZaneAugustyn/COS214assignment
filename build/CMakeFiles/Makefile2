@@ -65,22 +65,37 @@ CMAKE_BINARY_DIR = /home/cait/COS214assignment/COS214assignment-2/build
 # The main recursive "all" target.
 all: CMakeFiles/UnitTesting.dir/all
 all: googletest/all
-all: waiterTest/all
+all: CaitlinTesting/all
 all: adapterTest/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: googletest/preinstall
-preinstall: waiterTest/preinstall
+preinstall: CaitlinTesting/preinstall
 preinstall: adapterTest/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/UnitTesting.dir/clean
 clean: googletest/clean
-clean: waiterTest/clean
+clean: CaitlinTesting/clean
 clean: adapterTest/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory CaitlinTesting
+
+# Recursive "all" directory target.
+CaitlinTesting/all: CaitlinTesting/CMakeFiles/WaiterTests.dir/all
+.PHONY : CaitlinTesting/all
+
+# Recursive "preinstall" directory target.
+CaitlinTesting/preinstall:
+.PHONY : CaitlinTesting/preinstall
+
+# Recursive "clean" directory target.
+CaitlinTesting/clean: CaitlinTesting/CMakeFiles/WaiterTests.dir/clean
+.PHONY : CaitlinTesting/clean
 
 #=============================================================================
 # Directory level rules for directory adapterTest
@@ -147,21 +162,6 @@ googletest/googletest/preinstall:
 googletest/googletest/clean: googletest/googletest/CMakeFiles/gtest.dir/clean
 googletest/googletest/clean: googletest/googletest/CMakeFiles/gtest_main.dir/clean
 .PHONY : googletest/googletest/clean
-
-#=============================================================================
-# Directory level rules for directory waiterTest
-
-# Recursive "all" directory target.
-waiterTest/all: waiterTest/CMakeFiles/WaiterTests.dir/all
-.PHONY : waiterTest/all
-
-# Recursive "preinstall" directory target.
-waiterTest/preinstall:
-.PHONY : waiterTest/preinstall
-
-# Recursive "clean" directory target.
-waiterTest/clean: waiterTest/CMakeFiles/WaiterTests.dir/clean
-.PHONY : waiterTest/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/UnitTesting.dir
@@ -295,32 +295,32 @@ googletest/googletest/CMakeFiles/gtest_main.dir/clean:
 .PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/clean
 
 #=============================================================================
-# Target rules for target waiterTest/CMakeFiles/WaiterTests.dir
+# Target rules for target CaitlinTesting/CMakeFiles/WaiterTests.dir
 
 # All Build rule for target.
-waiterTest/CMakeFiles/WaiterTests.dir/all: CMakeFiles/UnitTesting.dir/all
-waiterTest/CMakeFiles/WaiterTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
-waiterTest/CMakeFiles/WaiterTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
-	$(MAKE) $(MAKESILENT) -f waiterTest/CMakeFiles/WaiterTests.dir/build.make waiterTest/CMakeFiles/WaiterTests.dir/depend
-	$(MAKE) $(MAKESILENT) -f waiterTest/CMakeFiles/WaiterTests.dir/build.make waiterTest/CMakeFiles/WaiterTests.dir/build
+CaitlinTesting/CMakeFiles/WaiterTests.dir/all: CMakeFiles/UnitTesting.dir/all
+CaitlinTesting/CMakeFiles/WaiterTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+CaitlinTesting/CMakeFiles/WaiterTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CaitlinTesting/CMakeFiles/WaiterTests.dir/build.make CaitlinTesting/CMakeFiles/WaiterTests.dir/depend
+	$(MAKE) $(MAKESILENT) -f CaitlinTesting/CMakeFiles/WaiterTests.dir/build.make CaitlinTesting/CMakeFiles/WaiterTests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles --progress-num=55,56 "Built target WaiterTests"
-.PHONY : waiterTest/CMakeFiles/WaiterTests.dir/all
+.PHONY : CaitlinTesting/CMakeFiles/WaiterTests.dir/all
 
 # Build rule for subdir invocation for target.
-waiterTest/CMakeFiles/WaiterTests.dir/rule: cmake_check_build_system
+CaitlinTesting/CMakeFiles/WaiterTests.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles 58
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 waiterTest/CMakeFiles/WaiterTests.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CaitlinTesting/CMakeFiles/WaiterTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles 0
-.PHONY : waiterTest/CMakeFiles/WaiterTests.dir/rule
+.PHONY : CaitlinTesting/CMakeFiles/WaiterTests.dir/rule
 
 # Convenience name for target.
-WaiterTests: waiterTest/CMakeFiles/WaiterTests.dir/rule
+WaiterTests: CaitlinTesting/CMakeFiles/WaiterTests.dir/rule
 .PHONY : WaiterTests
 
 # clean rule for target.
-waiterTest/CMakeFiles/WaiterTests.dir/clean:
-	$(MAKE) $(MAKESILENT) -f waiterTest/CMakeFiles/WaiterTests.dir/build.make waiterTest/CMakeFiles/WaiterTests.dir/clean
-.PHONY : waiterTest/CMakeFiles/WaiterTests.dir/clean
+CaitlinTesting/CMakeFiles/WaiterTests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CaitlinTesting/CMakeFiles/WaiterTests.dir/build.make CaitlinTesting/CMakeFiles/WaiterTests.dir/clean
+.PHONY : CaitlinTesting/CMakeFiles/WaiterTests.dir/clean
 
 #=============================================================================
 # Target rules for target adapterTest/CMakeFiles/AdapterTests.dir

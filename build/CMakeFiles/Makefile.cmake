@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
+  "../CaitlinTesting/CMakeLists.txt"
   "../adapterTest/CMakeLists.txt"
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
@@ -21,7 +22,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../googletest/googletest/cmake/gtest.pc.in"
   "../googletest/googletest/cmake/gtest_main.pc.in"
   "../googletest/googletest/cmake/internal_utils.cmake"
-  "../waiterTest/CMakeLists.txt"
   "/usr/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
@@ -73,7 +73,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "googletest/googletest/generated/gtest.pc"
   "googletest/googletest/generated/gtest_main.pc"
   "googletest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "waiterTest/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "CaitlinTesting/CMakeFiles/CMakeDirectoryInformation.cmake"
   "adapterTest/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -84,6 +84,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "googletest/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   "googletest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
-  "waiterTest/CMakeFiles/WaiterTests.dir/DependInfo.cmake"
+  "CaitlinTesting/CMakeFiles/WaiterTests.dir/DependInfo.cmake"
   "adapterTest/CMakeFiles/AdapterTests.dir/DependInfo.cmake"
   )

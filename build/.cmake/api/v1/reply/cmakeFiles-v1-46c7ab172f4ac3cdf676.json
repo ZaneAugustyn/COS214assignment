@@ -259,7 +259,7 @@
 			"path" : "googletest/googletest/cmake/gtest_main.pc.in"
 		},
 		{
-			"path" : "waiterTest/CMakeLists.txt"
+			"path" : "CaitlinTesting/CMakeLists.txt"
 		},
 		{
 			"path" : "adapterTest/CMakeLists.txt"
