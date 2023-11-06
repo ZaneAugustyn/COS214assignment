@@ -323,11 +323,12 @@ void facade::option5()
 
 void facade::option6()
 {
-    cout<<"Option6 done";
+    cout << PINK << endl << "Thank you for visiting Le McDonalds! We hope to see you again soon :)" << RESET << endl << endl;
 }
 
 void facade::initBasic()
 {
+    cout << PINK << endl << "Welcome to Le McDonalds resaurant simulation" << RESET << endl << endl;
     floor = new Floor();
 
     // create the pass
