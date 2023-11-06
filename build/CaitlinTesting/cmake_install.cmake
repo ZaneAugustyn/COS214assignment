@@ -1,4 +1,4 @@
-# Install script for directory: /home/cait/COS214assignment/COS214assignment-2/CaitlinTesting
+# Install script for directory: /mnt/c/Users/johan/OneDrive/Desktop/214Project/CaitlinTesting
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

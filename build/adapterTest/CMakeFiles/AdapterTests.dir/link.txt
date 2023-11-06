@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/AdapterTests.dir/AdapterTest.cpp.o -o AdapterTests  ../lib/libgtest_main.a ../libUnitTesting.a ../lib/libgtest.a 

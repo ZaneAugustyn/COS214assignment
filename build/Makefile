@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cait/COS214assignment/COS214assignment-2
+CMAKE_SOURCE_DIR = /mnt/c/Users/johan/OneDrive/Desktop/214Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cait/COS214assignment/COS214assignment-2/build
+CMAKE_BINARY_DIR = /mnt/c/Users/johan/OneDrive/Desktop/214Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,8 +77,8 @@ test/fast: test
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles /home/cait/COS214assignment/COS214assignment-2/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/johan/OneDrive/Desktop/214Project/build/CMakeFiles /mnt/c/Users/johan/OneDrive/Desktop/214Project/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/johan/OneDrive/Desktop/214Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -250,17 +250,17 @@ WaiterTests/fast:
 .PHONY : WaiterTests/fast
 
 #=============================================================================
-# Target rules for targets named AdapterTests
+# Target rules for targets named IteratorTests
 
 # Build rule for target.
-AdapterTests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AdapterTests
-.PHONY : AdapterTests
+IteratorTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 IteratorTests
+.PHONY : IteratorTests
 
 # fast build rule for target.
-AdapterTests/fast:
-	$(MAKE) $(MAKESILENT) -f adapterTest/CMakeFiles/AdapterTests.dir/build.make adapterTest/CMakeFiles/AdapterTests.dir/build
-.PHONY : AdapterTests/fast
+IteratorTests/fast:
+	$(MAKE) $(MAKESILENT) -f JohaneTesting/CMakeFiles/IteratorTests.dir/build.make JohaneTesting/CMakeFiles/IteratorTests.dir/build
+.PHONY : IteratorTests/fast
 
 BeefPatty.o: BeefPatty.cpp.o
 .PHONY : BeefPatty.o
@@ -1499,7 +1499,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... AdapterTests"
+	@echo "... IteratorTests"
 	@echo "... UnitTesting"
 	@echo "... WaiterTests"
 	@echo "... gmock"

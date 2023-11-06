@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.16)
 
-set(This <put name>) # set project name
+set(This IteratorTests) # set project name
 
 set(Sources
-    <put name>
+    IteratorTests.cpp
 )
 
 add_executable(${This} ${Sources}) # add executable - making program from sources
@@ -11,6 +11,7 @@ add_executable(${This} ${Sources}) # add executable - making program from source
 target_link_libraries(${This} PUBLIC
     gtest_main # provided by googletest
     UnitTesting
+
 )
 
 add_test(

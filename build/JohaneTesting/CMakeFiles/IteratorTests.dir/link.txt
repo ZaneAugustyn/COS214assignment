@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/IteratorTests.dir/IteratorTests.cpp.o -o IteratorTests  ../lib/libgtest_main.a ../libUnitTesting.a ../lib/libgtest.a 

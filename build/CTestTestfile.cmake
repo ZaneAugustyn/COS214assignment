@@ -1,9 +1,9 @@
 # CMake generated Testfile for 
-# Source directory: /home/cait/COS214assignment/COS214assignment-2
-# Build directory: /home/cait/COS214assignment/COS214assignment-2/build
+# Source directory: /mnt/c/Users/johan/OneDrive/Desktop/214Project
+# Build directory: /mnt/c/Users/johan/OneDrive/Desktop/214Project/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("googletest")
 subdirs("CaitlinTesting")
-subdirs("adapterTest")
+subdirs("JohaneTesting")

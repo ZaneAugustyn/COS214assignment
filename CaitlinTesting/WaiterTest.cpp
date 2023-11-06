@@ -73,7 +73,7 @@ void createMockGroup(GroupState *state)
 void createMockMenu()
 {
     global_Menu = new Order(NULL);
-    // meats
+    // maeats
     Order *meats = new Order(NULL);
     meats->addComponent(new ChickenPatty(true));
     meats->addComponent(new BeefPatty());

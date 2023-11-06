@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cait/COS214assignment/COS214assignment-2
+CMAKE_SOURCE_DIR = /mnt/c/Users/johan/OneDrive/Desktop/214Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cait/COS214assignment/COS214assignment-2/build
+CMAKE_BINARY_DIR = /mnt/c/Users/johan/OneDrive/Desktop/214Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,8 +77,8 @@ test/fast: test
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/cait/COS214assignment/COS214assignment-2/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles /home/cait/COS214assignment/COS214assignment-2/build/CaitlinTesting//CMakeFiles/progress.marks
-	cd /home/cait/COS214assignment/COS214assignment-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CaitlinTesting/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles 0
+	cd /mnt/c/Users/johan/OneDrive/Desktop/214Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/johan/OneDrive/Desktop/214Project/build/CMakeFiles /mnt/c/Users/johan/OneDrive/Desktop/214Project/build/CaitlinTesting//CMakeFiles/progress.marks
+	cd /mnt/c/Users/johan/OneDrive/Desktop/214Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CaitlinTesting/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/johan/OneDrive/Desktop/214Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/cait/COS214assignment/COS214assignment-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CaitlinTesting/clean
+	cd /mnt/c/Users/johan/OneDrive/Desktop/214Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CaitlinTesting/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/cait/COS214assignment/COS214assignment-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CaitlinTesting/preinstall
+	cd /mnt/c/Users/johan/OneDrive/Desktop/214Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CaitlinTesting/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/cait/COS214assignment/COS214assignment-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CaitlinTesting/preinstall
+	cd /mnt/c/Users/johan/OneDrive/Desktop/214Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CaitlinTesting/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/cait/COS214assignment/COS214assignment-2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/c/Users/johan/OneDrive/Desktop/214Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 CaitlinTesting/CMakeFiles/WaiterTests.dir/rule:
-	cd /home/cait/COS214assignment/COS214assignment-2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CaitlinTesting/CMakeFiles/WaiterTests.dir/rule
+	cd /mnt/c/Users/johan/OneDrive/Desktop/214Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CaitlinTesting/CMakeFiles/WaiterTests.dir/rule
 .PHONY : CaitlinTesting/CMakeFiles/WaiterTests.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ WaiterTests: CaitlinTesting/CMakeFiles/WaiterTests.dir/rule
 
 # fast build rule for target.
 WaiterTests/fast:
-	cd /home/cait/COS214assignment/COS214assignment-2/build && $(MAKE) $(MAKESILENT) -f CaitlinTesting/CMakeFiles/WaiterTests.dir/build.make CaitlinTesting/CMakeFiles/WaiterTests.dir/build
+	cd /mnt/c/Users/johan/OneDrive/Desktop/214Project/build && $(MAKE) $(MAKESILENT) -f CaitlinTesting/CMakeFiles/WaiterTests.dir/build.make CaitlinTesting/CMakeFiles/WaiterTests.dir/build
 .PHONY : WaiterTests/fast
 
 WaiterTest.o: WaiterTest.cpp.o
@@ -190,7 +190,7 @@ WaiterTest.o: WaiterTest.cpp.o
 
 # target to build an object file
 WaiterTest.cpp.o:
-	cd /home/cait/COS214assignment/COS214assignment-2/build && $(MAKE) $(MAKESILENT) -f CaitlinTesting/CMakeFiles/WaiterTests.dir/build.make CaitlinTesting/CMakeFiles/WaiterTests.dir/WaiterTest.cpp.o
+	cd /mnt/c/Users/johan/OneDrive/Desktop/214Project/build && $(MAKE) $(MAKESILENT) -f CaitlinTesting/CMakeFiles/WaiterTests.dir/build.make CaitlinTesting/CMakeFiles/WaiterTests.dir/WaiterTest.cpp.o
 .PHONY : WaiterTest.cpp.o
 
 WaiterTest.i: WaiterTest.cpp.i
@@ -198,7 +198,7 @@ WaiterTest.i: WaiterTest.cpp.i
 
 # target to preprocess a source file
 WaiterTest.cpp.i:
-	cd /home/cait/COS214assignment/COS214assignment-2/build && $(MAKE) $(MAKESILENT) -f CaitlinTesting/CMakeFiles/WaiterTests.dir/build.make CaitlinTesting/CMakeFiles/WaiterTests.dir/WaiterTest.cpp.i
+	cd /mnt/c/Users/johan/OneDrive/Desktop/214Project/build && $(MAKE) $(MAKESILENT) -f CaitlinTesting/CMakeFiles/WaiterTests.dir/build.make CaitlinTesting/CMakeFiles/WaiterTests.dir/WaiterTest.cpp.i
 .PHONY : WaiterTest.cpp.i
 
 WaiterTest.s: WaiterTest.cpp.s
@@ -206,7 +206,7 @@ WaiterTest.s: WaiterTest.cpp.s
 
 # target to generate assembly for a file
 WaiterTest.cpp.s:
-	cd /home/cait/COS214assignment/COS214assignment-2/build && $(MAKE) $(MAKESILENT) -f CaitlinTesting/CMakeFiles/WaiterTests.dir/build.make CaitlinTesting/CMakeFiles/WaiterTests.dir/WaiterTest.cpp.s
+	cd /mnt/c/Users/johan/OneDrive/Desktop/214Project/build && $(MAKE) $(MAKESILENT) -f CaitlinTesting/CMakeFiles/WaiterTests.dir/build.make CaitlinTesting/CMakeFiles/WaiterTests.dir/WaiterTest.cpp.s
 .PHONY : WaiterTest.cpp.s
 
 # Help Target
@@ -237,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/cait/COS214assignment/COS214assignment-2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/c/Users/johan/OneDrive/Desktop/214Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
