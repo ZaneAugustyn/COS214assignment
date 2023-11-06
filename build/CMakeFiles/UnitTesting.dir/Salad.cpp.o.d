@@ -1,10 +1,10 @@
 CMakeFiles/UnitTesting.dir/Salad.cpp.o: \
- /home/cait/COS214assignment/COS214assignment-1/Salad.cpp \
+ /home/cait/COS214assignment/COS214assignment-2/Salad.cpp \
  /usr/include/stdc-predef.h \
- /home/cait/COS214assignment/COS214assignment-1/Salad.h \
- /home/cait/COS214assignment/COS214assignment-1/Side.h \
- /home/cait/COS214assignment/COS214assignment-1/OrderItem.h \
- /home/cait/COS214assignment/COS214assignment-1/OrderComponent.h \
+ /home/cait/COS214assignment/COS214assignment-2/Salad.h \
+ /home/cait/COS214assignment/COS214assignment-2/Side.h \
+ /home/cait/COS214assignment/COS214assignment-2/OrderItem.h \
+ /home/cait/COS214assignment/COS214assignment-2/OrderComponent.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

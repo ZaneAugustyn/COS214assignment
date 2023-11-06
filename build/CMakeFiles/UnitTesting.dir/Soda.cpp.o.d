@@ -1,10 +1,10 @@
 CMakeFiles/UnitTesting.dir/Soda.cpp.o: \
- /home/cait/COS214assignment/COS214assignment-1/Soda.cpp \
+ /home/cait/COS214assignment/COS214assignment-2/Soda.cpp \
  /usr/include/stdc-predef.h \
- /home/cait/COS214assignment/COS214assignment-1/Soda.h \
- /home/cait/COS214assignment/COS214assignment-1/Drink.h \
- /home/cait/COS214assignment/COS214assignment-1/OrderItem.h \
- /home/cait/COS214assignment/COS214assignment-1/OrderComponent.h \
+ /home/cait/COS214assignment/COS214assignment-2/Soda.h \
+ /home/cait/COS214assignment/COS214assignment-2/Drink.h \
+ /home/cait/COS214assignment/COS214assignment-2/OrderItem.h \
+ /home/cait/COS214assignment/COS214assignment-2/OrderComponent.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

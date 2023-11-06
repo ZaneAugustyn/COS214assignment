@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cait/COS214assignment/COS214assignment-1
+CMAKE_SOURCE_DIR = /home/cait/COS214assignment/COS214assignment-2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cait/COS214assignment/COS214assignment-1/build
+CMAKE_BINARY_DIR = /home/cait/COS214assignment/COS214assignment-2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-1/build/CMakeFiles /home/cait/COS214assignment/COS214assignment-1/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles /home/cait/COS214assignment/COS214assignment-2/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-1/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cait/COS214assignment/COS214assignment-2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -237,17 +237,30 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
-# Target rules for targets named UnitTests
+# Target rules for targets named WaiterTests
 
 # Build rule for target.
-UnitTests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 UnitTests
-.PHONY : UnitTests
+WaiterTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 WaiterTests
+.PHONY : WaiterTests
 
 # fast build rule for target.
-UnitTests/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/UnitTests.dir/build.make test/CMakeFiles/UnitTests.dir/build
-.PHONY : UnitTests/fast
+WaiterTests/fast:
+	$(MAKE) $(MAKESILENT) -f waiterTest/CMakeFiles/WaiterTests.dir/build.make waiterTest/CMakeFiles/WaiterTests.dir/build
+.PHONY : WaiterTests/fast
+
+#=============================================================================
+# Target rules for targets named AdapterTests
+
+# Build rule for target.
+AdapterTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AdapterTests
+.PHONY : AdapterTests
+
+# fast build rule for target.
+AdapterTests/fast:
+	$(MAKE) $(MAKESILENT) -f adapterTest/CMakeFiles/AdapterTests.dir/build.make adapterTest/CMakeFiles/AdapterTests.dir/build
+.PHONY : AdapterTests/fast
 
 BeefPatty.o: BeefPatty.cpp.o
 .PHONY : BeefPatty.o
@@ -1486,8 +1499,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... AdapterTests"
 	@echo "... UnitTesting"
-	@echo "... UnitTests"
+	@echo "... WaiterTests"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"

@@ -1,282 +1,287 @@
 [
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Floor.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Floor.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Floor.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Floor.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Floor.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Floor.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/FloorState.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/FloorState.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/FloorState.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/FloorState.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/FloorState.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/FloorState.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Full.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Full.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Full.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Full.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Full.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Full.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/SpaceAvailable.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/SpaceAvailable.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/SpaceAvailable.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/SpaceAvailable.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/SpaceAvailable.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/SpaceAvailable.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/MaitreD.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/MaitreD.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/MaitreD.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/MaitreD.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/MaitreD.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/MaitreD.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/OrderComponent.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/OrderComponent.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/OrderComponent.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/OrderComponent.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/OrderComponent.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/OrderComponent.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/OrderItem.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/OrderItem.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/OrderItem.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/OrderItem.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/OrderItem.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/OrderItem.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Group.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Group.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Group.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Group.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Group.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Group.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Order.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Order.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Order.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Order.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Order.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Order.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/GroupState.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/GroupState.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/GroupState.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/GroupState.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/GroupState.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/GroupState.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Bun.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Bun.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Bun.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Bun.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Bun.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Bun.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Patty.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Patty.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Patty.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Patty.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Patty.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Patty.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Lettuce.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Lettuce.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Lettuce.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Lettuce.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Lettuce.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Lettuce.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Tomato.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Tomato.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Tomato.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Tomato.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Tomato.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Tomato.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/BeefPatty.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/BeefPatty.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/BeefPatty.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/BeefPatty.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/BeefPatty.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/BeefPatty.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/ChickenPatty.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/ChickenPatty.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/ChickenPatty.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/ChickenPatty.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/ChickenPatty.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/ChickenPatty.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Side.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Side.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Side.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Side.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Side.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Side.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Salad.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Salad.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Salad.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Salad.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Salad.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Salad.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Chips.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Chips.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Chips.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Chips.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Chips.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Chips.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Drink.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Drink.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Drink.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Drink.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Drink.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Drink.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Soda.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Soda.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Soda.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Soda.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Soda.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Soda.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Milkshake.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Milkshake.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Milkshake.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Milkshake.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Milkshake.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Milkshake.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Garnish.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Garnish.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Garnish.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Garnish.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Garnish.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Garnish.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Chef.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Chef.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Chef.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Chef.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Chef.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Chef.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/HeadChef.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/HeadChef.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/HeadChef.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/HeadChef.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/HeadChef.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/HeadChef.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/MeatChef.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/MeatChef.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/MeatChef.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/MeatChef.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/MeatChef.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/MeatChef.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/DrinkChef.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/DrinkChef.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/DrinkChef.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/DrinkChef.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/DrinkChef.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/DrinkChef.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/SidesChef.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/SidesChef.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/SidesChef.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/SidesChef.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/SidesChef.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/SidesChef.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/GarnishChef.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/GarnishChef.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/GarnishChef.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/GarnishChef.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/GarnishChef.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/GarnishChef.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Pass.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Pass.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Pass.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Pass.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Pass.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Pass.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Colleague.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Colleague.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Colleague.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Colleague.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Colleague.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Colleague.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Waiter.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Waiter.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Waiter.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Waiter.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Waiter.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Waiter.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/WaitForTable.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/WaitForTable.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/WaitForTable.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/WaitForTable.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/WaitForTable.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/WaitForTable.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Bill.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Bill.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Bill.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Bill.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Bill.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Bill.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/BillPayment.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/BillPayment.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/BillPayment.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/BillPayment.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/BillPayment.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/BillPayment.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Customer.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Customer.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Customer.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Customer.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Customer.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Customer.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/CustomerPays.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/CustomerPays.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/CustomerPays.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/CustomerPays.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/CustomerPays.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/CustomerPays.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Happy.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Happy.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Happy.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Happy.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Happy.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Happy.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/MakeTab.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/MakeTab.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/MakeTab.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/MakeTab.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/MakeTab.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/MakeTab.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/PayTab.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/PayTab.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/PayTab.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/PayTab.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/PayTab.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/PayTab.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/ReadyForBill.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/ReadyForBill.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/ReadyForBill.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/ReadyForBill.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/ReadyForBill.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/ReadyForBill.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/ReadyToOrder.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/ReadyToOrder.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/ReadyToOrder.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/ReadyToOrder.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/ReadyToOrder.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/ReadyToOrder.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/SplitBill.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/SplitBill.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/SplitBill.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/SplitBill.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/SplitBill.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/SplitBill.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Tab.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Tab.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Tab.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Tab.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Tab.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Tab.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Unhappy.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Unhappy.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Unhappy.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Unhappy.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Unhappy.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Unhappy.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/ItemIterator.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/ItemIterator.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/ItemIterator.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/ItemIterator.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/ItemIterator.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/ItemIterator.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/GroupIterator.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/GroupIterator.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/GroupIterator.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/GroupIterator.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/GroupIterator.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/GroupIterator.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/LanguageAdapter.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/LanguageAdapter.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/LanguageAdapter.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/LanguageAdapter.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/LanguageAdapter.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/LanguageAdapter.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/LanguageTarget.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/LanguageTarget.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/LanguageTarget.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/LanguageTarget.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/LanguageTarget.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/LanguageTarget.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Plate.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Plate.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Plate.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Plate.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Plate.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Plate.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build",
-  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Neutral.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/Neutral.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/Neutral.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build",
+  "command": "/usr/bin/g++   -g -fPIC -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Neutral.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/Neutral.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/Neutral.cpp"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build/googletest/googlemock",
-  "command": "/usr/bin/g++  -I/home/cait/COS214assignment/COS214assignment-1/googletest/googlemock/include -I/home/cait/COS214assignment/COS214assignment-1/googletest/googlemock -isystem /home/cait/COS214assignment/COS214assignment-1/googletest/googletest/include -isystem /home/cait/COS214assignment/COS214assignment-1/googletest/googletest -g -fPIC -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14 -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /home/cait/COS214assignment/COS214assignment-1/googletest/googlemock/src/gmock-all.cc",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/googletest/googlemock/src/gmock-all.cc"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build/googletest/googlemock",
+  "command": "/usr/bin/g++  -I/home/cait/COS214assignment/COS214assignment-2/googletest/googlemock/include -I/home/cait/COS214assignment/COS214assignment-2/googletest/googlemock -isystem /home/cait/COS214assignment/COS214assignment-2/googletest/googletest/include -isystem /home/cait/COS214assignment/COS214assignment-2/googletest/googletest -g -fPIC -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14 -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /home/cait/COS214assignment/COS214assignment-2/googletest/googlemock/src/gmock-all.cc",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/googletest/googlemock/src/gmock-all.cc"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build/googletest/googlemock",
-  "command": "/usr/bin/g++  -isystem /home/cait/COS214assignment/COS214assignment-1/googletest/googlemock/include -isystem /home/cait/COS214assignment/COS214assignment-1/googletest/googlemock -isystem /home/cait/COS214assignment/COS214assignment-1/googletest/googletest/include -isystem /home/cait/COS214assignment/COS214assignment-1/googletest/googletest -g -fPIC -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14 -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/cait/COS214assignment/COS214assignment-1/googletest/googlemock/src/gmock_main.cc",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/googletest/googlemock/src/gmock_main.cc"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build/googletest/googlemock",
+  "command": "/usr/bin/g++  -isystem /home/cait/COS214assignment/COS214assignment-2/googletest/googlemock/include -isystem /home/cait/COS214assignment/COS214assignment-2/googletest/googlemock -isystem /home/cait/COS214assignment/COS214assignment-2/googletest/googletest/include -isystem /home/cait/COS214assignment/COS214assignment-2/googletest/googletest -g -fPIC -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14 -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/cait/COS214assignment/COS214assignment-2/googletest/googlemock/src/gmock_main.cc",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/googletest/googlemock/src/gmock_main.cc"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build/googletest/googletest",
-  "command": "/usr/bin/g++  -I/home/cait/COS214assignment/COS214assignment-1/googletest/googletest/include -I/home/cait/COS214assignment/COS214assignment-1/googletest/googletest -g -fPIC -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14 -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/cait/COS214assignment/COS214assignment-1/googletest/googletest/src/gtest-all.cc",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/googletest/googletest/src/gtest-all.cc"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build/googletest/googletest",
+  "command": "/usr/bin/g++  -I/home/cait/COS214assignment/COS214assignment-2/googletest/googletest/include -I/home/cait/COS214assignment/COS214assignment-2/googletest/googletest -g -fPIC -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14 -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/cait/COS214assignment/COS214assignment-2/googletest/googletest/src/gtest-all.cc",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/googletest/googletest/src/gtest-all.cc"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build/googletest/googletest",
-  "command": "/usr/bin/g++  -isystem /home/cait/COS214assignment/COS214assignment-1/googletest/googletest/include -isystem /home/cait/COS214assignment/COS214assignment-1/googletest/googletest -g -fPIC -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14 -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/cait/COS214assignment/COS214assignment-1/googletest/googletest/src/gtest_main.cc",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/googletest/googletest/src/gtest_main.cc"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build/googletest/googletest",
+  "command": "/usr/bin/g++  -isystem /home/cait/COS214assignment/COS214assignment-2/googletest/googletest/include -isystem /home/cait/COS214assignment/COS214assignment-2/googletest/googletest -g -fPIC -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14 -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/cait/COS214assignment/COS214assignment-2/googletest/googletest/src/gtest_main.cc",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/googletest/googletest/src/gtest_main.cc"
 },
 {
-  "directory": "/home/cait/COS214assignment/COS214assignment-1/build/test",
-  "command": "/usr/bin/g++  -isystem /home/cait/COS214assignment/COS214assignment-1/googletest/googletest/include -isystem /home/cait/COS214assignment/COS214assignment-1/googletest/googletest -g -fPIE -std=gnu++14 -o CMakeFiles/UnitTests.dir/WaiterTest.cpp.o -c /home/cait/COS214assignment/COS214assignment-1/test/WaiterTest.cpp",
-  "file": "/home/cait/COS214assignment/COS214assignment-1/test/WaiterTest.cpp"
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build/waiterTest",
+  "command": "/usr/bin/g++  -isystem /home/cait/COS214assignment/COS214assignment-2/googletest/googletest/include -isystem /home/cait/COS214assignment/COS214assignment-2/googletest/googletest -g -fPIE -std=gnu++14 -o CMakeFiles/WaiterTests.dir/WaiterTest.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/waiterTest/WaiterTest.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/waiterTest/WaiterTest.cpp"
+},
+{
+  "directory": "/home/cait/COS214assignment/COS214assignment-2/build/adapterTest",
+  "command": "/usr/bin/g++  -isystem /home/cait/COS214assignment/COS214assignment-2/googletest/googletest/include -isystem /home/cait/COS214assignment/COS214assignment-2/googletest/googletest -g -fPIE -std=gnu++14 -o CMakeFiles/AdapterTests.dir/AdapterTest.cpp.o -c /home/cait/COS214assignment/COS214assignment-2/adapterTest/AdapterTest.cpp",
+  "file": "/home/cait/COS214assignment/COS214assignment-2/adapterTest/AdapterTest.cpp"
 }
 ]

@@ -1,8 +1,8 @@
 CMakeFiles/UnitTesting.dir/Customer.cpp.o: \
- /home/cait/COS214assignment/COS214assignment-1/Customer.cpp \
+ /home/cait/COS214assignment/COS214assignment-2/Customer.cpp \
  /usr/include/stdc-predef.h \
- /home/cait/COS214assignment/COS214assignment-1/Customer.h \
- /home/cait/COS214assignment/COS214assignment-1/Tab.h \
+ /home/cait/COS214assignment/COS214assignment-2/Customer.h \
+ /home/cait/COS214assignment/COS214assignment-2/Tab.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

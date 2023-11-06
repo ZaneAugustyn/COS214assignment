@@ -1,4 +1,4 @@
-# Install script for directory: /home/cait/COS214assignment/COS214assignment-1/googletest
+# Install script for directory: /home/cait/COS214assignment/COS214assignment-2/googletest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/cait/COS214assignment/COS214assignment-1/build/googletest/googlemock/cmake_install.cmake")
+  include("/home/cait/COS214assignment/COS214assignment-2/build/googletest/googlemock/cmake_install.cmake")
 
 endif()
 

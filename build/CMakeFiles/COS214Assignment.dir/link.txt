@@ -1,2 +1,0 @@
-/usr/bin/ar qc libCOS214Assignment.a CMakeFiles/COS214Assignment.dir/Waiter.cpp.o
-/usr/bin/ranlib libCOS214Assignment.a

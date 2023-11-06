@@ -1,8 +1,8 @@
 CMakeFiles/UnitTesting.dir/Colleague.cpp.o: \
- /home/cait/COS214assignment/COS214assignment-1/Colleague.cpp \
+ /home/cait/COS214assignment/COS214assignment-2/Colleague.cpp \
  /usr/include/stdc-predef.h \
- /home/cait/COS214assignment/COS214assignment-1/Colleague.h \
- /home/cait/COS214assignment/COS214assignment-1/Pass.h \
+ /home/cait/COS214assignment/COS214assignment-2/Colleague.h \
+ /home/cait/COS214assignment/COS214assignment-2/Pass.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -150,12 +150,12 @@ CMakeFiles/UnitTesting.dir/Colleague.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/cait/COS214assignment/COS214assignment-1/Bill.h \
- /home/cait/COS214assignment/COS214assignment-1/Customer.h \
- /home/cait/COS214assignment/COS214assignment-1/Tab.h \
- /home/cait/COS214assignment/COS214assignment-1/Group.h \
- /home/cait/COS214assignment/COS214assignment-1/GroupState.h \
- /home/cait/COS214assignment/COS214assignment-1/BillPayment.h \
- /home/cait/COS214assignment/COS214assignment-1/SplitBill.h \
- /home/cait/COS214assignment/COS214assignment-1/CustomerPays.h \
- /home/cait/COS214assignment/COS214assignment-1/MakeTab.h
+ /home/cait/COS214assignment/COS214assignment-2/Bill.h \
+ /home/cait/COS214assignment/COS214assignment-2/Customer.h \
+ /home/cait/COS214assignment/COS214assignment-2/Tab.h \
+ /home/cait/COS214assignment/COS214assignment-2/Group.h \
+ /home/cait/COS214assignment/COS214assignment-2/GroupState.h \
+ /home/cait/COS214assignment/COS214assignment-2/BillPayment.h \
+ /home/cait/COS214assignment/COS214assignment-2/SplitBill.h \
+ /home/cait/COS214assignment/COS214assignment-2/CustomerPays.h \
+ /home/cait/COS214assignment/COS214assignment-2/MakeTab.h

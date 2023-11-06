@@ -1,9 +1,9 @@
 CMakeFiles/UnitTesting.dir/Patty.cpp.o: \
- /home/cait/COS214assignment/COS214assignment-1/Patty.cpp \
+ /home/cait/COS214assignment/COS214assignment-2/Patty.cpp \
  /usr/include/stdc-predef.h \
- /home/cait/COS214assignment/COS214assignment-1/Patty.h \
- /home/cait/COS214assignment/COS214assignment-1/OrderItem.h \
- /home/cait/COS214assignment/COS214assignment-1/OrderComponent.h \
+ /home/cait/COS214assignment/COS214assignment-2/Patty.h \
+ /home/cait/COS214assignment/COS214assignment-2/OrderItem.h \
+ /home/cait/COS214assignment/COS214assignment-2/OrderComponent.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

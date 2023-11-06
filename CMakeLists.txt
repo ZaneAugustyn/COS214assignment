@@ -121,4 +121,5 @@ set(Sources
 
 add_library(${This} STATIC ${Sources} ${Headers}) # create static library
 
-add_subdirectory(test) # add test directory
+add_subdirectory(waiterTest) # add test directory
+add_subdirectory(adapterTest) # add test directory
