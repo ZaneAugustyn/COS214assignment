@@ -7,6 +7,17 @@
 #include "SplitBill.h"
 #include "CustomerPays.h"
 #include "MakeTab.h"
+#include "PrintBill.h"
+#include "OrderPrint.h"
+#include "Marginals.h"
+#include "FooterBill.h"
+#include "HeaderBill.h"
+
+// class PrintBill;
+// class Marginals;
+// class OrderPrint;
+// class HeaderBill;
+// class FooterBill;
 
 /**
  * @class Bill
@@ -49,6 +60,12 @@ public:
      * @return void
      */
     void setTotal(float t) { Total = t; }
+
+    /**
+     * @brief Print the bill.
+     * @return void
+     */
+    void Print();
 };
 
 #endif
