@@ -1,4 +1,4 @@
-# Install script for directory: /home/cait/COS214assignment/COS214assignment-2
+# Install script for directory: /home/xadrian/COS 214/GroupProject/COS214assignment
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,24 +37,14 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/xadrian/COS 214/GroupProject/COS214assignment/build/googletest/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/cait/COS214assignment/COS214assignment-2/build/googletest/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/home/cait/COS214assignment/COS214assignment-2/build/CaitlinTesting/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/home/cait/COS214assignment/COS214assignment-2/build/adapterTest/cmake_install.cmake")
+  include("/home/xadrian/COS 214/GroupProject/COS214assignment/build/XadrianTesting/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -65,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/cait/COS214assignment/COS214assignment-2/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/xadrian/COS 214/GroupProject/COS214assignment/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,9 +1,8 @@
 # CMake generated Testfile for 
-# Source directory: /home/cait/COS214assignment/COS214assignment-2
-# Build directory: /home/cait/COS214assignment/COS214assignment-2/build
+# Source directory: /home/xadrian/COS 214/GroupProject/COS214assignment
+# Build directory: /home/xadrian/COS 214/GroupProject/COS214assignment/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("googletest")
-subdirs("CaitlinTesting")
-subdirs("adapterTest")
+subdirs("XadrianTesting")
