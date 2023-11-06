@@ -1,0 +1,104 @@
+\hypertarget{classMeatChef}{}\doxysection{Meat\+Chef Class Reference}
+\label{classMeatChef}\index{MeatChef@{MeatChef}}
+
+
+This class is a Concrete Handler of the Chain of Responsibility Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Meat\+Chef.\+h$>$}
+
+
+
+Inheritance diagram for Meat\+Chef\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classMeatChef__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Meat\+Chef\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classMeatChef__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMeatChef_a35684a68e3d516ab60916cdb64d2ee41}{Meat\+Chef}} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMeatChef_a2734f3973f2de3479afe798f4a4eb388}{$\sim$\+Meat\+Chef}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMeatChef_a207a7408f9b3f826204dbdacce8ad1d9}{handle\+Order}} (\mbox{\hyperlink{classPlate}{Plate}} $\ast$plate, vector$<$ \mbox{\hyperlink{classOrderComponent}{Order\+Component}} $\ast$ $>$ order\+Comp)
+\begin{DoxyCompactList}\small\item\em part of the chain of responsibility design pattern to delegate to handle the order \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class is a Concrete Handler of the Chain of Responsibility Pattern. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMeatChef_a35684a68e3d516ab60916cdb64d2ee41}\label{classMeatChef_a35684a68e3d516ab60916cdb64d2ee41}} 
+\index{MeatChef@{MeatChef}!MeatChef@{MeatChef}}
+\index{MeatChef@{MeatChef}!MeatChef@{MeatChef}}
+\doxysubsubsection{\texorpdfstring{MeatChef()}{MeatChef()}}
+{\footnotesize\ttfamily Meat\+Chef\+::\+Meat\+Chef (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+default constructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMeatChef_a2734f3973f2de3479afe798f4a4eb388}\label{classMeatChef_a2734f3973f2de3479afe798f4a4eb388}} 
+\index{MeatChef@{MeatChef}!````~MeatChef@{$\sim$MeatChef}}
+\index{````~MeatChef@{$\sim$MeatChef}!MeatChef@{MeatChef}}
+\doxysubsubsection{\texorpdfstring{$\sim$MeatChef()}{~MeatChef()}}
+{\footnotesize\ttfamily Meat\+Chef\+::$\sim$\+Meat\+Chef (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMeatChef_a207a7408f9b3f826204dbdacce8ad1d9}\label{classMeatChef_a207a7408f9b3f826204dbdacce8ad1d9}} 
+\index{MeatChef@{MeatChef}!handleOrder@{handleOrder}}
+\index{handleOrder@{handleOrder}!MeatChef@{MeatChef}}
+\doxysubsubsection{\texorpdfstring{handleOrder()}{handleOrder()}}
+{\footnotesize\ttfamily void Meat\+Chef\+::handle\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlate}{Plate}} $\ast$}]{plate,  }\item[{vector$<$ \mbox{\hyperlink{classOrderComponent}{Order\+Component}} $\ast$ $>$}]{order\+Comp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+part of the chain of responsibility design pattern to delegate to handle the order 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plate} & pass the plate object to which the food will be added \\
+\hline
+{\em order\+Comp} & hold the group order to be handled through the chain \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classChef_a07f0cc4acdbe7c1ac9996eac15aabbb8}{Chef}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Meat\+Chef.\+h\item 
+Meat\+Chef.\+cpp\end{DoxyCompactItemize}

@@ -107,5 +107,6 @@
     "sstream": "cpp",
     "optional": "cpp",
     "fstream": "cpp"
-  }
+  },
+  "cmake.sourceDirectory": "/mnt/c/Users/User/OneDrive/Universiteit van Pretoria/BSc Information and Knowledge Systems/Year 2 - 2023/Semester 2/COS 214/COS214_Project2/COS214assignment/googletest"
 }

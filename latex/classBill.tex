@@ -1,0 +1,121 @@
+\hypertarget{classBill}{}\doxysection{Bill Class Reference}
+\label{classBill}\index{Bill@{Bill}}
+
+
+Represents a bill for a group of customers.  
+
+
+
+
+{\ttfamily \#include $<$Bill.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBill_a02ed9a652292dc388d01cccbfa53553b}{Bill}} (float t)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classBill}{Bill}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBill_acf731b0c8379ca571eb45eff63517468}\label{classBill_acf731b0c8379ca571eb45eff63517468}} 
+\mbox{\hyperlink{classBill_acf731b0c8379ca571eb45eff63517468}{$\sim$\+Bill}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classBill}{Bill}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBill_ac4d9b440ad1a443a45812b7973199ed9}{Pay}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group, char choice)
+\begin{DoxyCompactList}\small\item\em Pay the bill for a group of customers. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBill_a29170c41ea91d40528f9f63c69891bd8}{get\+Total}} ()
+\begin{DoxyCompactList}\small\item\em Get the total amount of the bill. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBill_a3adc9dae91028e5fc9ea6a7462b913b0}{set\+Total}} (float t)
+\begin{DoxyCompactList}\small\item\em Set the total amount of the bill. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBill_a0d5f9f4777850f02be5227255edc12fe}{Print}} ()
+\begin{DoxyCompactList}\small\item\em Print the bill. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a bill for a group of customers. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBill_a02ed9a652292dc388d01cccbfa53553b}\label{classBill_a02ed9a652292dc388d01cccbfa53553b}} 
+\index{Bill@{Bill}!Bill@{Bill}}
+\index{Bill@{Bill}!Bill@{Bill}}
+\doxysubsubsection{\texorpdfstring{Bill()}{Bill()}}
+{\footnotesize\ttfamily Bill\+::\+Bill (\begin{DoxyParamCaption}\item[{float}]{t }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classBill}{Bill}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The total amount to be paid for the bill. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBill_a29170c41ea91d40528f9f63c69891bd8}\label{classBill_a29170c41ea91d40528f9f63c69891bd8}} 
+\index{Bill@{Bill}!getTotal@{getTotal}}
+\index{getTotal@{getTotal}!Bill@{Bill}}
+\doxysubsubsection{\texorpdfstring{getTotal()}{getTotal()}}
+{\footnotesize\ttfamily float Bill\+::get\+Total (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the total amount of the bill. 
+
+\begin{DoxyReturn}{Returns}
+The total amount of the bill in float format. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBill_ac4d9b440ad1a443a45812b7973199ed9}\label{classBill_ac4d9b440ad1a443a45812b7973199ed9}} 
+\index{Bill@{Bill}!Pay@{Pay}}
+\index{Pay@{Pay}!Bill@{Bill}}
+\doxysubsubsection{\texorpdfstring{Pay()}{Pay()}}
+{\footnotesize\ttfamily void Bill\+::\+Pay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group,  }\item[{char}]{choice }\end{DoxyParamCaption})}
+
+
+
+Pay the bill for a group of customers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & The group of customers. \\
+\hline
+{\em choice} & The payment choice (\textquotesingle{}S\textquotesingle{} for split, \textquotesingle{}F\textquotesingle{} for full, \textquotesingle{}T\textquotesingle{} for tab). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBill_a0d5f9f4777850f02be5227255edc12fe}\label{classBill_a0d5f9f4777850f02be5227255edc12fe}} 
+\index{Bill@{Bill}!Print@{Print}}
+\index{Print@{Print}!Bill@{Bill}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily void Bill\+::\+Print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print the bill. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBill_a3adc9dae91028e5fc9ea6a7462b913b0}\label{classBill_a3adc9dae91028e5fc9ea6a7462b913b0}} 
+\index{Bill@{Bill}!setTotal@{setTotal}}
+\index{setTotal@{setTotal}!Bill@{Bill}}
+\doxysubsubsection{\texorpdfstring{setTotal()}{setTotal()}}
+{\footnotesize\ttfamily void Bill\+::set\+Total (\begin{DoxyParamCaption}\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the total amount of the bill. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The new total amount for the bill. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Bill.\+h\item 
+Bill.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,100 @@
+\hypertarget{classSpaceAvailable}{}\doxysection{Space\+Available Class Reference}
+\label{classSpaceAvailable}\index{SpaceAvailable@{SpaceAvailable}}
+
+
+This class represent the \mbox{\hyperlink{classSpaceAvailable}{Space\+Available}} state of the customer.  
+
+
+
+
+{\ttfamily \#include $<$Space\+Available.\+h$>$}
+
+
+
+Inheritance diagram for Space\+Available\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{classSpaceAvailable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Space\+Available\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{classSpaceAvailable__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSpaceAvailable_a6a329db38534820d627239ceecad5fa9}\label{classSpaceAvailable_a6a329db38534820d627239ceecad5fa9}} 
+\mbox{\hyperlink{classSpaceAvailable_a6a329db38534820d627239ceecad5fa9}{Space\+Available}} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSpaceAvailable_a10ae31bad6180acd26781b0d6b5d5357}\label{classSpaceAvailable_a10ae31bad6180acd26781b0d6b5d5357}} 
+\mbox{\hyperlink{classSpaceAvailable_a10ae31bad6180acd26781b0d6b5d5357}{$\sim$\+Space\+Available}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classSpaceAvailable_a95b38bb6ad1cda61863d69da1dbe948e}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em used to get the name of the state and return it \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSpaceAvailable_a133537a797df341f161c82b3b87675ed}{Change\+State}} (\mbox{\hyperlink{classFloor}{Floor}} $\ast$floor, \mbox{\hyperlink{classFloorState}{Floor\+State}} $\ast$state)
+\begin{DoxyCompactList}\small\item\em This method is used to change the current state of the floor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represent the \mbox{\hyperlink{classSpaceAvailable}{Space\+Available}} state of the customer. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSpaceAvailable_a133537a797df341f161c82b3b87675ed}\label{classSpaceAvailable_a133537a797df341f161c82b3b87675ed}} 
+\index{SpaceAvailable@{SpaceAvailable}!ChangeState@{ChangeState}}
+\index{ChangeState@{ChangeState}!SpaceAvailable@{SpaceAvailable}}
+\doxysubsubsection{\texorpdfstring{ChangeState()}{ChangeState()}}
+{\footnotesize\ttfamily void Space\+Available\+::\+Change\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFloor}{Floor}} $\ast$}]{floor,  }\item[{\mbox{\hyperlink{classFloorState}{Floor\+State}} $\ast$}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This method is used to change the current state of the floor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em floor} & is the floor that wants to change its state, and state is the state that floor wants to be changed to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classFloorState_a4da1bc2abbdc93126f80e68bdb2bdbc0}{Floor\+State}}.
+
+\mbox{\Hypertarget{classSpaceAvailable_a95b38bb6ad1cda61863d69da1dbe948e}\label{classSpaceAvailable_a95b38bb6ad1cda61863d69da1dbe948e}} 
+\index{SpaceAvailable@{SpaceAvailable}!getName@{getName}}
+\index{getName@{getName}!SpaceAvailable@{SpaceAvailable}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Space\+Available\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+used to get the name of the state and return it 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classFloorState_a9363a913450948c4414683f99b8def8e}{Floor\+State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Space\+Available.\+h\item 
+Space\+Available.\+cpp\end{DoxyCompactItemize}

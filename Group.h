@@ -16,6 +16,11 @@ class GroupState;
 class Waiter;
 class Bill;
 
+/**
+ * @class Group
+ * @brief This class represents the group of customers that will be seated and will order
+*/
+
 class Group
 {
 private:

@@ -1,0 +1,10 @@
+<map id="Colleague" name="Colleague">
+<area shape="rect" id="node1" title="This class is a abstract colleague of the Mediator design." alt="" coords="284,5,371,32"/>
+<area shape="rect" id="node2" href="$classChef.html" title="This class is a concrete colleague of the Mediator design and the Handler participant of the Chain of..." alt="" coords="260,80,312,107"/>
+<area shape="rect" id="node8" href="$classWaiter.html" title="This class is a concrete colleague of the Mediator design and the Handler participant of the Chain of..." alt="" coords="337,80,401,107"/>
+<area shape="rect" id="node3" href="$classDrinkChef.html" title="This class is a Concrete Handler of the Chain of Responsibility Pattern." alt="" coords="5,155,92,181"/>
+<area shape="rect" id="node4" href="$classGarnishChef.html" title="This class is a Concrete Handler of the Chain of Responsibility Pattern." alt="" coords="116,155,219,181"/>
+<area shape="rect" id="node5" href="$classHeadChef.html" title="This class is a Concrete Handler of the Chain of Responsibility Pattern." alt="" coords="243,155,329,181"/>
+<area shape="rect" id="node6" href="$classMeatChef.html" title="This class is a Concrete Handler of the Chain of Responsibility Pattern." alt="" coords="354,155,439,181"/>
+<area shape="rect" id="node7" href="$classSidesChef.html" title="This class is a Concrete Handler of the Chain of Responsibility Pattern." alt="" coords="464,155,551,181"/>
+</map>

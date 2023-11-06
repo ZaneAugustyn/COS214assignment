@@ -7,6 +7,12 @@
 #include "Full.h"
 #include "SpaceAvailable.h"
 // code here
+
+/**
+ * @class MaitreD
+ * @brief This class is represent the Maitre D that is responsible for the managing the floor
+*/
+
 class MaitreD
 {
 private:

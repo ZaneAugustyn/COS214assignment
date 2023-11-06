@@ -1,0 +1,246 @@
+\hypertarget{classWaitForTable}{}\doxysection{Wait\+For\+Table Class Reference}
+\label{classWaitForTable}\index{WaitForTable@{WaitForTable}}
+
+
+This class represents that the group should wait for a table (that is their state)  
+
+
+
+
+{\ttfamily \#include $<$Wait\+For\+Table.\+h$>$}
+
+
+
+Inheritance diagram for Wait\+For\+Table\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{classWaitForTable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wait\+For\+Table\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{classWaitForTable__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWaitForTable_a1498b221ae0d4e39c84ee689b36bf96a}\label{classWaitForTable_a1498b221ae0d4e39c84ee689b36bf96a}} 
+\mbox{\hyperlink{classWaitForTable_a1498b221ae0d4e39c84ee689b36bf96a}{Wait\+For\+Table}} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWaitForTable_a66dac18650c456f79795456825bb7f62}\label{classWaitForTable_a66dac18650c456f79795456825bb7f62}} 
+\mbox{\hyperlink{classWaitForTable_a66dac18650c456f79795456825bb7f62}{$\sim$\+Wait\+For\+Table}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classWaitForTable_a0dcd6b406d825ea1a79358d2360b3cb2}{Request\+To\+Order}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Request\+To\+Order request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classWaitForTable_a871bf1c474f0c960bf9f412f61647283}{Wait\+In\+Queue}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Wait\+In\+Queue request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classWaitForTable_aea9823815558ec6931245f37e8093333}{Make\+Unhappy}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Make\+Unhappy request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classWaitForTable_a7d92b2419f938df79473977f82c78a8a}{Make\+Happy}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Make\+Happy request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classWaitForTable_ab370e72e0e7ba0c2b39b775dba7827e3}{Make\+Neutral}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the \mbox{\hyperlink{classNeutral}{Neutral}} request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classWaitForTable_a5ee94704b73e4cc95cabf4149aa043ad}{Request\+Tab}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Request\+Tab request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classWaitForTable_a342192a0bc45bf0569e7cf9101bd2e65}{Request\+Bill}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Request\+Bill request \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classWaitForTable_a2fa2bdb516d8edb99da7c5f66eb1810c}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em method to return a string of the state name \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents that the group should wait for a table (that is their state) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWaitForTable_a7d92b2419f938df79473977f82c78a8a}\label{classWaitForTable_a7d92b2419f938df79473977f82c78a8a}} 
+\index{WaitForTable@{WaitForTable}!MakeHappy@{MakeHappy}}
+\index{MakeHappy@{MakeHappy}!WaitForTable@{WaitForTable}}
+\doxysubsubsection{\texorpdfstring{MakeHappy()}{MakeHappy()}}
+{\footnotesize\ttfamily void Wait\+For\+Table\+::\+Make\+Happy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Make\+Happy request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_a6f656d36478df3813b49a643f842dce1}{Group\+State}}.
+
+\mbox{\Hypertarget{classWaitForTable_ab370e72e0e7ba0c2b39b775dba7827e3}\label{classWaitForTable_ab370e72e0e7ba0c2b39b775dba7827e3}} 
+\index{WaitForTable@{WaitForTable}!MakeNeutral@{MakeNeutral}}
+\index{MakeNeutral@{MakeNeutral}!WaitForTable@{WaitForTable}}
+\doxysubsubsection{\texorpdfstring{MakeNeutral()}{MakeNeutral()}}
+{\footnotesize\ttfamily void Wait\+For\+Table\+::\+Make\+Neutral (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the \mbox{\hyperlink{classNeutral}{Neutral}} request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_a4f27694a8a88c832cbefc0f1be290a95}{Group\+State}}.
+
+\mbox{\Hypertarget{classWaitForTable_aea9823815558ec6931245f37e8093333}\label{classWaitForTable_aea9823815558ec6931245f37e8093333}} 
+\index{WaitForTable@{WaitForTable}!MakeUnhappy@{MakeUnhappy}}
+\index{MakeUnhappy@{MakeUnhappy}!WaitForTable@{WaitForTable}}
+\doxysubsubsection{\texorpdfstring{MakeUnhappy()}{MakeUnhappy()}}
+{\footnotesize\ttfamily void Wait\+For\+Table\+::\+Make\+Unhappy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Make\+Unhappy request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_a02f7ffc469e8d474ed547a6d0f161096}{Group\+State}}.
+
+\mbox{\Hypertarget{classWaitForTable_a342192a0bc45bf0569e7cf9101bd2e65}\label{classWaitForTable_a342192a0bc45bf0569e7cf9101bd2e65}} 
+\index{WaitForTable@{WaitForTable}!RequestBill@{RequestBill}}
+\index{RequestBill@{RequestBill}!WaitForTable@{WaitForTable}}
+\doxysubsubsection{\texorpdfstring{RequestBill()}{RequestBill()}}
+{\footnotesize\ttfamily void Wait\+For\+Table\+::\+Request\+Bill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Request\+Bill request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_ada5a23937d06e17439336af3f9045426}{Group\+State}}.
+
+\mbox{\Hypertarget{classWaitForTable_a5ee94704b73e4cc95cabf4149aa043ad}\label{classWaitForTable_a5ee94704b73e4cc95cabf4149aa043ad}} 
+\index{WaitForTable@{WaitForTable}!RequestTab@{RequestTab}}
+\index{RequestTab@{RequestTab}!WaitForTable@{WaitForTable}}
+\doxysubsubsection{\texorpdfstring{RequestTab()}{RequestTab()}}
+{\footnotesize\ttfamily void Wait\+For\+Table\+::\+Request\+Tab (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Request\+Tab request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_abaa00ecfeeff67144884aba156ef6e48}{Group\+State}}.
+
+\mbox{\Hypertarget{classWaitForTable_a0dcd6b406d825ea1a79358d2360b3cb2}\label{classWaitForTable_a0dcd6b406d825ea1a79358d2360b3cb2}} 
+\index{WaitForTable@{WaitForTable}!RequestToOrder@{RequestToOrder}}
+\index{RequestToOrder@{RequestToOrder}!WaitForTable@{WaitForTable}}
+\doxysubsubsection{\texorpdfstring{RequestToOrder()}{RequestToOrder()}}
+{\footnotesize\ttfamily void Wait\+For\+Table\+::\+Request\+To\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Request\+To\+Order request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_aff4a24d2821282afc2b210fd4248afbd}{Group\+State}}.
+
+\mbox{\Hypertarget{classWaitForTable_a2fa2bdb516d8edb99da7c5f66eb1810c}\label{classWaitForTable_a2fa2bdb516d8edb99da7c5f66eb1810c}} 
+\index{WaitForTable@{WaitForTable}!ToString@{ToString}}
+\index{ToString@{ToString}!WaitForTable@{WaitForTable}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily string Wait\+For\+Table\+::\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+method to return a string of the state name 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_a939244f42e418fcb401a98dbabb2109d}{Group\+State}}.
+
+\mbox{\Hypertarget{classWaitForTable_a871bf1c474f0c960bf9f412f61647283}\label{classWaitForTable_a871bf1c474f0c960bf9f412f61647283}} 
+\index{WaitForTable@{WaitForTable}!WaitInQueue@{WaitInQueue}}
+\index{WaitInQueue@{WaitInQueue}!WaitForTable@{WaitForTable}}
+\doxysubsubsection{\texorpdfstring{WaitInQueue()}{WaitInQueue()}}
+{\footnotesize\ttfamily void Wait\+For\+Table\+::\+Wait\+In\+Queue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Wait\+In\+Queue request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_a3189f08b482dc9d528df5bc1263c6dc9}{Group\+State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Wait\+For\+Table.\+h\item 
+Wait\+For\+Table.\+cpp\end{DoxyCompactItemize}

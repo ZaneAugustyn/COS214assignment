@@ -1,0 +1,124 @@
+\hypertarget{classOrderItem}{}\doxysection{Order\+Item Class Reference}
+\label{classOrderItem}\index{OrderItem@{OrderItem}}
+
+
+This class acts as the (concrete) Leaf of the Composite design pattern and represents an actual food item in an \mbox{\hyperlink{classOrder}{Order}}.  
+
+
+
+
+{\ttfamily \#include $<$Order\+Item.\+h$>$}
+
+
+
+Inheritance diagram for Order\+Item\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOrderItem__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Order\+Item\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classOrderItem__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classOrderItem_a71bbbcb8b073bb25269d17bbb7d30a86}{Order\+Item}} (double price, string name)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOrderItem_ac1be37b0c22656d7ca090d02858c0965}{$\sim$\+Order\+Item}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classOrderItem_adcee3c2356292e129b8d416c1c0191bf}{get\+Price}} ()
+\begin{DoxyCompactList}\small\item\em getter for price \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classOrderItem_a386e1b9c15fd08a886626700a140d904}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em getter for name \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classOrderItem_a76c1aa17c1716d3dfd60b35296b0158d}\label{classOrderItem_a76c1aa17c1716d3dfd60b35296b0158d}} 
+string {\bfseries name\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class acts as the (concrete) Leaf of the Composite design pattern and represents an actual food item in an \mbox{\hyperlink{classOrder}{Order}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classOrderItem_a71bbbcb8b073bb25269d17bbb7d30a86}\label{classOrderItem_a71bbbcb8b073bb25269d17bbb7d30a86}} 
+\index{OrderItem@{OrderItem}!OrderItem@{OrderItem}}
+\index{OrderItem@{OrderItem}!OrderItem@{OrderItem}}
+\doxysubsubsection{\texorpdfstring{OrderItem()}{OrderItem()}}
+{\footnotesize\ttfamily Order\+Item\+::\+Order\+Item (\begin{DoxyParamCaption}\item[{double}]{price,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em price} & takes in the price of the \mbox{\hyperlink{classOrderItem}{Order\+Item}} \\
+\hline
+{\em name} & takes in a name for the \mbox{\hyperlink{classOrderItem}{Order\+Item}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOrderItem_ac1be37b0c22656d7ca090d02858c0965}\label{classOrderItem_ac1be37b0c22656d7ca090d02858c0965}} 
+\index{OrderItem@{OrderItem}!````~OrderItem@{$\sim$OrderItem}}
+\index{````~OrderItem@{$\sim$OrderItem}!OrderItem@{OrderItem}}
+\doxysubsubsection{\texorpdfstring{$\sim$OrderItem()}{~OrderItem()}}
+{\footnotesize\ttfamily Order\+Item\+::$\sim$\+Order\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOrderItem_a386e1b9c15fd08a886626700a140d904}\label{classOrderItem_a386e1b9c15fd08a886626700a140d904}} 
+\index{OrderItem@{OrderItem}!getName@{getName}}
+\index{getName@{getName}!OrderItem@{OrderItem}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Order\+Item\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter for name 
+
+\begin{DoxyReturn}{Returns}
+the name of the \mbox{\hyperlink{classOrderItem}{Order\+Item}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOrderItem_adcee3c2356292e129b8d416c1c0191bf}\label{classOrderItem_adcee3c2356292e129b8d416c1c0191bf}} 
+\index{OrderItem@{OrderItem}!getPrice@{getPrice}}
+\index{getPrice@{getPrice}!OrderItem@{OrderItem}}
+\doxysubsubsection{\texorpdfstring{getPrice()}{getPrice()}}
+{\footnotesize\ttfamily float Order\+Item\+::get\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+getter for price 
+
+\begin{DoxyReturn}{Returns}
+the price of the \mbox{\hyperlink{classOrderItem}{Order\+Item}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classOrderComponent_a48279fea0b6c417bd5bcab81f4a0d520}{Order\+Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Order\+Item.\+h\item 
+Order\+Item.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,122 @@
+\hypertarget{classColleague}{}\doxysection{Colleague Class Reference}
+\label{classColleague}\index{Colleague@{Colleague}}
+
+
+This class is a abstract colleague of the Mediator design.  
+
+
+
+
+{\ttfamily \#include $<$Colleague.\+h$>$}
+
+
+
+Inheritance diagram for Colleague\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classColleague__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Colleague\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classColleague__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classColleague_a3ae4a27b23d6a1cafd35aa3f2a0d1235}{Colleague}} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classColleague_ab7dcaa99ef58bb2e20703321f3b2e679}{Colleague}} (\mbox{\hyperlink{classPass}{Pass}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classColleague_a9608c7993f3aee136ec79247b268969a}{changed}} ()=0
+\begin{DoxyCompactList}\small\item\em part of the mediator design pattern to delegate the appropriate notify method (abstract) \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classColleague_aec205c1bed48330009bbeaf3cf1129d5}{$\sim$\+Colleague}} ()
+\begin{DoxyCompactList}\small\item\em virtual destructor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classColleague_a435a8408f27a2463030c78edffed9e82}\label{classColleague_a435a8408f27a2463030c78edffed9e82}} 
+\mbox{\hyperlink{classPass}{Pass}} $\ast$ {\bfseries pass\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is a abstract colleague of the Mediator design. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classColleague_a3ae4a27b23d6a1cafd35aa3f2a0d1235}\label{classColleague_a3ae4a27b23d6a1cafd35aa3f2a0d1235}} 
+\index{Colleague@{Colleague}!Colleague@{Colleague}}
+\index{Colleague@{Colleague}!Colleague@{Colleague}}
+\doxysubsubsection{\texorpdfstring{Colleague()}{Colleague()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Colleague\+::\+Colleague (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+default constructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classColleague_ab7dcaa99ef58bb2e20703321f3b2e679}\label{classColleague_ab7dcaa99ef58bb2e20703321f3b2e679}} 
+\index{Colleague@{Colleague}!Colleague@{Colleague}}
+\index{Colleague@{Colleague}!Colleague@{Colleague}}
+\doxysubsubsection{\texorpdfstring{Colleague()}{Colleague()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Colleague\+::\+Colleague (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPass}{Pass}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the shared pass member variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classColleague_aec205c1bed48330009bbeaf3cf1129d5}\label{classColleague_aec205c1bed48330009bbeaf3cf1129d5}} 
+\index{Colleague@{Colleague}!````~Colleague@{$\sim$Colleague}}
+\index{````~Colleague@{$\sim$Colleague}!Colleague@{Colleague}}
+\doxysubsubsection{\texorpdfstring{$\sim$Colleague()}{~Colleague()}}
+{\footnotesize\ttfamily Colleague\+::$\sim$\+Colleague (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+virtual destructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classColleague_a9608c7993f3aee136ec79247b268969a}\label{classColleague_a9608c7993f3aee136ec79247b268969a}} 
+\index{Colleague@{Colleague}!changed@{changed}}
+\index{changed@{changed}!Colleague@{Colleague}}
+\doxysubsubsection{\texorpdfstring{changed()}{changed()}}
+{\footnotesize\ttfamily virtual void Colleague\+::changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+part of the mediator design pattern to delegate the appropriate notify method (abstract) 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classWaiter_a75d4656520e791e03e974cb95673da75}{Waiter}}, and \mbox{\hyperlink{classChef_a9fa1f9c45c1abb9c788c03b7973faa99}{Chef}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Colleague.\+h\item 
+Colleague.\+cpp\end{DoxyCompactItemize}

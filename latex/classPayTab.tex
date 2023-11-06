@@ -1,0 +1,246 @@
+\hypertarget{classPayTab}{}\doxysection{Pay\+Tab Class Reference}
+\label{classPayTab}\index{PayTab@{PayTab}}
+
+
+This class is used for managing the tab of customers that can be payed at a later stage.  
+
+
+
+
+{\ttfamily \#include $<$Pay\+Tab.\+h$>$}
+
+
+
+Inheritance diagram for Pay\+Tab\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classPayTab__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Pay\+Tab\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classPayTab__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPayTab_a3c925c4047d869c8333c6df40c3bfa4d}\label{classPayTab_a3c925c4047d869c8333c6df40c3bfa4d}} 
+\mbox{\hyperlink{classPayTab_a3c925c4047d869c8333c6df40c3bfa4d}{Pay\+Tab}} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPayTab_a598a5f8239f049c2889a326e8790a49d}\label{classPayTab_a598a5f8239f049c2889a326e8790a49d}} 
+\mbox{\hyperlink{classPayTab_a598a5f8239f049c2889a326e8790a49d}{$\sim$\+Pay\+Tab}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPayTab_a1be3589a911ec6298ffed8000b37ddb3}{Request\+To\+Order}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Request\+To\+Order request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPayTab_a3ce906767fdc0c1d10b179ad44fca717}{Wait\+In\+Queue}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Wait\+In\+Queue request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPayTab_a6202e5a2bce8e2922d33b76155732707}{Make\+Unhappy}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Manke\+Unhappy request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPayTab_ae5f10070da346fd3bd8fa9a7d764aa38}{Make\+Happy}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Make\+Happy request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPayTab_a392b0aba7ec959aec4e1c4c4dd7d7619}{Request\+Tab}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Request\+Tab request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPayTab_a5e1b416ff7bb139500a9624491a3afdc}{Make\+Neutral}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the \mbox{\hyperlink{classNeutral}{Neutral}} request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPayTab_a296f26258c86922600fef0d3a12e334c}{Request\+Bill}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Request\+Bill request \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classPayTab_a39abb95606954eadebf8ed2c50d13ba9}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em method to return a string of the state name \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used for managing the tab of customers that can be payed at a later stage. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPayTab_ae5f10070da346fd3bd8fa9a7d764aa38}\label{classPayTab_ae5f10070da346fd3bd8fa9a7d764aa38}} 
+\index{PayTab@{PayTab}!MakeHappy@{MakeHappy}}
+\index{MakeHappy@{MakeHappy}!PayTab@{PayTab}}
+\doxysubsubsection{\texorpdfstring{MakeHappy()}{MakeHappy()}}
+{\footnotesize\ttfamily void Pay\+Tab\+::\+Make\+Happy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Make\+Happy request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_a6f656d36478df3813b49a643f842dce1}{Group\+State}}.
+
+\mbox{\Hypertarget{classPayTab_a5e1b416ff7bb139500a9624491a3afdc}\label{classPayTab_a5e1b416ff7bb139500a9624491a3afdc}} 
+\index{PayTab@{PayTab}!MakeNeutral@{MakeNeutral}}
+\index{MakeNeutral@{MakeNeutral}!PayTab@{PayTab}}
+\doxysubsubsection{\texorpdfstring{MakeNeutral()}{MakeNeutral()}}
+{\footnotesize\ttfamily void Pay\+Tab\+::\+Make\+Neutral (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the \mbox{\hyperlink{classNeutral}{Neutral}} request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_a4f27694a8a88c832cbefc0f1be290a95}{Group\+State}}.
+
+\mbox{\Hypertarget{classPayTab_a6202e5a2bce8e2922d33b76155732707}\label{classPayTab_a6202e5a2bce8e2922d33b76155732707}} 
+\index{PayTab@{PayTab}!MakeUnhappy@{MakeUnhappy}}
+\index{MakeUnhappy@{MakeUnhappy}!PayTab@{PayTab}}
+\doxysubsubsection{\texorpdfstring{MakeUnhappy()}{MakeUnhappy()}}
+{\footnotesize\ttfamily void Pay\+Tab\+::\+Make\+Unhappy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Manke\+Unhappy request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_a02f7ffc469e8d474ed547a6d0f161096}{Group\+State}}.
+
+\mbox{\Hypertarget{classPayTab_a296f26258c86922600fef0d3a12e334c}\label{classPayTab_a296f26258c86922600fef0d3a12e334c}} 
+\index{PayTab@{PayTab}!RequestBill@{RequestBill}}
+\index{RequestBill@{RequestBill}!PayTab@{PayTab}}
+\doxysubsubsection{\texorpdfstring{RequestBill()}{RequestBill()}}
+{\footnotesize\ttfamily void Pay\+Tab\+::\+Request\+Bill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Request\+Bill request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_ada5a23937d06e17439336af3f9045426}{Group\+State}}.
+
+\mbox{\Hypertarget{classPayTab_a392b0aba7ec959aec4e1c4c4dd7d7619}\label{classPayTab_a392b0aba7ec959aec4e1c4c4dd7d7619}} 
+\index{PayTab@{PayTab}!RequestTab@{RequestTab}}
+\index{RequestTab@{RequestTab}!PayTab@{PayTab}}
+\doxysubsubsection{\texorpdfstring{RequestTab()}{RequestTab()}}
+{\footnotesize\ttfamily void Pay\+Tab\+::\+Request\+Tab (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Request\+Tab request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_abaa00ecfeeff67144884aba156ef6e48}{Group\+State}}.
+
+\mbox{\Hypertarget{classPayTab_a1be3589a911ec6298ffed8000b37ddb3}\label{classPayTab_a1be3589a911ec6298ffed8000b37ddb3}} 
+\index{PayTab@{PayTab}!RequestToOrder@{RequestToOrder}}
+\index{RequestToOrder@{RequestToOrder}!PayTab@{PayTab}}
+\doxysubsubsection{\texorpdfstring{RequestToOrder()}{RequestToOrder()}}
+{\footnotesize\ttfamily void Pay\+Tab\+::\+Request\+To\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Request\+To\+Order request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_aff4a24d2821282afc2b210fd4248afbd}{Group\+State}}.
+
+\mbox{\Hypertarget{classPayTab_a39abb95606954eadebf8ed2c50d13ba9}\label{classPayTab_a39abb95606954eadebf8ed2c50d13ba9}} 
+\index{PayTab@{PayTab}!ToString@{ToString}}
+\index{ToString@{ToString}!PayTab@{PayTab}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily string Pay\+Tab\+::\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+method to return a string of the state name 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_a939244f42e418fcb401a98dbabb2109d}{Group\+State}}.
+
+\mbox{\Hypertarget{classPayTab_a3ce906767fdc0c1d10b179ad44fca717}\label{classPayTab_a3ce906767fdc0c1d10b179ad44fca717}} 
+\index{PayTab@{PayTab}!WaitInQueue@{WaitInQueue}}
+\index{WaitInQueue@{WaitInQueue}!PayTab@{PayTab}}
+\doxysubsubsection{\texorpdfstring{WaitInQueue()}{WaitInQueue()}}
+{\footnotesize\ttfamily void Pay\+Tab\+::\+Wait\+In\+Queue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Wait\+In\+Queue request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_a3189f08b482dc9d528df5bc1263c6dc9}{Group\+State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pay\+Tab.\+h\item 
+Pay\+Tab.\+cpp\end{DoxyCompactItemize}

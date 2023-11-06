@@ -6,6 +6,12 @@
 using namespace std;
 
 class Group;
+
+/**
+ * @class GroupState
+ * @brief This class represents the group's state
+*/
+
 class GroupState
 {
 private:

@@ -1,0 +1,7 @@
+<map id="PrintBill" name="PrintBill">
+<area shape="rect" id="node1" title="Will be the representation and printing of a bill." alt="" coords="123,5,196,32"/>
+<area shape="rect" id="node2" href="$classMarginals.html" title="Will print the Marginals of the bill." alt="" coords="60,80,147,107"/>
+<area shape="rect" id="node5" href="$classOrderPrint.html" title="Will print the order of the bill." alt="" coords="171,80,259,107"/>
+<area shape="rect" id="node3" href="$classFooterBill.html" title="Will print the Marginals of the bill." alt="" coords="5,155,89,181"/>
+<area shape="rect" id="node4" href="$classHeaderBill.html" title="Will print the Marginals of the bill." alt="" coords="114,155,205,181"/>
+</map>

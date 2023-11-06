@@ -1,0 +1,5 @@
+<map id="FooterBill" name="FooterBill">
+<area shape="rect" id="node1" title="Will print the Marginals of the bill." alt="" coords="7,155,91,181"/>
+<area shape="rect" id="node2" href="$classMarginals.html" title="Will print the Marginals of the bill." alt="" coords="5,80,92,107"/>
+<area shape="rect" id="node3" href="$classPrintBill.html" title="Will be the representation and printing of a bill." alt="" coords="12,5,85,32"/>
+</map>
