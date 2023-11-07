@@ -26,6 +26,17 @@ void Bill::Pay(Group* group, char choice)
     case 'T': // Tab payment
         payment = new MakeTab(this->getTotal());
         break;
+    case 's': // Split bill
+        payment = new SplitBill(this->getTotal());
+        break;
+
+    case 'f': // Full payment
+        payment = new CustomerPays(this->getTotal());
+        break;
+
+    case 't': // Tab payment
+        payment = new MakeTab(this->getTotal());
+        break;
     }
 
     Print();
