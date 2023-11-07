@@ -120,6 +120,13 @@ void MaitreD::removeGroupFromFloor(Group* group)
     {
         return;
     }
+
+    if(group->GetState()->ToString() == "ReadyToOrder")
+    {
+        cout<<RED<<"You cannot leave without paying"<<RESET<<endl;
+        return;
+    }
+    
     availableTables_ = availableTables_ + calculateTablesNeeded(group->getCustomers().size());//update tables since group left
     //addGroupToFloor(add group somehow) or are we going to just use a queue and add the first one to said queue or have 
     //a var where we keep the group that is waiting if we need to pop the queue to be able to access the group
