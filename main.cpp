@@ -33,7 +33,7 @@ using namespace std;
 
 int main()
 {
-  facade instance;
+  Facade instance;
   instance.run();  
     return 0;
 }
