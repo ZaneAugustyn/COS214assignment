@@ -9,17 +9,17 @@
 #define LIGHT_GREEN "\033[92m"  /* Light Green */
 #define PINK    "\033[38;5;206m"  /* Pink */
 
-facade::facade(/* args */)
+Facade::Facade(/* args */)
 {
     initBasic();
 }
 
-facade::~facade()
+Facade::~Facade()
 {
 
 }
 
-void facade::run()
+void Facade::run()
 {
     bool loop = true;
     cout<<endl;
@@ -116,7 +116,7 @@ void facade::run()
 
 }
 
-void facade::option1()
+void Facade::option1()
 {
     string names[] = {"John", "Jane", "Bob", "Alice", "Joe", "Jill", "Bill", "Sally", "Jack", "Jill", "Tom", "Tim", "Tina", "Terry", "Trevor", "Tiffany", "Tina", "Terry", "Trevor", "Tiffany"};
     numGroups++;
@@ -125,7 +125,7 @@ void facade::option1()
     int numCustomers;
     cin >> numCustomers;
 
-    while (!cin.good())
+    while (!cin.good() || numCustomers <= 0)
     {
         cout << RED << "Please enter a valid number: " << RESET;
         cin.clear();
@@ -153,12 +153,12 @@ void facade::option1()
     // print the queue
 }
 
-void facade::option2()
+void Facade::option2()
 {
     maitreD->addGroupToFloor();
 }
 
-void facade::option3()
+void Facade::option3()
 {
     cout <<YELLOW<< "List of group numbers: "<<RESET<<endl;
     
@@ -204,7 +204,7 @@ void facade::option3()
 
 }
 
-void facade::option4()
+void Facade::option4()
 {
     cout <<YELLOW<< "List of group numbers: "<<RESET<<endl;
     
@@ -251,7 +251,7 @@ void facade::option4()
     
 }
 
-void facade::option5()
+void Facade::option5()
 {
     cout << YELLOW << "Please select the group you would like to excuse from the floor: " << RESET << endl;
     int numGroups = floor->getGroups().size();
@@ -299,12 +299,12 @@ void facade::option5()
     }
 }
 
-void facade::option6()
+void Facade::option6()
 {
     cout << PINK << endl << "Thank you for visiting Le McDonalds! We hope to see you again soon :)" << RESET << endl << endl;
 }
 
-void facade::initBasic()
+void Facade::initBasic()
 {
     cout << PINK << endl << "Welcome to Le McDonalds resaurant simulation" << RESET << endl << endl;
     floor = new Floor();
@@ -329,7 +329,7 @@ void facade::initBasic()
     int numWaiters;
     cout<<YELLOW<<"Please select number of waiters: "<<RESET;
     cin>>numWaiters;
-    while (!cin.good())
+    while (!cin.good() || numWaiters <= 0)
     {
         cout<<RED<<"Please enter a valid number: "<<RESET;
         cin.clear();
@@ -349,7 +349,7 @@ void facade::initBasic()
     maitreD->setWaiterList(waiters);
 }
 
-void facade::askForHappiness(Group* selectedGroup)
+void Facade::askForHappiness(Group* selectedGroup)
 {
     char status;
     cout <<"Are you happy/unhappy with the service? (H/U) ";

@@ -54,7 +54,7 @@ using namespace std;
  * @class facade
  * @brief Facade class that provides a simplified interface for managing a restaurant simulation.
  */
-class facade
+class Facade
 {
 private:
     /* data */
@@ -69,12 +69,12 @@ public:
     /**
      * @brief Constructor for the facade class.
      */
-    facade(/* args */);
+    Facade(/* args */);
 
     /**
      * @brief Destructor for the facade class.
      */
-    ~facade();
+    ~Facade();
 
     /**
      * @brief Run the restaurant simulation.
