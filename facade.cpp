@@ -283,7 +283,13 @@ void Facade::option5()
                 // g.erase(it);
                 // floor->setGroups(g);
                 Group* group = g[i];
+                int t = maitreD->getFloor()->getGroups().size();
                 maitreD->removeGroupFromFloor(group);
+                if(t == maitreD->getFloor()->getGroups().size())
+                {
+                    l = false;
+                    break;
+                }
 
                 cout << LIGHT_GREEN << "Group " << c << " has been excused from the floor." << RESET << endl;
                 l = false;
