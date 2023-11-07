@@ -623,6 +623,33 @@ FloorState.cpp.s:
 	$(MAKE) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/FloorState.cpp.s
 .PHONY : FloorState.cpp.s
 
+FooterBill.o: FooterBill.cpp.o
+
+.PHONY : FooterBill.o
+
+# target to build an object file
+FooterBill.cpp.o:
+	$(MAKE) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/FooterBill.cpp.o
+.PHONY : FooterBill.cpp.o
+
+FooterBill.i: FooterBill.cpp.i
+
+.PHONY : FooterBill.i
+
+# target to preprocess a source file
+FooterBill.cpp.i:
+	$(MAKE) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/FooterBill.cpp.i
+.PHONY : FooterBill.cpp.i
+
+FooterBill.s: FooterBill.cpp.s
+
+.PHONY : FooterBill.s
+
+# target to generate assembly for a file
+FooterBill.cpp.s:
+	$(MAKE) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/FooterBill.cpp.s
+.PHONY : FooterBill.cpp.s
+
 Full.o: Full.cpp.o
 
 .PHONY : Full.o
@@ -839,6 +866,33 @@ HeadChef.cpp.s:
 	$(MAKE) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/HeadChef.cpp.s
 .PHONY : HeadChef.cpp.s
 
+HeaderBill.o: HeaderBill.cpp.o
+
+.PHONY : HeaderBill.o
+
+# target to build an object file
+HeaderBill.cpp.o:
+	$(MAKE) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/HeaderBill.cpp.o
+.PHONY : HeaderBill.cpp.o
+
+HeaderBill.i: HeaderBill.cpp.i
+
+.PHONY : HeaderBill.i
+
+# target to preprocess a source file
+HeaderBill.cpp.i:
+	$(MAKE) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/HeaderBill.cpp.i
+.PHONY : HeaderBill.cpp.i
+
+HeaderBill.s: HeaderBill.cpp.s
+
+.PHONY : HeaderBill.s
+
+# target to generate assembly for a file
+HeaderBill.cpp.s:
+	$(MAKE) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/HeaderBill.cpp.s
+.PHONY : HeaderBill.cpp.s
+
 ItemIterator.o: ItemIterator.cpp.o
 
 .PHONY : ItemIterator.o
@@ -1000,6 +1054,33 @@ MakeTab.s: MakeTab.cpp.s
 MakeTab.cpp.s:
 	$(MAKE) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/MakeTab.cpp.s
 .PHONY : MakeTab.cpp.s
+
+Marginals.o: Marginals.cpp.o
+
+.PHONY : Marginals.o
+
+# target to build an object file
+Marginals.cpp.o:
+	$(MAKE) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Marginals.cpp.o
+.PHONY : Marginals.cpp.o
+
+Marginals.i: Marginals.cpp.i
+
+.PHONY : Marginals.i
+
+# target to preprocess a source file
+Marginals.cpp.i:
+	$(MAKE) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Marginals.cpp.i
+.PHONY : Marginals.cpp.i
+
+Marginals.s: Marginals.cpp.s
+
+.PHONY : Marginals.s
+
+# target to generate assembly for a file
+Marginals.cpp.s:
+	$(MAKE) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Marginals.cpp.s
+.PHONY : Marginals.cpp.s
 
 MeatChef.o: MeatChef.cpp.o
 
@@ -1163,6 +1244,33 @@ OrderItem.cpp.s:
 	$(MAKE) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/OrderItem.cpp.s
 .PHONY : OrderItem.cpp.s
 
+OrderPrint.o: OrderPrint.cpp.o
+
+.PHONY : OrderPrint.o
+
+# target to build an object file
+OrderPrint.cpp.o:
+	$(MAKE) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/OrderPrint.cpp.o
+.PHONY : OrderPrint.cpp.o
+
+OrderPrint.i: OrderPrint.cpp.i
+
+.PHONY : OrderPrint.i
+
+# target to preprocess a source file
+OrderPrint.cpp.i:
+	$(MAKE) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/OrderPrint.cpp.i
+.PHONY : OrderPrint.cpp.i
+
+OrderPrint.s: OrderPrint.cpp.s
+
+.PHONY : OrderPrint.s
+
+# target to generate assembly for a file
+OrderPrint.cpp.s:
+	$(MAKE) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/OrderPrint.cpp.s
+.PHONY : OrderPrint.cpp.s
+
 Pass.o: Pass.cpp.o
 
 .PHONY : Pass.o
@@ -1270,6 +1378,33 @@ Plate.s: Plate.cpp.s
 Plate.cpp.s:
 	$(MAKE) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/Plate.cpp.s
 .PHONY : Plate.cpp.s
+
+PrintBill.o: PrintBill.cpp.o
+
+.PHONY : PrintBill.o
+
+# target to build an object file
+PrintBill.cpp.o:
+	$(MAKE) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/PrintBill.cpp.o
+.PHONY : PrintBill.cpp.o
+
+PrintBill.i: PrintBill.cpp.i
+
+.PHONY : PrintBill.i
+
+# target to preprocess a source file
+PrintBill.cpp.i:
+	$(MAKE) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/PrintBill.cpp.i
+.PHONY : PrintBill.cpp.i
+
+PrintBill.s: PrintBill.cpp.s
+
+.PHONY : PrintBill.s
+
+# target to generate assembly for a file
+PrintBill.cpp.s:
+	$(MAKE) -f CMakeFiles/UnitTesting.dir/build.make CMakeFiles/UnitTesting.dir/PrintBill.cpp.s
+.PHONY : PrintBill.cpp.s
 
 ReadyForBill.o: ReadyForBill.cpp.o
 
@@ -1683,6 +1818,9 @@ help:
 	@echo "... FloorState.o"
 	@echo "... FloorState.i"
 	@echo "... FloorState.s"
+	@echo "... FooterBill.o"
+	@echo "... FooterBill.i"
+	@echo "... FooterBill.s"
 	@echo "... Full.o"
 	@echo "... Full.i"
 	@echo "... Full.s"
@@ -1707,6 +1845,9 @@ help:
 	@echo "... HeadChef.o"
 	@echo "... HeadChef.i"
 	@echo "... HeadChef.s"
+	@echo "... HeaderBill.o"
+	@echo "... HeaderBill.i"
+	@echo "... HeaderBill.s"
 	@echo "... ItemIterator.o"
 	@echo "... ItemIterator.i"
 	@echo "... ItemIterator.s"
@@ -1725,6 +1866,9 @@ help:
 	@echo "... MakeTab.o"
 	@echo "... MakeTab.i"
 	@echo "... MakeTab.s"
+	@echo "... Marginals.o"
+	@echo "... Marginals.i"
+	@echo "... Marginals.s"
 	@echo "... MeatChef.o"
 	@echo "... MeatChef.i"
 	@echo "... MeatChef.s"
@@ -1743,6 +1887,9 @@ help:
 	@echo "... OrderItem.o"
 	@echo "... OrderItem.i"
 	@echo "... OrderItem.s"
+	@echo "... OrderPrint.o"
+	@echo "... OrderPrint.i"
+	@echo "... OrderPrint.s"
 	@echo "... Pass.o"
 	@echo "... Pass.i"
 	@echo "... Pass.s"
@@ -1755,6 +1902,9 @@ help:
 	@echo "... Plate.o"
 	@echo "... Plate.i"
 	@echo "... Plate.s"
+	@echo "... PrintBill.o"
+	@echo "... PrintBill.i"
+	@echo "... PrintBill.s"
 	@echo "... ReadyForBill.o"
 	@echo "... ReadyForBill.i"
 	@echo "... ReadyForBill.s"

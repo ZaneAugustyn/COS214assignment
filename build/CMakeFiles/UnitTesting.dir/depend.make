@@ -148,6 +148,11 @@ CMakeFiles/UnitTesting.dir/Floor.cpp.o: ../Tab.h
 CMakeFiles/UnitTesting.dir/FloorState.cpp.o: ../FloorState.cpp
 CMakeFiles/UnitTesting.dir/FloorState.cpp.o: ../FloorState.h
 
+CMakeFiles/UnitTesting.dir/FooterBill.cpp.o: ../FooterBill.cpp
+CMakeFiles/UnitTesting.dir/FooterBill.cpp.o: ../FooterBill.h
+CMakeFiles/UnitTesting.dir/FooterBill.cpp.o: ../Marginals.h
+CMakeFiles/UnitTesting.dir/FooterBill.cpp.o: ../PrintBill.h
+
 CMakeFiles/UnitTesting.dir/Full.cpp.o: ../Customer.h
 CMakeFiles/UnitTesting.dir/Full.cpp.o: ../Floor.h
 CMakeFiles/UnitTesting.dir/Full.cpp.o: ../FloorState.h
@@ -259,6 +264,11 @@ CMakeFiles/UnitTesting.dir/HeadChef.cpp.o: ../PrintBill.h
 CMakeFiles/UnitTesting.dir/HeadChef.cpp.o: ../SplitBill.h
 CMakeFiles/UnitTesting.dir/HeadChef.cpp.o: ../Tab.h
 
+CMakeFiles/UnitTesting.dir/HeaderBill.cpp.o: ../HeaderBill.cpp
+CMakeFiles/UnitTesting.dir/HeaderBill.cpp.o: ../HeaderBill.h
+CMakeFiles/UnitTesting.dir/HeaderBill.cpp.o: ../Marginals.h
+CMakeFiles/UnitTesting.dir/HeaderBill.cpp.o: ../PrintBill.h
+
 CMakeFiles/UnitTesting.dir/ItemIterator.cpp.o: ../GroupIterator.h
 CMakeFiles/UnitTesting.dir/ItemIterator.cpp.o: ../ItemIterator.cpp
 CMakeFiles/UnitTesting.dir/ItemIterator.cpp.o: ../ItemIterator.h
@@ -299,6 +309,10 @@ CMakeFiles/UnitTesting.dir/MakeTab.cpp.o: ../GroupState.h
 CMakeFiles/UnitTesting.dir/MakeTab.cpp.o: ../MakeTab.cpp
 CMakeFiles/UnitTesting.dir/MakeTab.cpp.o: ../MakeTab.h
 CMakeFiles/UnitTesting.dir/MakeTab.cpp.o: ../Tab.h
+
+CMakeFiles/UnitTesting.dir/Marginals.cpp.o: ../Marginals.cpp
+CMakeFiles/UnitTesting.dir/Marginals.cpp.o: ../Marginals.h
+CMakeFiles/UnitTesting.dir/Marginals.cpp.o: ../PrintBill.h
 
 CMakeFiles/UnitTesting.dir/MeatChef.cpp.o: ../Bill.h
 CMakeFiles/UnitTesting.dir/MeatChef.cpp.o: ../BillPayment.h
@@ -377,6 +391,10 @@ CMakeFiles/UnitTesting.dir/OrderItem.cpp.o: ../OrderComponent.h
 CMakeFiles/UnitTesting.dir/OrderItem.cpp.o: ../OrderItem.cpp
 CMakeFiles/UnitTesting.dir/OrderItem.cpp.o: ../OrderItem.h
 
+CMakeFiles/UnitTesting.dir/OrderPrint.cpp.o: ../OrderPrint.cpp
+CMakeFiles/UnitTesting.dir/OrderPrint.cpp.o: ../OrderPrint.h
+CMakeFiles/UnitTesting.dir/OrderPrint.cpp.o: ../PrintBill.h
+
 CMakeFiles/UnitTesting.dir/Pass.cpp.o: ../Bill.h
 CMakeFiles/UnitTesting.dir/Pass.cpp.o: ../BillPayment.h
 CMakeFiles/UnitTesting.dir/Pass.cpp.o: ../Chef.h
@@ -424,6 +442,9 @@ CMakeFiles/UnitTesting.dir/Plate.cpp.o: ../OrderComponent.h
 CMakeFiles/UnitTesting.dir/Plate.cpp.o: ../OrderItem.h
 CMakeFiles/UnitTesting.dir/Plate.cpp.o: ../Plate.cpp
 CMakeFiles/UnitTesting.dir/Plate.cpp.o: ../Plate.h
+
+CMakeFiles/UnitTesting.dir/PrintBill.cpp.o: ../PrintBill.cpp
+CMakeFiles/UnitTesting.dir/PrintBill.cpp.o: ../PrintBill.h
 
 CMakeFiles/UnitTesting.dir/ReadyForBill.cpp.o: ../Customer.h
 CMakeFiles/UnitTesting.dir/ReadyForBill.cpp.o: ../Group.h

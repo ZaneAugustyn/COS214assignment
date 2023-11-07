@@ -720,6 +720,71 @@ CMakeFiles/UnitTesting.dir/Neutral.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTesting.dir/Neutral.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/xadrian/COS 214/GroupProject/COS214assignment/Neutral.cpp" -o CMakeFiles/UnitTesting.dir/Neutral.cpp.s
 
+CMakeFiles/UnitTesting.dir/PrintBill.cpp.o: CMakeFiles/UnitTesting.dir/flags.make
+CMakeFiles/UnitTesting.dir/PrintBill.cpp.o: ../PrintBill.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/xadrian/COS 214/GroupProject/COS214assignment/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/UnitTesting.dir/PrintBill.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTesting.dir/PrintBill.cpp.o -c "/home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.cpp"
+
+CMakeFiles/UnitTesting.dir/PrintBill.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTesting.dir/PrintBill.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.cpp" > CMakeFiles/UnitTesting.dir/PrintBill.cpp.i
+
+CMakeFiles/UnitTesting.dir/PrintBill.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTesting.dir/PrintBill.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.cpp" -o CMakeFiles/UnitTesting.dir/PrintBill.cpp.s
+
+CMakeFiles/UnitTesting.dir/Marginals.cpp.o: CMakeFiles/UnitTesting.dir/flags.make
+CMakeFiles/UnitTesting.dir/Marginals.cpp.o: ../Marginals.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/xadrian/COS 214/GroupProject/COS214assignment/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/UnitTesting.dir/Marginals.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTesting.dir/Marginals.cpp.o -c "/home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.cpp"
+
+CMakeFiles/UnitTesting.dir/Marginals.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTesting.dir/Marginals.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.cpp" > CMakeFiles/UnitTesting.dir/Marginals.cpp.i
+
+CMakeFiles/UnitTesting.dir/Marginals.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTesting.dir/Marginals.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.cpp" -o CMakeFiles/UnitTesting.dir/Marginals.cpp.s
+
+CMakeFiles/UnitTesting.dir/OrderPrint.cpp.o: CMakeFiles/UnitTesting.dir/flags.make
+CMakeFiles/UnitTesting.dir/OrderPrint.cpp.o: ../OrderPrint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/xadrian/COS 214/GroupProject/COS214assignment/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/UnitTesting.dir/OrderPrint.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTesting.dir/OrderPrint.cpp.o -c "/home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.cpp"
+
+CMakeFiles/UnitTesting.dir/OrderPrint.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTesting.dir/OrderPrint.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.cpp" > CMakeFiles/UnitTesting.dir/OrderPrint.cpp.i
+
+CMakeFiles/UnitTesting.dir/OrderPrint.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTesting.dir/OrderPrint.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.cpp" -o CMakeFiles/UnitTesting.dir/OrderPrint.cpp.s
+
+CMakeFiles/UnitTesting.dir/HeaderBill.cpp.o: CMakeFiles/UnitTesting.dir/flags.make
+CMakeFiles/UnitTesting.dir/HeaderBill.cpp.o: ../HeaderBill.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/xadrian/COS 214/GroupProject/COS214assignment/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/UnitTesting.dir/HeaderBill.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTesting.dir/HeaderBill.cpp.o -c "/home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.cpp"
+
+CMakeFiles/UnitTesting.dir/HeaderBill.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTesting.dir/HeaderBill.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.cpp" > CMakeFiles/UnitTesting.dir/HeaderBill.cpp.i
+
+CMakeFiles/UnitTesting.dir/HeaderBill.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTesting.dir/HeaderBill.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.cpp" -o CMakeFiles/UnitTesting.dir/HeaderBill.cpp.s
+
+CMakeFiles/UnitTesting.dir/FooterBill.cpp.o: CMakeFiles/UnitTesting.dir/flags.make
+CMakeFiles/UnitTesting.dir/FooterBill.cpp.o: ../FooterBill.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/xadrian/COS 214/GroupProject/COS214assignment/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/UnitTesting.dir/FooterBill.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/UnitTesting.dir/FooterBill.cpp.o -c "/home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.cpp"
+
+CMakeFiles/UnitTesting.dir/FooterBill.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/UnitTesting.dir/FooterBill.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.cpp" > CMakeFiles/UnitTesting.dir/FooterBill.cpp.i
+
+CMakeFiles/UnitTesting.dir/FooterBill.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/UnitTesting.dir/FooterBill.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.cpp" -o CMakeFiles/UnitTesting.dir/FooterBill.cpp.s
+
 # Object files for target UnitTesting
 UnitTesting_OBJECTS = \
 "CMakeFiles/UnitTesting.dir/Floor.cpp.o" \
@@ -772,7 +837,12 @@ UnitTesting_OBJECTS = \
 "CMakeFiles/UnitTesting.dir/LanguageAdapter.cpp.o" \
 "CMakeFiles/UnitTesting.dir/LanguageTarget.cpp.o" \
 "CMakeFiles/UnitTesting.dir/Plate.cpp.o" \
-"CMakeFiles/UnitTesting.dir/Neutral.cpp.o"
+"CMakeFiles/UnitTesting.dir/Neutral.cpp.o" \
+"CMakeFiles/UnitTesting.dir/PrintBill.cpp.o" \
+"CMakeFiles/UnitTesting.dir/Marginals.cpp.o" \
+"CMakeFiles/UnitTesting.dir/OrderPrint.cpp.o" \
+"CMakeFiles/UnitTesting.dir/HeaderBill.cpp.o" \
+"CMakeFiles/UnitTesting.dir/FooterBill.cpp.o"
 
 # External object files for target UnitTesting
 UnitTesting_EXTERNAL_OBJECTS =
@@ -828,9 +898,14 @@ libUnitTesting.a: CMakeFiles/UnitTesting.dir/LanguageAdapter.cpp.o
 libUnitTesting.a: CMakeFiles/UnitTesting.dir/LanguageTarget.cpp.o
 libUnitTesting.a: CMakeFiles/UnitTesting.dir/Plate.cpp.o
 libUnitTesting.a: CMakeFiles/UnitTesting.dir/Neutral.cpp.o
+libUnitTesting.a: CMakeFiles/UnitTesting.dir/PrintBill.cpp.o
+libUnitTesting.a: CMakeFiles/UnitTesting.dir/Marginals.cpp.o
+libUnitTesting.a: CMakeFiles/UnitTesting.dir/OrderPrint.cpp.o
+libUnitTesting.a: CMakeFiles/UnitTesting.dir/HeaderBill.cpp.o
+libUnitTesting.a: CMakeFiles/UnitTesting.dir/FooterBill.cpp.o
 libUnitTesting.a: CMakeFiles/UnitTesting.dir/build.make
 libUnitTesting.a: CMakeFiles/UnitTesting.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/xadrian/COS 214/GroupProject/COS214assignment/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_52) "Linking CXX static library libUnitTesting.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/xadrian/COS 214/GroupProject/COS214assignment/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_57) "Linking CXX static library libUnitTesting.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/UnitTesting.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/UnitTesting.dir/link.txt --verbose=$(VERBOSE)
 

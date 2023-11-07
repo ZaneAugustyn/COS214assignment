@@ -255,6 +255,31 @@
   "file": "/home/xadrian/COS 214/GroupProject/COS214assignment/Neutral.cpp"
 },
 {
+  "directory": "/home/xadrian/COS 214/GroupProject/COS214assignment/build",
+  "command": "/usr/bin/g++    -g -fPIC   -std=gnu++11 -o CMakeFiles/UnitTesting.dir/PrintBill.cpp.o -c \"/home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.cpp\"",
+  "file": "/home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.cpp"
+},
+{
+  "directory": "/home/xadrian/COS 214/GroupProject/COS214assignment/build",
+  "command": "/usr/bin/g++    -g -fPIC   -std=gnu++11 -o CMakeFiles/UnitTesting.dir/Marginals.cpp.o -c \"/home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.cpp\"",
+  "file": "/home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.cpp"
+},
+{
+  "directory": "/home/xadrian/COS 214/GroupProject/COS214assignment/build",
+  "command": "/usr/bin/g++    -g -fPIC   -std=gnu++11 -o CMakeFiles/UnitTesting.dir/OrderPrint.cpp.o -c \"/home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.cpp\"",
+  "file": "/home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.cpp"
+},
+{
+  "directory": "/home/xadrian/COS 214/GroupProject/COS214assignment/build",
+  "command": "/usr/bin/g++    -g -fPIC   -std=gnu++11 -o CMakeFiles/UnitTesting.dir/HeaderBill.cpp.o -c \"/home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.cpp\"",
+  "file": "/home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.cpp"
+},
+{
+  "directory": "/home/xadrian/COS 214/GroupProject/COS214assignment/build",
+  "command": "/usr/bin/g++    -g -fPIC   -std=gnu++11 -o CMakeFiles/UnitTesting.dir/FooterBill.cpp.o -c \"/home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.cpp\"",
+  "file": "/home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.cpp"
+},
+{
   "directory": "/home/xadrian/COS 214/GroupProject/COS214assignment/build/googletest/googlemock",
   "command": "/usr/bin/g++   -isystem \"/home/xadrian/COS 214/GroupProject/COS214assignment/googletest/googlemock/include\" -isystem \"/home/xadrian/COS 214/GroupProject/COS214assignment/googletest/googlemock\" -isystem \"/home/xadrian/COS 214/GroupProject/COS214assignment/googletest/googletest/include\" -isystem \"/home/xadrian/COS 214/GroupProject/COS214assignment/googletest/googletest\"  -g -fPIC   -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++14 -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c \"/home/xadrian/COS 214/GroupProject/COS214assignment/googletest/googlemock/src/gmock_main.cc\"",
   "file": "/home/xadrian/COS 214/GroupProject/COS214assignment/googletest/googlemock/src/gmock_main.cc"

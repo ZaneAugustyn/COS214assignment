@@ -64,6 +64,11 @@ set(Headers
     LanguageTarget.h
     Plate.h
     Neutral.h
+    PrintBill.h
+    Marginals.h
+    OrderPrint.h
+    HeaderBill.h
+    FooterBill.h
 )
 set(Sources
     Floor.cpp
@@ -117,6 +122,11 @@ set(Sources
     LanguageTarget.cpp
     Plate.cpp
     Neutral.cpp
+    PrintBill.cpp
+    Marginals.cpp
+    OrderPrint.cpp
+    HeaderBill.cpp
+    FooterBill.cpp
 )
 
 add_library(${This} STATIC ${Sources} ${Headers}) # create static library

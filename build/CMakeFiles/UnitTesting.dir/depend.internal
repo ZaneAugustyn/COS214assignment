@@ -148,6 +148,11 @@ CMakeFiles/UnitTesting.dir/Floor.cpp.o
 CMakeFiles/UnitTesting.dir/FloorState.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/FloorState.cpp
  /home/xadrian/COS 214/GroupProject/COS214assignment/FloorState.h
+CMakeFiles/UnitTesting.dir/FooterBill.cpp.o
+ /home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.cpp
+ /home/xadrian/COS 214/GroupProject/COS214assignment/FooterBill.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
 CMakeFiles/UnitTesting.dir/Full.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/Customer.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Floor.h
@@ -259,6 +264,11 @@ CMakeFiles/UnitTesting.dir/HeadChef.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/SplitBill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Tab.h
+CMakeFiles/UnitTesting.dir/HeaderBill.cpp.o
+ /home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.cpp
+ /home/xadrian/COS 214/GroupProject/COS214assignment/HeaderBill.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
 CMakeFiles/UnitTesting.dir/ItemIterator.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/GroupIterator.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/ItemIterator.cpp
@@ -300,6 +310,10 @@ CMakeFiles/UnitTesting.dir/MakeTab.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/MakeTab.cpp
  /home/xadrian/COS 214/GroupProject/COS214assignment/MakeTab.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Tab.h
+CMakeFiles/UnitTesting.dir/Marginals.cpp.o
+ /home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.cpp
+ /home/xadrian/COS 214/GroupProject/COS214assignment/Marginals.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
 CMakeFiles/UnitTesting.dir/MeatChef.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/Bill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/BillPayment.h
@@ -377,6 +391,10 @@ CMakeFiles/UnitTesting.dir/OrderItem.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderComponent.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderItem.cpp
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderItem.h
+CMakeFiles/UnitTesting.dir/OrderPrint.cpp.o
+ /home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.cpp
+ /home/xadrian/COS 214/GroupProject/COS214assignment/OrderPrint.h
+ /home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
 CMakeFiles/UnitTesting.dir/Pass.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/Bill.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/BillPayment.h
@@ -425,6 +443,9 @@ CMakeFiles/UnitTesting.dir/Plate.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/OrderItem.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Plate.cpp
  /home/xadrian/COS 214/GroupProject/COS214assignment/Plate.h
+CMakeFiles/UnitTesting.dir/PrintBill.cpp.o
+ /home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.cpp
+ /home/xadrian/COS 214/GroupProject/COS214assignment/PrintBill.h
 CMakeFiles/UnitTesting.dir/ReadyForBill.cpp.o
  /home/xadrian/COS 214/GroupProject/COS214assignment/Customer.h
  /home/xadrian/COS 214/GroupProject/COS214assignment/Group.h
