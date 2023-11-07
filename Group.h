@@ -7,11 +7,13 @@
 #include<string>
 
 #include "GroupState.h"
+#include "EmotionalState.h"
 #include "Customer.h"
 
 using namespace std;
 
 class GroupState;
+class EmotionalState;
 
 class Waiter;
 class Bill;
@@ -30,7 +32,7 @@ private:
     Bill* bill_;
     Waiter* waiter_;
     int groupNumber_;
-    GroupState* lastEmotion;
+    EmotionalState* lastEmotion_;
 
 public:
     /**
@@ -77,6 +79,13 @@ public:
      * @return void
     */
     void SetState(GroupState * state);
+
+    /**
+     * @brief set the emotional state of the group
+     * @param state the emotional state to be assigned to a group
+     * @return void
+    */
+    void setLastEmotion(EmotionalState * state);
 
     /**
      * @brief the Context class of the State pattern that defines the requests for the state changes
@@ -185,10 +194,10 @@ public:
     void updateLastEmotion(GroupState* State);
 
     /**
-     * @brief Update last emotion
-     * @return GroupState*
+     * @brief get last emotion
+     * @return EmotionalState*
      */
-    GroupState* getLastEmotion();
+    EmotionalState* getLastEmotion();
 };
 
 #endif

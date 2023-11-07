@@ -23,21 +23,6 @@ void ReadyForBill::WaitInQueue(Group *group)
     cout << "Cannot move back to the queue." << endl;
 }
 
-void ReadyForBill::MakeUnhappy(Group *group)
-{
-    group->SetState(new Unhappy());
-}
-
-void ReadyForBill::MakeHappy(Group *group)
-{
-    group->SetState(new Happy());
-}
-
-void ReadyForBill::MakeNeutral(Group *group)
-{
-    group->SetState(new Neutral());
-}
-
 void ReadyForBill::RequestTab(Group *group)
 {
     cout << "Cannot request for a tab when seated." << endl;
@@ -45,7 +30,7 @@ void ReadyForBill::RequestTab(Group *group)
 
 void ReadyForBill::RequestBill(Group *group)
 {
-    cout << "Currently in the ReadyForBill state." << endl;
+    cout << "Group has already paid their bill." << endl;
 }
 
 string ReadyForBill::ToString()

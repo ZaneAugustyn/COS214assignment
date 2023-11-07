@@ -239,7 +239,6 @@ void Facade::option4()
             }
         }
         if (selectedGroup) {
-            askForHappiness(selectedGroup);
             selectedGroup->RequestBill();
             break;
         } else {
@@ -347,20 +346,4 @@ void Facade::initBasic()
 
     //add the waiters to the maitre'd
     maitreD->setWaiterList(waiters);
-}
-
-void Facade::askForHappiness(Group* selectedGroup)
-{
-    char status;
-    cout <<"Are you happy/unhappy with the service? (H/U) ";
-    cin>>status;
-    while (status != 'H' && status != 'U')
-    {
-        cout << RED << "Please enter a valid choice (H/U) " << RESET;
-        cin>>status;
-    }
-    if (status =='H')
-        selectedGroup->MakeHappy();
-    else if (status =='U')
-        selectedGroup->MakeUnhappy();
 }

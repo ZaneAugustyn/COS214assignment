@@ -43,20 +43,6 @@ public:
     virtual void WaitInQueue(Group * group) = 0;
 
     /**
-     * @brief the State participant of the State pattern that defines the interface for the MakeUnhappy behaviour of the ConcreteStates
-     * @param group the group that is requesting the request
-     * @return void
-    */
-    virtual void MakeUnhappy(Group * group) = 0;
-
-    /**
-     * @brief the State participant of the State pattern that defines the interface for the MakeHappy behaviour of the ConcreteStates
-     * @param group the group that is requesting the request
-     * @return void
-    */
-    virtual void MakeHappy(Group * group) = 0;
-
-    /**
      * @brief the State participant of the State pattern that defines the interface for the RequestTab behaviour of the ConcreteStates
      * @param group the group that is requesting the request
      * @return void
@@ -69,13 +55,6 @@ public:
      * @return void
     */
     virtual void RequestBill(Group * group) = 0;
-
-    /**
-     * @brief the State participant of the State pattern that defines the interface for the MakeNeutral behaviour of the ConcreteStates
-     * @param group the group that is requesting the request
-     * @return void  
-    */
-    virtual void MakeNeutral(Group * group) = 0;
 
 
     /**

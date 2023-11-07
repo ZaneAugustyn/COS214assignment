@@ -16,27 +16,12 @@ ReadyToOrder::~ReadyToOrder()
 
 void ReadyToOrder::RequestToOrder(Group *group) 
 {
-    cout << "Currently in ReadyToOrder state." << endl;
+    cout << "Group has already ordered." << endl;
 }
 
 void ReadyToOrder::WaitInQueue(Group *group)
 {
     cout << "Cannot move to WaitForTable state." << endl;
-}
-
-void ReadyToOrder::MakeUnhappy(Group *group)
-{
-    group->SetState(new Unhappy());
-}
-
-void ReadyToOrder::MakeHappy(Group *group)
-{
-    group->SetState(new Happy());
-}
-
-void ReadyToOrder::MakeNeutral(Group * group)
-{
-    group->SetState(new Neutral());
 }
 
 void ReadyToOrder::RequestTab(Group *group)

@@ -21,6 +21,9 @@
 #include <string>
 #include <limits> 
 
+#define RED     "\033[31m"      /* Red */
+#define RESET   "\033[0m"
+
 Waiter::Waiter(std::string n, Pass* pass):Colleague(pass)
 {
     this->name_ = n;
@@ -152,6 +155,20 @@ void Waiter::update(Group* group)
     }
     else if(group->GetState()->ToString() == "ReadyForBill"){
         //the waiter will take the group bill and display it
+        
+        char status;
+        cout <<"Are you happy/unhappy with the service? (H/U) ";
+        cin>>status;
+        while (status != 'H' && status != 'U')
+        {
+            cout << RED << "Please enter a valid choice (H/U) " << RESET;
+            cin>>status;
+        }
+        if (status =='H')
+            group->MakeHappy();
+        else if (status =='U')
+            group->MakeUnhappy();
+
         cout << "You have to pay R " << group->getBill()->getTotal() << endl;
         cout << "How would you like to pay it? 'S' to split, 'F' to pay in full, 'T' to put it on a tab" << endl;
         char c;

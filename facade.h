@@ -122,13 +122,7 @@ public:
      * @return void
      */
     void initBasic();
-
-    /**
-     * @brief Ask the group for their satisfaction with the service and update their status accordingly.
-     * @param selectedGroup The selected group to ask for satisfaction.
-     * @return void
-     */
-    void askForHappiness(Group* selectedGroup);
+    
 };
 
 #endif

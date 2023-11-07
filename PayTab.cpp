@@ -20,24 +20,9 @@ void PayTab::WaitInQueue(Group *group)
     cout << "Cannot change state to WaitForTable." << endl;
 }
 
-void PayTab::MakeUnhappy(Group *group)
-{
-    cout << "Cannot change state to Unhappy." << endl;
-}
-
-void PayTab::MakeHappy(Group *group)
-{
-    cout << "Cannot change state to Happy." << endl;
-}
-
 void PayTab::RequestTab(Group *group)
 {
     cout << "Currently in the PayTab state." << endl;
-}
-
-void PayTab::MakeNeutral(Group *group)
-{
-    cout << "Cannot change state to Neutral." << endl;
 }
 
 void PayTab::RequestBill(Group *group)

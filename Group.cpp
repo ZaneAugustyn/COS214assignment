@@ -11,7 +11,7 @@ Group::Group(GroupState * state, int groupNumber)
 {
     groupState_ = state;
     groupNumber_ = groupNumber;
-    lastEmotion = new Neutral();
+    lastEmotion_ = new Neutral();
 }
 
 Group::~Group()
@@ -23,10 +23,15 @@ void Group::SetState(GroupState *state)
 {
     delete groupState_;
     groupState_ = state;
-    if(state->ToString() == "Happy" || state->ToString() == "UnHappy" || state->ToString() == "Neutral")
-    {
-        updateLastEmotion(state);
-    }
+
+}
+
+void Group::setLastEmotion(EmotionalState *state)
+{
+    delete lastEmotion_;
+    lastEmotion_ = state;
+    cout<<"Group emotion changed to "<<lastEmotion_->ToString()<<endl;
+
 }
 
 void Group::RequestToOrder()
@@ -53,8 +58,8 @@ void Group::MakeUnhappy()
         cout << "Can't have Unhappy state when in the queue." << endl;
         return;
     }
-    groupState_->MakeUnhappy(this);
-    lastEmotion = new Unhappy();
+    lastEmotion_->MakeUnhappy(this);
+    lastEmotion_ = new Unhappy();
 }
 
 void Group::MakeHappy()
@@ -63,8 +68,8 @@ void Group::MakeHappy()
         cout << "Can't have Happy state when in the queue." << endl;
         return;
     }
-    groupState_->MakeHappy(this);
-    lastEmotion = new Happy();
+    lastEmotion_->MakeHappy(this);
+    lastEmotion_ = new Happy();
 }
 
 void Group::MakeNeutral()
@@ -73,8 +78,8 @@ void Group::MakeNeutral()
         cout << "Can't have Happy state when in the queue." << endl;
         return;
     }
-    groupState_->MakeNeutral(this);
-    lastEmotion = new Neutral();
+    lastEmotion_->MakeNeutral(this);
+    lastEmotion_ = new Neutral();
 }
 
 void Group::RequestTab()
@@ -159,13 +164,7 @@ Waiter* Group::getWaiter(){
     return waiter_;
 }
 
-void Group::updateLastEmotion(GroupState* State)
+EmotionalState* Group::getLastEmotion()
 {
-    this->lastEmotion = State; 
-    cout<<"Group emotion changed to "<<State->ToString()<<endl;
-}
-
-GroupState* Group::getLastEmotion()
-{
-    return this->lastEmotion;
+    return this->lastEmotion_;
 }

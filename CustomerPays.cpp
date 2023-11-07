@@ -40,7 +40,9 @@ void CustomerPays::Pay(Group* group)
             }
             else
             {
-                cout << "Please enter a valid number to pay! Please pay the full amount as R" << paid << " is less than R" << getTotal() << endl;
+                cout << "Please enter a valid number to pay!" << endl;
+                cin.clear(); // Clear error flags
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
             }
         }
         

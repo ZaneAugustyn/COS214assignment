@@ -27,21 +27,6 @@ void WaitForTable::WaitInQueue(Group *group)
     cout << "Currently in the WaitForTable state." << endl;
 }
 
-void WaitForTable::MakeUnhappy(Group *group)
-{
-    group->SetState(new Unhappy());
-}
-
-void WaitForTable::MakeNeutral(Group *group)
-{
-    group->SetState(new Neutral());
-}
-
-void WaitForTable::MakeHappy(Group *group)
-{
-    group->SetState(new Happy());
-}
-
 void WaitForTable::RequestTab(Group *group)
 {
     group->SetState(new PayTab());
@@ -50,7 +35,7 @@ void WaitForTable::RequestTab(Group *group)
 
 void WaitForTable::RequestBill(Group *group)
 {
-    cout << "Cannot request the bill while in the queue." << endl;
+    cout << "Cannot request the bill before having ordered." << endl;
 }
 
 string WaitForTable::ToString()
