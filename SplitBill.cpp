@@ -34,7 +34,14 @@ void SplitBill::Pay(Group *group)
         {
             if (cin >> pay)
             {
-                invalid = false;
+                if(pay >= 0)
+                {
+                    invalid = false;
+                }
+                else
+                {
+                    cout << "Please enter a valid amount." << endl;
+                }
             }
             else
             {
@@ -62,8 +69,14 @@ void SplitBill::Pay(Group *group)
                             {
                                 if(cin >> tip)
                                 {
-                                    cout << "Thank you for the tip!" << endl;
-                                    invalid = false;
+                                    if(tip > 0)
+                                    {
+                                        cout << "Thank you for the tip!" << endl;
+                                        invalid = false;
+                                    }
+                                    else{
+                                        cout << "Please enter a valid tip amount." << endl;
+                                    }
                                 }
                                 else
                                 {
