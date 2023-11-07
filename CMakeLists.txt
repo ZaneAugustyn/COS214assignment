@@ -131,4 +131,4 @@ set(Sources
 
 add_library(${This} STATIC ${Sources} ${Headers}) # create static library
 
-add_subdirectory(XadrianTesting) # add test directory
+add_subdirectory(tests) # add test directory
