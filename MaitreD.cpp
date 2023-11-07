@@ -132,8 +132,6 @@ void MaitreD::removeGroupFromFloor(Group* group)
     //a var where we keep the group that is waiting if we need to pop the queue to be able to access the group
     myFloor_->excuseGroup(group);//group is excused from the floor
 
-    cout<<LIGHT_GREEN<<"Group  "<<group->getGroupNumber()<<" removed from floor"<<RESET<<endl;
-
     if(group->GetState()->ToString() == "PayTab") 
     {
         addGroupToWaitingGroups(group);

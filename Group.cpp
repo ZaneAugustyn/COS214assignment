@@ -136,12 +136,7 @@ void Group::notify()
 
 void Group::setBill(Bill* bill){
 
-    if(bill_ == NULL){
-        bill_ = bill;
-    }
-    else{
-        bill_->setTotal(bill_->getTotal() + bill->getTotal());
-    }
+    bill_ = bill;
 
 }
 
