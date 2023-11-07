@@ -22,10 +22,16 @@ void CustomerPays::Pay(Group* group)
         {
             if(cin >> paid)
             {
+                
                 if (paid > getTotal())
+                {
                     cout << "Thank you for the Tip!" << endl;
+                    invalid = false;
+                }
                 else if(paid < getTotal())
+                {
                     cout << "Payment failed! Please pay the full amount as R" << paid << " is less than R" << getTotal() << endl;
+                }
             }
             else
             {
