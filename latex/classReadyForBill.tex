@@ -1,0 +1,246 @@
+\hypertarget{classReadyForBill}{}\doxysection{Ready\+For\+Bill Class Reference}
+\label{classReadyForBill}\index{ReadyForBill@{ReadyForBill}}
+
+
+This class represent the ready\+For\+Bill state of the customer.  
+
+
+
+
+{\ttfamily \#include $<$Ready\+For\+Bill.\+h$>$}
+
+
+
+Inheritance diagram for Ready\+For\+Bill\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classReadyForBill__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ready\+For\+Bill\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classReadyForBill__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classReadyForBill_a26437c293c12cdcf5eba06cba1fbaf4b}\label{classReadyForBill_a26437c293c12cdcf5eba06cba1fbaf4b}} 
+\mbox{\hyperlink{classReadyForBill_a26437c293c12cdcf5eba06cba1fbaf4b}{Ready\+For\+Bill}} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classReadyForBill_abb001ce0eb5af20f7c914a0dc397d490}\label{classReadyForBill_abb001ce0eb5af20f7c914a0dc397d490}} 
+\mbox{\hyperlink{classReadyForBill_abb001ce0eb5af20f7c914a0dc397d490}{$\sim$\+Ready\+For\+Bill}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classReadyForBill_ab21ccd63234cb579a0448a7117643f59}{Request\+To\+Order}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Request\+To\+Order request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classReadyForBill_abfc3ca0aef894f27a50e24ccf297c922}{Wait\+In\+Queue}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Wait\+In\+Queue request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classReadyForBill_af92dcac7b92546b28c60d09775d96dd6}{Make\+Unhappy}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Make\+Unhappy request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classReadyForBill_afda9aff55e1621d33e01298ade1d1029}{Make\+Happy}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the \mbox{\hyperlink{classHappy}{Happy}} request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classReadyForBill_a7ca13e051b87d46c5bb579d4ebf70ec8}{Make\+Neutral}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the \mbox{\hyperlink{classNeutral}{Neutral}} request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classReadyForBill_ab898636aa3574180f266dc72ba75ed86}{Request\+Tab}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Request\+Tab request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classReadyForBill_a345a471bbd46f16393f133a6156be316}{Request\+Bill}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Request\+Bill request \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classReadyForBill_a95fb3422fdd692aa3388ba7a3a704284}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em method to return a string of the state name \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represent the ready\+For\+Bill state of the customer. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classReadyForBill_afda9aff55e1621d33e01298ade1d1029}\label{classReadyForBill_afda9aff55e1621d33e01298ade1d1029}} 
+\index{ReadyForBill@{ReadyForBill}!MakeHappy@{MakeHappy}}
+\index{MakeHappy@{MakeHappy}!ReadyForBill@{ReadyForBill}}
+\doxysubsubsection{\texorpdfstring{MakeHappy()}{MakeHappy()}}
+{\footnotesize\ttfamily void Ready\+For\+Bill\+::\+Make\+Happy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the \mbox{\hyperlink{classHappy}{Happy}} request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_a6f656d36478df3813b49a643f842dce1}{Group\+State}}.
+
+\mbox{\Hypertarget{classReadyForBill_a7ca13e051b87d46c5bb579d4ebf70ec8}\label{classReadyForBill_a7ca13e051b87d46c5bb579d4ebf70ec8}} 
+\index{ReadyForBill@{ReadyForBill}!MakeNeutral@{MakeNeutral}}
+\index{MakeNeutral@{MakeNeutral}!ReadyForBill@{ReadyForBill}}
+\doxysubsubsection{\texorpdfstring{MakeNeutral()}{MakeNeutral()}}
+{\footnotesize\ttfamily void Ready\+For\+Bill\+::\+Make\+Neutral (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the \mbox{\hyperlink{classNeutral}{Neutral}} request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_a4f27694a8a88c832cbefc0f1be290a95}{Group\+State}}.
+
+\mbox{\Hypertarget{classReadyForBill_af92dcac7b92546b28c60d09775d96dd6}\label{classReadyForBill_af92dcac7b92546b28c60d09775d96dd6}} 
+\index{ReadyForBill@{ReadyForBill}!MakeUnhappy@{MakeUnhappy}}
+\index{MakeUnhappy@{MakeUnhappy}!ReadyForBill@{ReadyForBill}}
+\doxysubsubsection{\texorpdfstring{MakeUnhappy()}{MakeUnhappy()}}
+{\footnotesize\ttfamily void Ready\+For\+Bill\+::\+Make\+Unhappy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Make\+Unhappy request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_a02f7ffc469e8d474ed547a6d0f161096}{Group\+State}}.
+
+\mbox{\Hypertarget{classReadyForBill_a345a471bbd46f16393f133a6156be316}\label{classReadyForBill_a345a471bbd46f16393f133a6156be316}} 
+\index{ReadyForBill@{ReadyForBill}!RequestBill@{RequestBill}}
+\index{RequestBill@{RequestBill}!ReadyForBill@{ReadyForBill}}
+\doxysubsubsection{\texorpdfstring{RequestBill()}{RequestBill()}}
+{\footnotesize\ttfamily void Ready\+For\+Bill\+::\+Request\+Bill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Request\+Bill request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_ada5a23937d06e17439336af3f9045426}{Group\+State}}.
+
+\mbox{\Hypertarget{classReadyForBill_ab898636aa3574180f266dc72ba75ed86}\label{classReadyForBill_ab898636aa3574180f266dc72ba75ed86}} 
+\index{ReadyForBill@{ReadyForBill}!RequestTab@{RequestTab}}
+\index{RequestTab@{RequestTab}!ReadyForBill@{ReadyForBill}}
+\doxysubsubsection{\texorpdfstring{RequestTab()}{RequestTab()}}
+{\footnotesize\ttfamily void Ready\+For\+Bill\+::\+Request\+Tab (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Request\+Tab request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_abaa00ecfeeff67144884aba156ef6e48}{Group\+State}}.
+
+\mbox{\Hypertarget{classReadyForBill_ab21ccd63234cb579a0448a7117643f59}\label{classReadyForBill_ab21ccd63234cb579a0448a7117643f59}} 
+\index{ReadyForBill@{ReadyForBill}!RequestToOrder@{RequestToOrder}}
+\index{RequestToOrder@{RequestToOrder}!ReadyForBill@{ReadyForBill}}
+\doxysubsubsection{\texorpdfstring{RequestToOrder()}{RequestToOrder()}}
+{\footnotesize\ttfamily void Ready\+For\+Bill\+::\+Request\+To\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Request\+To\+Order request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_aff4a24d2821282afc2b210fd4248afbd}{Group\+State}}.
+
+\mbox{\Hypertarget{classReadyForBill_a95fb3422fdd692aa3388ba7a3a704284}\label{classReadyForBill_a95fb3422fdd692aa3388ba7a3a704284}} 
+\index{ReadyForBill@{ReadyForBill}!ToString@{ToString}}
+\index{ToString@{ToString}!ReadyForBill@{ReadyForBill}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily string Ready\+For\+Bill\+::\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+method to return a string of the state name 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_a939244f42e418fcb401a98dbabb2109d}{Group\+State}}.
+
+\mbox{\Hypertarget{classReadyForBill_abfc3ca0aef894f27a50e24ccf297c922}\label{classReadyForBill_abfc3ca0aef894f27a50e24ccf297c922}} 
+\index{ReadyForBill@{ReadyForBill}!WaitInQueue@{WaitInQueue}}
+\index{WaitInQueue@{WaitInQueue}!ReadyForBill@{ReadyForBill}}
+\doxysubsubsection{\texorpdfstring{WaitInQueue()}{WaitInQueue()}}
+{\footnotesize\ttfamily void Ready\+For\+Bill\+::\+Wait\+In\+Queue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Wait\+In\+Queue request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_a3189f08b482dc9d528df5bc1263c6dc9}{Group\+State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Ready\+For\+Bill.\+h\item 
+Ready\+For\+Bill.\+cpp\end{DoxyCompactItemize}

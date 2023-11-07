@@ -1,0 +1,4 @@
+<map id="Full" name="Full">
+<area shape="rect" id="node1" title="This class represents a state whether the restaurant is full or not." alt="" coords="27,80,73,107"/>
+<area shape="rect" id="node2" href="$classFloorState.html" title="This class represents the state of the floor in the restaurant." alt="" coords="5,5,95,32"/>
+</map>

@@ -1,13 +1,31 @@
 #ifndef _TAB_H
 #define _TAB_H
-// code here
+
+/**
+ * @class Tab
+ * @brief Represents a tab for tracking the total amount owed.
+ */
 class Tab
 {
 private:
-    /* data */
+    float TotalAmountOwed_; 
 public:
-    Tab(/* args */);
+    /**
+     * @brief Constructor for the Tab class.
+     * @param amount The initial total amount owed in the tab.
+     */
+    Tab(float amount);
+
+    /**
+     * @brief Destructor for the Tab class.
+     */
     ~Tab();
+
+    /**
+     * @brief Get the current total amount owed in the tab.
+     * @return The total amount owed in the tab.
+     */
+    float getAmount() const;
 };
 
 #endif

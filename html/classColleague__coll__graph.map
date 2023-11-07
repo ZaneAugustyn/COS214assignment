@@ -1,0 +1,5 @@
+<map id="Colleague" name="Colleague">
+<area shape="rect" id="node1" title="This class is a abstract colleague of the Mediator design." alt="" coords="35,5,121,32"/>
+<area shape="rect" id="node3" href="$classChef.html" title="This class is a concrete colleague of the Mediator design and the Handler participant of the Chain of..." alt="" coords="5,81,57,108"/>
+<area shape="rect" id="node2" href="$classPass.html" title="This class acts as the mediator between the chefs and the waiters, it connects the floor and the kitc..." alt="" coords="43,171,94,197"/>
+</map>

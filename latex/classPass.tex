@@ -1,0 +1,209 @@
+\hypertarget{classPass}{}\doxysection{Pass Class Reference}
+\label{classPass}\index{Pass@{Pass}}
+
+
+This class acts as the mediator between the chefs and the waiters, it connects the floor and the kitchen together.  
+
+
+
+
+{\ttfamily \#include $<$Pass.\+h$>$}
+
+
+
+Collaboration diagram for Pass\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classPass__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPass_a5d0cea4019f5c123fb4a4417de8d95b9}{Pass}} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPass_a3013200b2c391b4fa851fa4e9c16a0ab}{Pass}} (vector$<$ \mbox{\hyperlink{classWaiter}{Waiter}} $\ast$ $>$ waiters, \mbox{\hyperlink{classChef}{Chef}} $\ast$head\+Chef)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPass_ab22a8dcc3ddb49dfc9d7be2478ad0258}{notify\+Head\+Chef}} (\mbox{\hyperlink{classWaiter}{Waiter}} $\ast$waiter)
+\begin{DoxyCompactList}\small\item\em the head chef is notifies when the waiter added a order to the plate \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPass_af00804eb0a05d37435f30aa6dc884135}{notify\+Waiter}} (\mbox{\hyperlink{classChef}{Chef}} $\ast$headchef)
+\begin{DoxyCompactList}\small\item\em waiter is notified as soon as a order is complete and added to the pass \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPass_ad6a6d25eea242fb5e43c83a05d3e4f13}{add\+To\+List\+Of\+Trays}} (vector$<$ \mbox{\hyperlink{classPlate}{Plate}} $\ast$ $>$ plates)
+\begin{DoxyCompactList}\small\item\em add a plate (a completed order) to the tray on the pass \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPass_af6ce3621afa3b8980b22f1bdfe708d62}{add\+Order}} (\mbox{\hyperlink{classOrder}{Order}} $\ast$order)
+\begin{DoxyCompactList}\small\item\em used by waiter to add a order to the order list in the pass \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPass_aebd205f3fdc4ae4eb207d65c14e822ff}{dequeue\+Order}} ()
+\begin{DoxyCompactList}\small\item\em dequeue the first order from the list (First come first serve) \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classPass_abe2fe9b29d21424fe4b410fc8e98606c}{$\sim$\+Pass}} ()
+\begin{DoxyCompactList}\small\item\em virtual destructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPass_ab553a51795c301612b9f5792db635493}{add\+Chef}} (\mbox{\hyperlink{classChef}{Chef}} $\ast$)
+\begin{DoxyCompactList}\small\item\em assign chef to the member variable \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPass_a9f6e645bfdd1f867e0ac6eeb9d8a2350}\label{classPass_a9f6e645bfdd1f867e0ac6eeb9d8a2350}} 
+vector$<$ \mbox{\hyperlink{classWaiter}{Waiter}} $\ast$ $>$ {\bfseries list\+Of\+Waiters\+\_\+}
+\item 
+\mbox{\Hypertarget{classPass_a7b50f03cc6173bd84b5fabae0d6f97c0}\label{classPass_a7b50f03cc6173bd84b5fabae0d6f97c0}} 
+\mbox{\hyperlink{classChef}{Chef}} $\ast$ {\bfseries head\+Chef\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class acts as the mediator between the chefs and the waiters, it connects the floor and the kitchen together. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPass_a5d0cea4019f5c123fb4a4417de8d95b9}\label{classPass_a5d0cea4019f5c123fb4a4417de8d95b9}} 
+\index{Pass@{Pass}!Pass@{Pass}}
+\index{Pass@{Pass}!Pass@{Pass}}
+\doxysubsubsection{\texorpdfstring{Pass()}{Pass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Pass\+::\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+default constructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPass_a3013200b2c391b4fa851fa4e9c16a0ab}\label{classPass_a3013200b2c391b4fa851fa4e9c16a0ab}} 
+\index{Pass@{Pass}!Pass@{Pass}}
+\index{Pass@{Pass}!Pass@{Pass}}
+\doxysubsubsection{\texorpdfstring{Pass()}{Pass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Pass\+::\+Pass (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classWaiter}{Waiter}} $\ast$ $>$}]{waiters,  }\item[{\mbox{\hyperlink{classChef}{Chef}} $\ast$}]{head\+Chef }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em waiters} & takes in the list of waiters in the restaurant \\
+\hline
+{\em head\+Chef} & takes in a head chef pointer to the chef that is the start of the chain of responsibility \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPass_abe2fe9b29d21424fe4b410fc8e98606c}\label{classPass_abe2fe9b29d21424fe4b410fc8e98606c}} 
+\index{Pass@{Pass}!````~Pass@{$\sim$Pass}}
+\index{````~Pass@{$\sim$Pass}!Pass@{Pass}}
+\doxysubsubsection{\texorpdfstring{$\sim$Pass()}{~Pass()}}
+{\footnotesize\ttfamily Pass\+::$\sim$\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+virtual destructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPass_ab553a51795c301612b9f5792db635493}\label{classPass_ab553a51795c301612b9f5792db635493}} 
+\index{Pass@{Pass}!addChef@{addChef}}
+\index{addChef@{addChef}!Pass@{Pass}}
+\doxysubsubsection{\texorpdfstring{addChef()}{addChef()}}
+{\footnotesize\ttfamily void Pass\+::add\+Chef (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChef}{Chef}} $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+assign chef to the member variable 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPass_af6ce3621afa3b8980b22f1bdfe708d62}\label{classPass_af6ce3621afa3b8980b22f1bdfe708d62}} 
+\index{Pass@{Pass}!addOrder@{addOrder}}
+\index{addOrder@{addOrder}!Pass@{Pass}}
+\doxysubsubsection{\texorpdfstring{addOrder()}{addOrder()}}
+{\footnotesize\ttfamily void Pass\+::add\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOrder}{Order}} $\ast$}]{order }\end{DoxyParamCaption})}
+
+
+
+used by waiter to add a order to the order list in the pass 
+
+
+\begin{DoxyParams}{Parameters}
+{\em order} & contains the group order \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPass_ad6a6d25eea242fb5e43c83a05d3e4f13}\label{classPass_ad6a6d25eea242fb5e43c83a05d3e4f13}} 
+\index{Pass@{Pass}!addToListOfTrays@{addToListOfTrays}}
+\index{addToListOfTrays@{addToListOfTrays}!Pass@{Pass}}
+\doxysubsubsection{\texorpdfstring{addToListOfTrays()}{addToListOfTrays()}}
+{\footnotesize\ttfamily void Pass\+::add\+To\+List\+Of\+Trays (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classPlate}{Plate}} $\ast$ $>$}]{plates }\end{DoxyParamCaption})}
+
+
+
+add a plate (a completed order) to the tray on the pass 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plates} & contain the plate containing the order items \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPass_aebd205f3fdc4ae4eb207d65c14e822ff}\label{classPass_aebd205f3fdc4ae4eb207d65c14e822ff}} 
+\index{Pass@{Pass}!dequeueOrder@{dequeueOrder}}
+\index{dequeueOrder@{dequeueOrder}!Pass@{Pass}}
+\doxysubsubsection{\texorpdfstring{dequeueOrder()}{dequeueOrder()}}
+{\footnotesize\ttfamily void Pass\+::dequeue\+Order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+dequeue the first order from the list (First come first serve) 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPass_ab22a8dcc3ddb49dfc9d7be2478ad0258}\label{classPass_ab22a8dcc3ddb49dfc9d7be2478ad0258}} 
+\index{Pass@{Pass}!notifyHeadChef@{notifyHeadChef}}
+\index{notifyHeadChef@{notifyHeadChef}!Pass@{Pass}}
+\doxysubsubsection{\texorpdfstring{notifyHeadChef()}{notifyHeadChef()}}
+{\footnotesize\ttfamily void Pass\+::notify\+Head\+Chef (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWaiter}{Waiter}} $\ast$}]{waiter }\end{DoxyParamCaption})}
+
+
+
+the head chef is notifies when the waiter added a order to the plate 
+
+
+\begin{DoxyParams}{Parameters}
+{\em waiter} & contains a reference of the waiter who is notifying the head chef \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPass_af00804eb0a05d37435f30aa6dc884135}\label{classPass_af00804eb0a05d37435f30aa6dc884135}} 
+\index{Pass@{Pass}!notifyWaiter@{notifyWaiter}}
+\index{notifyWaiter@{notifyWaiter}!Pass@{Pass}}
+\doxysubsubsection{\texorpdfstring{notifyWaiter()}{notifyWaiter()}}
+{\footnotesize\ttfamily void Pass\+::notify\+Waiter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChef}{Chef}} $\ast$}]{headchef }\end{DoxyParamCaption})}
+
+
+
+waiter is notified as soon as a order is complete and added to the pass 
+
+
+\begin{DoxyParams}{Parameters}
+{\em headchef} & contains a reference of the chef who is notifying the waiter that the order is complete \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pass.\+h\item 
+Pass.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="SplitBill" name="SplitBill">
+<area shape="rect" id="node1" title="Represents a bill payment method where the bill is split among customers." alt="" coords="19,80,91,107"/>
+<area shape="rect" id="node2" href="$classBillPayment.html" title="Represents a method of payment for a bill." alt="" coords="5,5,105,32"/>
+</map>

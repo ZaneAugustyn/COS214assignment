@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classBillPayment.html" title="Represents a method of payment for a bill." alt="" coords="5,56,105,83"/>
+<area shape="rect" id="node2" href="$classCustomerPays.html" title="Represents a bill payment method where a customer pays their bill in the group." alt="" coords="153,5,268,32"/>
+<area shape="rect" id="node3" href="$classMakeTab.html" title="A class for handling tab payments in a group." alt="" coords="171,56,250,83"/>
+<area shape="rect" id="node4" href="$classSplitBill.html" title="Represents a bill payment method where the bill is split among customers." alt="" coords="175,107,247,133"/>
+</map>

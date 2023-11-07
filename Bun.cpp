@@ -1,10 +1,9 @@
 #include "Bun.h"
 
-Bun::Bun(/* args */)
+Bun::Bun():OrderItem(0, "Bun")
 {
 }
 
 Bun::~Bun()
 {
 }
-

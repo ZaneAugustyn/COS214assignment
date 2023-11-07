@@ -1,0 +1,104 @@
+\hypertarget{classGarnishChef}{}\doxysection{Garnish\+Chef Class Reference}
+\label{classGarnishChef}\index{GarnishChef@{GarnishChef}}
+
+
+This class is a Concrete Handler of the Chain of Responsibility Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Garnish\+Chef.\+h$>$}
+
+
+
+Inheritance diagram for Garnish\+Chef\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{classGarnishChef__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Garnish\+Chef\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{classGarnishChef__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGarnishChef_a8a848feb7b4a44ece7fc52981a5215ce}{Garnish\+Chef}} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classGarnishChef_a8c935416009079990a6f93bf5d6fd82b}{$\sim$\+Garnish\+Chef}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGarnishChef_af825f93d4373a6508c7703dde9655686}{handle\+Order}} (\mbox{\hyperlink{classPlate}{Plate}} $\ast$plate, vector$<$ \mbox{\hyperlink{classOrderComponent}{Order\+Component}} $\ast$ $>$ order\+Comp)
+\begin{DoxyCompactList}\small\item\em part of the chain of responsibility design pattern to delegate to handle the order \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class is a Concrete Handler of the Chain of Responsibility Pattern. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGarnishChef_a8a848feb7b4a44ece7fc52981a5215ce}\label{classGarnishChef_a8a848feb7b4a44ece7fc52981a5215ce}} 
+\index{GarnishChef@{GarnishChef}!GarnishChef@{GarnishChef}}
+\index{GarnishChef@{GarnishChef}!GarnishChef@{GarnishChef}}
+\doxysubsubsection{\texorpdfstring{GarnishChef()}{GarnishChef()}}
+{\footnotesize\ttfamily Garnish\+Chef\+::\+Garnish\+Chef (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+default constructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGarnishChef_a8c935416009079990a6f93bf5d6fd82b}\label{classGarnishChef_a8c935416009079990a6f93bf5d6fd82b}} 
+\index{GarnishChef@{GarnishChef}!````~GarnishChef@{$\sim$GarnishChef}}
+\index{````~GarnishChef@{$\sim$GarnishChef}!GarnishChef@{GarnishChef}}
+\doxysubsubsection{\texorpdfstring{$\sim$GarnishChef()}{~GarnishChef()}}
+{\footnotesize\ttfamily Garnish\+Chef\+::$\sim$\+Garnish\+Chef (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+destructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGarnishChef_af825f93d4373a6508c7703dde9655686}\label{classGarnishChef_af825f93d4373a6508c7703dde9655686}} 
+\index{GarnishChef@{GarnishChef}!handleOrder@{handleOrder}}
+\index{handleOrder@{handleOrder}!GarnishChef@{GarnishChef}}
+\doxysubsubsection{\texorpdfstring{handleOrder()}{handleOrder()}}
+{\footnotesize\ttfamily void Garnish\+Chef\+::handle\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlate}{Plate}} $\ast$}]{plate,  }\item[{vector$<$ \mbox{\hyperlink{classOrderComponent}{Order\+Component}} $\ast$ $>$}]{order\+Comp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+part of the chain of responsibility design pattern to delegate to handle the order 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plate} & pass the plate object to which the food will be added \\
+\hline
+{\em order\+Comp} & hold the group order to be handled through the chain \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classChef_a07f0cc4acdbe7c1ac9996eac15aabbb8}{Chef}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Garnish\+Chef.\+h\item 
+Garnish\+Chef.\+cpp\end{DoxyCompactItemize}

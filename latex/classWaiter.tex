@@ -1,0 +1,132 @@
+\hypertarget{classWaiter}{}\doxysection{Waiter Class Reference}
+\label{classWaiter}\index{Waiter@{Waiter}}
+
+
+This class is a concrete colleague of the Mediator design and the Handler participant of the Chain of Responsibility Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Waiter.\+h$>$}
+
+
+
+Inheritance diagram for Waiter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classWaiter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Waiter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classWaiter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWaiter_a6a7a78bca626e8ac762935313034f755}{Waiter}} (std\+::string n, \mbox{\hyperlink{classPass}{Pass}} $\ast$pass)
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaiter_a75d4656520e791e03e974cb95673da75}{changed}} ()
+\begin{DoxyCompactList}\small\item\em part of the mediator design pattern to delegate the appropriate notify method \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classWaiter_aa3eac8a78439feb99b0bb50380f8597d}{$\sim$\+Waiter}} ()
+\begin{DoxyCompactList}\small\item\em virtual destructor \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classWaiter_a6b2e2da03b23552760de8949b80d616c}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the waiter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaiter_a85c2e0cc17e84bb394e516c9d0405422}{update}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em Update the waiter with changes in the group\textquotesingle{}s state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class is a concrete colleague of the Mediator design and the Handler participant of the Chain of Responsibility Pattern. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWaiter_a6a7a78bca626e8ac762935313034f755}\label{classWaiter_a6a7a78bca626e8ac762935313034f755}} 
+\index{Waiter@{Waiter}!Waiter@{Waiter}}
+\index{Waiter@{Waiter}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{Waiter()}{Waiter()}}
+{\footnotesize\ttfamily Waiter\+::\+Waiter (\begin{DoxyParamCaption}\item[{std\+::string}]{n,  }\item[{\mbox{\hyperlink{classPass}{Pass}} $\ast$}]{pass }\end{DoxyParamCaption})}
+
+
+
+default constructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWaiter_aa3eac8a78439feb99b0bb50380f8597d}\label{classWaiter_aa3eac8a78439feb99b0bb50380f8597d}} 
+\index{Waiter@{Waiter}!````~Waiter@{$\sim$Waiter}}
+\index{````~Waiter@{$\sim$Waiter}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{$\sim$Waiter()}{~Waiter()}}
+{\footnotesize\ttfamily Waiter\+::$\sim$\+Waiter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+virtual destructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWaiter_a75d4656520e791e03e974cb95673da75}\label{classWaiter_a75d4656520e791e03e974cb95673da75}} 
+\index{Waiter@{Waiter}!changed@{changed}}
+\index{changed@{changed}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{changed()}{changed()}}
+{\footnotesize\ttfamily void Waiter\+::changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+part of the mediator design pattern to delegate the appropriate notify method 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classColleague_a9608c7993f3aee136ec79247b268969a}{Colleague}}.
+
+\mbox{\Hypertarget{classWaiter_a6b2e2da03b23552760de8949b80d616c}\label{classWaiter_a6b2e2da03b23552760de8949b80d616c}} 
+\index{Waiter@{Waiter}!getName@{getName}}
+\index{getName@{getName}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Waiter\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the name of the waiter. 
+
+\begin{DoxyReturn}{Returns}
+The name of the waiter. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWaiter_a85c2e0cc17e84bb394e516c9d0405422}\label{classWaiter_a85c2e0cc17e84bb394e516c9d0405422}} 
+\index{Waiter@{Waiter}!update@{update}}
+\index{update@{update}!Waiter@{Waiter}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Waiter\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})}
+
+
+
+Update the waiter with changes in the group\textquotesingle{}s state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & The group whose state has changed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Waiter.\+h\item 
+Waiter.\+cpp\end{DoxyCompactItemize}

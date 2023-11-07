@@ -1,0 +1,146 @@
+\hypertarget{classSplitBill}{}\doxysection{Split\+Bill Class Reference}
+\label{classSplitBill}\index{SplitBill@{SplitBill}}
+
+
+Represents a bill payment method where the bill is split among customers.  
+
+
+
+
+{\ttfamily \#include $<$Split\+Bill.\+h$>$}
+
+
+
+Inheritance diagram for Split\+Bill\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{classSplitBill__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Split\+Bill\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{classSplitBill__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSplitBill_ab4be9ac9f8952160eba8a3889d8c773a}{Split\+Bill}} (float t)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classSplitBill}{Split\+Bill}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSplitBill_a07a81856924133c9fd213bed3e139beb}\label{classSplitBill_a07a81856924133c9fd213bed3e139beb}} 
+\mbox{\hyperlink{classSplitBill_a07a81856924133c9fd213bed3e139beb}{$\sim$\+Split\+Bill}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classSplitBill}{Split\+Bill}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSplitBill_aa9d4e9ecc89d6b7b74775318788defa8}{Pay}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em Perform the split bill payment among a group of customers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSplitBill_a6423fd67c8aa851115a87643e3a18dc4}{paid}} (float paid)
+\begin{DoxyCompactList}\small\item\em Add paid value to Total\+Paid by the customer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSplitBill_a300d3f3d2bc45ccf5b24940e59cc236a}{tip\+Waiter}} (float tip)
+\begin{DoxyCompactList}\small\item\em Record the tip amount paid to the waiter. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSplitBill_af5b6cd4c56675224ede10b871f960446}{fully\+Paid}} ()
+\begin{DoxyCompactList}\small\item\em Check if the bill is fully paid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a bill payment method where the bill is split among customers. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSplitBill_ab4be9ac9f8952160eba8a3889d8c773a}\label{classSplitBill_ab4be9ac9f8952160eba8a3889d8c773a}} 
+\index{SplitBill@{SplitBill}!SplitBill@{SplitBill}}
+\index{SplitBill@{SplitBill}!SplitBill@{SplitBill}}
+\doxysubsubsection{\texorpdfstring{SplitBill()}{SplitBill()}}
+{\footnotesize\ttfamily Split\+Bill\+::\+Split\+Bill (\begin{DoxyParamCaption}\item[{float}]{t }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classSplitBill}{Split\+Bill}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The total amount to be paid for the bill. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSplitBill_af5b6cd4c56675224ede10b871f960446}\label{classSplitBill_af5b6cd4c56675224ede10b871f960446}} 
+\index{SplitBill@{SplitBill}!fullyPaid@{fullyPaid}}
+\index{fullyPaid@{fullyPaid}!SplitBill@{SplitBill}}
+\doxysubsubsection{\texorpdfstring{fullyPaid()}{fullyPaid()}}
+{\footnotesize\ttfamily bool Split\+Bill\+::fully\+Paid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if the bill is fully paid. 
+
+\begin{DoxyReturn}{Returns}
+boolean value -\/True if the bill is fully paid, otherwise false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSplitBill_a6423fd67c8aa851115a87643e3a18dc4}\label{classSplitBill_a6423fd67c8aa851115a87643e3a18dc4}} 
+\index{SplitBill@{SplitBill}!paid@{paid}}
+\index{paid@{paid}!SplitBill@{SplitBill}}
+\doxysubsubsection{\texorpdfstring{paid()}{paid()}}
+{\footnotesize\ttfamily void Split\+Bill\+::paid (\begin{DoxyParamCaption}\item[{float}]{paid }\end{DoxyParamCaption})}
+
+
+
+Add paid value to Total\+Paid by the customer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em paid} & The amount paid by the customer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSplitBill_aa9d4e9ecc89d6b7b74775318788defa8}\label{classSplitBill_aa9d4e9ecc89d6b7b74775318788defa8}} 
+\index{SplitBill@{SplitBill}!Pay@{Pay}}
+\index{Pay@{Pay}!SplitBill@{SplitBill}}
+\doxysubsubsection{\texorpdfstring{Pay()}{Pay()}}
+{\footnotesize\ttfamily void Split\+Bill\+::\+Pay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Perform the split bill payment among a group of customers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & The group of customers for which the bill is being paid. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBillPayment_a4639b657d7b5346a907ea2e1c0b4b4a0}{Bill\+Payment}}.
+
+\mbox{\Hypertarget{classSplitBill_a300d3f3d2bc45ccf5b24940e59cc236a}\label{classSplitBill_a300d3f3d2bc45ccf5b24940e59cc236a}} 
+\index{SplitBill@{SplitBill}!tipWaiter@{tipWaiter}}
+\index{tipWaiter@{tipWaiter}!SplitBill@{SplitBill}}
+\doxysubsubsection{\texorpdfstring{tipWaiter()}{tipWaiter()}}
+{\footnotesize\ttfamily void Split\+Bill\+::tip\+Waiter (\begin{DoxyParamCaption}\item[{float}]{tip }\end{DoxyParamCaption})}
+
+
+
+Record the tip amount paid to the waiter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tip} & The tip amount paid to the waiter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Split\+Bill.\+h\item 
+Split\+Bill.\+cpp\end{DoxyCompactItemize}

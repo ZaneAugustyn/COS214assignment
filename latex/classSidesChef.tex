@@ -1,0 +1,104 @@
+\hypertarget{classSidesChef}{}\doxysection{Sides\+Chef Class Reference}
+\label{classSidesChef}\index{SidesChef@{SidesChef}}
+
+
+This class is a Concrete Handler of the Chain of Responsibility Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Sides\+Chef.\+h$>$}
+
+
+
+Inheritance diagram for Sides\+Chef\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classSidesChef__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sides\+Chef\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{classSidesChef__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSidesChef_a1c480e3b4d83509c7555f177e50fb4a6}{Sides\+Chef}} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classSidesChef_a3d86b806f58baf0a5a6697771d1935e6}{$\sim$\+Sides\+Chef}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSidesChef_a1cea0bf720666d4ac07a6279b0ff5834}{handle\+Order}} (\mbox{\hyperlink{classPlate}{Plate}} $\ast$plate, vector$<$ \mbox{\hyperlink{classOrderComponent}{Order\+Component}} $\ast$ $>$ order\+Comp)
+\begin{DoxyCompactList}\small\item\em part of the chain of responsibility design pattern to delegate to handle the order \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class is a Concrete Handler of the Chain of Responsibility Pattern. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSidesChef_a1c480e3b4d83509c7555f177e50fb4a6}\label{classSidesChef_a1c480e3b4d83509c7555f177e50fb4a6}} 
+\index{SidesChef@{SidesChef}!SidesChef@{SidesChef}}
+\index{SidesChef@{SidesChef}!SidesChef@{SidesChef}}
+\doxysubsubsection{\texorpdfstring{SidesChef()}{SidesChef()}}
+{\footnotesize\ttfamily Sides\+Chef\+::\+Sides\+Chef (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+default constructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSidesChef_a3d86b806f58baf0a5a6697771d1935e6}\label{classSidesChef_a3d86b806f58baf0a5a6697771d1935e6}} 
+\index{SidesChef@{SidesChef}!````~SidesChef@{$\sim$SidesChef}}
+\index{````~SidesChef@{$\sim$SidesChef}!SidesChef@{SidesChef}}
+\doxysubsubsection{\texorpdfstring{$\sim$SidesChef()}{~SidesChef()}}
+{\footnotesize\ttfamily Sides\+Chef\+::$\sim$\+Sides\+Chef (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+destructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSidesChef_a1cea0bf720666d4ac07a6279b0ff5834}\label{classSidesChef_a1cea0bf720666d4ac07a6279b0ff5834}} 
+\index{SidesChef@{SidesChef}!handleOrder@{handleOrder}}
+\index{handleOrder@{handleOrder}!SidesChef@{SidesChef}}
+\doxysubsubsection{\texorpdfstring{handleOrder()}{handleOrder()}}
+{\footnotesize\ttfamily void Sides\+Chef\+::handle\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlate}{Plate}} $\ast$}]{plate,  }\item[{vector$<$ \mbox{\hyperlink{classOrderComponent}{Order\+Component}} $\ast$ $>$}]{order\+Comp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+part of the chain of responsibility design pattern to delegate to handle the order 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plate} & pass the plate object to which the food will be added \\
+\hline
+{\em order\+Comp} & hold the group order to be handled through the chain \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classChef_a07f0cc4acdbe7c1ac9996eac15aabbb8}{Chef}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sides\+Chef.\+h\item 
+Sides\+Chef.\+cpp\end{DoxyCompactItemize}

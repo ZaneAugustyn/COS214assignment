@@ -1,0 +1,5 @@
+<map id="HeadChef" name="HeadChef">
+<area shape="rect" id="node1" title="This class is a Concrete Handler of the Chain of Responsibility Pattern." alt="" coords="5,155,92,181"/>
+<area shape="rect" id="node2" href="$classChef.html" title="This class is a concrete colleague of the Mediator design and the Handler participant of the Chain of..." alt="" coords="23,80,75,107"/>
+<area shape="rect" id="node3" href="$classColleague.html" title="This class is a abstract colleague of the Mediator design." alt="" coords="5,5,92,32"/>
+</map>

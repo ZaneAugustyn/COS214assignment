@@ -1,0 +1,104 @@
+\hypertarget{classDrinkChef}{}\doxysection{Drink\+Chef Class Reference}
+\label{classDrinkChef}\index{DrinkChef@{DrinkChef}}
+
+
+This class is a Concrete Handler of the Chain of Responsibility Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Drink\+Chef.\+h$>$}
+
+
+
+Inheritance diagram for Drink\+Chef\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classDrinkChef__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Drink\+Chef\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{classDrinkChef__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDrinkChef_a52323355e72d0292d3bec91ca077cab2}{Drink\+Chef}} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classDrinkChef_a589ea478291a1a1d05b1c41b891b3351}{$\sim$\+Drink\+Chef}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDrinkChef_ad3872ced6ef68712bc0af7ea106e6ade}{handle\+Order}} (\mbox{\hyperlink{classPlate}{Plate}} $\ast$plate, vector$<$ \mbox{\hyperlink{classOrderComponent}{Order\+Component}} $\ast$ $>$ order\+Comp)
+\begin{DoxyCompactList}\small\item\em part of the chain of responsibility design pattern to delegate to handle the order \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class is a Concrete Handler of the Chain of Responsibility Pattern. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDrinkChef_a52323355e72d0292d3bec91ca077cab2}\label{classDrinkChef_a52323355e72d0292d3bec91ca077cab2}} 
+\index{DrinkChef@{DrinkChef}!DrinkChef@{DrinkChef}}
+\index{DrinkChef@{DrinkChef}!DrinkChef@{DrinkChef}}
+\doxysubsubsection{\texorpdfstring{DrinkChef()}{DrinkChef()}}
+{\footnotesize\ttfamily Drink\+Chef\+::\+Drink\+Chef (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+default constructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDrinkChef_a589ea478291a1a1d05b1c41b891b3351}\label{classDrinkChef_a589ea478291a1a1d05b1c41b891b3351}} 
+\index{DrinkChef@{DrinkChef}!````~DrinkChef@{$\sim$DrinkChef}}
+\index{````~DrinkChef@{$\sim$DrinkChef}!DrinkChef@{DrinkChef}}
+\doxysubsubsection{\texorpdfstring{$\sim$DrinkChef()}{~DrinkChef()}}
+{\footnotesize\ttfamily Drink\+Chef\+::$\sim$\+Drink\+Chef (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+destructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDrinkChef_ad3872ced6ef68712bc0af7ea106e6ade}\label{classDrinkChef_ad3872ced6ef68712bc0af7ea106e6ade}} 
+\index{DrinkChef@{DrinkChef}!handleOrder@{handleOrder}}
+\index{handleOrder@{handleOrder}!DrinkChef@{DrinkChef}}
+\doxysubsubsection{\texorpdfstring{handleOrder()}{handleOrder()}}
+{\footnotesize\ttfamily void Drink\+Chef\+::handle\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlate}{Plate}} $\ast$}]{plate,  }\item[{vector$<$ \mbox{\hyperlink{classOrderComponent}{Order\+Component}} $\ast$ $>$}]{order\+Comp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+part of the chain of responsibility design pattern to delegate to handle the order 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plate} & pass the plate object to which the food will be added \\
+\hline
+{\em order\+Comp} & hold the group order to be handled through the chain \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classChef_a07f0cc4acdbe7c1ac9996eac15aabbb8}{Chef}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Drink\+Chef.\+h\item 
+Drink\+Chef.\+cpp\end{DoxyCompactItemize}

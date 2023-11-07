@@ -1,0 +1,10 @@
+<map id="GroupState" name="GroupState">
+<area shape="rect" id="node1" title="This class represents the group&#39;s state." alt="" coords="285,5,379,32"/>
+<area shape="rect" id="node2" href="$classHappy.html" title="This class is represents the group&#39;s happy state." alt="" coords="5,80,69,107"/>
+<area shape="rect" id="node3" href="$classNeutral.html" title="This class is represent the neutral state of the group." alt="" coords="94,80,165,107"/>
+<area shape="rect" id="node4" href="$classPayTab.html" title="This class is used for managing the tab of customers that can be payed at a later stage." alt="" coords="189,80,256,107"/>
+<area shape="rect" id="node5" href="$classReadyForBill.html" title="This class represent the readyForBill state of the customer." alt="" coords="280,80,384,107"/>
+<area shape="rect" id="node6" href="$classReadyToOrder.html" title="This class represent the ReadyToOrder state of the customer." alt="" coords="409,80,522,107"/>
+<area shape="rect" id="node7" href="$classUnhappy.html" title="This class represents a type of state of the group&#45;that they are currently unhappy with the service." alt="" coords="547,80,627,107"/>
+<area shape="rect" id="node8" href="$classWaitForTable.html" title="This class represents that the group should wait for a table (that is their state)" alt="" coords="651,80,757,107"/>
+</map>

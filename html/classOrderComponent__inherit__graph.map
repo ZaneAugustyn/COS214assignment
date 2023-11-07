@@ -1,0 +1,18 @@
+<map id="OrderComponent" name="OrderComponent">
+<area shape="rect" id="node1" title="This class acts as the (abstract) Component participant of the Composite design pattern,..." alt="" coords="187,5,320,32"/>
+<area shape="rect" id="node2" href="$classOrder.html" title="Represents an order containing a list of order components." alt="" coords="176,80,235,107"/>
+<area shape="rect" id="node3" href="$classOrderItem.html" title="This class acts as the (concrete) Leaf of the Composite design pattern and represents an actual food ..." alt="" coords="259,80,347,107"/>
+<area shape="rect" id="node4" href="$classBun.html" title="This class inherits from OrderItem and represents a burger bun to be served in the restaurant." alt="" coords="69,155,115,181"/>
+<area shape="rect" id="node5" href="$classDrink.html" title="This class inherits from OrderItem and represents a drink that a guest can have with their burger." alt="" coords="139,155,197,181"/>
+<area shape="rect" id="node8" href="$classGarnish.html" title="This class inherits from OrderItem and represents garnish that a guest can have on their burger." alt="" coords="267,155,339,181"/>
+<area shape="rect" id="node11" href="$classPatty.html" title="This class inherits from OrderItem and represents a burger patty." alt="" coords="402,155,457,181"/>
+<area shape="rect" id="node14" href="$classSide.html" title="This class inherits from OrderItem and represents a side that a guest can have with their burger." alt="" coords="631,155,681,181"/>
+<area shape="rect" id="node6" href="$classMilkshake.html" title="This class inherits from Drink and represents a milkshake." alt="" coords="5,229,93,256"/>
+<area shape="rect" id="node7" href="$classSoda.html" title="This class inherits from Drink and represents a soda." alt="" coords="118,229,173,256"/>
+<area shape="rect" id="node9" href="$classLettuce.html" title="This class inherits from Garnish and represents lettuce to garnish a burger." alt="" coords="197,229,267,256"/>
+<area shape="rect" id="node10" href="$classTomato.html" title="This class inherits from Garnish and represents tomato to garnish a burger." alt="" coords="291,229,362,256"/>
+<area shape="rect" id="node12" href="$classBeefPatty.html" title="This class inherits from Patty and represents a beef patty." alt="" coords="387,229,472,256"/>
+<area shape="rect" id="node13" href="$classChickenPatty.html" title="This class inherits from Patty and represents a chicken patty." alt="" coords="496,229,603,256"/>
+<area shape="rect" id="node15" href="$classChips.html" title="This class inherits from Side and represents chips." alt="" coords="627,229,685,256"/>
+<area shape="rect" id="node16" href="$classSalad.html" title="This class inherits from Side and represents side salad." alt="" coords="709,229,768,256"/>
+</map>

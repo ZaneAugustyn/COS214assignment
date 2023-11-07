@@ -1,0 +1,111 @@
+\hypertarget{classItemIterator}{}\doxysection{Item\+Iterator Class Reference}
+\label{classItemIterator}\index{ItemIterator@{ItemIterator}}
+
+
+A class for iterating through a collection of \mbox{\hyperlink{classOrderComponent}{Order\+Component}} objects.  
+
+
+
+
+{\ttfamily \#include $<$Item\+Iterator.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classItemIterator_acd46d9dac738e5ff262e987e0dd8b08b}\label{classItemIterator_acd46d9dac738e5ff262e987e0dd8b08b}} 
+\mbox{\hyperlink{classItemIterator_acd46d9dac738e5ff262e987e0dd8b08b}{Item\+Iterator}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \mbox{\hyperlink{classItemIterator}{Item\+Iterator}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classItemIterator_a860f6c84249e6529a71d7809f82f82fc}{Item\+Iterator}} (vector$<$ \mbox{\hyperlink{classOrderComponent}{Order\+Component}} $\ast$ $>$ items\+\_\+)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor for \mbox{\hyperlink{classItemIterator}{Item\+Iterator}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classItemIterator_a8951b9163451b3c081cf07575ab61806}{set\+Order\+Components}} (vector$<$ \mbox{\hyperlink{classOrderComponent}{Order\+Component}} $\ast$ $>$ items\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the collection of \mbox{\hyperlink{classOrderComponent}{Order\+Component}} items to iterate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOrderComponent}{Order\+Component}} $\ast$ \mbox{\hyperlink{classItemIterator_a4736ae1d420142b99761f53cab1eeb1b}{next}} ()
+\begin{DoxyCompactList}\small\item\em Get the next \mbox{\hyperlink{classOrderComponent}{Order\+Component}} in the iteration. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classItemIterator_a81eed09d50dde8f6dadd45b6c0713f95}{is\+Done}} ()
+\begin{DoxyCompactList}\small\item\em Check if the iteration is complete. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOrderComponent}{Order\+Component}} $\ast$ \mbox{\hyperlink{classItemIterator_a16c4157905539c6382fad818ce0e9216}{current\+Item}} ()
+\begin{DoxyCompactList}\small\item\em Get the current \mbox{\hyperlink{classOrderComponent}{Order\+Component}} in the iteration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class for iterating through a collection of \mbox{\hyperlink{classOrderComponent}{Order\+Component}} objects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classItemIterator_a860f6c84249e6529a71d7809f82f82fc}\label{classItemIterator_a860f6c84249e6529a71d7809f82f82fc}} 
+\index{ItemIterator@{ItemIterator}!ItemIterator@{ItemIterator}}
+\index{ItemIterator@{ItemIterator}!ItemIterator@{ItemIterator}}
+\doxysubsubsection{\texorpdfstring{ItemIterator()}{ItemIterator()}}
+{\footnotesize\ttfamily Item\+Iterator\+::\+Item\+Iterator (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classOrderComponent}{Order\+Component}} $\ast$ $>$}]{items\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor for \mbox{\hyperlink{classItemIterator}{Item\+Iterator}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em items\+\_\+} & The collection of \mbox{\hyperlink{classOrderComponent}{Order\+Component}} items to iterate. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classItemIterator_a16c4157905539c6382fad818ce0e9216}\label{classItemIterator_a16c4157905539c6382fad818ce0e9216}} 
+\index{ItemIterator@{ItemIterator}!currentItem@{currentItem}}
+\index{currentItem@{currentItem}!ItemIterator@{ItemIterator}}
+\doxysubsubsection{\texorpdfstring{currentItem()}{currentItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classOrderComponent}{Order\+Component}} $\ast$ Item\+Iterator\+::current\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current \mbox{\hyperlink{classOrderComponent}{Order\+Component}} in the iteration. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the current \mbox{\hyperlink{classOrderComponent}{Order\+Component}}, or nullptr if the iteration is complete. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classItemIterator_a81eed09d50dde8f6dadd45b6c0713f95}\label{classItemIterator_a81eed09d50dde8f6dadd45b6c0713f95}} 
+\index{ItemIterator@{ItemIterator}!isDone@{isDone}}
+\index{isDone@{isDone}!ItemIterator@{ItemIterator}}
+\doxysubsubsection{\texorpdfstring{isDone()}{isDone()}}
+{\footnotesize\ttfamily bool Item\+Iterator\+::is\+Done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if the iteration is complete. 
+
+\begin{DoxyReturn}{Returns}
+True if the iteration is complete, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classItemIterator_a4736ae1d420142b99761f53cab1eeb1b}\label{classItemIterator_a4736ae1d420142b99761f53cab1eeb1b}} 
+\index{ItemIterator@{ItemIterator}!next@{next}}
+\index{next@{next}!ItemIterator@{ItemIterator}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classOrderComponent}{Order\+Component}} $\ast$ Item\+Iterator\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the next \mbox{\hyperlink{classOrderComponent}{Order\+Component}} in the iteration. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the next \mbox{\hyperlink{classOrderComponent}{Order\+Component}}, or nullptr if the iteration is complete. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classItemIterator_a8951b9163451b3c081cf07575ab61806}\label{classItemIterator_a8951b9163451b3c081cf07575ab61806}} 
+\index{ItemIterator@{ItemIterator}!setOrderComponents@{setOrderComponents}}
+\index{setOrderComponents@{setOrderComponents}!ItemIterator@{ItemIterator}}
+\doxysubsubsection{\texorpdfstring{setOrderComponents()}{setOrderComponents()}}
+{\footnotesize\ttfamily void Item\+Iterator\+::set\+Order\+Components (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classOrderComponent}{Order\+Component}} $\ast$ $>$}]{items\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Set the collection of \mbox{\hyperlink{classOrderComponent}{Order\+Component}} items to iterate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em items\+\_\+} & The new collection of \mbox{\hyperlink{classOrderComponent}{Order\+Component}} items. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Item\+Iterator.\+h\item 
+Item\+Iterator.\+cpp\end{DoxyCompactItemize}
