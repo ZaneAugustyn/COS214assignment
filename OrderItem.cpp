@@ -10,14 +10,14 @@ OrderItem::~OrderItem()
 {
 }
 
-float OrderItem::getPrice()
+float OrderItem::GetPrice()
 {
 
     return price_;
 
 }
 
-string OrderItem::getName()
+string OrderItem::GetName()
 {
     return name_;
 }

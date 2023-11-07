@@ -11,13 +11,12 @@ class Pass;
 class Bill;
 class Order;
 
+using namespace std;
+
 /**
  * @class Waiter
  * @brief This class is a concrete colleague of the Mediator design and the Handler participant of the Chain of Responsibility Pattern
 */
-
-//class Group;
-
 class Waiter : public Colleague
 {
   private:
@@ -35,7 +34,7 @@ class Waiter : public Colleague
      * @brief part of the mediator design pattern to delegate the appropriate notify method
      * @return void
     */
-    void changed();
+    void Changed();
 
     /**
      * @brief virtual destructor
@@ -47,14 +46,14 @@ class Waiter : public Colleague
      * @brief Get the name of the waiter.
      * @return The name of the waiter.
      */
-    std::string getName();
+    string GetName();
 
     /**
      * @brief Update the waiter with changes in the group's state.
      * @param group The group whose state has changed.
      * @return void
      */
-    void update(Group* group);
+    void Update(Group* group);
 };
 
 #endif

@@ -8,7 +8,6 @@
  * @class Happy
  * @brief This class is represents the group's happy state
 */
-
 class Happy : public EmotionalState
 {
 private:

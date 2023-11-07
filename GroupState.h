@@ -3,19 +3,17 @@
 
 #include "Group.h"
 #include <string>
-using namespace std;
 
 class Group;
+
+using namespace std;
 
 /**
  * @class GroupState
  * @brief This class represents the group's state
 */
-
 class GroupState
 {
-private:
-    
 public:
 
     /**

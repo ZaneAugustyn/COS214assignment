@@ -7,12 +7,9 @@
  * @class Salad
  * @brief This class inherits from Side and represents side salad
 */
-
 class Salad : public Side
 {
-private:
 public:
-
     /**
      * @brief default constructor - sets Sides's attributes to the values of a salad
      * @return none

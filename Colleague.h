@@ -7,11 +7,8 @@
  * @class Colleague
  * @brief This class is a abstract colleague of the Mediator design
 */
-
 class Colleague
 {
-  private:
-
   protected:
     Pass* pass_;
 
@@ -33,7 +30,7 @@ class Colleague
      * @brief part of the mediator design pattern to delegate the appropriate notify method (abstract)
      * @return void
     */
-    virtual void changed() = 0;
+    virtual void Changed() = 0;
 
     /**
      * @brief virtual destructor

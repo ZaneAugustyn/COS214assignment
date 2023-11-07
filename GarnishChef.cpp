@@ -6,7 +6,7 @@
 #include <iostream>
 using namespace std;
 
-GarnishChef::GarnishChef(/* args */)
+GarnishChef::GarnishChef()
 {
 }
 
@@ -14,32 +14,32 @@ GarnishChef::~GarnishChef()
 {
 }
 
-void GarnishChef::handleOrder(Plate* plate, vector<OrderComponent*> orderComp)
+void GarnishChef::HandleOrder(Plate* plate, vector<OrderComponent*> orderComp)
 {
   if (orderComp.empty())
   {
-    Chef::handleOrder(plate,orderComp);
+    Chef::HandleOrder(plate,orderComp);
     return;
   }
 
   ItemIterator* itemIterator = new ItemIterator(orderComp);
   int counter = 0;
   
-  while (!itemIterator->isDone()) {
-      OrderComponent* item = itemIterator->currentItem();
+  while (!itemIterator->IsDone()) {
+      OrderComponent* item = itemIterator->CurrentItem();
       if (dynamic_cast<OrderItem*>(item)) {
 
           OrderItem* orderItem = dynamic_cast<OrderItem*>(item);
 
-          if (orderItem->getName() != "Lettuce" && orderItem->getName() != "Tomato")
+          if (orderItem->GetName() != "Lettuce" && orderItem->GetName() != "Tomato")
           {
             counter += 1;
           }
           else 
           {
-            cout << "The Garnish Chef adds the " << orderItem->getName() << " to the plate" << endl;
-            plate->addToPlate(orderItem);
-            plate->printPlate();
+            cout << "The Garnish Chef adds the " << orderItem->GetName() << " to the plate" << endl;
+            plate->AddToPlate(orderItem);
+            plate->PrintPlate();
 
             //remove bun from orderComp
             orderComp.erase(orderComp.begin() + counter);
@@ -47,13 +47,9 @@ void GarnishChef::handleOrder(Plate* plate, vector<OrderComponent*> orderComp)
             break;
           }
       }
-      itemIterator->next();
+      itemIterator->Next();
   }
   
   //send to the next chef
-  Chef::handleOrder(plate,orderComp);
-
-  // iterate over the order to find the garnish
-  // remove the garnish from the order
-  // add the garnish to the plate
+  Chef::HandleOrder(plate,orderComp);
 }

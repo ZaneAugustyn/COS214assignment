@@ -8,17 +8,15 @@
  * @class SpaceAvailable
  * @brief This class represent the SpaceAvailable state of the customer
 */
-
 class SpaceAvailable : public FloorState 
 {
 private:
-    /* data */
     string name_;
 public:
     /**
      * @brief constructor
     */
-    SpaceAvailable(/* args */);
+    SpaceAvailable();
 
     /**
      * @brief destructor
@@ -30,7 +28,7 @@ public:
      * @param none
      * @return string
     */
-    string getName(){return this->name_;};
+    string GetName();
 
     /**
      * @brief This method is used to change the current state of the floor

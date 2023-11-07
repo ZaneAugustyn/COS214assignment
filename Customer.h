@@ -31,20 +31,20 @@ public:
      * @brief Get the customer's tab.
      * @return A pointer to the customer's tab.
      */
-    Tab* getTab();
+    Tab* GetTab();
 
     /**
      * @brief Set the customer's tab.
      * @param tab A pointer to the tab to be associated with the customer.
      * @return void
      */
-    void setTab(Tab* tab);
+    void SetTab(Tab* tab);
 
     /**
      * @brief Get the name of the customer.
      * @return The name of the customer.
      */
-    string getName();
+    string GetName();
 };
 
 #endif

@@ -30,7 +30,7 @@ public:
      * @param orderComp hold the group order to be handled through the chain
      * @return void
     */
-    void handleOrder(Plate* plate, vector<OrderComponent*> orderComp);
+    void HandleOrder(Plate* plate, vector<OrderComponent*> orderComp);
 };
 
 #endif

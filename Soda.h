@@ -7,10 +7,8 @@
  * @class Soda
  * @brief This class inherits from Drink and represents a soda
 */
-
 class Soda : public Drink
 {
-private:
 public:
 
     /**

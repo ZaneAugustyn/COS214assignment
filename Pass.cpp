@@ -18,13 +18,13 @@ Pass::Pass(vector<Waiter*> waiters, Chef* headChef)
   this->headChef_ = headChef;
 }
 
-void Pass::notifyHeadChef(Waiter* waiter)
+void Pass::NotifyHeadChef(Waiter* waiter)
 {
   cout<<"NOTIFY: The headchef was notified of a new order"<<endl;
-  dequeueOrder();
+  DequeueOrder();
 }
 
-void Pass::notifyWaiter(Chef* headchef)
+void Pass::NotifyWaiter(Chef* headchef)
 {
   cout<<"NOTIFY: Waiter fetch the plate"<<endl;
 
@@ -32,38 +32,38 @@ void Pass::notifyWaiter(Chef* headchef)
 
 }
 
-void Pass::addToListOfTrays(vector<Plate*> plates)
+void Pass::AddToListOfTrays(vector<Plate*> plates)
 {
   this->listOfTrays_.push_back(plates);
 }
 
-void Pass::addOrder(Order* order)
+void Pass::AddOrder(Order* order)
 {
   // Notify the head chef that a order was added
-  Group* groups = order->getGroup();
-  Waiter* waiter = groups->getWaiter();
+  Group* groups = order->GetGroup();
+  Waiter* waiter = groups->GetWaiter();
 
   this->orders_.push_back(order);
 
-  waiter->changed();
+  waiter->Changed();
 
 }
 
-void Pass::dequeueOrder()
+void Pass::DequeueOrder()
 {
   Order* order =  this->orders_.front();
-  Bill* groupBill = new Bill(order->getPrice());
-  order->getGroup()->setBill(groupBill);
+  Bill* groupBill = new Bill(order->GetPrice());
+  order->GetGroup()->SetBill(groupBill);
   this->orders_.erase(this->orders_.begin());
 
-  this->headChef_->createGroupOrder(order);
+  this->headChef_->CreateGroupOrder(order);
 }
 
 Pass::~Pass()
 {
 }
 
-void Pass::addChef(Chef* c)
+void Pass::AddChef(Chef* c)
 {
   this->headChef_ = c;
 }

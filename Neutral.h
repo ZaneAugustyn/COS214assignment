@@ -8,7 +8,6 @@
  * @class Neutral
  * @brief This class is represent the neutral state of the group
 */
-
 class Neutral : public EmotionalState
 {
 private:

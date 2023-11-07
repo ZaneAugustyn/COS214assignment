@@ -2,15 +2,13 @@
 #define _PRINTBILL_H
 
 #include <iostream>
+
 /**
  * @class PrintBill
  * @brief Will be the representation and printing of a bill.
  */
 class PrintBill
 {
-private:
-    
-
 public:
     /**
      * @brief Constructor for the PrintBill class.

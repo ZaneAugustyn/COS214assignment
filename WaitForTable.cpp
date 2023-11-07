@@ -19,7 +19,7 @@ WaitForTable::~WaitForTable()
 void WaitForTable::RequestToOrder(Group *group)
 {
     group->SetState(new ReadyToOrder());
-    group->notify();
+    group->Notify();
 }
 
 void WaitForTable::WaitInQueue(Group *group)
@@ -30,7 +30,7 @@ void WaitForTable::WaitInQueue(Group *group)
 void WaitForTable::RequestTab(Group *group)
 {
     group->SetState(new PayTab());
-    group->notify();
+    group->Notify();
 }
 
 void WaitForTable::RequestBill(Group *group)

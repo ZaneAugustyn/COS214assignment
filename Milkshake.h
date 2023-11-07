@@ -7,10 +7,8 @@
  * @class Milkshake
  * @brief This class inherits from Drink and represents a milkshake
 */
-
 class Milkshake : public Drink
 {
-private:
 public:
 
     /**

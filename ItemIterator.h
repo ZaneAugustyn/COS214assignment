@@ -1,9 +1,11 @@
 #ifndef _ITEMITERATOR_H
 #define _ITEMITERATOR_H
 
+
+#include <vector>
+
 class Order;   // Forward declaration of Order class 
 class OrderComponent;   // Forward declaration of OrderComponent class
-#include <vector>
 
 using namespace std;
 
@@ -33,25 +35,25 @@ public:
      * @brief Set the collection of OrderComponent items to iterate.
      * @param items_ The new collection of OrderComponent items.
      */
-    void setOrderComponents(vector<OrderComponent*> items_);
+    void SetOrderComponents(vector<OrderComponent*> items_);
 
     /**
      * @brief Get the next OrderComponent in the iteration.
      * @return A pointer to the next OrderComponent, or nullptr if the iteration is complete.
      */
-    OrderComponent* next();
+    OrderComponent* Next();
 
     /**
      * @brief Check if the iteration is complete.
      * @return True if the iteration is complete, false otherwise.
      */
-    bool isDone();
+    bool IsDone();
 
     /**
      * @brief Get the current OrderComponent in the iteration.
      * @return A pointer to the current OrderComponent, or nullptr if the iteration is complete.
      */
-    OrderComponent* currentItem();
+    OrderComponent* CurrentItem();
 };
 
 #endif

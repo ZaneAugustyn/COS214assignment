@@ -7,10 +7,8 @@
  * @class Tomato
  * @brief This class inherits from Garnish and represents tomato to garnish a burger
 */
-
 class Tomato : public Garnish
 {
-private:
 public:
 
     /**

@@ -14,8 +14,8 @@ void CustomerPays::Pay(Group* group)
     string complaint;
     char choice;
     bool invalid;
-    while(paid < getTotal()){
-        cout << "Please pay the bill of R" << getTotal() << endl;
+    while(paid < GetTotal()){
+        cout << "Please pay the bill of R" << GetTotal() << endl;
         cout << "Please enter the amount you would like to pay including tip" << endl;
         invalid = true;
         while (invalid)
@@ -23,19 +23,19 @@ void CustomerPays::Pay(Group* group)
             if(cin >> paid)
             {
                 
-                if (paid > getTotal())
+                if (paid > GetTotal())
                 {
                     cout << "Thank you, and thank you for the Tip!" << endl;
                     invalid = false;
                 }
-                else if(paid == getTotal())
+                else if(paid == GetTotal())
                 {
                     cout << "Thank you!" << endl;
                     invalid = false;
                 }
                 else
                 {
-                    cout << "Payment failed! Please pay the full amount as R" << paid << " is less than R" << getTotal() << endl;
+                    cout << "Payment failed! Please pay the full amount as R" << paid << " is less than R" << GetTotal() << endl;
                 }
             }
             else
@@ -47,7 +47,7 @@ void CustomerPays::Pay(Group* group)
         }
         
     }
-    if (group->getLastEmotion()->ToString() == "Unhappy")
+    if (group->GetLastEmotion()->ToString() == "Unhappy")
     {
         cout << "Would you like to leave a complaint (Y/N)" << endl;
         cin >> choice;

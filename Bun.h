@@ -7,7 +7,6 @@
  * @class Bun
  * @brief This class inherits from OrderItem and represents a burger bun to be served in the restaurant
 */
-
 class Bun : public OrderItem
 {
 private:

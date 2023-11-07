@@ -11,7 +11,6 @@ using namespace std;
  * @class OrderItem
  * @brief This class acts as the (concrete) Leaf of the Composite design pattern and represents an actual food item in an Order
 */
-
 class OrderItem : public OrderComponent
 {
 private:
@@ -38,13 +37,13 @@ public:
      * @brief getter for price
      * @return the price of the OrderItem
     */
-    float getPrice();
+    float GetPrice();
 
     /**
      * @brief getter for name
      * @return the name of the OrderItem
     */
-    string getName(); 
+    string GetName(); 
 };
 
 #endif

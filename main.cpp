@@ -27,13 +27,13 @@
 #include "Pass.h"
 #include "Colleague.h"
 #include "Happy.h"
-#include "facade.h"
+#include "Facade.h"
 
 using namespace std;
 
 int main()
 {
   Facade instance;
-  instance.run();  
+  instance.Run();  
     return 0;
 }

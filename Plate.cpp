@@ -9,13 +9,13 @@ Plate::Plate()
 
 }
 
-void Plate::printPlate()
+void Plate::PrintPlate()
 {
   vector<OrderItem*>::iterator it;
   string output = "PLATE: ";
   for (it = this->burger_.begin(); it!=this->burger_.end(); ++it)
   {
-    output += (*it)->getName();
+    output += (*it)->GetName();
     if (it + 1 != this->burger_.end())
     {
         output += ", ";
@@ -25,7 +25,7 @@ void Plate::printPlate()
   cout<<output<<endl;
 }
 
-void Plate::addToPlate(OrderItem* item)
+void Plate::AddToPlate(OrderItem* item)
 {
   this->burger_.push_back(item);
 }

@@ -5,9 +5,10 @@
 #include "BillPayment.h"
 #include "Group.h"
 #include "Tab.h"
-using namespace std;
 
 class Group;
+
+using namespace std;
 
 /**
  * @class MakeTab
@@ -31,7 +32,7 @@ public:
      * @param t The total amount for the tab.
      * @return The created Tab instance.
      */
-    Tab* createTab(float t);
+    Tab* CreateTab(float t);
 
     /**
      * @brief Handle the tab payment for a group.
@@ -45,7 +46,7 @@ public:
      * @param tab The Tab instance to set the total amount for the tab.
      * @return void
      */
-    void setTab(Tab* tab);
+    void SetTab(Tab* tab);
 };
 
 #endif

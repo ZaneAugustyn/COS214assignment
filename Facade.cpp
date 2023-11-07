@@ -1,4 +1,4 @@
-#include "facade.h"
+#include "Facade.h"
 #include <iostream>
 #include <limits>
 #include <string>
@@ -11,7 +11,7 @@
 
 Facade::Facade(/* args */)
 {
-    initBasic();
+    InitBasic();
 }
 
 Facade::~Facade()
@@ -19,7 +19,7 @@ Facade::~Facade()
 
 }
 
-void Facade::run()
+void Facade::Run()
 {
     bool loop = true;
     cout<<endl;
@@ -30,19 +30,19 @@ void Facade::run()
         int choice;
         cout<<endl;
         cout<<YELLOW<<"1. Add a group to the queue outside"<<RESET<<endl;
-        if(maitreD->getAwaitingGroup().size() > 0)
+        if(maitreD_->GetAwaitingGroup().size() > 0)
         {
             cout<<YELLOW<<"2. Let a group inside the restaurant"<<RESET<<endl;
         }
-        if(maitreD->getFloor()->getGroups().size() > 0)
+        if(maitreD_->GetFloor()->GetGroups().size() > 0)
         {
             cout<<YELLOW<<"3. Let a group order"<<RESET<<endl;
         }
-        if(maitreD->getFloor()->getGroups().size() > 0)
+        if(maitreD_->GetFloor()->GetGroups().size() > 0)
         {
             cout<<YELLOW<<"4. Let a group pay the bill"<<RESET<<endl;
         }
-        if(maitreD->getFloor()->getGroups().size() > 0)
+        if(maitreD_->GetFloor()->GetGroups().size() > 0)
         {
             cout<<YELLOW<<"5. Remove group from restaurant"<<RESET<<endl;
         }
@@ -63,12 +63,12 @@ void Facade::run()
         switch (choice)
         {
             case 1:
-                option1();
+                Option1();
                 break;
             case 2:
-                if (maitreD->getAwaitingGroup().size() > 0)
+                if (maitreD_->GetAwaitingGroup().size() > 0)
                 {
-                    option2();
+                    Option2();
                 }
                 else
                 {
@@ -76,9 +76,9 @@ void Facade::run()
                 }
                 break;
             case 3:
-                if (maitreD->getFloor()->getGroups().size() > 0)
+                if (maitreD_->GetFloor()->GetGroups().size() > 0)
                 {
-                    option3();
+                    Option3();
                 }
                 else
                 {
@@ -86,9 +86,9 @@ void Facade::run()
                 }
                 break;
             case 4:
-                if (maitreD->getFloor()->getGroups().size() > 0)
+                if (maitreD_->GetFloor()->GetGroups().size() > 0)
                 {
-                    option4();
+                    Option4();
                 }
                 else
                 {
@@ -96,9 +96,9 @@ void Facade::run()
                 }
                 break;
             case 5:
-                if (maitreD->getFloor()->getGroups().size() > 0)
+                if (maitreD_->GetFloor()->GetGroups().size() > 0)
                 {   
-                    option5();
+                    Option5();
                 }
                 else
                 {
@@ -106,7 +106,7 @@ void Facade::run()
                 }
                 break;
             case 6:
-                option6();
+                Option6();
                 loop = false;
                 break;
             default:
@@ -116,11 +116,11 @@ void Facade::run()
 
 }
 
-void Facade::option1()
+void Facade::Option1()
 {
     string names[] = {"John", "Jane", "Bob", "Alice", "Joe", "Jill", "Bill", "Sally", "Jack", "Jill", "Tom", "Tim", "Tina", "Terry", "Trevor", "Tiffany", "Tina", "Terry", "Trevor", "Tiffany"};
-    numGroups++;
-    Group* newGroup = new Group(new WaitForTable(), numGroups);
+    numGroups_++;
+    Group* newGroup = new Group(new WaitForTable(), numGroups_);
     cout << YELLOW << "How many customers are in the group? " << RESET;
     int numCustomers;
     cin >> numCustomers;
@@ -138,36 +138,38 @@ void Facade::option1()
     {
         int randomName = rand() % 20;
         Customer* newCustomer = new Customer(names[randomName]);
-        newGroup->addCustomer(newCustomer);
+        newGroup->AddCustomer(newCustomer);
     }
     // print group
-    cout << LIGHT_GREEN << "Group " << numGroups << " :";
+    cout << LIGHT_GREEN << "Group " << numGroups_ << " :";
     for (int i = 0; i < numCustomers; i++)
     {
-        cout << " " << newGroup->getCustomers()[i]->getName();
+        cout << " " << newGroup->GetCustomers()[i]->GetName();
     }
     cout << RESET << endl;
 
     //add the group to the maitre'd's queue
-    maitreD->addGroupToWaitingGroups(newGroup);
+    maitreD_->AddGroupToWaitingGroups(newGroup);
+
     // print the queue
+
 }
 
-void Facade::option2()
+void Facade::Option2()
 {
-    maitreD->addGroupToFloor();
+    maitreD_->AddGroupToFloor();
 }
 
-void Facade::option3()
+void Facade::Option3()
 {
     cout <<YELLOW<< "List of group numbers: "<<RESET<<endl;
     
-    int numGroups = floor->getGroups().size();
-    std::vector<Group*> g = floor->getGroups();
+    int numGroups = floor_->GetGroups().size();
+    std::vector<Group*> g = floor_->GetGroups();
     int c;
     for (int i = 0; i < numGroups; i++)
     {
-        cout<<"Group number: "<<g[i]->getGroupNumber()<<endl;
+        cout<<"Group number: "<<g[i]->GetGroupNumber()<<endl;
     }
 
 
@@ -187,7 +189,7 @@ void Facade::option3()
 
         Group* selectedGroup = nullptr;
         for (auto& group : g) {
-            if (group->getGroupNumber() == selectedGroupNumber) {
+            if (group->GetGroupNumber() == selectedGroupNumber) {
                 selectedGroup = group;
                 break;
             }
@@ -204,17 +206,17 @@ void Facade::option3()
 
 }
 
-void Facade::option4()
+void Facade::Option4()
 {
     cout <<YELLOW<< "List of group numbers: "<<RESET<<endl;
     
-    int numGroups = floor->getGroups().size();
-    std::vector<Group*> g = floor->getGroups();
+    int numGroups = floor_->GetGroups().size();
+    std::vector<Group*> g = floor_->GetGroups();
     int c;
     for (int i = 0; i < numGroups; i++)
     {
 
-        cout<<"Group number: "<<g[i]->getGroupNumber()<<endl;
+        cout<<"Group number: "<<g[i]->GetGroupNumber()<<endl;
     }
 
 
@@ -233,7 +235,7 @@ void Facade::option4()
         Group* selectedGroup = nullptr;
 
         for (auto& group : g) {
-            if (group->getGroupNumber() == selectedGroupNumber) {
+            if (group->GetGroupNumber() == selectedGroupNumber) {
                 selectedGroup = group;
                 break;
             }
@@ -250,16 +252,16 @@ void Facade::option4()
     
 }
 
-void Facade::option5()
+void Facade::Option5()
 {
     cout << YELLOW << "Please select the group you would like to excuse from the floor: " << RESET << endl;
-    int numGroups = floor->getGroups().size();
-    std::vector<Group*> g = floor->getGroups();
+    int numGroups = floor_->GetGroups().size();
+    std::vector<Group*> g = floor_->GetGroups();
     int c;
 
     for (int i = 0; i < numGroups; i++)
     {
-        cout << "Group number: " << g[i]->getGroupNumber() << endl;
+        cout << "Group number: " << g[i]->GetGroupNumber() << endl;
     }
 
 
@@ -277,15 +279,15 @@ void Facade::option5()
 
         for (int i = 0; i < numGroups; i++)
         {
-            if (g[i]->getGroupNumber() == c)
+            if (g[i]->GetGroupNumber() == c)
             {
                 auto it = g.begin() + i;
                 // g.erase(it);
                 // floor->setGroups(g);
                 Group* group = g[i];
-                int t = maitreD->getFloor()->getGroups().size();
-                maitreD->removeGroupFromFloor(group);
-                if(t == maitreD->getFloor()->getGroups().size())
+                int t = maitreD_->GetFloor()->GetGroups().size();
+                maitreD_->RemoveGroupFromFloor(group);
+                if(t == maitreD_->GetFloor()->GetGroups().size())
                 {
                     l = false;
                     break;
@@ -304,31 +306,31 @@ void Facade::option5()
     }
 }
 
-void Facade::option6()
+void Facade::Option6()
 {
-    cout << PINK << endl << "Thank you for visiting Le McDonalds! We hope to see you again soon :)" << RESET << endl << endl;
+    cout << PINK << endl << "Thank you for using the Le McDonalds simulation! We hope to see you again soon :)" << RESET << endl << endl;
 }
 
-void Facade::initBasic()
+void Facade::InitBasic()
 {
-    cout << PINK << endl << "Welcome to Le McDonalds resaurant simulation" << RESET << endl << endl;
-    floor = new Floor();
+    cout << PINK << endl << "Welcome to the Le McDonalds restaurant simulation" << RESET << endl << endl;
+    floor_ = new Floor();
 
     // create the pass
-    kitchenPass = new Pass();
+    kitchenPass_ = new Pass();
 
     // build chain
-    chef2 = new Chef(kitchenPass);
-    headChef = new HeadChef(kitchenPass);
-    kitchenPass->addChef(chef2);
-    chef2->add(headChef);
-    chef2->add(new MeatChef());
-    chef2->add(new DrinkChef());
-    chef2->add(new SidesChef());
-    chef2->add(new GarnishChef());
-    chef2->add(headChef);
+    chef_ = new Chef(kitchenPass_);
+    headChef_ = new HeadChef(kitchenPass_);
+    kitchenPass_->AddChef(chef_);
+    chef_->Add(headChef_);
+    chef_->Add(new MeatChef());
+    chef_->Add(new DrinkChef());
+    chef_->Add(new SidesChef());
+    chef_->Add(new GarnishChef());
+    chef_->Add(headChef_);
 
-    maitreD = new MaitreD(floor,20);
+    maitreD_ = new MaitreD(floor_,20);
 
     vector<Waiter*> waiters;
     int numWaiters;
@@ -347,9 +349,9 @@ void Facade::initBasic()
         cout<<YELLOW<<"Please enter a name for waiter number "<<i+1<<": "<<RESET;
         cin>>wName;
 
-        waiters.push_back(new Waiter(wName, kitchenPass));
+        waiters.push_back(new Waiter(wName, kitchenPass_));
     }
 
     //add the waiters to the maitre'd
-    maitreD->setWaiterList(waiters);
+    maitreD_->SetWaiterList(waiters);
 }

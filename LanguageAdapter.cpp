@@ -1,12 +1,12 @@
 #include "LanguageAdapter.h"
 #include "OrderItem.h"
 
-void LanguageAdapter::setOrderItems(OrderItem* orderitem)
+void LanguageAdapter::SetOrderItems(OrderItem* orderitem)
 {
   orderItem_ = orderitem;
 }
 
-string LanguageAdapter::getOrderItemInLanguage(char language)
+string LanguageAdapter::GetOrderItemInLanguage(char language)
 {
   map<string, string> dictionary;
   dictionary["Beef Patty"] = "Beesvleis patty";
@@ -22,10 +22,10 @@ string LanguageAdapter::getOrderItemInLanguage(char language)
 
   if (language == 'A')
   {
-    return dictionary[orderItem_->getName()];    
+    return dictionary[orderItem_->GetName()];    
   }
   else // english is the default language
   {
-    return orderItem_->getName();
+    return orderItem_->GetName();
   }
 }

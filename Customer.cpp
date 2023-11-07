@@ -8,17 +8,17 @@ Customer::~Customer()
 {
 }
 
-Tab* Customer::getTab()
+Tab* Customer::GetTab()
 {
     return this->tab_;
 }
 
-void Customer::setTab(Tab* tab)
+void Customer::SetTab(Tab* tab)
 {
     this->tab_ = tab;
 }
 
-string Customer::getName()
+string Customer::GetName()
 {
     return this->name_;
 }

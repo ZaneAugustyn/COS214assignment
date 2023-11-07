@@ -7,7 +7,6 @@
  * @class Drink
  * @brief This class inherits from OrderItem and represents a drink that a guest can have with their burger
 */
-
 class Drink : public OrderItem
 {
 private:

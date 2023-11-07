@@ -2,21 +2,21 @@
 #define _FULL_H
 
 #include "FloorState.h"
-    /**
-    * @class Full
-    * @brief This class represents a state whether the restaurant is full or not
-    */
+
+/**
+* @class Full
+* @brief This class represents a state whether the restaurant is full or not
+*/
 class Full : public FloorState
 {
 private:
-    /* data */
     string name_;
 public:
     /**
      * @brief constructor
      * @return none
     */
-    Full(/* args */);
+    Full();
 
     /**
      * @brief destructor
@@ -29,7 +29,7 @@ public:
      * @param none
      * @return string
     */
-    string getName(){return this->name_;};
+    string GetName();
 
     /**
      * @brief This method is used to change the current state of the floor

@@ -11,7 +11,6 @@ class Group;
  * @class EmotionalState
  * @brief This class represents the group's emotional state
 */
-
 class EmotionalState
 {
 private:
@@ -49,7 +48,7 @@ public:
     */
     virtual void MakeNeutral(Group * group) = 0;
 
-     /**
+    /**
      * @brief an interface method to return the ConcreteState name
      * @return string
     */

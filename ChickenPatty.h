@@ -7,8 +7,6 @@
  * @class ChickenPatty
  * @brief This class inherits from Patty and represents a chicken patty
 */
-
-
 class ChickenPatty : public Patty
 {
 private:
@@ -26,6 +24,5 @@ public:
     */
     ~ChickenPatty();
 };
-
 
 #endif

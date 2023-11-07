@@ -3,10 +3,11 @@
 
 #include "GroupState.h"
 #include <iostream>
-    /**
-     * @class WaitForTable
-     * @brief This class represents that the group should wait for a table (that is their state)
-    */
+
+/**
+ * @class WaitForTable
+ * @brief This class represents that the group should wait for a table (that is their state)
+*/
 class WaitForTable : public GroupState
 {
 private:

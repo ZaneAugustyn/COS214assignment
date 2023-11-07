@@ -15,17 +15,17 @@ void SplitBill::Pay(Group *group)
     char choice;
     int count = 0;
     string complaint;
-    while (!fullyPaid())
+    while (!FullyPaid())
     {
-        if (count == group->getCustomers().size())
+        if (count == group->GetCustomers().size())
         {
             count = 0;
         }
         pay = 0;
         tip = 0;
-        cout << "Please pass the terminal to " << (group->getCustomers())[count]->getName() << endl;
+        cout << "Please pass the terminal to " << (group->GetCustomers())[count]->GetName() << endl;
         cout << "The bill is chosen to be paid in split payment." << endl;
-        cout << "The total amount to be paid is " << this->getTotal() << endl;
+        cout << "The total amount to be paid is " << this->GetTotal() << endl;
         cout << "The total amount paid for the bill so far is " << this->TotalPaid << endl;
         cout << "The total amount paid as tip so far is " << this->TipAmount << endl;
         cout << "Please enter the amount you'd like to pay (excluding the tip amount)." << endl;
@@ -51,7 +51,7 @@ void SplitBill::Pay(Group *group)
             }
         }
 
-        if (group->getLastEmotion()->ToString() == "Happy")
+        if (group->GetLastEmotion()->ToString() == "Happy")
         {
             cout << "Would you like to add a tip? (y/n)" << endl;
 
@@ -104,8 +104,8 @@ void SplitBill::Pay(Group *group)
             }
         }
 
-        paid(pay);
-        tipWaiter(tip);
+        Paid(pay);
+        TipWaiter(tip);
         count++;
     }
 
@@ -114,7 +114,7 @@ void SplitBill::Pay(Group *group)
     {
         cout << "Thank you for the tip" << endl;
     }
-    if (group->getLastEmotion()->ToString() == "Unhappy")
+    if (group->GetLastEmotion()->ToString() == "Unhappy")
     {
         cout << "Would you like to leave a complaint (Y/N)" << endl;
         cin >> choice;
@@ -141,17 +141,17 @@ void SplitBill::Pay(Group *group)
     }
 }
 
-void SplitBill::paid(float paid)
+void SplitBill::Paid(float paid)
 {
     this->TotalPaid += paid;
 }
 
-void SplitBill::tipWaiter(float tip)
+void SplitBill::TipWaiter(float tip)
 {
     this->TipAmount += tip;
 }
 
-bool SplitBill::fullyPaid()
+bool SplitBill::FullyPaid()
 {
-    return getTotal() <= TotalPaid;
+    return GetTotal() <= TotalPaid;
 }

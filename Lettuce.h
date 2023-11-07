@@ -7,10 +7,8 @@
  * @class Lettuce
  * @brief This class inherits from Garnish and represents lettuce to garnish a burger
 */
-
 class Lettuce : public Garnish
 {
-private:
 public:
 
     /**

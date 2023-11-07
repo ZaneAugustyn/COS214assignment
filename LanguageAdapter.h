@@ -2,6 +2,7 @@
 #define _LANGUAGEADAPTER_H
 
 #include "LanguageTarget.h"
+
 class OrderItem;
 
 /**
@@ -18,14 +19,14 @@ public:
      * @param orderItem The order item to be translated.
      * @return void
      */
-    void setOrderItems(OrderItem* orderItem);
+    void SetOrderItems(OrderItem* orderItem);
 
     /**
      * @brief Get the translated order item in the specified language.
      * @param language The language code 
      * @return The translated order item.
      */
-    string getOrderItemInLanguage(char language);
+    string GetOrderItemInLanguage(char language);
 };
 
 #endif

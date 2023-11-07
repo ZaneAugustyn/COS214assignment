@@ -32,7 +32,7 @@ void ReadyToOrder::RequestTab(Group *group)
 void ReadyToOrder::RequestBill(Group *group)
 {
     group->SetState(new ReadyForBill());
-    group->notify();
+    group->Notify();
 }
 
 string ReadyToOrder::ToString()

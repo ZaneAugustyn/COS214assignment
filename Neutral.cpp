@@ -13,12 +13,12 @@ Neutral::~Neutral()
 
 void Neutral::MakeUnhappy(Group *group)
 {
-    group->setLastEmotion(new Unhappy());
+    group->SetLastEmotion(new Unhappy());
 }
 
 void Neutral::MakeHappy(Group * group) 
 {
-    group->setLastEmotion(new Happy());
+    group->SetLastEmotion(new Happy());
 }
 
 void Neutral::MakeNeutral(Group *group)

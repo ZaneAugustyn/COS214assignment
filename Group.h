@@ -1,6 +1,5 @@
 #ifndef _GROUP_H
 #define _GROUP_H
-// code here
 
 #include <iostream>
 #include <vector>
@@ -10,7 +9,6 @@
 #include "EmotionalState.h"
 #include "Customer.h"
 
-using namespace std;
 
 class GroupState;
 class EmotionalState;
@@ -18,15 +16,15 @@ class EmotionalState;
 class Waiter;
 class Bill;
 
+using namespace std;
+
 /**
  * @class Group
  * @brief This class represents the group of customers that will be seated and will order
 */
-
 class Group
 {
 private:
-    /* data */
     GroupState* groupState_;
     std::vector<Customer*> customers_;
     Bill* bill_;
@@ -52,26 +50,19 @@ public:
      * @param customer The customer to be added.
      * @return void
      */
-    void addCustomer(Customer* customer){
-
-        customers_.push_back(customer);
-
-    }
+    void AddCustomer(Customer* customer);
 
     /**
      * @brief Get the customers in the group.
      * @return A vector of Customer pointers.
      */
-    std::vector<Customer*> getCustomers()
-    {
-        return customers_;
-    }
+    vector<Customer*> GetCustomers();
     
     /**
      * @brief Get the waiter serving the group.
      * @return The waiter serving the group.
      */
-    Waiter* getWaiter();
+    Waiter* GetWaiter();
 
     /**
      * @brief set the state of the group
@@ -85,7 +76,7 @@ public:
      * @param state the emotional state to be assigned to a group
      * @return void
     */
-    void setLastEmotion(EmotionalState * state);
+    void SetLastEmotion(EmotionalState * state);
 
     /**
      * @brief the Context class of the State pattern that defines the requests for the state changes
@@ -133,7 +124,7 @@ public:
      * @brief the function to return the groupNumber
      * @return int
     */
-    int getGroupNumber();
+    int GetGroupNumber();
 
     /**
      * @brief the function to return the the state of the group
@@ -151,53 +142,53 @@ public:
      * @brief function to return the first customer in the group
      * @return Customer*
     */
-    Customer* getFirstCustomer();
+    Customer* GetFirstCustomer();
 
     /**
      * @brief Add a waiter to serve the group.
      * @param waiter The waiter to be assigned to the group.
      * @return void
      */
-    void addWaiter(Waiter* waiter);
+    void AddWaiter(Waiter* waiter);
 
      /**
      * @brief Remove the waiter serving the group.
      * @param waiter The waiter to be removed from the group.
      * @return void
      */
-    void removeWaiter(Waiter* waiter);
+    void RemoveWaiter(Waiter* waiter);
 
      /**
      * @brief Set the bill associated with the group.
      * @param bill The bill to be associated with the group.
      * @return void
      */
-    void setBill(Bill* bill);
+    void SetBill(Bill* bill);
 
      /**
      * @brief Get the bill associated with the group.
      * @return The bill associated with the group.
      */
-    Bill* getBill();
+    Bill* GetBill();
     
      /**
      * @brief Notify the waiter about group updates.
      * @return void
      */
-    void notify();
+    void Notify();
 
     /**
      * @brief Update last emotion
      * @param State to update the lastEmotion to
      * @return void
      */
-    void updateLastEmotion(GroupState* State);
+    void UpdateLastEmotion(GroupState* State);
 
     /**
      * @brief get last emotion
      * @return EmotionalState*
      */
-    EmotionalState* getLastEmotion();
+    EmotionalState* GetLastEmotion();
 };
 
 #endif

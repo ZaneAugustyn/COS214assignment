@@ -13,12 +13,6 @@
 #include "FooterBill.h"
 #include "HeaderBill.h"
 
-// class PrintBill;
-// class Marginals;
-// class OrderPrint;
-// class HeaderBill;
-// class FooterBill;
-
 /**
  * @class Bill
  * @brief Represents a bill for a group of customers.
@@ -52,14 +46,14 @@ public:
      * @brief Get the total amount of the bill.
      * @return The total amount of the bill in float format.
      */
-    float getTotal() { return Total; }
+    float GetTotal() { return Total; }
 
     /**
      * @brief Set the total amount of the bill.
      * @param t The new total amount for the bill.
      * @return void
      */
-    void setTotal(float t) { Total = t; }
+    void SetTotal(float t) { Total = t; }
 
     /**
      * @brief Print the bill.

@@ -32,34 +32,34 @@ Waiter::Waiter(std::string n, Pass* pass):Colleague(pass)
 
     //meats
     Order* meats = new Order(NULL);
-    meats->addComponent(new ChickenPatty(true));
-    meats->addComponent(new BeefPatty());
+    meats->AddComponent(new ChickenPatty(true));
+    meats->AddComponent(new BeefPatty());
 
     //sides
     Order* sides = new Order(NULL);
-    sides->addComponent(new Chips());
-    sides->addComponent(new Salad());
+    sides->AddComponent(new Chips());
+    sides->AddComponent(new Salad());
 
     //garnish
     Order* garnish = new Order(NULL);
-    garnish->addComponent(new Lettuce());
-    garnish->addComponent(new Tomato());
+    garnish->AddComponent(new Lettuce());
+    garnish->AddComponent(new Tomato());
 
     //drinks
     Order* drinks = new Order(NULL);
-    drinks->addComponent(new Milkshake());
-    drinks->addComponent(new Soda());
+    drinks->AddComponent(new Milkshake());
+    drinks->AddComponent(new Soda());
 
-    this->menu_->addComponent(meats);
-    this->menu_->addComponent(sides);
-    this->menu_->addComponent(garnish);
-    this->menu_->addComponent(drinks);
+    this->menu_->AddComponent(meats);
+    this->menu_->AddComponent(sides);
+    this->menu_->AddComponent(garnish);
+    this->menu_->AddComponent(drinks);
 
 }
 
-void Waiter::changed()
+void Waiter::Changed()
 {
-    this->pass_->notifyHeadChef(this);
+    this->pass_->NotifyHeadChef(this);
 }
 
 Waiter::~Waiter()
@@ -67,14 +67,14 @@ Waiter::~Waiter()
 
 }
 
-std::string Waiter::getName()
+std::string Waiter::GetName()
 {
     return name_;
 }
 
-void Waiter::update(Group* group)
+void Waiter::Update(Group* group)
 {
-    std::cout<<getName()<<" has been notified"<<std::endl;
+    std::cout<<GetName()<<" has been notified"<<std::endl;
 
     if(group->GetState()->ToString() == "WaitForTable"){
         return;
@@ -85,23 +85,23 @@ void Waiter::update(Group* group)
         Order* groupOrder = new Order(group);
 
         //iterate over customers
-        for(Customer* customer : group->getCustomers()){
+        for(Customer* customer : group->GetCustomers()){
             Order* customerOrder = new Order(group);
 
-            customerOrder->addComponent(new Bun());
+            customerOrder->AddComponent(new Bun());
 
             char languageChoice;
-            cout << customer->getName() << ", in which language would you like your menu? ('A' for Afrikaans, 'E' for English)" << endl;
+            cout << customer->GetName() << ", in which language would you like your menu? ('A' for Afrikaans, 'E' for English)" << endl;
             cin >> languageChoice;
             
-            GroupIterator* iterator = menu_->createIterator();
+            GroupIterator* iterator = menu_->CreateIterator();
             string messages[] = {"Please select a meat", "Please select a side", "Please select a garnish", "Please select a drink"};
             int i = 0;
 
-            while (!iterator->isDone()) {
+            while (!iterator->IsDone()) {
                 cout << messages[i] << endl;
                
-                cout << (iterator->currentItem())->formatOrder(la, languageChoice);
+                cout << (iterator->CurrentItem())->FormatOrder(la, languageChoice);
                 int choice;
                 cin >> choice;                
 
@@ -112,7 +112,7 @@ void Waiter::update(Group* group)
 
                     cout<<"WARNING! You entered the wrong menu option. Please try again."<<endl;
                     cout << messages[i] << endl;
-                    cout << (iterator->currentItem())->formatOrder(la, languageChoice);
+                    cout << (iterator->CurrentItem())->FormatOrder(la, languageChoice);
 
                     cin >> choice;
                 }
@@ -131,27 +131,27 @@ void Waiter::update(Group* group)
 
                     if (chicOption == 'F')
                     {
-                        customerOrder->addComponent(new ChickenPatty(0));
+                        customerOrder->AddComponent(new ChickenPatty(0));
                     }
                     else
                     {
-                        customerOrder->addComponent(new ChickenPatty(1));
+                        customerOrder->AddComponent(new ChickenPatty(1));
                     }
                     
                 }
                 else
                 {
-                    customerOrder->addComponent((iterator->currentItem())->getItems()[choice - 1]);
+                    customerOrder->AddComponent((iterator->CurrentItem())->GetItems()[choice - 1]);
                 }
 
                 i++;
-                iterator->next(); 
+                iterator->Next(); 
             }
 
-            groupOrder->addComponent(customerOrder);
+            groupOrder->AddComponent(customerOrder);
 
         }
-        pass_->addOrder(groupOrder);
+        pass_->AddOrder(groupOrder);
     }
     else if(group->GetState()->ToString() == "ReadyForBill"){
         //the waiter will take the group bill and display it
@@ -169,10 +169,9 @@ void Waiter::update(Group* group)
         else if (status =='U')
             group->MakeUnhappy();
 
-        cout << "You have to pay R " << group->getBill()->getTotal() << endl;
+        cout << "You have to pay R " << group->GetBill()->GetTotal() << endl;
         cout << "How would you like to pay it? 'S' to split, 'F' to pay in full, 'T' to put it on a tab" << endl;
         char c;
-        // TODO: need to check inputs
         cin >> c;
 
         while ((c != 'S') && (c != 'F') && (c != 'T') && (c != 's') && (c != 'f') && (c != 't'))
@@ -185,20 +184,16 @@ void Waiter::update(Group* group)
         }
         cin.clear(); // Clear error flags
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        // Assume we take the first customer in the group if they want to make a bill
-        //**********Check group last emotion for tip.*********************
+        
         
         if(group != NULL)
         {
-            group->getBill()->Pay(group,c);
+            group->GetBill()->Pay(group,c);
         }
         else
         {
             cout << "There are no customers in this group to pay for the bill" << endl;
         }
-        //**********Xadrian please help here.
-        //and ask the group how they want to pay it
-        //the waiter will then initiate the payment process
     }
     else if(group->GetState()->ToString() == "PayTab"){
 

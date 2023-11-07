@@ -12,5 +12,4 @@ void FooterBill::Print()
     cout << "See you soon!" << endl;
     cout << "For more information please visit http://leMcdonaldsBurgers.com" << endl;
     cout << endl << "==========================================="<<endl << endl;
-
 }

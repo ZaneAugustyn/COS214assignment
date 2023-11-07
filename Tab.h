@@ -25,7 +25,7 @@ public:
      * @brief Get the current total amount owed in the tab.
      * @return The total amount owed in the tab.
      */
-    float getAmount() const;
+    float GetAmount() const;
 };
 
 #endif

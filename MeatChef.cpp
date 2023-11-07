@@ -13,38 +13,38 @@ MeatChef::~MeatChef()
 {
 }
 
-void MeatChef::handleOrder(Plate *plate, vector<OrderComponent *> orderComp)
+void MeatChef::HandleOrder(Plate *plate, vector<OrderComponent *> orderComp)
 {
   if (orderComp.empty())
   {
-    Chef::handleOrder(plate,orderComp);
+    Chef::HandleOrder(plate,orderComp);
     return;
   }
 
   ItemIterator *itemIterator = new ItemIterator(orderComp);
   int counter = 0;
 
-  while (!itemIterator->isDone())
+  while (!itemIterator->IsDone())
   {
-    OrderComponent *item = itemIterator->currentItem();
+    OrderComponent *item = itemIterator->CurrentItem();
     if (dynamic_cast<OrderItem *>(item))
     {
 
       OrderItem *orderItem = dynamic_cast<OrderItem *>(item);
 
-      if (orderItem->getName() != "Chicken Patty" && orderItem->getName() != "Beef Patty")
+      if (orderItem->GetName() != "Chicken Patty" && orderItem->GetName() != "Beef Patty")
       {
         counter += 1;
       }
-      else if (orderItem->getName() == "Chicken Patty")
+      else if (orderItem->GetName() == "Chicken Patty")
       {
         // add a chicken patty to the plate
         Patty *chic = dynamic_cast<ChickenPatty *>(orderItem);
-        if (chic->getGrilledStatus() == true)
+        if (chic->GetGrilledStatus() == true)
         {
           cout << "The Meat Chef adds a grilled chicken patty to the plate" << endl;
-          plate->addToPlate(chic);
-          plate->printPlate();
+          plate->AddToPlate(chic);
+          plate->PrintPlate();
 
           // remove bun from orderComp
           orderComp.erase(orderComp.begin() + counter);
@@ -54,8 +54,8 @@ void MeatChef::handleOrder(Plate *plate, vector<OrderComponent *> orderComp)
         else
         {
           cout << "The Meat Chef adds a fried chicken patty to the plate" << endl;
-          plate->addToPlate(chic);
-          plate->printPlate();
+          plate->AddToPlate(chic);
+          plate->PrintPlate();
 
           // remove bun from orderComp
           orderComp.erase(orderComp.begin() + counter);
@@ -63,11 +63,11 @@ void MeatChef::handleOrder(Plate *plate, vector<OrderComponent *> orderComp)
           break;
         }
       }
-      else if (orderItem->getName() == "Beef Patty")
+      else if (orderItem->GetName() == "Beef Patty")
       {
         cout << "The Meat Chef a grilled beef patty to the plate" << endl;
-        plate->addToPlate(orderItem);
-        plate->printPlate();
+        plate->AddToPlate(orderItem);
+        plate->PrintPlate();
 
         // remove bun from orderComp
         orderComp.erase(orderComp.begin() + counter);
@@ -75,9 +75,9 @@ void MeatChef::handleOrder(Plate *plate, vector<OrderComponent *> orderComp)
         break;
       }
     }
-    itemIterator->next();
+    itemIterator->Next();
   }
 
   // send to the next chef
-  Chef::handleOrder(plate, orderComp);
+  Chef::HandleOrder(plate, orderComp);
 }

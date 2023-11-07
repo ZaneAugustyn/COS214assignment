@@ -7,10 +7,8 @@
  * @class Side
  * @brief This class inherits from OrderItem and represents a side that a guest can have with their burger
 */
-
 class Side : public OrderItem
 {
-private:
 public:
     /**
      * @brief constructor

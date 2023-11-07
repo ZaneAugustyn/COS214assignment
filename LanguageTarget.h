@@ -17,14 +17,14 @@ public:
      * @brief Set the order item to be translated.
      * @param orderItem The order item to be translated.
      */
-    virtual void setOrderItems(OrderItem* orderItem) = 0;
+    virtual void SetOrderItems(OrderItem* orderItem) = 0;
 
     /**
      * @brief Get the translated order item in the specified language.
      * @param language The language code
      * @return The translated order item.
      */
-    virtual string getOrderItemInLanguage(char language) = 0;
+    virtual string GetOrderItemInLanguage(char language) = 0;
 };
 
 #endif

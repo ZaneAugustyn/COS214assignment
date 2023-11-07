@@ -58,12 +58,12 @@ class Facade
 {
 private:
     /* data */
-    Floor* floor;         
-    MaitreD* maitreD;      
-    Chef* chef2;          
-    HeadChef* headChef;    
-    Pass* kitchenPass;    
-    int numGroups = 0;     
+    Floor* floor_;         
+    MaitreD* maitreD_;      
+    Chef* chef_;          
+    HeadChef* headChef_;    
+    Pass* kitchenPass_;    
+    int numGroups_ = 0;     
 
 public:
     /**
@@ -79,49 +79,49 @@ public:
     /**
      * @brief Run the restaurant simulation.
      */
-    void run();
+    void Run();
 
     /**
      * @brief Option 1: Add a group to the queue outside the restaurant.
      * @return void
      */
-    void option1();
+    void Option1();
 
     /**
      * @brief Option 2: Let a group inside the restaurant.
      * @return void
      */
-    void option2();
+    void Option2();
 
     /**
      * @brief Option 3: Let a group place an order.
      * @return void
      */
-    void option3();
+    void Option3();
 
     /**
      * @brief Option 4: Let a group pay their bill.
      * @return void
      */
-    void option4();
+    void Option4();
 
     /**
      * @brief Option 5: Remove a group from the restaurant.
      * @return void
      */
-    void option5();
+    void Option5();
 
     /**
      * @brief Option 6: Exit the simulation.
      * @return void
      */
-    void option6();
+    void Option6();
 
     /**
      * @brief Initialize basic components and setup for the restaurant simulation.
      * @return void
      */
-    void initBasic();
+    void InitBasic();
     
 };
 

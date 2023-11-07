@@ -7,10 +7,8 @@
  * @class BeefPatty
  * @brief This class inherits from Patty and represents a beef patty
 */
-
 class BeefPatty : public Patty
 {
-private:
 public:
 
     /**

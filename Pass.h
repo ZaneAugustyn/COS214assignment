@@ -3,7 +3,7 @@
 
 #include <vector>
 #include <iostream>
-using namespace std;
+
 #include "Bill.h"
 
 class Order;
@@ -11,6 +11,8 @@ class Waiter;
 class Chef;
 class Plate;
 class Group;
+
+using namespace std;
 
 /**
  * @class Pass
@@ -47,34 +49,34 @@ class Pass
      * @param waiter contains a reference of the waiter who is notifying the head chef
      * @return void
     */
-    void notifyHeadChef(Waiter* waiter);
+    void NotifyHeadChef(Waiter* waiter);
 
     /**
      * @brief waiter is notified as soon as a order is complete and added to the pass
      * @param headchef contains a reference of the chef who is notifying the waiter that the order is complete
      * @return void
     */
-    void notifyWaiter(Chef* headchef);
+    void NotifyWaiter(Chef* headchef);
 
     /**
      * @brief add a plate (a completed order) to the tray on the pass
      * @param plates contain the plate containing the order items
      * @return void
     */
-    void addToListOfTrays(vector<Plate*> plates);
+    void AddToListOfTrays(vector<Plate*> plates);
 
     /**
      * @brief used by waiter to add a order to the order list in the pass
      * @param order contains the group order
      * @return void
     */
-    void addOrder(Order* order);
+    void AddOrder(Order* order);
 
     /**
      * @brief dequeue the first order from the list (First come first serve)
      * @return void
     */
-    void dequeueOrder();
+    void DequeueOrder();
 
     /**
      * @brief virtual destructor
@@ -86,7 +88,7 @@ class Pass
      * @brief assign chef to the member variable
      * @return void
     */
-    void addChef(Chef*);
+    void AddChef(Chef*);
 };
 
 #endif

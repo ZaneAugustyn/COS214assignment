@@ -8,7 +8,6 @@
  * @class ReadyToOrder
  * @brief This class represent the ReadyToOrder state of the customer
 */
-
 class ReadyToOrder : public GroupState
 {
 private:

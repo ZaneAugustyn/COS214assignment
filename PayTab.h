@@ -8,7 +8,6 @@
  * @class PayTab
  * @brief This class is used for managing the tab of customers that can be payed at a later stage
 */
-
 class PayTab : public GroupState
 {
 private:

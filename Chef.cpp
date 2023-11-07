@@ -24,11 +24,11 @@ Chef::~Chef()
 {
 }
 
-void Chef::add(Chef* nextChef)
+void Chef::Add(Chef* nextChef)
 {
     if(nextChef_)
     {
-        nextChef_->add(nextChef);
+        nextChef_->Add(nextChef);
     }
     else
     {
@@ -36,40 +36,40 @@ void Chef::add(Chef* nextChef)
     }
 }
 
-void Chef::handleOrder(Plate* plate, vector<OrderComponent*> orderComp)
+void Chef::HandleOrder(Plate* plate, vector<OrderComponent*> orderComp)
 {
     if(nextChef_)
     {
-        nextChef_->handleOrder(plate, orderComp);
+        nextChef_->HandleOrder(plate, orderComp);
     }
 }
 
-void Chef::createGroupOrder(Order* order)
+void Chef::CreateGroupOrder(Order* order)
 {
-    GroupIterator* iterator = order->createIterator();
-    iterator->setOrder(order);
+    GroupIterator* iterator = order->CreateIterator();
+    iterator->SetOrder(order);
 
-    while (!iterator->isDone()) {
-        Order* currentComponent = iterator->currentItem();
-        cout << "The kitchen is preparing an order for group " << currentComponent->getGroupNumber() << endl;
+    while (!iterator->IsDone()) {
+        Order* currentComponent = iterator->CurrentItem();
+        cout << "The kitchen is preparing an order for group " << currentComponent->GetGroupNumber() << endl;
         if (currentComponent) {
-            handleOrder(new Plate(), currentComponent->getItems());
+            HandleOrder(new Plate(), currentComponent->GetItems());
         }
         cout<<endl;
-        iterator->next();
+        iterator->Next();
     }
     
-    if (iterator->isDone())
+    if (iterator->IsDone())
     {
-        cout << "The kitchen is done preparing all orders for group " << order->getGroupNumber() << endl;
-        pass_->addToListOfTrays(tray_); // add tray to list of trays
+        cout << "The kitchen is done preparing all orders for group " << order->GetGroupNumber() << endl;
+        pass_->AddToListOfTrays(tray_); // add tray to list of trays
         tray_.clear();  // clear tray
-        cout<<"Waiter name: "<<order->getGroup()->getWaiter()->getName()<<endl;
-        changed();
+        cout<<"Waiter name: "<<order->GetGroup()->GetWaiter()->GetName()<<endl;
+        Changed();
     }
 }
 
-void Chef::changed()
+void Chef::Changed()
 {
-    pass_->notifyWaiter(this);
+    pass_->NotifyWaiter(this);
 }

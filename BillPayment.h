@@ -36,13 +36,13 @@ public:
      * @brief Get the total amount of the bill payment.
      * @return The total amount of the bill payment.
      */
-    float getTotal() { return Total; }
+    float GetTotal() { return Total; }
 
     /**
      * @brief Set the total amount of the bill payment.
      * @param t The new total amount for the bill payment.
      */
-    void setTotal(float t) { Total = t; }
+    void SetTotal(float t) { Total = t; }
 };
 
 #endif

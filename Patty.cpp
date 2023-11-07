@@ -5,7 +5,7 @@ Patty::Patty(bool grilled, double price, string name):OrderItem(price, name)
     grilled_ = grilled;
 }
 
-bool Patty::getGrilledStatus()
+bool Patty::GetGrilledStatus()
 {
     return this->grilled_;
 }

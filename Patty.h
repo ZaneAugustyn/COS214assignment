@@ -7,13 +7,11 @@
  * @class Patty
  * @brief This class inherits from OrderItem and represents a burger patty
 */
-
 class Patty : public OrderItem
 {
 protected:
     bool grilled_;
 public:
-
     /**
      * @brief constructor
      * @param grilled takes in a boolean value - the Patty will be grilled in the Kitchen if this is true, otherwise it will be fried
@@ -27,7 +25,7 @@ public:
      * @brief getter for grilled_
      * @return whether the Patty should be grilled (or alternatively, fried) in the Kitchen
     */
-    bool getGrilledStatus();
+    bool GetGrilledStatus();
 
     /**
      * @brief destructor

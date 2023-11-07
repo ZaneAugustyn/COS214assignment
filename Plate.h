@@ -26,14 +26,14 @@ public:
      * @brief Print the contents of the plate to the console.
      * @return void
      */
-    void printPlate();
+    void PrintPlate();
 
     /**
      * @brief Add an order item to the plate.
      * @param item The order item to add to the plate.
      * @return void
      */
-    void addToPlate(OrderItem* item);
+    void AddToPlate(OrderItem* item);
 
     /**
      * @brief Destructor for the Plate instance.

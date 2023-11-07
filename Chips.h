@@ -7,7 +7,6 @@
  * @class Chips
  * @brief This class inherits from Side and represents chips
 */
-
 class Chips : public Side
 {
 private:

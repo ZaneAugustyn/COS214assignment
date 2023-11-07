@@ -2,26 +2,26 @@
 #define _FLOORSTATE_H
 
 class Floor;
-// code here
 
 #include <array>
-using namespace std;
 #include <iostream>
 #include <string>
+
+using namespace std;
+
 /**
  * @class FloorState
  * @brief This class represents the state of the floor in the restaurant
 */
 class FloorState
 {
-private:
-    /* data */
 public:
     /**
      * @brief constructor
      * @return none
     */
-    FloorState(/* args */);
+    FloorState();
+
     /**
      * @brief destructor
      * @return none
@@ -33,7 +33,7 @@ public:
      * @param none
      * @return string
     */
-    virtual string getName() = 0;
+    virtual string GetName() = 0;
 
     /**
      * @brief This is a virtual method that is used to change the current state of the floor

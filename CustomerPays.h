@@ -5,9 +5,11 @@
 #include "Group.h"
 #include <iostream>
 #include <limits>
-using namespace std;
 
 class Group;
+
+using namespace std;
+
 /**
  * @class CustomerPays
  * @brief Represents a bill payment method where a customer pays their bill in the group.

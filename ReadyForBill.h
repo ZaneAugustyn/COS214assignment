@@ -8,7 +8,6 @@
  * @class ReadyForBill
  * @brief This class represent the readyForBill state of the customer
 */
-
 class ReadyForBill : public GroupState
 {
 private:

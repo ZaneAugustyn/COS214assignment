@@ -9,7 +9,7 @@ OrderComponent::~OrderComponent()
 {
 }
 
-ItemIterator* OrderComponent::createItemIterator()
+ItemIterator* OrderComponent::CreateItemIterator()
 {
   return new ItemIterator();
 }

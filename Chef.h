@@ -2,10 +2,11 @@
 #define _CHEF_H
 
 #include <vector>
-using namespace std;
 
 #include "Colleague.h"
 #include "ItemIterator.h"
+
+using namespace std;
 
 class Pass;
 class Plate; 
@@ -19,7 +20,6 @@ class OrderComponent;
  * @class Chef
  * @brief This class is a concrete colleague of the Mediator design and the Handler participant of the Chain of Responsibility Pattern
 */
-
 class Chef : public Colleague
 {
     private:
@@ -50,7 +50,7 @@ class Chef : public Colleague
        * @brief part of the mediator design pattern to delegate the appropriate notify method
        * @return void
       */
-      void changed();
+      void Changed();
 
       /**
        * @brief part of the chain of responsibility design pattern to delegate to handle the order
@@ -58,21 +58,21 @@ class Chef : public Colleague
        * @param orderComp hold one of the group member's group order
        * @return void
       */
-      virtual void handleOrder(Plate* plate, vector<OrderComponent*> orderComp);
+      virtual void HandleOrder(Plate* plate, vector<OrderComponent*> orderComp);
       
       /**
        * @brief part of the mediator design pattern to add a specific chef to the chain of responsibility
        * @param nextChef pointer to the next chef in the chain of responsibility
        * @return void
       */
-      void add(Chef* nextChef);
+      void Add(Chef* nextChef);
 
       /**
        * @brief is being used as the start and the end of the chain of responsibility
        * @param order holds the pointer to the group order
        * @return void
       */      
-      void createGroupOrder(Order* order);
+      void CreateGroupOrder(Order* order);
 };
 
 #endif

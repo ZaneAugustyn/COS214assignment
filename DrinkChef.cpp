@@ -14,34 +14,34 @@ DrinkChef::~DrinkChef()
 {
 }
 
-void DrinkChef::handleOrder(Plate *plate, vector<OrderComponent *> orderComp)
+void DrinkChef::HandleOrder(Plate *plate, vector<OrderComponent *> orderComp)
 {
   if (orderComp.empty())
   {
-    Chef::handleOrder(plate,orderComp);
+    Chef::HandleOrder(plate,orderComp);
     return;
   }
 
   ItemIterator *itemIterator = new ItemIterator(orderComp);
   int counter = 0;
 
-  while (!itemIterator->isDone())
+  while (!itemIterator->IsDone())
   {
-    OrderComponent *item = itemIterator->currentItem();
+    OrderComponent *item = itemIterator->CurrentItem();
     if (dynamic_cast<OrderItem *>(item))
     {
 
       OrderItem *orderItem = dynamic_cast<OrderItem *>(item);
 
-      if (orderItem->getName() != "Soda" && orderItem->getName() != "Milkshake")
+      if (orderItem->GetName() != "Soda" && orderItem->GetName() != "Milkshake")
       {
         counter += 1;
       }
       else 
       {
-        cout << "The Drink Chef adds the " << orderItem->getName() << " to the plate" << endl;
-        plate->addToPlate(orderItem);
-        plate->printPlate();
+        cout << "The Drink Chef adds the " << orderItem->GetName() << " to the plate" << endl;
+        plate->AddToPlate(orderItem);
+        plate->PrintPlate();
 
         // remove bun from orderComp
         orderComp.erase(orderComp.begin() + counter);
@@ -49,13 +49,9 @@ void DrinkChef::handleOrder(Plate *plate, vector<OrderComponent *> orderComp)
         break;
       }
     }
-    itemIterator->next();
+    itemIterator->Next();
   }
 
   // send to the next chef
-  Chef::handleOrder(plate, orderComp);
-
-  // iterate over the order to find the drink
-  // remove the drink from the order
-  // add the drink to the plate
+  Chef::HandleOrder(plate, orderComp);
 }

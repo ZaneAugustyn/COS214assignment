@@ -2,7 +2,7 @@
 #include "Full.h"
 #include "Floor.h"
 
-Full::Full(/* args */)
+Full::Full()
 {
     name_ = "FULL";
 }
@@ -17,5 +17,10 @@ void Full::ChangeState(Floor* floor, FloorState* state)
     {
         return;
     }
-    floor->setCurrentState(state);
+    floor->SetCurrentState(state);
+}
+
+string Full::GetName()
+{
+    return name_;
 }

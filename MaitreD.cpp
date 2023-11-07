@@ -23,7 +23,7 @@ MaitreD::~MaitreD()
 {
 }
 
-int MaitreD::calculateTablesNeeded(int groupSize)
+int MaitreD::CalculateTablesNeeded(int groupSize)
 {
     float numNeeded = 0;
     float test = groupSize;
@@ -33,15 +33,15 @@ int MaitreD::calculateTablesNeeded(int groupSize)
     return ret;
 }
 
-bool MaitreD::checkAvailability(int groupSize)
+bool MaitreD::CheckAvailability(int groupSize)
 {
-    this->tableChecker();//makes sure that the floor state is up to date
-    if(!checkCurrentFloorState(myFloor_->getCurrentState()))//floor state is full
+    this->TableChecker();//makes sure that the floor state is up to date
+    if(!CheckCurrentFloorState(myFloor_->GetCurrentState()))//floor state is full
     {
         return false;
     }
     int numTablesNeeded = 0;
-    numTablesNeeded = calculateTablesNeeded(groupSize);
+    numTablesNeeded = CalculateTablesNeeded(groupSize);
     if(availableTables_ < numTablesNeeded)
     {
         return false;
@@ -49,72 +49,72 @@ bool MaitreD::checkAvailability(int groupSize)
     return true;
 }
 
-bool MaitreD::checkCurrentFloorState(FloorState* floorState)
+bool MaitreD::CheckCurrentFloorState(FloorState* floorState)
 {
     if(floorState == nullptr)
     {
         return false;;
     }
 
-    if(floorState->getName() == "SPACEAVAILABLE")
+    if(floorState->GetName() == "SPACEAVAILABLE")
     {
         return true;
     }
     return false;
 }
 
-void MaitreD::addGroupToFloor()
+void MaitreD::AddGroupToFloor()
 {
-    if (WaitingGroups_.empty()) 
+    if (waitingGroups_.empty()) 
     {
         std::cout << "No waiting groups available." << std::endl;
         return;
     }
     
-    if(WaitingGroups_.front()->GetState()->ToString() == "PayTab") 
+    if(waitingGroups_.front()->GetState()->ToString() == "PayTab") 
     {
         cout<<endl<<PINK<<"Welcome back to Le McDonalds - thank you for coming to settle the tab"<<RESET<<endl;
-        WaitingGroups_.front()->getBill()->Pay(WaitingGroups_.front(), 'F');
-        WaitingGroups_.erase(WaitingGroups_.begin());
+        waitingGroups_.front()->GetBill()->Pay(waitingGroups_.front(), 'F');
+        waitingGroups_.erase(waitingGroups_.begin());
         return;
     }
 
-    this->tableChecker();//sets table to full or spaceavailable if needed
+    this->TableChecker();//sets table to full or spaceavailable if needed
 
-    if(!this->checkCurrentFloorState(myFloor_->getCurrentState()))//this checks if the curent floorstate is full 
+    if(!this->CheckCurrentFloorState(myFloor_->GetCurrentState()))//this checks if the curent floorstate is full 
     {
         return;//state is full
     }
 
-    Group* group = WaitingGroups_.front();
+    Group* group = waitingGroups_.front();
 
-    if (checkAvailability(group->getCustomers().size())) 
+    if (CheckAvailability(group->GetCustomers().size())) 
     {
-        int tablesNeeded = calculateTablesNeeded(group->getCustomers().size());
+        int tablesNeeded = CalculateTablesNeeded(group->GetCustomers().size());
         availableTables_ -= tablesNeeded;
 
         // Decide how you want to add the group to the floor.
 
-        WaitingGroups_.erase(WaitingGroups_.begin());//remove group from waiting groups
-        myFloor_->seatGroup(group);//group is seating on the floor
+        waitingGroups_.erase(waitingGroups_.begin());//remove group from waiting groups
+        myFloor_->SeatGroup(group);//group is seating on the floor
 
-        Waiter* w1 = Waiters_.front();
-        group->addWaiter(w1);
+        Waiter* w1 = waiters_.front();
+        group->AddWaiter(w1);
         //w1->addGroup(group);
 
 
-        Waiters_.erase(Waiters_.begin());
-        Waiters_.push_back(w1);
+        waiters_.erase(waiters_.begin());
+        waiters_.push_back(w1);
 
 
-        std::cout <<LIGHT_GREEN<< "Group "<<group->getGroupNumber()<<" added to the floor." <<RESET<< std::endl;
+        std::cout <<LIGHT_GREEN<< "Group "<<group->GetGroupNumber()<<" added to the floor." <<RESET<< std::endl;
     } else 
     {
         std::cout <<RED<< "No availability for the group." <<RESET<< std::endl;
     }
 }
 
-void MaitreD::removeGroupFromFloor(Group* group)
+void MaitreD::RemoveGroupFromFloor(Group* group)
 {
     if(group == nullptr)
     {
@@ -127,61 +127,61 @@ void MaitreD::removeGroupFromFloor(Group* group)
         return;
     }
     
-    availableTables_ = availableTables_ + calculateTablesNeeded(group->getCustomers().size());//update tables since group left
+    availableTables_ = availableTables_ + CalculateTablesNeeded(group->GetCustomers().size());//update tables since group left
     //addGroupToFloor(add group somehow) or are we going to just use a queue and add the first one to said queue or have 
     //a var where we keep the group that is waiting if we need to pop the queue to be able to access the group
-    myFloor_->excuseGroup(group);//group is excused from the floor
+    myFloor_->ExcuseGroup(group);//group is excused from the floor
 
     if(group->GetState()->ToString() == "PayTab") 
     {
-        addGroupToWaitingGroups(group);
+        AddGroupToWaitingGroups(group);
     }
 
 
 }
 
-void MaitreD::addGroupToWaitingGroups(Group* group)
+void MaitreD::AddGroupToWaitingGroups(Group* group)
 {
     if(group == nullptr)
     {
         return;
     }
 
-    WaitingGroups_.push_back(group);
+    waitingGroups_.push_back(group);
 }
 
-void MaitreD::setWaiterList(std::vector<Waiter*> W)
+void MaitreD::SetWaiterList(std::vector<Waiter*> W)
 {
     cout<<LIGHT_GREEN<<"Waiters have been hired"<<RESET<<endl;
-    this->Waiters_ = W;
+    this->waiters_ = W;
 }
 
-void MaitreD::tableChecker()
+void MaitreD::TableChecker()
 {
     if(availableTables_ == 0)
     {
-        if(myFloor_->getCurrentState()->getName() == "FULL")
+        if(myFloor_->GetCurrentState()->GetName() == "FULL")
             {
                 return;
             }
-        myFloor_->setFull();
+        myFloor_->SetFull();
     }
     else if(availableTables_ >= 1)
     {
-        if(myFloor_->getCurrentState()->getName() == "SPACEAVAILABLE")
+        if(myFloor_->GetCurrentState()->GetName() == "SPACEAVAILABLE")
             {
                 return;
             }
-        myFloor_->setSpaceAvailable();
+        myFloor_->SetSpaceAvailable();
     }
 }
 
-std::vector<Group*> MaitreD::getAwaitingGroup()
+std::vector<Group*> MaitreD::GetAwaitingGroup()
 {
-    return WaitingGroups_;
+    return waitingGroups_;
 }
 
-Floor* MaitreD::getFloor()
+Floor* MaitreD::GetFloor()
 {
     return myFloor_;
 }

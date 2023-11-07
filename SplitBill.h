@@ -44,20 +44,20 @@ public:
      * @param paid The amount paid by the customer.
      * @return void
      */
-    void paid(float paid);
+    void Paid(float paid);
 
     /**
      * @brief Record the tip amount paid to the waiter.
      * @param tip The tip amount paid to the waiter.
      * @return void
      */
-    void tipWaiter(float tip);
+    void TipWaiter(float tip);
 
     /**
      * @brief Check if the bill is fully paid.
      * @return boolean value -True if the bill is fully paid, otherwise false.
      */
-    bool fullyPaid();
+    bool FullyPaid();
 };
 
 #endif

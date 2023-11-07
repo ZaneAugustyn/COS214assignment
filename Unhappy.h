@@ -3,6 +3,7 @@
 
 #include "EmotionalState.h"
 #include <iostream>
+
 /**
  * @class Unhappy
  * @brief This class represents a type of state of the group-that they are currently unhappy with the service
@@ -49,7 +50,5 @@ public:
     */
     virtual string ToString();
 };
-
-
 
 #endif

@@ -7,10 +7,8 @@
  * @class Garnish
  * @brief This class inherits from OrderItem and represents garnish that a guest can have on their burger
 */
-
 class Garnish : public OrderItem
 {
-private:
 public:
 
     /**

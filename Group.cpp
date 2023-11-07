@@ -26,7 +26,7 @@ void Group::SetState(GroupState *state)
 
 }
 
-void Group::setLastEmotion(EmotionalState *state)
+void Group::SetLastEmotion(EmotionalState *state)
 {
     delete lastEmotion_;
     lastEmotion_ = state;
@@ -100,7 +100,7 @@ void Group::RequestBill()
     groupState_->RequestBill(this);
 }
 
-int Group::getGroupNumber()
+int Group::GetGroupNumber()
 {
     return groupNumber_;
 }
@@ -117,36 +117,36 @@ string Group::CurrentState()
     return ret;
 }
 
-void Group::addWaiter(Waiter* waiter)
+void Group::AddWaiter(Waiter* waiter)
 {
     waiter_ = waiter;
-    cout<<"Group has been assigned "<<waiter->getName()<<" as their waiter."<<endl;
+    cout<<"Group has been assigned "<<waiter->GetName()<<" as their waiter."<<endl;
 }
 
-void Group::removeWaiter(Waiter* waiter)
+void Group::RemoveWaiter(Waiter* waiter)
 {
-    cout<<"Group has removed "<<waiter->getName()<<" as their waiter."<<endl;
+    cout<<"Group has removed "<<waiter->GetName()<<" as their waiter."<<endl;
     waiter_ = nullptr;
 }
     
-void Group::notify()
+void Group::Notify()
 {
-    waiter_->update(this);
+    waiter_->Update(this);
 }
 
-void Group::setBill(Bill* bill){
+void Group::SetBill(Bill* bill){
 
     bill_ = bill;
 
 }
 
-Bill* Group::getBill(){
+Bill* Group::GetBill(){
 
     return bill_;
 
 }
 
-Customer* Group::getFirstCustomer(){
+Customer* Group::GetFirstCustomer(){
     if(customers_.size() > 0){
         Customer* customer = this->customers_[0];
         if (customer != NULL)
@@ -155,11 +155,21 @@ Customer* Group::getFirstCustomer(){
     return NULL;
 }
 
-Waiter* Group::getWaiter(){
+Waiter* Group::GetWaiter(){
     return waiter_;
 }
 
-EmotionalState* Group::getLastEmotion()
+EmotionalState* Group::GetLastEmotion()
 {
     return this->lastEmotion_;
+}
+
+void Group::AddCustomer(Customer* customer)
+{
+    customers_.push_back(customer);
+}
+
+vector<Customer*> Group::GetCustomers()
+{
+    return customers_;
 }

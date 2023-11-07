@@ -13,7 +13,7 @@ Happy::~Happy()
 
 void Happy::MakeUnhappy(Group *group)
 {
-    group->setLastEmotion(new Unhappy());
+    group->SetLastEmotion(new Unhappy());
     
 }
 
@@ -24,7 +24,7 @@ void Happy::MakeHappy(Group *group)
 
 void Happy::MakeNeutral(Group *group)
 {
-    group->setLastEmotion(new Neutral());
+    group->SetLastEmotion(new Neutral());
 }
 
 string Happy::ToString()

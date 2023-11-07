@@ -18,11 +18,11 @@ void MakeTab::Pay(Group* group)
     Customer* customer;
     while(!TabAllocated)
     {
-        if(count == group->getCustomers().size()){
+        if(count == group->GetCustomers().size()){
             count = 0;
         }
-        customer = (group->getCustomers())[count];
-        cout << customer->getName() << ", would you like to take the tab? (Y/N)" << endl;
+        customer = (group->GetCustomers())[count];
+        cout << customer->GetName() << ", would you like to take the tab? (Y/N)" << endl;
         bool invalid = true;
         while(invalid){
             if(cin >> choice)
@@ -32,8 +32,8 @@ void MakeTab::Pay(Group* group)
                     invalid = false;
                     if (choice == 'y' || choice == 'Y')
                     {
-                        Tab* t1 = createTab(getTotal());    
-                        customer->setTab(t1);    
+                        Tab* t1 = CreateTab(GetTotal());    
+                        customer->SetTab(t1);    
                         TabAllocated = true;
                         group->SetState(new PayTab());
                     }
@@ -50,7 +50,7 @@ void MakeTab::Pay(Group* group)
         
         ++count;
     }
-    if (group->getLastEmotion()->ToString() == "Unhappy")
+    if (group->GetLastEmotion()->ToString() == "Unhappy")
     {
         cout << "Would you like to leave a complaint (Y/N)" << endl;
         cin >> choice;
@@ -77,14 +77,14 @@ void MakeTab::Pay(Group* group)
     }
 }
 
-Tab* MakeTab::createTab(float t)
+Tab* MakeTab::CreateTab(float t)
 {
     Tab* tab = new Tab(t);
     return tab;
 }
 
-void MakeTab::setTab(Tab* tab)
+void MakeTab::SetTab(Tab* tab)
 {
-    // set total amount owed to total for the bill
-    setTotal(tab->getAmount());
+    // Set total amount owed to total for the bill
+    SetTotal(tab->GetAmount());
 }

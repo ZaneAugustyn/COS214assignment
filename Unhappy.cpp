@@ -18,12 +18,12 @@ void Unhappy::MakeUnhappy(Group *group)
 
 void Unhappy::MakeHappy(Group *group)
 {
-    group->setLastEmotion(new Happy());
+    group->SetLastEmotion(new Happy());
 }
 
 void Unhappy::MakeNeutral(Group *group)
 {
-    group->setLastEmotion(new Neutral());
+    group->SetLastEmotion(new Neutral());
 }
 
 string Unhappy::ToString()

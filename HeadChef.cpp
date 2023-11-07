@@ -12,7 +12,7 @@ HeadChef::HeadChef(Pass* pass)
   this->pass_ = pass;
 }
 
-void HeadChef::handleOrder(Plate *plate, vector<OrderComponent *> orderComp)
+void HeadChef::HandleOrder(Plate *plate, vector<OrderComponent *> orderComp)
 {
   ItemIterator *itemIterator = new ItemIterator(orderComp);
   int counter = 0;
@@ -20,18 +20,18 @@ void HeadChef::handleOrder(Plate *plate, vector<OrderComponent *> orderComp)
   if (orderComp.empty())
   {
     cout << "The Head Chef garnishes the plate and adds it to the tray" << endl;
-    addToTray(plate);
+    AddToTray(plate);
     return;
   }
 
-  while (!itemIterator->isDone())
+  while (!itemIterator->IsDone())
   {
-    OrderComponent *item = itemIterator->currentItem();
+    OrderComponent *item = itemIterator->CurrentItem();
     if (dynamic_cast<OrderItem *>(item))
     {
       OrderItem *orderItem = dynamic_cast<OrderItem *>(item);
 
-      if (orderItem->getName() != "Bun")
+      if (orderItem->GetName() != "Bun")
       {
         counter += 1;
       }
@@ -43,22 +43,15 @@ void HeadChef::handleOrder(Plate *plate, vector<OrderComponent *> orderComp)
         break;
       }
     }
-    itemIterator->next();
+    itemIterator->Next();
   }
 
   // send to the next chef
-  Chef::handleOrder(plate, orderComp);
+  Chef::HandleOrder(plate, orderComp);
 
-  // TO DO: chain of responsibility
-  // if order is not empty
-  // cout << "The Head Chef adds the bun to the plate"
-  // Chef::heandleOrder(plate);
-  // if order is empty
-  // cout << "The Head Chef garnishes the plate and adds it to the tray" << endl;
-  // addToTray(plate);
 }
 
-void HeadChef::addToTray(Plate *plate)
+void HeadChef::AddToTray(Plate *plate)
 {
   tray_.push_back(plate);
 }

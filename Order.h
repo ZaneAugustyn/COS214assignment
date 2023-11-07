@@ -41,45 +41,45 @@ public:
      * @brief Calculate and return the total price of the order.
      * @return The total price of the order.
      */
-    float getPrice();
+    float GetPrice();
 
     /**
      * @brief Add an order component to this order.
      * @param component The order component to add.
      * @return void
      */
-    void addComponent(OrderComponent* component);
+    void AddComponent(OrderComponent* component);
 
     /**
      * @brief Remove an order component from this order.
      * @param component The order component to remove.
      * @return void
      */
-    void removeComponent(OrderComponent* component);
+    void RemoveComponent(OrderComponent* component);
 
     /**
      * @brief Get a vector of all order components within this order.
      * @return A vector of order components.
      */
-    virtual vector<OrderComponent*> getItems();
+    virtual vector<OrderComponent*> GetItems();
 
     /**
      * @brief Create an iterator for traversing the order components.
      * @return A GroupIterator for this order.
      */
-    GroupIterator* createIterator();
+    GroupIterator* CreateIterator();
     
     /**
      * @brief Get the group number associated with this order.
      * @return The group number.
      */
-    int getGroupNumber();
+    int GetGroupNumber();
 
     /**
      * @brief Get the group associated with this order.
      * @return A pointer to the associated group.
      */
-    Group* getGroup();
+    Group* GetGroup();
 
     /**
      * @brief Format the order in the specified language.
@@ -87,7 +87,7 @@ public:
      * @param lang The language code.
      * @return The formatted order as a string.
      */
-    string formatOrder(LanguageTarget* lt, char lang);
+    string FormatOrder(LanguageTarget* lt, char lang);
 };
 
 #endif

@@ -8,7 +8,7 @@ Tab::~Tab()
 {
 }
 
-float Tab::getAmount() const
+float Tab::GetAmount() const
 {
     return this->TotalAmountOwed_;
 }

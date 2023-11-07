@@ -16,5 +16,10 @@ void SpaceAvailable::ChangeState(Floor* floor, FloorState* state)
         return;
     }
 
-    floor->setCurrentState(state);
+    floor->SetCurrentState(state);
+}
+
+string SpaceAvailable::GetName()
+{
+    return name_;
 }
