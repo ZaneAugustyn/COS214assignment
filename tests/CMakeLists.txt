@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-set(This XadrianTesting) # set project name
+set(This tests) # set project name
 
 set(Sources
     XadrianTesting.cpp
