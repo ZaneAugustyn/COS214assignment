@@ -160,10 +160,14 @@ void Waiter::update(Group* group)
 
         while ((c != 'S') && (c != 'F') && (c != 'T') && (c != 's') && (c != 'f') && (c != 't'))
         {
+            cin.clear(); // Clear error flags
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout<<"WARNING! You entered the wrong bill option. Please try again."<<endl;
             cout << "How would you like to pay it? 'S' to split, 'F' to pay in full, 'T' to put it on a tab" << endl;
             cin >> c;
         }
+        cin.clear(); // Clear error flags
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         // Assume we take the first customer in the group if they want to make a bill
         //**********Check group last emotion for tip.*********************
         

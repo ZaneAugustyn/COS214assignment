@@ -46,6 +46,8 @@ void SplitBill::Pay(Group *group)
             else
             {
                 cout << "Please enter a valid amount." << endl;
+                cin.clear(); // Clear error flags
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
             }
         }
 
@@ -81,6 +83,8 @@ void SplitBill::Pay(Group *group)
                                 else
                                 {
                                     cout << "Please enter a valid tip amount." << endl;
+                                    cin.clear(); // Clear error flags
+                                    cin.ignore(numeric_limits<streamsize>::max(), '\n');
                                 }
                             }
                         }
@@ -88,6 +92,8 @@ void SplitBill::Pay(Group *group)
                     else
                     {
                         cout << "Please enter a valid choice for the tip." << endl;
+                        cin.clear(); // Clear error flags
+                        cin.ignore(numeric_limits<streamsize>::max(), '\n');
                     }
                 }
                 else

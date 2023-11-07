@@ -25,10 +25,15 @@ void CustomerPays::Pay(Group* group)
                 
                 if (paid > getTotal())
                 {
-                    cout << "Thank you for the Tip!" << endl;
+                    cout << "Thank you, and thank you for the Tip!" << endl;
                     invalid = false;
                 }
-                else if(paid < getTotal())
+                else if(paid == getTotal())
+                {
+                    cout << "Thank you!" << endl;
+                    invalid = false;
+                }
+                else
                 {
                     cout << "Payment failed! Please pay the full amount as R" << paid << " is less than R" << getTotal() << endl;
                 }
