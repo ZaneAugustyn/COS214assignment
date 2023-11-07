@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['waiter_254',['Waiter',['../classWaiter.html',1,'']]],
-  ['waitfortable_255',['WaitForTable',['../classWaitForTable.html',1,'']]]
+  ['unhappy_258',['Unhappy',['../classUnhappy.html',1,'']]]
 ];

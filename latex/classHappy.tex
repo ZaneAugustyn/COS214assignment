@@ -11,22 +11,20 @@ This class is represents the group\textquotesingle{}s happy state.
 
 
 
-Inheritance diagram for Happy\+:
-\nopagebreak
+Inheritance diagram for Happy\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=151pt]{classHappy__inherit__graph}
+\includegraphics[width=172pt]{classHappy__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for Happy\+:
-\nopagebreak
+Collaboration diagram for Happy\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=151pt]{classHappy__coll__graph}
+\includegraphics[width=172pt]{classHappy__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
@@ -38,20 +36,12 @@ Collaboration diagram for Happy\+:
 \mbox{\Hypertarget{classHappy_ad7847eacaedd7cd018f11e8af6c0adb9}\label{classHappy_ad7847eacaedd7cd018f11e8af6c0adb9}} 
 \mbox{\hyperlink{classHappy_ad7847eacaedd7cd018f11e8af6c0adb9}{$\sim$\+Happy}} ()
 \begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classHappy_a7f4abd75e3ce0125c5a0407195ac1af0}{Request\+To\+Order}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
-\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Request\+To\+Order request \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classHappy_a80c77e2e86da052ebec1571c4dcee030}{Wait\+In\+Queue}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
-\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Wait\+In\+Queue request \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classHappy_ab6b4c8de5abafe23d87959a6e593866e}{Make\+Unhappy}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
 \begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Make\+Unhappy request \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classHappy_a32bafa7adc64d0bc976e97fa197724ac}{Make\+Happy}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
 \begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the \mbox{\hyperlink{classHappy}{Happy}} request \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classHappy_a5556023acb0cf05f88e5e6e7816597e5}{Make\+Neutral}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
 \begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the \mbox{\hyperlink{classNeutral}{Neutral}} request \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classHappy_a04d83e661bb37ab788e92a6de1ea0c90}{Request\+Tab}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
-\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Request\+Tab request \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classHappy_ac8c75267e85c6860068553d6f03bb26b}{Request\+Bill}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
-\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Request\+Bill request \end{DoxyCompactList}\item 
 virtual string \mbox{\hyperlink{classHappy_a10d5d5d291f86af4f4c0492823f36a80}{To\+String}} ()
 \begin{DoxyCompactList}\small\item\em method to return a string of the state name \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -81,7 +71,7 @@ void ~\newline
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classGroupState_a6f656d36478df3813b49a643f842dce1}{Group\+State}}.
+Implements \mbox{\hyperlink{classEmotionalState_adf9bd865a32d449bbf47c6ffddb01a2f}{Emotional\+State}}.
 
 \mbox{\Hypertarget{classHappy_a5556023acb0cf05f88e5e6e7816597e5}\label{classHappy_a5556023acb0cf05f88e5e6e7816597e5}} 
 \index{Happy@{Happy}!MakeNeutral@{MakeNeutral}}
@@ -104,7 +94,7 @@ void ~\newline
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classGroupState_a4f27694a8a88c832cbefc0f1be290a95}{Group\+State}}.
+Implements \mbox{\hyperlink{classEmotionalState_a9d183f6c26daf6080087d0a18446da38}{Emotional\+State}}.
 
 \mbox{\Hypertarget{classHappy_ab6b4c8de5abafe23d87959a6e593866e}\label{classHappy_ab6b4c8de5abafe23d87959a6e593866e}} 
 \index{Happy@{Happy}!MakeUnhappy@{MakeUnhappy}}
@@ -127,76 +117,7 @@ void ~\newline
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classGroupState_a02f7ffc469e8d474ed547a6d0f161096}{Group\+State}}.
-
-\mbox{\Hypertarget{classHappy_ac8c75267e85c6860068553d6f03bb26b}\label{classHappy_ac8c75267e85c6860068553d6f03bb26b}} 
-\index{Happy@{Happy}!RequestBill@{RequestBill}}
-\index{RequestBill@{RequestBill}!Happy@{Happy}}
-\doxysubsubsection{\texorpdfstring{RequestBill()}{RequestBill()}}
-{\footnotesize\ttfamily void Happy\+::\+Request\+Bill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-the Concrete\+Class method to handle the Request\+Bill request 
-
-
-\begin{DoxyParams}{Parameters}
-{\em group} & the group to update the state of \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-void ~\newline
- 
-\end{DoxyReturn}
-
-
-Implements \mbox{\hyperlink{classGroupState_ada5a23937d06e17439336af3f9045426}{Group\+State}}.
-
-\mbox{\Hypertarget{classHappy_a04d83e661bb37ab788e92a6de1ea0c90}\label{classHappy_a04d83e661bb37ab788e92a6de1ea0c90}} 
-\index{Happy@{Happy}!RequestTab@{RequestTab}}
-\index{RequestTab@{RequestTab}!Happy@{Happy}}
-\doxysubsubsection{\texorpdfstring{RequestTab()}{RequestTab()}}
-{\footnotesize\ttfamily void Happy\+::\+Request\+Tab (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-the Concrete\+Class method to handle the Request\+Tab request 
-
-
-\begin{DoxyParams}{Parameters}
-{\em group} & the group to update the state of \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-void ~\newline
- 
-\end{DoxyReturn}
-
-
-Implements \mbox{\hyperlink{classGroupState_abaa00ecfeeff67144884aba156ef6e48}{Group\+State}}.
-
-\mbox{\Hypertarget{classHappy_a7f4abd75e3ce0125c5a0407195ac1af0}\label{classHappy_a7f4abd75e3ce0125c5a0407195ac1af0}} 
-\index{Happy@{Happy}!RequestToOrder@{RequestToOrder}}
-\index{RequestToOrder@{RequestToOrder}!Happy@{Happy}}
-\doxysubsubsection{\texorpdfstring{RequestToOrder()}{RequestToOrder()}}
-{\footnotesize\ttfamily void Happy\+::\+Request\+To\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-the Concrete\+Class method to handle the Request\+To\+Order request 
-
-
-\begin{DoxyParams}{Parameters}
-{\em group} & the group to update the state of \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-void ~\newline
- 
-\end{DoxyReturn}
-
-
-Implements \mbox{\hyperlink{classGroupState_aff4a24d2821282afc2b210fd4248afbd}{Group\+State}}.
+Implements \mbox{\hyperlink{classEmotionalState_ae0789c4c917e93a6c8c3ab06998db7d8}{Emotional\+State}}.
 
 \mbox{\Hypertarget{classHappy_a10d5d5d291f86af4f4c0492823f36a80}\label{classHappy_a10d5d5d291f86af4f4c0492823f36a80}} 
 \index{Happy@{Happy}!ToString@{ToString}}
@@ -213,30 +134,7 @@ string
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classGroupState_a939244f42e418fcb401a98dbabb2109d}{Group\+State}}.
-
-\mbox{\Hypertarget{classHappy_a80c77e2e86da052ebec1571c4dcee030}\label{classHappy_a80c77e2e86da052ebec1571c4dcee030}} 
-\index{Happy@{Happy}!WaitInQueue@{WaitInQueue}}
-\index{WaitInQueue@{WaitInQueue}!Happy@{Happy}}
-\doxysubsubsection{\texorpdfstring{WaitInQueue()}{WaitInQueue()}}
-{\footnotesize\ttfamily void Happy\+::\+Wait\+In\+Queue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-the Concrete\+Class method to handle the Wait\+In\+Queue request 
-
-
-\begin{DoxyParams}{Parameters}
-{\em group} & the group to update the state of \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-void ~\newline
- 
-\end{DoxyReturn}
-
-
-Implements \mbox{\hyperlink{classGroupState_a3189f08b482dc9d528df5bc1263c6dc9}{Group\+State}}.
+Implements \mbox{\hyperlink{classEmotionalState_a8c867f7378eb69f2d117234c594d0634}{Emotional\+State}}.
 
 
 

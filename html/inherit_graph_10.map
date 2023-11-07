@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classItemIterator.html" title="A class for iterating through a collection of OrderComponent objects." alt="" coords="5,5,105,32"/>
+<area shape="rect" id="node1" href="$classGroupState.html" title="This class represents the group&#39;s state." alt="" coords="5,81,100,108"/>
+<area shape="rect" id="node2" href="$classPayTab.html" title="This class is used for managing the tab of customers that can be payed at a later stage." alt="" coords="171,5,238,32"/>
+<area shape="rect" id="node3" href="$classReadyForBill.html" title="This class represent the readyForBill state of the customer." alt="" coords="153,56,257,83"/>
+<area shape="rect" id="node4" href="$classReadyToOrder.html" title="This class represent the ReadyToOrder state of the customer." alt="" coords="148,107,261,133"/>
+<area shape="rect" id="node5" href="$classWaitForTable.html" title="This class represents that the group should wait for a table (that is their state)" alt="" coords="152,157,257,184"/>
 </map>

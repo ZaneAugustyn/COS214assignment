@@ -117,7 +117,7 @@ $(function() {
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classfacade.html">   57</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfacade.html">facade</a></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classFacade.html">   57</a></span>&#160;<span class="keyword">class </span><a class="code" href="classFacade.html">Facade</a></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">/* data */</span></div>
@@ -129,9 +129,9 @@ $(function() {
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">int</span> numGroups = 0;     </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classfacade.html">facade</a>(<span class="comment">/* args */</span>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classFacade.html">Facade</a>(<span class="comment">/* args */</span>);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    ~<a class="code" href="classfacade.html">facade</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    ~<a class="code" href="classFacade.html">Facade</a>();</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> run();</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
@@ -148,18 +148,16 @@ $(function() {
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span> option6();</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">void</span> initBasic();</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">void</span> askForHappiness(<a class="code" href="classGroup.html">Group</a>* selectedGroup);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;};</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;};</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassChef_html"><div class="ttname"><a href="classChef.html">Chef</a></div><div class="ttdoc">This class is a concrete colleague of the Mediator design and the Handler participant of the Chain of...</div><div class="ttdef"><b>Definition:</b> Chef.h:24</div></div>
+<div class="ttc" id="aclassFacade_html"><div class="ttname"><a href="classFacade.html">Facade</a></div><div class="ttdoc">Facade class that provides a simplified interface for managing a restaurant simulation.</div><div class="ttdef"><b>Definition:</b> facade.h:58</div></div>
 <div class="ttc" id="aclassFloor_html"><div class="ttname"><a href="classFloor.html">Floor</a></div><div class="ttdoc">This class represents the floor of the restaurant.</div><div class="ttdef"><b>Definition:</b> Floor.h:17</div></div>
-<div class="ttc" id="aclassGroup_html"><div class="ttname"><a href="classGroup.html">Group</a></div><div class="ttdoc">This class represents the group of customers that will be seated and will order.</div><div class="ttdef"><b>Definition:</b> Group.h:25</div></div>
 <div class="ttc" id="aclassHeadChef_html"><div class="ttname"><a href="classHeadChef.html">HeadChef</a></div><div class="ttdoc">This class is a Concrete Handler of the Chain of Responsibility Pattern.</div><div class="ttdef"><b>Definition:</b> HeadChef.h:19</div></div>
 <div class="ttc" id="aclassMaitreD_html"><div class="ttname"><a href="classMaitreD.html">MaitreD</a></div><div class="ttdoc">This class is represent the Maitre D that is responsible for the managing the floor.</div><div class="ttdef"><b>Definition:</b> MaitreD.h:17</div></div>
 <div class="ttc" id="aclassPass_html"><div class="ttname"><a href="classPass.html">Pass</a></div><div class="ttdoc">This class acts as the mediator between the chefs and the waiters, it connects the floor and the kitc...</div><div class="ttdef"><b>Definition:</b> Pass.h:21</div></div>
-<div class="ttc" id="aclassfacade_html"><div class="ttname"><a href="classfacade.html">facade</a></div><div class="ttdoc">Facade class that provides a simplified interface for managing a restaurant simulation.</div><div class="ttdef"><b>Definition:</b> facade.h:58</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

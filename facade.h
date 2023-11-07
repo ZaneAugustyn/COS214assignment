@@ -51,7 +51,7 @@ using namespace std;
 #include <string>
 
 /**
- * @class facade
+ * @class Facade
  * @brief Facade class that provides a simplified interface for managing a restaurant simulation.
  */
 class Facade

@@ -25,6 +25,8 @@ std\+::vector$<$ \mbox{\hyperlink{classCustomer}{Customer}} $\ast$ $>$ \mbox{\hy
 \begin{DoxyCompactList}\small\item\em Get the waiter serving the group. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGroup_a19bc2fd5a6ce8f4b017f5db663527b40}{Set\+State}} (\mbox{\hyperlink{classGroupState}{Group\+State}} $\ast$state)
 \begin{DoxyCompactList}\small\item\em set the state of the group \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGroup_a71d2a46c34d14cf8cf5b5d3c32fed6d7}{set\+Last\+Emotion}} (\mbox{\hyperlink{classEmotionalState}{Emotional\+State}} $\ast$state)
+\begin{DoxyCompactList}\small\item\em set the emotional state of the group \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGroup_a1e87c275b309967a13c478f8b7b53c34}{Request\+To\+Order}} ()
 \begin{DoxyCompactList}\small\item\em the Context class of the State pattern that defines the requests for the state changes \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGroup_a05a851b6521bbefeda267d3cde5a375d}{Wait\+In\+Queue}} ()
@@ -59,8 +61,8 @@ void \mbox{\hyperlink{classGroup_a123d86ac56cf6c96e8ff96b78f0aaef1}{notify}} ()
 \begin{DoxyCompactList}\small\item\em Notify the waiter about group updates. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGroup_a7f423f9942de66cd0dc2f6a9711ce056}{update\+Last\+Emotion}} (\mbox{\hyperlink{classGroupState}{Group\+State}} $\ast$State)
 \begin{DoxyCompactList}\small\item\em Update last emotion. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classGroupState}{Group\+State}} $\ast$ \mbox{\hyperlink{classGroup_afeb51c4a801a893e323b2fefecb9e2f4}{get\+Last\+Emotion}} ()
-\begin{DoxyCompactList}\small\item\em Update last emotion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{classEmotionalState}{Emotional\+State}} $\ast$ \mbox{\hyperlink{classGroup_af79c3a15c0960a2d2bc6d93baa04e0ba}{get\+Last\+Emotion}} ()
+\begin{DoxyCompactList}\small\item\em get last emotion \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -188,18 +190,18 @@ the function to return the group\+Number
 \begin{DoxyReturn}{Returns}
 int 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classGroup_afeb51c4a801a893e323b2fefecb9e2f4}\label{classGroup_afeb51c4a801a893e323b2fefecb9e2f4}} 
+\mbox{\Hypertarget{classGroup_af79c3a15c0960a2d2bc6d93baa04e0ba}\label{classGroup_af79c3a15c0960a2d2bc6d93baa04e0ba}} 
 \index{Group@{Group}!getLastEmotion@{getLastEmotion}}
 \index{getLastEmotion@{getLastEmotion}!Group@{Group}}
 \doxysubsubsection{\texorpdfstring{getLastEmotion()}{getLastEmotion()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classGroupState}{Group\+State}} $\ast$ Group\+::get\+Last\+Emotion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEmotionalState}{Emotional\+State}} $\ast$ Group\+::get\+Last\+Emotion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-Update last emotion. 
+get last emotion 
 
 \begin{DoxyReturn}{Returns}
-Group\+State$\ast$ 
+Emotional\+State$\ast$ 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classGroup_a449941234293c40ff54438d9a63b7b4f}\label{classGroup_a449941234293c40ff54438d9a63b7b4f}} 
 \index{Group@{Group}!GetState@{GetState}}
@@ -349,6 +351,24 @@ Set the bill associated with the group.
 
 \begin{DoxyParams}{Parameters}
 {\em bill} & The bill to be associated with the group. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_a71d2a46c34d14cf8cf5b5d3c32fed6d7}\label{classGroup_a71d2a46c34d14cf8cf5b5d3c32fed6d7}} 
+\index{Group@{Group}!setLastEmotion@{setLastEmotion}}
+\index{setLastEmotion@{setLastEmotion}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{setLastEmotion()}{setLastEmotion()}}
+{\footnotesize\ttfamily void Group\+::set\+Last\+Emotion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEmotionalState}{Emotional\+State}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+
+
+set the emotional state of the group 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & the emotional state to be assigned to a group \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

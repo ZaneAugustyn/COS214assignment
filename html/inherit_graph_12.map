@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classMaitreD.html" title="This class is represent the Maitre D that is responsible for the managing the floor." alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node1" href="$classLanguageTarget.html" title="Abstract class for translating order items into different languages." alt="" coords="5,5,131,32"/>
+<area shape="rect" id="node2" href="$classLanguageAdapter.html" title="Adapter class for translating order items into different languages." alt="" coords="179,5,315,32"/>
 </map>

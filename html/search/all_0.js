@@ -9,6 +9,5 @@ var searchData=
   ['addorder_6',['addOrder',['../classPass.html#af6ce3621afa3b8980b22f1bdfe708d62',1,'Pass']]],
   ['addtolistoftrays_7',['addToListOfTrays',['../classPass.html#ad6a6d25eea242fb5e43c83a05d3e4f13',1,'Pass']]],
   ['addtoplate_8',['addToPlate',['../classPlate.html#a60439ddc816efce9a69715492b619d38',1,'Plate']]],
-  ['addwaiter_9',['addWaiter',['../classGroup.html#a2ea735060d5cc6e23f65f92ffbdaf0e4',1,'Group']]],
-  ['askforhappiness_10',['askForHappiness',['../classfacade.html#a0dc242ebdcd63e21eb780b136c879209',1,'facade']]]
+  ['addwaiter_9',['addWaiter',['../classGroup.html#a2ea735060d5cc6e23f65f92ffbdaf0e4',1,'Group']]]
 ];

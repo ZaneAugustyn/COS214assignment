@@ -11,8 +11,7 @@ This class represent the \mbox{\hyperlink{classReadyToOrder}{Ready\+To\+Order}} 
 
 
 
-Inheritance diagram for Ready\+To\+Order\+:
-\nopagebreak
+Inheritance diagram for Ready\+To\+Order\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for Ready\+To\+Order\+:
 \end{figure}
 
 
-Collaboration diagram for Ready\+To\+Order\+:
-\nopagebreak
+Collaboration diagram for Ready\+To\+Order\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -42,12 +40,6 @@ virtual void \mbox{\hyperlink{classReadyToOrder_a1209c0871e15c935040a555da4c86bb
 \begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Request\+To\+Order request \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classReadyToOrder_a3a3663ca2b295cdbbd2d8d6344c4a8ff}{Wait\+In\+Queue}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
 \begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Wait\+In\+Queue request \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classReadyToOrder_a00f8a267439afd75176ea20e7b2e0299}{Make\+Unhappy}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
-\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Make\+Unhappy request \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classReadyToOrder_a31a86affd853ff880c2823161330e66e}{Make\+Happy}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
-\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Make\+Happy request \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classReadyToOrder_ae35a0a92e4588617c6517184db9b3e70}{Make\+Neutral}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
-\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the \mbox{\hyperlink{classNeutral}{Neutral}} request \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classReadyToOrder_a1b64d6f365ce488c9865ebcd81586bde}{Request\+Tab}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
 \begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Request\+Tab request \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classReadyToOrder_a86323e77b20f06839f5cafa214aa227b}{Request\+Bill}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
@@ -60,75 +52,6 @@ virtual string \mbox{\hyperlink{classReadyToOrder_a20e0d6b78c39621589d168aa8c1a9
 This class represent the \mbox{\hyperlink{classReadyToOrder}{Ready\+To\+Order}} state of the customer. 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classReadyToOrder_a31a86affd853ff880c2823161330e66e}\label{classReadyToOrder_a31a86affd853ff880c2823161330e66e}} 
-\index{ReadyToOrder@{ReadyToOrder}!MakeHappy@{MakeHappy}}
-\index{MakeHappy@{MakeHappy}!ReadyToOrder@{ReadyToOrder}}
-\doxysubsubsection{\texorpdfstring{MakeHappy()}{MakeHappy()}}
-{\footnotesize\ttfamily void Ready\+To\+Order\+::\+Make\+Happy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-the Concrete\+Class method to handle the Make\+Happy request 
-
-
-\begin{DoxyParams}{Parameters}
-{\em group} & the group to update the state of \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-void ~\newline
- 
-\end{DoxyReturn}
-
-
-Implements \mbox{\hyperlink{classGroupState_a6f656d36478df3813b49a643f842dce1}{Group\+State}}.
-
-\mbox{\Hypertarget{classReadyToOrder_ae35a0a92e4588617c6517184db9b3e70}\label{classReadyToOrder_ae35a0a92e4588617c6517184db9b3e70}} 
-\index{ReadyToOrder@{ReadyToOrder}!MakeNeutral@{MakeNeutral}}
-\index{MakeNeutral@{MakeNeutral}!ReadyToOrder@{ReadyToOrder}}
-\doxysubsubsection{\texorpdfstring{MakeNeutral()}{MakeNeutral()}}
-{\footnotesize\ttfamily void Ready\+To\+Order\+::\+Make\+Neutral (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-the Concrete\+Class method to handle the \mbox{\hyperlink{classNeutral}{Neutral}} request 
-
-
-\begin{DoxyParams}{Parameters}
-{\em group} & the group to update the state of \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-void ~\newline
- 
-\end{DoxyReturn}
-
-
-Implements \mbox{\hyperlink{classGroupState_a4f27694a8a88c832cbefc0f1be290a95}{Group\+State}}.
-
-\mbox{\Hypertarget{classReadyToOrder_a00f8a267439afd75176ea20e7b2e0299}\label{classReadyToOrder_a00f8a267439afd75176ea20e7b2e0299}} 
-\index{ReadyToOrder@{ReadyToOrder}!MakeUnhappy@{MakeUnhappy}}
-\index{MakeUnhappy@{MakeUnhappy}!ReadyToOrder@{ReadyToOrder}}
-\doxysubsubsection{\texorpdfstring{MakeUnhappy()}{MakeUnhappy()}}
-{\footnotesize\ttfamily void Ready\+To\+Order\+::\+Make\+Unhappy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-the Concrete\+Class method to handle the Make\+Unhappy request 
-
-
-\begin{DoxyParams}{Parameters}
-{\em group} & the group to update the state of \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-void ~\newline
- 
-\end{DoxyReturn}
-
-
-Implements \mbox{\hyperlink{classGroupState_a02f7ffc469e8d474ed547a6d0f161096}{Group\+State}}.
-
 \mbox{\Hypertarget{classReadyToOrder_a86323e77b20f06839f5cafa214aa227b}\label{classReadyToOrder_a86323e77b20f06839f5cafa214aa227b}} 
 \index{ReadyToOrder@{ReadyToOrder}!RequestBill@{RequestBill}}
 \index{RequestBill@{RequestBill}!ReadyToOrder@{ReadyToOrder}}

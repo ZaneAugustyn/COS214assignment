@@ -31,7 +31,11 @@ void \mbox{\hyperlink{classMaitreD_acfb93542581d7b56746e3d42ca5ce1b5}{add\+Group
 void \mbox{\hyperlink{classMaitreD_a8b38e9e556f8e52e39da76101d7327ab}{set\+Waiter\+List}} (std\+::vector$<$ \mbox{\hyperlink{classWaiter}{Waiter}} $\ast$ $>$ W)
 \begin{DoxyCompactList}\small\item\em This method is used to set the waiter\+List vector that holds all the waiters. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classMaitreD_a308f6efe43d9955433524807232183e6}{table\+Checker}} ()
-\begin{DoxyCompactList}\small\item\em This method checks if tables are available if not it sets the floor state to full. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This method checks if tables are available if not it sets the floor state to full. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classGroup}{Group}} $\ast$ $>$ \mbox{\hyperlink{classMaitreD_a3cb6325937d562cfe9bb235ab391ca7a}{get\+Awaiting\+Group}} ()
+\begin{DoxyCompactList}\small\item\em This method returns the groups waiting to enter the floor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFloor}{Floor}} $\ast$ \mbox{\hyperlink{classMaitreD_a903d0f3fabf199c4ed283540488f3d51}{get\+Floor}} ()
+\begin{DoxyCompactList}\small\item\em This method returns floor that the maitreD is on. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -166,6 +170,42 @@ This method checks if the state of the floor is \mbox{\hyperlink{classFull}{Full
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMaitreD_a3cb6325937d562cfe9bb235ab391ca7a}\label{classMaitreD_a3cb6325937d562cfe9bb235ab391ca7a}} 
+\index{MaitreD@{MaitreD}!getAwaitingGroup@{getAwaitingGroup}}
+\index{getAwaitingGroup@{getAwaitingGroup}!MaitreD@{MaitreD}}
+\doxysubsubsection{\texorpdfstring{getAwaitingGroup()}{getAwaitingGroup()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classGroup}{Group}} $\ast$ $>$ Maitre\+D\+::get\+Awaiting\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method returns the groups waiting to enter the floor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Group$\ast$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMaitreD_a903d0f3fabf199c4ed283540488f3d51}\label{classMaitreD_a903d0f3fabf199c4ed283540488f3d51}} 
+\index{MaitreD@{MaitreD}!getFloor@{getFloor}}
+\index{getFloor@{getFloor}!MaitreD@{MaitreD}}
+\doxysubsubsection{\texorpdfstring{getFloor()}{getFloor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFloor}{Floor}} $\ast$ Maitre\+D\+::get\+Floor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method returns floor that the maitreD is on. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Floor$\ast$ 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classMaitreD_a1d7a363ae269b23b966483c692ce3845}\label{classMaitreD_a1d7a363ae269b23b966483c692ce3845}} 
 \index{MaitreD@{MaitreD}!removeGroupFromFloor@{removeGroupFromFloor}}

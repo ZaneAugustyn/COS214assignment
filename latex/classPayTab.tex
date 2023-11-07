@@ -11,8 +11,7 @@ This class is used for managing the tab of customers that can be payed at a late
 
 
 
-Inheritance diagram for Pay\+Tab\+:
-\nopagebreak
+Inheritance diagram for Pay\+Tab\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for Pay\+Tab\+:
 \end{figure}
 
 
-Collaboration diagram for Pay\+Tab\+:
-\nopagebreak
+Collaboration diagram for Pay\+Tab\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -42,14 +40,8 @@ virtual void \mbox{\hyperlink{classPayTab_a1be3589a911ec6298ffed8000b37ddb3}{Req
 \begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Request\+To\+Order request \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classPayTab_a3ce906767fdc0c1d10b179ad44fca717}{Wait\+In\+Queue}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
 \begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Wait\+In\+Queue request \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classPayTab_a6202e5a2bce8e2922d33b76155732707}{Make\+Unhappy}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
-\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Manke\+Unhappy request \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classPayTab_ae5f10070da346fd3bd8fa9a7d764aa38}{Make\+Happy}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
-\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Make\+Happy request \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classPayTab_a392b0aba7ec959aec4e1c4c4dd7d7619}{Request\+Tab}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
 \begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Request\+Tab request \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classPayTab_a5e1b416ff7bb139500a9624491a3afdc}{Make\+Neutral}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
-\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the \mbox{\hyperlink{classNeutral}{Neutral}} request \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classPayTab_a296f26258c86922600fef0d3a12e334c}{Request\+Bill}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
 \begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Request\+Bill request \end{DoxyCompactList}\item 
 virtual string \mbox{\hyperlink{classPayTab_a39abb95606954eadebf8ed2c50d13ba9}{To\+String}} ()
@@ -60,75 +52,6 @@ virtual string \mbox{\hyperlink{classPayTab_a39abb95606954eadebf8ed2c50d13ba9}{T
 This class is used for managing the tab of customers that can be payed at a later stage. 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classPayTab_ae5f10070da346fd3bd8fa9a7d764aa38}\label{classPayTab_ae5f10070da346fd3bd8fa9a7d764aa38}} 
-\index{PayTab@{PayTab}!MakeHappy@{MakeHappy}}
-\index{MakeHappy@{MakeHappy}!PayTab@{PayTab}}
-\doxysubsubsection{\texorpdfstring{MakeHappy()}{MakeHappy()}}
-{\footnotesize\ttfamily void Pay\+Tab\+::\+Make\+Happy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-the Concrete\+Class method to handle the Make\+Happy request 
-
-
-\begin{DoxyParams}{Parameters}
-{\em group} & the group to update the state of \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-void ~\newline
- 
-\end{DoxyReturn}
-
-
-Implements \mbox{\hyperlink{classGroupState_a6f656d36478df3813b49a643f842dce1}{Group\+State}}.
-
-\mbox{\Hypertarget{classPayTab_a5e1b416ff7bb139500a9624491a3afdc}\label{classPayTab_a5e1b416ff7bb139500a9624491a3afdc}} 
-\index{PayTab@{PayTab}!MakeNeutral@{MakeNeutral}}
-\index{MakeNeutral@{MakeNeutral}!PayTab@{PayTab}}
-\doxysubsubsection{\texorpdfstring{MakeNeutral()}{MakeNeutral()}}
-{\footnotesize\ttfamily void Pay\+Tab\+::\+Make\+Neutral (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-the Concrete\+Class method to handle the \mbox{\hyperlink{classNeutral}{Neutral}} request 
-
-
-\begin{DoxyParams}{Parameters}
-{\em group} & the group to update the state of \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-void ~\newline
- 
-\end{DoxyReturn}
-
-
-Implements \mbox{\hyperlink{classGroupState_a4f27694a8a88c832cbefc0f1be290a95}{Group\+State}}.
-
-\mbox{\Hypertarget{classPayTab_a6202e5a2bce8e2922d33b76155732707}\label{classPayTab_a6202e5a2bce8e2922d33b76155732707}} 
-\index{PayTab@{PayTab}!MakeUnhappy@{MakeUnhappy}}
-\index{MakeUnhappy@{MakeUnhappy}!PayTab@{PayTab}}
-\doxysubsubsection{\texorpdfstring{MakeUnhappy()}{MakeUnhappy()}}
-{\footnotesize\ttfamily void Pay\+Tab\+::\+Make\+Unhappy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-the Concrete\+Class method to handle the Manke\+Unhappy request 
-
-
-\begin{DoxyParams}{Parameters}
-{\em group} & the group to update the state of \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-void ~\newline
- 
-\end{DoxyReturn}
-
-
-Implements \mbox{\hyperlink{classGroupState_a02f7ffc469e8d474ed547a6d0f161096}{Group\+State}}.
-
 \mbox{\Hypertarget{classPayTab_a296f26258c86922600fef0d3a12e334c}\label{classPayTab_a296f26258c86922600fef0d3a12e334c}} 
 \index{PayTab@{PayTab}!RequestBill@{RequestBill}}
 \index{RequestBill@{RequestBill}!PayTab@{PayTab}}

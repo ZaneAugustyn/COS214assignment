@@ -106,6 +106,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a308f6efe43d9955433524807232183e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMaitreD.html#a308f6efe43d9955433524807232183e6">tableChecker</a> ()</td></tr>
 <tr class="memdesc:a308f6efe43d9955433524807232183e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method checks if tables are available if not it sets the floor state to full.  <a href="classMaitreD.html#a308f6efe43d9955433524807232183e6">More...</a><br /></td></tr>
 <tr class="separator:a308f6efe43d9955433524807232183e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cb6325937d562cfe9bb235ab391ca7a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classGroup.html">Group</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMaitreD.html#a3cb6325937d562cfe9bb235ab391ca7a">getAwaitingGroup</a> ()</td></tr>
+<tr class="memdesc:a3cb6325937d562cfe9bb235ab391ca7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the groups waiting to enter the floor.  <a href="classMaitreD.html#a3cb6325937d562cfe9bb235ab391ca7a">More...</a><br /></td></tr>
+<tr class="separator:a3cb6325937d562cfe9bb235ab391ca7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a903d0f3fabf199c4ed283540488f3d51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFloor.html">Floor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMaitreD.html#a903d0f3fabf199c4ed283540488f3d51">getFloor</a> ()</td></tr>
+<tr class="memdesc:a903d0f3fabf199c4ed283540488f3d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns floor that the maitreD is on.  <a href="classMaitreD.html#a903d0f3fabf199c4ed283540488f3d51">More...</a><br /></td></tr>
+<tr class="separator:a903d0f3fabf199c4ed283540488f3d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is represent the Maitre D that is responsible for the managing the floor. </p>
@@ -305,6 +311,58 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
+
+</div>
+</div>
+<a id="a3cb6325937d562cfe9bb235ab391ca7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cb6325937d562cfe9bb235ab391ca7a">&#9670;&nbsp;</a></span>getAwaitingGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classGroup.html">Group</a> * &gt; MaitreD::getAwaitingGroup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method returns the groups waiting to enter the floor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::vector&lt;Group*&gt; </dd></dl>
+
+</div>
+</div>
+<a id="a903d0f3fabf199c4ed283540488f3d51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a903d0f3fabf199c4ed283540488f3d51">&#9670;&nbsp;</a></span>getFloor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classFloor.html">Floor</a> * MaitreD::getFloor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method returns floor that the maitreD is on. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Floor* </dd></dl>
 
 </div>
 </div>

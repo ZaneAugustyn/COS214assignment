@@ -78,14 +78,11 @@ Inheritance diagram for GroupState:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGroupState__inherit__graph.png" border="0" usemap="#aGroupState_inherit__map" alt="Inheritance graph"/></div>
 <map name="aGroupState_inherit__map" id="aGroupState_inherit__map">
-<area shape="rect" title="This class represents the group&#39;s state." alt="" coords="285,5,379,32"/>
-<area shape="rect" href="classHappy.html" title="This class is represents the group&#39;s happy state." alt="" coords="5,80,69,107"/>
-<area shape="rect" href="classNeutral.html" title="This class is represent the neutral state of the group." alt="" coords="94,80,165,107"/>
-<area shape="rect" href="classPayTab.html" title="This class is used for managing the tab of customers that can be payed at a later stage." alt="" coords="189,80,256,107"/>
-<area shape="rect" href="classReadyForBill.html" title="This class represent the readyForBill state of the customer." alt="" coords="280,80,384,107"/>
-<area shape="rect" href="classReadyToOrder.html" title="This class represent the ReadyToOrder state of the customer." alt="" coords="409,80,522,107"/>
-<area shape="rect" href="classUnhappy.html" title="This class represents a type of state of the group&#45;that they are currently unhappy with the service." alt="" coords="547,80,627,107"/>
-<area shape="rect" href="classWaitForTable.html" title="This class represents that the group should wait for a table (that is their state)" alt="" coords="651,80,757,107"/>
+<area shape="rect" title="This class represents the group&#39;s state." alt="" coords="167,5,262,32"/>
+<area shape="rect" href="classPayTab.html" title="This class is used for managing the tab of customers that can be payed at a later stage." alt="" coords="5,80,72,107"/>
+<area shape="rect" href="classReadyForBill.html" title="This class represent the readyForBill state of the customer." alt="" coords="96,80,200,107"/>
+<area shape="rect" href="classReadyToOrder.html" title="This class represent the ReadyToOrder state of the customer." alt="" coords="225,80,338,107"/>
+<area shape="rect" href="classWaitForTable.html" title="This class represents that the group should wait for a table (that is their state)" alt="" coords="362,80,467,107"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -105,21 +102,12 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="memitem:a3189f08b482dc9d528df5bc1263c6dc9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGroupState.html#a3189f08b482dc9d528df5bc1263c6dc9">WaitInQueue</a> (<a class="el" href="classGroup.html">Group</a> *group)=0</td></tr>
 <tr class="memdesc:a3189f08b482dc9d528df5bc1263c6dc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">the State participant of the State pattern that defines the interface for the WaitInQueue behaviour of the ConcreteStates  <a href="classGroupState.html#a3189f08b482dc9d528df5bc1263c6dc9">More...</a><br /></td></tr>
 <tr class="separator:a3189f08b482dc9d528df5bc1263c6dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02f7ffc469e8d474ed547a6d0f161096"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGroupState.html#a02f7ffc469e8d474ed547a6d0f161096">MakeUnhappy</a> (<a class="el" href="classGroup.html">Group</a> *group)=0</td></tr>
-<tr class="memdesc:a02f7ffc469e8d474ed547a6d0f161096"><td class="mdescLeft">&#160;</td><td class="mdescRight">the State participant of the State pattern that defines the interface for the MakeUnhappy behaviour of the ConcreteStates  <a href="classGroupState.html#a02f7ffc469e8d474ed547a6d0f161096">More...</a><br /></td></tr>
-<tr class="separator:a02f7ffc469e8d474ed547a6d0f161096"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f656d36478df3813b49a643f842dce1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGroupState.html#a6f656d36478df3813b49a643f842dce1">MakeHappy</a> (<a class="el" href="classGroup.html">Group</a> *group)=0</td></tr>
-<tr class="memdesc:a6f656d36478df3813b49a643f842dce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">the State participant of the State pattern that defines the interface for the MakeHappy behaviour of the ConcreteStates  <a href="classGroupState.html#a6f656d36478df3813b49a643f842dce1">More...</a><br /></td></tr>
-<tr class="separator:a6f656d36478df3813b49a643f842dce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abaa00ecfeeff67144884aba156ef6e48"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGroupState.html#abaa00ecfeeff67144884aba156ef6e48">RequestTab</a> (<a class="el" href="classGroup.html">Group</a> *group)=0</td></tr>
 <tr class="memdesc:abaa00ecfeeff67144884aba156ef6e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">the State participant of the State pattern that defines the interface for the RequestTab behaviour of the ConcreteStates  <a href="classGroupState.html#abaa00ecfeeff67144884aba156ef6e48">More...</a><br /></td></tr>
 <tr class="separator:abaa00ecfeeff67144884aba156ef6e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada5a23937d06e17439336af3f9045426"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGroupState.html#ada5a23937d06e17439336af3f9045426">RequestBill</a> (<a class="el" href="classGroup.html">Group</a> *group)=0</td></tr>
 <tr class="memdesc:ada5a23937d06e17439336af3f9045426"><td class="mdescLeft">&#160;</td><td class="mdescRight">the State participant of the State pattern that defines the interface for the RequestBill behaviour of the ConcreteStates  <a href="classGroupState.html#ada5a23937d06e17439336af3f9045426">More...</a><br /></td></tr>
 <tr class="separator:ada5a23937d06e17439336af3f9045426"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f27694a8a88c832cbefc0f1be290a95"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGroupState.html#a4f27694a8a88c832cbefc0f1be290a95">MakeNeutral</a> (<a class="el" href="classGroup.html">Group</a> *group)=0</td></tr>
-<tr class="memdesc:a4f27694a8a88c832cbefc0f1be290a95"><td class="mdescLeft">&#160;</td><td class="mdescRight">the State participant of the State pattern that defines the interface for the MakeNeutral behaviour of the ConcreteStates  <a href="classGroupState.html#a4f27694a8a88c832cbefc0f1be290a95">More...</a><br /></td></tr>
-<tr class="separator:a4f27694a8a88c832cbefc0f1be290a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a939244f42e418fcb401a98dbabb2109d"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGroupState.html#a939244f42e418fcb401a98dbabb2109d">ToString</a> ()=0</td></tr>
 <tr class="memdesc:a939244f42e418fcb401a98dbabb2109d"><td class="mdescLeft">&#160;</td><td class="mdescRight">an interface method to return the ConcreteState name  <a href="classGroupState.html#a939244f42e418fcb401a98dbabb2109d">More...</a><br /></td></tr>
 <tr class="separator:a939244f42e418fcb401a98dbabb2109d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,118 +115,6 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class represents the group's state. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6f656d36478df3813b49a643f842dce1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f656d36478df3813b49a643f842dce1">&#9670;&nbsp;</a></span>MakeHappy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void GroupState::MakeHappy </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classGroup.html">Group</a> *&#160;</td>
-          <td class="paramname"><em>group</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>the State participant of the State pattern that defines the interface for the MakeHappy behaviour of the ConcreteStates </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">group</td><td>the group that is requesting the request </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-<p>Implemented in <a class="el" href="classWaitForTable.html#a7d92b2419f938df79473977f82c78a8a">WaitForTable</a>, <a class="el" href="classUnhappy.html#a6f53147ef6ca1ecc14793bf59155faaa">Unhappy</a>, <a class="el" href="classReadyToOrder.html#a31a86affd853ff880c2823161330e66e">ReadyToOrder</a>, <a class="el" href="classReadyForBill.html#afda9aff55e1621d33e01298ade1d1029">ReadyForBill</a>, <a class="el" href="classPayTab.html#ae5f10070da346fd3bd8fa9a7d764aa38">PayTab</a>, <a class="el" href="classNeutral.html#a38e3df242a1182e24290fdc65db2a39d">Neutral</a>, and <a class="el" href="classHappy.html#a32bafa7adc64d0bc976e97fa197724ac">Happy</a>.</p>
-
-</div>
-</div>
-<a id="a4f27694a8a88c832cbefc0f1be290a95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f27694a8a88c832cbefc0f1be290a95">&#9670;&nbsp;</a></span>MakeNeutral()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void GroupState::MakeNeutral </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classGroup.html">Group</a> *&#160;</td>
-          <td class="paramname"><em>group</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>the State participant of the State pattern that defines the interface for the MakeNeutral behaviour of the ConcreteStates </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">group</td><td>the group that is requesting the request </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void <br  />
- </dd></dl>
-
-<p>Implemented in <a class="el" href="classWaitForTable.html#ab370e72e0e7ba0c2b39b775dba7827e3">WaitForTable</a>, <a class="el" href="classUnhappy.html#aa5d097ffaf12db211c8a2f226f193a64">Unhappy</a>, <a class="el" href="classReadyToOrder.html#ae35a0a92e4588617c6517184db9b3e70">ReadyToOrder</a>, <a class="el" href="classReadyForBill.html#a7ca13e051b87d46c5bb579d4ebf70ec8">ReadyForBill</a>, <a class="el" href="classPayTab.html#a5e1b416ff7bb139500a9624491a3afdc">PayTab</a>, <a class="el" href="classNeutral.html#a8cd1ca651fa2f98427c9526125f18a48">Neutral</a>, and <a class="el" href="classHappy.html#a5556023acb0cf05f88e5e6e7816597e5">Happy</a>.</p>
-
-</div>
-</div>
-<a id="a02f7ffc469e8d474ed547a6d0f161096"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02f7ffc469e8d474ed547a6d0f161096">&#9670;&nbsp;</a></span>MakeUnhappy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void GroupState::MakeUnhappy </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classGroup.html">Group</a> *&#160;</td>
-          <td class="paramname"><em>group</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>the State participant of the State pattern that defines the interface for the MakeUnhappy behaviour of the ConcreteStates </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">group</td><td>the group that is requesting the request </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-<p>Implemented in <a class="el" href="classWaitForTable.html#aea9823815558ec6931245f37e8093333">WaitForTable</a>, <a class="el" href="classUnhappy.html#a45d3f3ec399fcf1aac65584217d2efb7">Unhappy</a>, <a class="el" href="classReadyToOrder.html#a00f8a267439afd75176ea20e7b2e0299">ReadyToOrder</a>, <a class="el" href="classReadyForBill.html#af92dcac7b92546b28c60d09775d96dd6">ReadyForBill</a>, <a class="el" href="classPayTab.html#a6202e5a2bce8e2922d33b76155732707">PayTab</a>, <a class="el" href="classNeutral.html#acc42fcb473aa4e7a83e672595c852f27">Neutral</a>, and <a class="el" href="classHappy.html#ab6b4c8de5abafe23d87959a6e593866e">Happy</a>.</p>
-
-</div>
-</div>
 <a id="ada5a23937d06e17439336af3f9045426"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada5a23937d06e17439336af3f9045426">&#9670;&nbsp;</a></span>RequestBill()</h2>
 
@@ -272,7 +148,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Implemented in <a class="el" href="classWaitForTable.html#a342192a0bc45bf0569e7cf9101bd2e65">WaitForTable</a>, <a class="el" href="classUnhappy.html#ae7bc9577aa5d1b9ec1e9fc28c7e26458">Unhappy</a>, <a class="el" href="classReadyToOrder.html#a86323e77b20f06839f5cafa214aa227b">ReadyToOrder</a>, <a class="el" href="classReadyForBill.html#a345a471bbd46f16393f133a6156be316">ReadyForBill</a>, <a class="el" href="classPayTab.html#a296f26258c86922600fef0d3a12e334c">PayTab</a>, <a class="el" href="classNeutral.html#a8391c5316912ffaeb7920f7a07404c93">Neutral</a>, and <a class="el" href="classHappy.html#ac8c75267e85c6860068553d6f03bb26b">Happy</a>.</p>
+<p>Implemented in <a class="el" href="classWaitForTable.html#a342192a0bc45bf0569e7cf9101bd2e65">WaitForTable</a>, <a class="el" href="classReadyToOrder.html#a86323e77b20f06839f5cafa214aa227b">ReadyToOrder</a>, <a class="el" href="classReadyForBill.html#a345a471bbd46f16393f133a6156be316">ReadyForBill</a>, and <a class="el" href="classPayTab.html#a296f26258c86922600fef0d3a12e334c">PayTab</a>.</p>
 
 </div>
 </div>
@@ -309,7 +185,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Implemented in <a class="el" href="classWaitForTable.html#a5ee94704b73e4cc95cabf4149aa043ad">WaitForTable</a>, <a class="el" href="classUnhappy.html#a1906d4f46aec807ebad0c3caf264803a">Unhappy</a>, <a class="el" href="classReadyToOrder.html#a1b64d6f365ce488c9865ebcd81586bde">ReadyToOrder</a>, <a class="el" href="classReadyForBill.html#ab898636aa3574180f266dc72ba75ed86">ReadyForBill</a>, <a class="el" href="classPayTab.html#a392b0aba7ec959aec4e1c4c4dd7d7619">PayTab</a>, <a class="el" href="classNeutral.html#af2fdd3c654189ce8019da5f8e813ff3f">Neutral</a>, and <a class="el" href="classHappy.html#a04d83e661bb37ab788e92a6de1ea0c90">Happy</a>.</p>
+<p>Implemented in <a class="el" href="classWaitForTable.html#a5ee94704b73e4cc95cabf4149aa043ad">WaitForTable</a>, <a class="el" href="classReadyToOrder.html#a1b64d6f365ce488c9865ebcd81586bde">ReadyToOrder</a>, <a class="el" href="classReadyForBill.html#ab898636aa3574180f266dc72ba75ed86">ReadyForBill</a>, and <a class="el" href="classPayTab.html#a392b0aba7ec959aec4e1c4c4dd7d7619">PayTab</a>.</p>
 
 </div>
 </div>
@@ -346,7 +222,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Implemented in <a class="el" href="classWaitForTable.html#a0dcd6b406d825ea1a79358d2360b3cb2">WaitForTable</a>, <a class="el" href="classUnhappy.html#ae4362c6cb2f32e8c737e0b2867042889">Unhappy</a>, <a class="el" href="classReadyToOrder.html#a1209c0871e15c935040a555da4c86bbd">ReadyToOrder</a>, <a class="el" href="classReadyForBill.html#ab21ccd63234cb579a0448a7117643f59">ReadyForBill</a>, <a class="el" href="classPayTab.html#a1be3589a911ec6298ffed8000b37ddb3">PayTab</a>, <a class="el" href="classNeutral.html#a9d836cb440b856580901bfc9566e62b6">Neutral</a>, and <a class="el" href="classHappy.html#a7f4abd75e3ce0125c5a0407195ac1af0">Happy</a>.</p>
+<p>Implemented in <a class="el" href="classWaitForTable.html#a0dcd6b406d825ea1a79358d2360b3cb2">WaitForTable</a>, <a class="el" href="classReadyToOrder.html#a1209c0871e15c935040a555da4c86bbd">ReadyToOrder</a>, <a class="el" href="classReadyForBill.html#ab21ccd63234cb579a0448a7117643f59">ReadyForBill</a>, and <a class="el" href="classPayTab.html#a1be3589a911ec6298ffed8000b37ddb3">PayTab</a>.</p>
 
 </div>
 </div>
@@ -376,7 +252,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <p>an interface method to return the ConcreteState name </p>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p>Implemented in <a class="el" href="classWaitForTable.html#a2fa2bdb516d8edb99da7c5f66eb1810c">WaitForTable</a>, <a class="el" href="classUnhappy.html#af01e8ec3aa6f8292d08a1646c63ef112">Unhappy</a>, <a class="el" href="classReadyToOrder.html#a20e0d6b78c39621589d168aa8c1a97c8">ReadyToOrder</a>, <a class="el" href="classReadyForBill.html#a95fb3422fdd692aa3388ba7a3a704284">ReadyForBill</a>, <a class="el" href="classPayTab.html#a39abb95606954eadebf8ed2c50d13ba9">PayTab</a>, <a class="el" href="classNeutral.html#aa59fa4909feaa9c520afe145b2624cb8">Neutral</a>, and <a class="el" href="classHappy.html#a10d5d5d291f86af4f4c0492823f36a80">Happy</a>.</p>
+<p>Implemented in <a class="el" href="classWaitForTable.html#a2fa2bdb516d8edb99da7c5f66eb1810c">WaitForTable</a>, <a class="el" href="classReadyToOrder.html#a20e0d6b78c39621589d168aa8c1a97c8">ReadyToOrder</a>, <a class="el" href="classReadyForBill.html#a95fb3422fdd692aa3388ba7a3a704284">ReadyForBill</a>, and <a class="el" href="classPayTab.html#a39abb95606954eadebf8ed2c50d13ba9">PayTab</a>.</p>
 
 </div>
 </div>
@@ -413,7 +289,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Implemented in <a class="el" href="classWaitForTable.html#a871bf1c474f0c960bf9f412f61647283">WaitForTable</a>, <a class="el" href="classUnhappy.html#a4db8a93496c48c139bff678ad6b495ef">Unhappy</a>, <a class="el" href="classReadyToOrder.html#a3a3663ca2b295cdbbd2d8d6344c4a8ff">ReadyToOrder</a>, <a class="el" href="classReadyForBill.html#abfc3ca0aef894f27a50e24ccf297c922">ReadyForBill</a>, <a class="el" href="classPayTab.html#a3ce906767fdc0c1d10b179ad44fca717">PayTab</a>, <a class="el" href="classNeutral.html#a60b9f2d240e704d6477bfc01b5a371a9">Neutral</a>, and <a class="el" href="classHappy.html#a80c77e2e86da052ebec1571c4dcee030">Happy</a>.</p>
+<p>Implemented in <a class="el" href="classWaitForTable.html#a871bf1c474f0c960bf9f412f61647283">WaitForTable</a>, <a class="el" href="classReadyToOrder.html#a3a3663ca2b295cdbbd2d8d6344c4a8ff">ReadyToOrder</a>, <a class="el" href="classReadyForBill.html#abfc3ca0aef894f27a50e24ccf297c922">ReadyForBill</a>, and <a class="el" href="classPayTab.html#a3ce906767fdc0c1d10b179ad44fca717">PayTab</a>.</p>
 
 </div>
 </div>

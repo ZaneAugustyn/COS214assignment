@@ -1,4 +1,4 @@
 <map id="Neutral" name="Neutral">
-<area shape="rect" id="node1" title="This class is represent the neutral state of the group." alt="" coords="17,80,88,107"/>
-<area shape="rect" id="node2" href="$classGroupState.html" title="This class represents the group&#39;s state." alt="" coords="5,5,100,32"/>
+<area shape="rect" id="node1" title="This class is represent the neutral state of the group." alt="" coords="31,80,102,107"/>
+<area shape="rect" id="node2" href="$classEmotionalState.html" title="This class represents the group&#39;s emotional state." alt="" coords="5,5,128,32"/>
 </map>
