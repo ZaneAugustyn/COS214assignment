@@ -11,6 +11,7 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 enable_testing() # enable unit testing
 
 add_subdirectory(googletest) # add googletest library
+add_subdirectory(tests) # add test directory
 
 set(Headers
     Floor.h
@@ -131,4 +132,3 @@ set(Sources
 
 add_library(${This} STATIC ${Sources} ${Headers}) # create static library
 
-add_subdirectory(tests) # add test directory
