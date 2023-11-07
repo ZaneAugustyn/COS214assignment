@@ -45,25 +45,43 @@ void SplitBill::Pay(Group *group)
         if (group->getLastEmotion()->ToString() == "Happy")
         {
             cout << "Would you like to add a tip? (y/n)" << endl;
-            cin >> choice;
 
             invalid = true;
             while (invalid)
             {
-                if (choice == 'y' || choice == 'Y' || choice == 'n' || choice == 'N')
+                if(cin >> choice)
                 {
-                    invalid = false;
-                    if (choice == 'y' || choice == 'Y')
+                    if (choice == 'y' || choice == 'Y' || choice == 'n' || choice == 'N')
                     {
-                        cout << "Please enter the amount you'd like to tip the waiter." << endl;
-                        cin >> tip;
+                        invalid = false;
+                        if (choice == 'y' || choice == 'Y')
+                        {
+                            cout << "Please enter the amount you'd like to tip the waiter." << endl;
+                            invalid = true;
+                            while(invalid)
+                            {
+                                if(cin >> tip)
+                                {
+                                    cout << "Thank you for the tip!" << endl;
+                                    invalid = false;
+                                }
+                                else
+                                {
+                                    cout << "Please enter a valid tip amount." << endl;
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        cout << "Please enter a valid choice for the tip." << endl;
                     }
                 }
                 else
                 {
-                    cout << "Please enter a valid choice for the tip." << endl;
-                    cin >> choice;
+                        cout << "Please enter a valid amount for the tip." << endl;
                 }
+                
             }
         }
 
