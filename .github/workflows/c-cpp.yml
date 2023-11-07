@@ -1,0 +1,72 @@
+# name: C/C++ CI
+
+# on:
+#   push:
+#     branches: [ "main" ]
+#   pull_request:
+#     branches: [ "main" ]
+
+# jobs:
+#   build:
+
+#     runs-on: ubuntu-latest
+
+#     steps:
+#     - uses: actions/checkout@v3
+#     - name: configure
+#       run: ./configure
+#     - name: make
+#       run: make
+#     - name: make check
+#       run: make check
+#     - name: make distcheck
+#       run: make distcheck
+
+name: CMake Build and Test
+
+on:
+  push:
+    branches:
+      - XadrianUnitTesting  # Replace 'main' with your desired branch name
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        path: COS214assignment  # Specify the path where your project is located
+
+    - name: Check for specific file changes
+      run: |
+        # Check if files in a specific directory have changed
+        if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -q 'COS214assignment'; then
+          echo "Specific files have changed. Proceed with the build and test."
+        else
+          echo "No changes in specific files. Skip the build and test."
+          exit 0
+        fi
+      working-directory: COS214assignment  # Specify the working directory
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get -y install g++ cmake
+      working-directory: COS214assignment  # Specify the working directory
+
+    - name: Configure and build with CMake
+      run: |
+        mkdir build
+        cd build
+        cmake ..
+        make
+      working-directory: COS214assignment  # Specify the working directory
+
+    - name: Run unit tests
+      run: |
+        cd build
+        ctest --output-on-failure
+      working-directory: COS214assignment  # Specify the working directory
