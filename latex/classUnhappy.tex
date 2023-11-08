@@ -1,0 +1,144 @@
+\hypertarget{classUnhappy}{}\doxysection{Unhappy Class Reference}
+\label{classUnhappy}\index{Unhappy@{Unhappy}}
+
+
+This class represents a type of state of the group-\/that they are currently unhappy with the service.  
+
+
+
+
+{\ttfamily \#include $<$Unhappy.\+h$>$}
+
+
+
+Inheritance diagram for Unhappy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classUnhappy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Unhappy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classUnhappy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classUnhappy_aa452aaa043be400ca0d22fcf68393330}\label{classUnhappy_aa452aaa043be400ca0d22fcf68393330}} 
+\mbox{\hyperlink{classUnhappy_aa452aaa043be400ca0d22fcf68393330}{Unhappy}} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUnhappy_a51dd2564a7e202685d8e5a44b2b18d3f}\label{classUnhappy_a51dd2564a7e202685d8e5a44b2b18d3f}} 
+\mbox{\hyperlink{classUnhappy_a51dd2564a7e202685d8e5a44b2b18d3f}{$\sim$\+Unhappy}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classUnhappy_a45d3f3ec399fcf1aac65584217d2efb7}{Make\+Unhappy}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Make\+Unhappy request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classUnhappy_a6f53147ef6ca1ecc14793bf59155faaa}{Make\+Happy}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Make\+Happy request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classUnhappy_aa5d097ffaf12db211c8a2f226f193a64}{Make\+Neutral}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the \mbox{\hyperlink{classNeutral}{Neutral}} request \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classUnhappy_af01e8ec3aa6f8292d08a1646c63ef112}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em method to return a string of the state name \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents a type of state of the group-\/that they are currently unhappy with the service. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classUnhappy_a6f53147ef6ca1ecc14793bf59155faaa}\label{classUnhappy_a6f53147ef6ca1ecc14793bf59155faaa}} 
+\index{Unhappy@{Unhappy}!MakeHappy@{MakeHappy}}
+\index{MakeHappy@{MakeHappy}!Unhappy@{Unhappy}}
+\doxysubsubsection{\texorpdfstring{MakeHappy()}{MakeHappy()}}
+{\footnotesize\ttfamily void Unhappy\+::\+Make\+Happy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Make\+Happy request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEmotionalState_adf9bd865a32d449bbf47c6ffddb01a2f}{Emotional\+State}}.
+
+\mbox{\Hypertarget{classUnhappy_aa5d097ffaf12db211c8a2f226f193a64}\label{classUnhappy_aa5d097ffaf12db211c8a2f226f193a64}} 
+\index{Unhappy@{Unhappy}!MakeNeutral@{MakeNeutral}}
+\index{MakeNeutral@{MakeNeutral}!Unhappy@{Unhappy}}
+\doxysubsubsection{\texorpdfstring{MakeNeutral()}{MakeNeutral()}}
+{\footnotesize\ttfamily void Unhappy\+::\+Make\+Neutral (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the \mbox{\hyperlink{classNeutral}{Neutral}} request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEmotionalState_a9d183f6c26daf6080087d0a18446da38}{Emotional\+State}}.
+
+\mbox{\Hypertarget{classUnhappy_a45d3f3ec399fcf1aac65584217d2efb7}\label{classUnhappy_a45d3f3ec399fcf1aac65584217d2efb7}} 
+\index{Unhappy@{Unhappy}!MakeUnhappy@{MakeUnhappy}}
+\index{MakeUnhappy@{MakeUnhappy}!Unhappy@{Unhappy}}
+\doxysubsubsection{\texorpdfstring{MakeUnhappy()}{MakeUnhappy()}}
+{\footnotesize\ttfamily void Unhappy\+::\+Make\+Unhappy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Make\+Unhappy request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEmotionalState_ae0789c4c917e93a6c8c3ab06998db7d8}{Emotional\+State}}.
+
+\mbox{\Hypertarget{classUnhappy_af01e8ec3aa6f8292d08a1646c63ef112}\label{classUnhappy_af01e8ec3aa6f8292d08a1646c63ef112}} 
+\index{Unhappy@{Unhappy}!ToString@{ToString}}
+\index{ToString@{ToString}!Unhappy@{Unhappy}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily string Unhappy\+::\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+method to return a string of the state name 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEmotionalState_a8c867f7378eb69f2d117234c594d0634}{Emotional\+State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Unhappy.\+h\item 
+Unhappy.\+cpp\end{DoxyCompactItemize}

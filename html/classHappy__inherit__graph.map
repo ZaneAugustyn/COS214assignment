@@ -1,0 +1,4 @@
+<map id="Happy" name="Happy">
+<area shape="rect" id="node1" title="This class is represents the group&#39;s happy state." alt="" coords="35,80,99,107"/>
+<area shape="rect" id="node2" href="$classEmotionalState.html" title="This class represents the group&#39;s emotional state." alt="" coords="5,5,128,32"/>
+</map>

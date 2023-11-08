@@ -1,13 +1,42 @@
 #ifndef _COLLEAGUE_H
 #define _COLLEAGUE_H
-// code here
+
+#include "Pass.h"
+
+/**
+ * @class Colleague
+ * @brief This class is a abstract colleague of the Mediator design
+*/
 class Colleague
 {
-private:
-    /* data */
-public:
+  protected:
+    Pass* pass_;
+
+  public:
+    /**
+     * @brief default constructor
+     * @return none
+    */
     Colleague(/* args */);
-    ~Colleague();
+
+    /**
+     * @brief Constructor
+     * @param p the shared pass member variable
+     * @return none
+    */    
+    Colleague(Pass* p);
+
+    /**
+     * @brief part of the mediator design pattern to delegate the appropriate notify method (abstract)
+     * @return void
+    */
+    virtual void Changed() = 0;
+
+    /**
+     * @brief virtual destructor
+     * @return none
+    */
+    virtual ~Colleague();
 };
 
 

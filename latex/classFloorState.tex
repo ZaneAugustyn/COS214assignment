@@ -1,0 +1,118 @@
+\hypertarget{classFloorState}{}\doxysection{Floor\+State Class Reference}
+\label{classFloorState}\index{FloorState@{FloorState}}
+
+
+This class represents the state of the floor in the restaurant.  
+
+
+
+
+{\ttfamily \#include $<$Floor\+State.\+h$>$}
+
+
+
+Inheritance diagram for Floor\+State\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classFloorState__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFloorState_a7fad005e67f4aaeb8a7d8d6f15f3c682}{Floor\+State}} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFloorState_adf62c1471f30246e1fea7f5da444ea3e}{$\sim$\+Floor\+State}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classFloorState_a9363a913450948c4414683f99b8def8e}{get\+Name}} ()=0
+\begin{DoxyCompactList}\small\item\em virtyal method used to get the name of the state \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classFloorState_a4da1bc2abbdc93126f80e68bdb2bdbc0}{Change\+State}} (\mbox{\hyperlink{classFloor}{Floor}} $\ast$floor, \mbox{\hyperlink{classFloorState}{Floor\+State}} $\ast$state)=0
+\begin{DoxyCompactList}\small\item\em This is a virtual method that is used to change the current state of the floor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the state of the floor in the restaurant. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFloorState_a7fad005e67f4aaeb8a7d8d6f15f3c682}\label{classFloorState_a7fad005e67f4aaeb8a7d8d6f15f3c682}} 
+\index{FloorState@{FloorState}!FloorState@{FloorState}}
+\index{FloorState@{FloorState}!FloorState@{FloorState}}
+\doxysubsubsection{\texorpdfstring{FloorState()}{FloorState()}}
+{\footnotesize\ttfamily Floor\+State\+::\+Floor\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+constructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFloorState_adf62c1471f30246e1fea7f5da444ea3e}\label{classFloorState_adf62c1471f30246e1fea7f5da444ea3e}} 
+\index{FloorState@{FloorState}!````~FloorState@{$\sim$FloorState}}
+\index{````~FloorState@{$\sim$FloorState}!FloorState@{FloorState}}
+\doxysubsubsection{\texorpdfstring{$\sim$FloorState()}{~FloorState()}}
+{\footnotesize\ttfamily Floor\+State\+::$\sim$\+Floor\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFloorState_a4da1bc2abbdc93126f80e68bdb2bdbc0}\label{classFloorState_a4da1bc2abbdc93126f80e68bdb2bdbc0}} 
+\index{FloorState@{FloorState}!ChangeState@{ChangeState}}
+\index{ChangeState@{ChangeState}!FloorState@{FloorState}}
+\doxysubsubsection{\texorpdfstring{ChangeState()}{ChangeState()}}
+{\footnotesize\ttfamily virtual void Floor\+State\+::\+Change\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFloor}{Floor}} $\ast$}]{floor,  }\item[{\mbox{\hyperlink{classFloorState}{Floor\+State}} $\ast$}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This is a virtual method that is used to change the current state of the floor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em floor} & is the floor that wants to change its state \\
+\hline
+{\em state} & is the state that floor wants to be changed to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSpaceAvailable_a133537a797df341f161c82b3b87675ed}{Space\+Available}}, and \mbox{\hyperlink{classFull_a48283ff6fae73d18674222dddf396ef3}{Full}}.
+
+\mbox{\Hypertarget{classFloorState_a9363a913450948c4414683f99b8def8e}\label{classFloorState_a9363a913450948c4414683f99b8def8e}} 
+\index{FloorState@{FloorState}!getName@{getName}}
+\index{getName@{getName}!FloorState@{FloorState}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily virtual string Floor\+State\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+virtyal method used to get the name of the state 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSpaceAvailable_a95b38bb6ad1cda61863d69da1dbe948e}{Space\+Available}}, and \mbox{\hyperlink{classFull_aba0bd6c6945ae6b89a8f2892d91d0d4b}{Full}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Floor\+State.\+h\item 
+Floor\+State.\+cpp\end{DoxyCompactItemize}

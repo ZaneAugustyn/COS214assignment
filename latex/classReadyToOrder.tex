@@ -1,0 +1,169 @@
+\hypertarget{classReadyToOrder}{}\doxysection{Ready\+To\+Order Class Reference}
+\label{classReadyToOrder}\index{ReadyToOrder@{ReadyToOrder}}
+
+
+This class represent the \mbox{\hyperlink{classReadyToOrder}{Ready\+To\+Order}} state of the customer.  
+
+
+
+
+{\ttfamily \#include $<$Ready\+To\+Order.\+h$>$}
+
+
+
+Inheritance diagram for Ready\+To\+Order\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=165pt]{classReadyToOrder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ready\+To\+Order\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=165pt]{classReadyToOrder__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classReadyToOrder_a44d187e28c47ef6b0ad7ae757977f51f}\label{classReadyToOrder_a44d187e28c47ef6b0ad7ae757977f51f}} 
+\mbox{\hyperlink{classReadyToOrder_a44d187e28c47ef6b0ad7ae757977f51f}{Ready\+To\+Order}} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classReadyToOrder_a573ae80df595b9c77c4151f93f84cca9}\label{classReadyToOrder_a573ae80df595b9c77c4151f93f84cca9}} 
+\mbox{\hyperlink{classReadyToOrder_a573ae80df595b9c77c4151f93f84cca9}{$\sim$\+Ready\+To\+Order}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classReadyToOrder_a1209c0871e15c935040a555da4c86bbd}{Request\+To\+Order}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Request\+To\+Order request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classReadyToOrder_a3a3663ca2b295cdbbd2d8d6344c4a8ff}{Wait\+In\+Queue}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Wait\+In\+Queue request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classReadyToOrder_a1b64d6f365ce488c9865ebcd81586bde}{Request\+Tab}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Request\+Tab request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classReadyToOrder_a86323e77b20f06839f5cafa214aa227b}{Request\+Bill}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Request\+Bill request \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classReadyToOrder_a20e0d6b78c39621589d168aa8c1a97c8}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em method to return a string of the state name \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represent the \mbox{\hyperlink{classReadyToOrder}{Ready\+To\+Order}} state of the customer. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classReadyToOrder_a86323e77b20f06839f5cafa214aa227b}\label{classReadyToOrder_a86323e77b20f06839f5cafa214aa227b}} 
+\index{ReadyToOrder@{ReadyToOrder}!RequestBill@{RequestBill}}
+\index{RequestBill@{RequestBill}!ReadyToOrder@{ReadyToOrder}}
+\doxysubsubsection{\texorpdfstring{RequestBill()}{RequestBill()}}
+{\footnotesize\ttfamily void Ready\+To\+Order\+::\+Request\+Bill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Request\+Bill request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_ada5a23937d06e17439336af3f9045426}{Group\+State}}.
+
+\mbox{\Hypertarget{classReadyToOrder_a1b64d6f365ce488c9865ebcd81586bde}\label{classReadyToOrder_a1b64d6f365ce488c9865ebcd81586bde}} 
+\index{ReadyToOrder@{ReadyToOrder}!RequestTab@{RequestTab}}
+\index{RequestTab@{RequestTab}!ReadyToOrder@{ReadyToOrder}}
+\doxysubsubsection{\texorpdfstring{RequestTab()}{RequestTab()}}
+{\footnotesize\ttfamily void Ready\+To\+Order\+::\+Request\+Tab (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Request\+Tab request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_abaa00ecfeeff67144884aba156ef6e48}{Group\+State}}.
+
+\mbox{\Hypertarget{classReadyToOrder_a1209c0871e15c935040a555da4c86bbd}\label{classReadyToOrder_a1209c0871e15c935040a555da4c86bbd}} 
+\index{ReadyToOrder@{ReadyToOrder}!RequestToOrder@{RequestToOrder}}
+\index{RequestToOrder@{RequestToOrder}!ReadyToOrder@{ReadyToOrder}}
+\doxysubsubsection{\texorpdfstring{RequestToOrder()}{RequestToOrder()}}
+{\footnotesize\ttfamily void Ready\+To\+Order\+::\+Request\+To\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Request\+To\+Order request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_aff4a24d2821282afc2b210fd4248afbd}{Group\+State}}.
+
+\mbox{\Hypertarget{classReadyToOrder_a20e0d6b78c39621589d168aa8c1a97c8}\label{classReadyToOrder_a20e0d6b78c39621589d168aa8c1a97c8}} 
+\index{ReadyToOrder@{ReadyToOrder}!ToString@{ToString}}
+\index{ToString@{ToString}!ReadyToOrder@{ReadyToOrder}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily string Ready\+To\+Order\+::\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+method to return a string of the state name 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_a939244f42e418fcb401a98dbabb2109d}{Group\+State}}.
+
+\mbox{\Hypertarget{classReadyToOrder_a3a3663ca2b295cdbbd2d8d6344c4a8ff}\label{classReadyToOrder_a3a3663ca2b295cdbbd2d8d6344c4a8ff}} 
+\index{ReadyToOrder@{ReadyToOrder}!WaitInQueue@{WaitInQueue}}
+\index{WaitInQueue@{WaitInQueue}!ReadyToOrder@{ReadyToOrder}}
+\doxysubsubsection{\texorpdfstring{WaitInQueue()}{WaitInQueue()}}
+{\footnotesize\ttfamily void Ready\+To\+Order\+::\+Wait\+In\+Queue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Wait\+In\+Queue request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classGroupState_a3189f08b482dc9d528df5bc1263c6dc9}{Group\+State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Ready\+To\+Order.\+h\item 
+Ready\+To\+Order.\+cpp\end{DoxyCompactItemize}

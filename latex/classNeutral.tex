@@ -1,0 +1,144 @@
+\hypertarget{classNeutral}{}\doxysection{Neutral Class Reference}
+\label{classNeutral}\index{Neutral@{Neutral}}
+
+
+This class is represent the neutral state of the group.  
+
+
+
+
+{\ttfamily \#include $<$Neutral.\+h$>$}
+
+
+
+Inheritance diagram for Neutral\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classNeutral__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Neutral\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classNeutral__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNeutral_aa3a8b3238e5b9a9a9a422bbbf0da6026}\label{classNeutral_aa3a8b3238e5b9a9a9a422bbbf0da6026}} 
+\mbox{\hyperlink{classNeutral_aa3a8b3238e5b9a9a9a422bbbf0da6026}{Neutral}} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNeutral_afc4de4ad01e65cc80f60dad54dc2e3c5}\label{classNeutral_afc4de4ad01e65cc80f60dad54dc2e3c5}} 
+\mbox{\hyperlink{classNeutral_afc4de4ad01e65cc80f60dad54dc2e3c5}{$\sim$\+Neutral}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classNeutral_acc42fcb473aa4e7a83e672595c852f27}{Make\+Unhappy}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the Make\+Unhappy request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classNeutral_a38e3df242a1182e24290fdc65db2a39d}{Make\+Happy}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the \mbox{\hyperlink{classHappy}{Happy}} request \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classNeutral_a8cd1ca651fa2f98427c9526125f18a48}{Make\+Neutral}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em the Concrete\+Class method to handle the \mbox{\hyperlink{classNeutral}{Neutral}} request \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classNeutral_aa59fa4909feaa9c520afe145b2624cb8}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em method to return a string of the state name \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is represent the neutral state of the group. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNeutral_a38e3df242a1182e24290fdc65db2a39d}\label{classNeutral_a38e3df242a1182e24290fdc65db2a39d}} 
+\index{Neutral@{Neutral}!MakeHappy@{MakeHappy}}
+\index{MakeHappy@{MakeHappy}!Neutral@{Neutral}}
+\doxysubsubsection{\texorpdfstring{MakeHappy()}{MakeHappy()}}
+{\footnotesize\ttfamily void Neutral\+::\+Make\+Happy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the \mbox{\hyperlink{classHappy}{Happy}} request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEmotionalState_adf9bd865a32d449bbf47c6ffddb01a2f}{Emotional\+State}}.
+
+\mbox{\Hypertarget{classNeutral_a8cd1ca651fa2f98427c9526125f18a48}\label{classNeutral_a8cd1ca651fa2f98427c9526125f18a48}} 
+\index{Neutral@{Neutral}!MakeNeutral@{MakeNeutral}}
+\index{MakeNeutral@{MakeNeutral}!Neutral@{Neutral}}
+\doxysubsubsection{\texorpdfstring{MakeNeutral()}{MakeNeutral()}}
+{\footnotesize\ttfamily void Neutral\+::\+Make\+Neutral (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the \mbox{\hyperlink{classNeutral}{Neutral}} request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEmotionalState_a9d183f6c26daf6080087d0a18446da38}{Emotional\+State}}.
+
+\mbox{\Hypertarget{classNeutral_acc42fcb473aa4e7a83e672595c852f27}\label{classNeutral_acc42fcb473aa4e7a83e672595c852f27}} 
+\index{Neutral@{Neutral}!MakeUnhappy@{MakeUnhappy}}
+\index{MakeUnhappy@{MakeUnhappy}!Neutral@{Neutral}}
+\doxysubsubsection{\texorpdfstring{MakeUnhappy()}{MakeUnhappy()}}
+{\footnotesize\ttfamily void Neutral\+::\+Make\+Unhappy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+the Concrete\+Class method to handle the Make\+Unhappy request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & the group to update the state of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void ~\newline
+ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEmotionalState_ae0789c4c917e93a6c8c3ab06998db7d8}{Emotional\+State}}.
+
+\mbox{\Hypertarget{classNeutral_aa59fa4909feaa9c520afe145b2624cb8}\label{classNeutral_aa59fa4909feaa9c520afe145b2624cb8}} 
+\index{Neutral@{Neutral}!ToString@{ToString}}
+\index{ToString@{ToString}!Neutral@{Neutral}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily string Neutral\+::\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+method to return a string of the state name 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEmotionalState_a8c867f7378eb69f2d117234c594d0634}{Emotional\+State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Neutral.\+h\item 
+Neutral.\+cpp\end{DoxyCompactItemize}

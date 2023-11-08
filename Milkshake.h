@@ -1,12 +1,26 @@
 #ifndef _MILKSHAKE_H
 #define _MILKSHAKE_H
-// code here
-class Milkshake
+
+#include "Drink.h"
+
+/**
+ * @class Milkshake
+ * @brief This class inherits from Drink and represents a milkshake
+*/
+class Milkshake : public Drink
 {
-private:
-    /* data */
 public:
-    Milkshake(/* args */);
+
+    /**
+     * @brief default constructor - sets Drink's attributes to the values of a milkshake
+     * @return none
+    */
+    Milkshake();
+
+    /**
+     * @brief destructor
+     * @return none
+    */
     ~Milkshake();
 };
 

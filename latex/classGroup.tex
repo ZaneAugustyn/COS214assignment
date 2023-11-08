@@ -1,0 +1,431 @@
+\hypertarget{classGroup}{}\doxysection{Group Class Reference}
+\label{classGroup}\index{Group@{Group}}
+
+
+This class represents the group of customers that will be seated and will order.  
+
+
+
+
+{\ttfamily \#include $<$Group.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGroup_afb19beae3200e08c0eb8e36d07ac742b}{Group}} (\mbox{\hyperlink{classGroupState}{Group\+State}} $\ast$state, int group\+Number)
+\begin{DoxyCompactList}\small\item\em parameterized constructor for \mbox{\hyperlink{classGroup}{Group}} to initialise a group \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGroup_aed00a22ff227ee2657ae44a5cbcedf7c}\label{classGroup_aed00a22ff227ee2657ae44a5cbcedf7c}} 
+\mbox{\hyperlink{classGroup_aed00a22ff227ee2657ae44a5cbcedf7c}{$\sim$\+Group}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGroup_a4d1c38e11012781b7ecf222e6feb7463}{add\+Customer}} (\mbox{\hyperlink{classCustomer}{Customer}} $\ast$customer)
+\begin{DoxyCompactList}\small\item\em Add a customer to the group. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCustomer}{Customer}} $\ast$ $>$ \mbox{\hyperlink{classGroup_acf4bf21001a7efca6a6a3b24fead55f3}{get\+Customers}} ()
+\begin{DoxyCompactList}\small\item\em Get the customers in the group. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classWaiter}{Waiter}} $\ast$ \mbox{\hyperlink{classGroup_a9d5cb69042175ef60e09adbba965434f}{get\+Waiter}} ()
+\begin{DoxyCompactList}\small\item\em Get the waiter serving the group. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGroup_a19bc2fd5a6ce8f4b017f5db663527b40}{Set\+State}} (\mbox{\hyperlink{classGroupState}{Group\+State}} $\ast$state)
+\begin{DoxyCompactList}\small\item\em set the state of the group \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGroup_a71d2a46c34d14cf8cf5b5d3c32fed6d7}{set\+Last\+Emotion}} (\mbox{\hyperlink{classEmotionalState}{Emotional\+State}} $\ast$state)
+\begin{DoxyCompactList}\small\item\em set the emotional state of the group \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGroup_a1e87c275b309967a13c478f8b7b53c34}{Request\+To\+Order}} ()
+\begin{DoxyCompactList}\small\item\em the Context class of the State pattern that defines the requests for the state changes \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGroup_a05a851b6521bbefeda267d3cde5a375d}{Wait\+In\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em the Context class of the State pattern that defines the requests for the state changes \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGroup_abcd6017e3996795157f26e972325c547}{Make\+Unhappy}} ()
+\begin{DoxyCompactList}\small\item\em the Context class of the State pattern that defines the requests for the state changes \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGroup_aa0a85e1eec0584cc543fc208e96fb60a}{Make\+Happy}} ()
+\begin{DoxyCompactList}\small\item\em the Context class of the State pattern that defines the requests for the state changes \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGroup_a6827ae2f0811563af2b721aaef2935fe}{Make\+Neutral}} ()
+\begin{DoxyCompactList}\small\item\em the Context class of the State pattern that defines the requests for the state changes \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGroup_aeedc0549b515de2b9a3506a9f84a8033}{Request\+Tab}} ()
+\begin{DoxyCompactList}\small\item\em the Context class of the State pattern that defines the requests for the state changes \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGroup_af557f5040deeae57df7f174795d20531}{Request\+Bill}} ()
+\begin{DoxyCompactList}\small\item\em the Context class of the State pattern that defines the requests for the state changes \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classGroup_afc1664ec19c1ecba6b59b8c1b7ec9525}{get\+Group\+Number}} ()
+\begin{DoxyCompactList}\small\item\em the function to return the group\+Number \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGroupState}{Group\+State}} $\ast$ \mbox{\hyperlink{classGroup_a449941234293c40ff54438d9a63b7b4f}{Get\+State}} ()
+\begin{DoxyCompactList}\small\item\em the function to return the the state of the group \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classGroup_ae5019593100824f3121c11d52c731fab}{Current\+State}} ()
+\begin{DoxyCompactList}\small\item\em function to create a string to show the current state of the group \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCustomer}{Customer}} $\ast$ \mbox{\hyperlink{classGroup_a6359c95d47f042df67e7f4881e312e09}{get\+First\+Customer}} ()
+\begin{DoxyCompactList}\small\item\em function to return the first customer in the group \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGroup_a2ea735060d5cc6e23f65f92ffbdaf0e4}{add\+Waiter}} (\mbox{\hyperlink{classWaiter}{Waiter}} $\ast$waiter)
+\begin{DoxyCompactList}\small\item\em Add a waiter to serve the group. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGroup_a695667372b33a03d669127cc492d1d38}{remove\+Waiter}} (\mbox{\hyperlink{classWaiter}{Waiter}} $\ast$waiter)
+\begin{DoxyCompactList}\small\item\em Remove the waiter serving the group. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGroup_a904bf7828facfc88b6f8a6a779c22edc}{set\+Bill}} (\mbox{\hyperlink{classBill}{Bill}} $\ast$bill)
+\begin{DoxyCompactList}\small\item\em Set the bill associated with the group. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBill}{Bill}} $\ast$ \mbox{\hyperlink{classGroup_a505ff0f7219f7b510feffd552cf615cb}{get\+Bill}} ()
+\begin{DoxyCompactList}\small\item\em Get the bill associated with the group. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGroup_a123d86ac56cf6c96e8ff96b78f0aaef1}{notify}} ()
+\begin{DoxyCompactList}\small\item\em Notify the waiter about group updates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGroup_a7f423f9942de66cd0dc2f6a9711ce056}{update\+Last\+Emotion}} (\mbox{\hyperlink{classGroupState}{Group\+State}} $\ast$State)
+\begin{DoxyCompactList}\small\item\em Update last emotion. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEmotionalState}{Emotional\+State}} $\ast$ \mbox{\hyperlink{classGroup_af79c3a15c0960a2d2bc6d93baa04e0ba}{get\+Last\+Emotion}} ()
+\begin{DoxyCompactList}\small\item\em get last emotion \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the group of customers that will be seated and will order. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGroup_afb19beae3200e08c0eb8e36d07ac742b}\label{classGroup_afb19beae3200e08c0eb8e36d07ac742b}} 
+\index{Group@{Group}!Group@{Group}}
+\index{Group@{Group}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{Group()}{Group()}}
+{\footnotesize\ttfamily Group\+::\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroupState}{Group\+State}} $\ast$}]{state,  }\item[{int}]{group\+Number }\end{DoxyParamCaption})}
+
+
+
+parameterized constructor for \mbox{\hyperlink{classGroup}{Group}} to initialise a group 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & the initial state of the group \\
+\hline
+{\em group\+Number} & the number of the group \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGroup_a4d1c38e11012781b7ecf222e6feb7463}\label{classGroup_a4d1c38e11012781b7ecf222e6feb7463}} 
+\index{Group@{Group}!addCustomer@{addCustomer}}
+\index{addCustomer@{addCustomer}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{addCustomer()}{addCustomer()}}
+{\footnotesize\ttfamily void Group\+::add\+Customer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCustomer}{Customer}} $\ast$}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a customer to the group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em customer} & The customer to be added. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_a2ea735060d5cc6e23f65f92ffbdaf0e4}\label{classGroup_a2ea735060d5cc6e23f65f92ffbdaf0e4}} 
+\index{Group@{Group}!addWaiter@{addWaiter}}
+\index{addWaiter@{addWaiter}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{addWaiter()}{addWaiter()}}
+{\footnotesize\ttfamily void Group\+::add\+Waiter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWaiter}{Waiter}} $\ast$}]{waiter }\end{DoxyParamCaption})}
+
+
+
+Add a waiter to serve the group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em waiter} & The waiter to be assigned to the group. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_ae5019593100824f3121c11d52c731fab}\label{classGroup_ae5019593100824f3121c11d52c731fab}} 
+\index{Group@{Group}!CurrentState@{CurrentState}}
+\index{CurrentState@{CurrentState}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{CurrentState()}{CurrentState()}}
+{\footnotesize\ttfamily string Group\+::\+Current\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+function to create a string to show the current state of the group 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_a505ff0f7219f7b510feffd552cf615cb}\label{classGroup_a505ff0f7219f7b510feffd552cf615cb}} 
+\index{Group@{Group}!getBill@{getBill}}
+\index{getBill@{getBill}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{getBill()}{getBill()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBill}{Bill}} $\ast$ Group\+::get\+Bill (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the bill associated with the group. 
+
+\begin{DoxyReturn}{Returns}
+The bill associated with the group. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_acf4bf21001a7efca6a6a3b24fead55f3}\label{classGroup_acf4bf21001a7efca6a6a3b24fead55f3}} 
+\index{Group@{Group}!getCustomers@{getCustomers}}
+\index{getCustomers@{getCustomers}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{getCustomers()}{getCustomers()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCustomer}{Customer}}$\ast$$>$ Group\+::get\+Customers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the customers in the group. 
+
+\begin{DoxyReturn}{Returns}
+A vector of \mbox{\hyperlink{classCustomer}{Customer}} pointers. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_a6359c95d47f042df67e7f4881e312e09}\label{classGroup_a6359c95d47f042df67e7f4881e312e09}} 
+\index{Group@{Group}!getFirstCustomer@{getFirstCustomer}}
+\index{getFirstCustomer@{getFirstCustomer}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{getFirstCustomer()}{getFirstCustomer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCustomer}{Customer}} $\ast$ Group\+::get\+First\+Customer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+function to return the first customer in the group 
+
+\begin{DoxyReturn}{Returns}
+Customer$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_afc1664ec19c1ecba6b59b8c1b7ec9525}\label{classGroup_afc1664ec19c1ecba6b59b8c1b7ec9525}} 
+\index{Group@{Group}!getGroupNumber@{getGroupNumber}}
+\index{getGroupNumber@{getGroupNumber}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{getGroupNumber()}{getGroupNumber()}}
+{\footnotesize\ttfamily int Group\+::get\+Group\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the function to return the group\+Number 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_af79c3a15c0960a2d2bc6d93baa04e0ba}\label{classGroup_af79c3a15c0960a2d2bc6d93baa04e0ba}} 
+\index{Group@{Group}!getLastEmotion@{getLastEmotion}}
+\index{getLastEmotion@{getLastEmotion}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{getLastEmotion()}{getLastEmotion()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEmotionalState}{Emotional\+State}} $\ast$ Group\+::get\+Last\+Emotion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get last emotion 
+
+\begin{DoxyReturn}{Returns}
+Emotional\+State$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_a449941234293c40ff54438d9a63b7b4f}\label{classGroup_a449941234293c40ff54438d9a63b7b4f}} 
+\index{Group@{Group}!GetState@{GetState}}
+\index{GetState@{GetState}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{GetState()}{GetState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGroupState}{Group\+State}} $\ast$ Group\+::\+Get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the function to return the the state of the group 
+
+\begin{DoxyReturn}{Returns}
+Group\+State$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_a9d5cb69042175ef60e09adbba965434f}\label{classGroup_a9d5cb69042175ef60e09adbba965434f}} 
+\index{Group@{Group}!getWaiter@{getWaiter}}
+\index{getWaiter@{getWaiter}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{getWaiter()}{getWaiter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classWaiter}{Waiter}} $\ast$ Group\+::get\+Waiter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the waiter serving the group. 
+
+\begin{DoxyReturn}{Returns}
+The waiter serving the group. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_aa0a85e1eec0584cc543fc208e96fb60a}\label{classGroup_aa0a85e1eec0584cc543fc208e96fb60a}} 
+\index{Group@{Group}!MakeHappy@{MakeHappy}}
+\index{MakeHappy@{MakeHappy}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{MakeHappy()}{MakeHappy()}}
+{\footnotesize\ttfamily void Group\+::\+Make\+Happy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the Context class of the State pattern that defines the requests for the state changes 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_a6827ae2f0811563af2b721aaef2935fe}\label{classGroup_a6827ae2f0811563af2b721aaef2935fe}} 
+\index{Group@{Group}!MakeNeutral@{MakeNeutral}}
+\index{MakeNeutral@{MakeNeutral}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{MakeNeutral()}{MakeNeutral()}}
+{\footnotesize\ttfamily void Group\+::\+Make\+Neutral (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the Context class of the State pattern that defines the requests for the state changes 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_abcd6017e3996795157f26e972325c547}\label{classGroup_abcd6017e3996795157f26e972325c547}} 
+\index{Group@{Group}!MakeUnhappy@{MakeUnhappy}}
+\index{MakeUnhappy@{MakeUnhappy}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{MakeUnhappy()}{MakeUnhappy()}}
+{\footnotesize\ttfamily void Group\+::\+Make\+Unhappy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the Context class of the State pattern that defines the requests for the state changes 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_a123d86ac56cf6c96e8ff96b78f0aaef1}\label{classGroup_a123d86ac56cf6c96e8ff96b78f0aaef1}} 
+\index{Group@{Group}!notify@{notify}}
+\index{notify@{notify}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily void Group\+::notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Notify the waiter about group updates. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_a695667372b33a03d669127cc492d1d38}\label{classGroup_a695667372b33a03d669127cc492d1d38}} 
+\index{Group@{Group}!removeWaiter@{removeWaiter}}
+\index{removeWaiter@{removeWaiter}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{removeWaiter()}{removeWaiter()}}
+{\footnotesize\ttfamily void Group\+::remove\+Waiter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWaiter}{Waiter}} $\ast$}]{waiter }\end{DoxyParamCaption})}
+
+
+
+Remove the waiter serving the group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em waiter} & The waiter to be removed from the group. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_af557f5040deeae57df7f174795d20531}\label{classGroup_af557f5040deeae57df7f174795d20531}} 
+\index{Group@{Group}!RequestBill@{RequestBill}}
+\index{RequestBill@{RequestBill}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{RequestBill()}{RequestBill()}}
+{\footnotesize\ttfamily void Group\+::\+Request\+Bill (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the Context class of the State pattern that defines the requests for the state changes 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_aeedc0549b515de2b9a3506a9f84a8033}\label{classGroup_aeedc0549b515de2b9a3506a9f84a8033}} 
+\index{Group@{Group}!RequestTab@{RequestTab}}
+\index{RequestTab@{RequestTab}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{RequestTab()}{RequestTab()}}
+{\footnotesize\ttfamily void Group\+::\+Request\+Tab (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the Context class of the State pattern that defines the requests for the state changes 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_a1e87c275b309967a13c478f8b7b53c34}\label{classGroup_a1e87c275b309967a13c478f8b7b53c34}} 
+\index{Group@{Group}!RequestToOrder@{RequestToOrder}}
+\index{RequestToOrder@{RequestToOrder}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{RequestToOrder()}{RequestToOrder()}}
+{\footnotesize\ttfamily void Group\+::\+Request\+To\+Order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the Context class of the State pattern that defines the requests for the state changes 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_a904bf7828facfc88b6f8a6a779c22edc}\label{classGroup_a904bf7828facfc88b6f8a6a779c22edc}} 
+\index{Group@{Group}!setBill@{setBill}}
+\index{setBill@{setBill}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{setBill()}{setBill()}}
+{\footnotesize\ttfamily void Group\+::set\+Bill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBill}{Bill}} $\ast$}]{bill }\end{DoxyParamCaption})}
+
+
+
+Set the bill associated with the group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bill} & The bill to be associated with the group. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_a71d2a46c34d14cf8cf5b5d3c32fed6d7}\label{classGroup_a71d2a46c34d14cf8cf5b5d3c32fed6d7}} 
+\index{Group@{Group}!setLastEmotion@{setLastEmotion}}
+\index{setLastEmotion@{setLastEmotion}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{setLastEmotion()}{setLastEmotion()}}
+{\footnotesize\ttfamily void Group\+::set\+Last\+Emotion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEmotionalState}{Emotional\+State}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+
+
+set the emotional state of the group 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & the emotional state to be assigned to a group \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_a19bc2fd5a6ce8f4b017f5db663527b40}\label{classGroup_a19bc2fd5a6ce8f4b017f5db663527b40}} 
+\index{Group@{Group}!SetState@{SetState}}
+\index{SetState@{SetState}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{SetState()}{SetState()}}
+{\footnotesize\ttfamily void Group\+::\+Set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroupState}{Group\+State}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+
+
+set the state of the group 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & the state to be assigned to a group \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_a7f423f9942de66cd0dc2f6a9711ce056}\label{classGroup_a7f423f9942de66cd0dc2f6a9711ce056}} 
+\index{Group@{Group}!updateLastEmotion@{updateLastEmotion}}
+\index{updateLastEmotion@{updateLastEmotion}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{updateLastEmotion()}{updateLastEmotion()}}
+{\footnotesize\ttfamily void Group\+::update\+Last\+Emotion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroupState}{Group\+State}} $\ast$}]{State }\end{DoxyParamCaption})}
+
+
+
+Update last emotion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em State} & to update the last\+Emotion to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGroup_a05a851b6521bbefeda267d3cde5a375d}\label{classGroup_a05a851b6521bbefeda267d3cde5a375d}} 
+\index{Group@{Group}!WaitInQueue@{WaitInQueue}}
+\index{WaitInQueue@{WaitInQueue}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{WaitInQueue()}{WaitInQueue()}}
+{\footnotesize\ttfamily void Group\+::\+Wait\+In\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the Context class of the State pattern that defines the requests for the state changes 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Group.\+h\item 
+Group.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,269 @@
+\hypertarget{classMaitreD}{}\doxysection{MaitreD Class Reference}
+\label{classMaitreD}\index{MaitreD@{MaitreD}}
+
+
+This class is represent the Maitre D that is responsible for the managing the floor.  
+
+
+
+
+{\ttfamily \#include $<$Maitre\+D.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMaitreD_a55cc9b5d5da7ed2bb66a726fba8c6646}{MaitreD}} (\mbox{\hyperlink{classFloor}{Floor}} $\ast$myF, int tables)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMaitreD_ad695bff1263fc8a87b80609dbd4d2ee3}{$\sim$\+MaitreD}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMaitreD_a7613b78e81f8f3fd257d4145d16cfedb}{calculate\+Tables\+Needed}} (int group\+Size)
+\begin{DoxyCompactList}\small\item\em This method calculates how many tables are needed for the group. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMaitreD_aa9c3b237392aa90209b011fd8c660fb1}{check\+Availability}} (int group\+Size)
+\begin{DoxyCompactList}\small\item\em this method checks if there are enough tables for the current group to be seated \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMaitreD_a55d7e5683e7e099913c5563c067a1349}{check\+Current\+Floor\+State}} (\mbox{\hyperlink{classFloorState}{Floor\+State}} $\ast$curr\+State)
+\begin{DoxyCompactList}\small\item\em This method checks if the state of the floor is \mbox{\hyperlink{classFull}{Full}} or \mbox{\hyperlink{classSpaceAvailable}{Space\+Available}} if full it returns false otherwise true. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMaitreD_afa04cc5ba3eabfde7bf2139b34e1ebd2}{add\+Group\+To\+Floor}} ()
+\begin{DoxyCompactList}\small\item\em this method seats the group to the floor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMaitreD_a1d7a363ae269b23b966483c692ce3845}{remove\+Group\+From\+Floor}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em this method removes the group from the floor letting those tables open up for the next group \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMaitreD_acfb93542581d7b56746e3d42ca5ce1b5}{add\+Group\+To\+Waiting\+Groups}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em this method adds a group to the waiting queue of groups that are waiting to be seated in the floor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMaitreD_a8b38e9e556f8e52e39da76101d7327ab}{set\+Waiter\+List}} (std\+::vector$<$ \mbox{\hyperlink{classWaiter}{Waiter}} $\ast$ $>$ W)
+\begin{DoxyCompactList}\small\item\em This method is used to set the waiter\+List vector that holds all the waiters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMaitreD_a308f6efe43d9955433524807232183e6}{table\+Checker}} ()
+\begin{DoxyCompactList}\small\item\em This method checks if tables are available if not it sets the floor state to full. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classGroup}{Group}} $\ast$ $>$ \mbox{\hyperlink{classMaitreD_a3cb6325937d562cfe9bb235ab391ca7a}{get\+Awaiting\+Group}} ()
+\begin{DoxyCompactList}\small\item\em This method returns the groups waiting to enter the floor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFloor}{Floor}} $\ast$ \mbox{\hyperlink{classMaitreD_a903d0f3fabf199c4ed283540488f3d51}{get\+Floor}} ()
+\begin{DoxyCompactList}\small\item\em This method returns floor that the maitreD is on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is represent the Maitre D that is responsible for the managing the floor. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMaitreD_a55cc9b5d5da7ed2bb66a726fba8c6646}\label{classMaitreD_a55cc9b5d5da7ed2bb66a726fba8c6646}} 
+\index{MaitreD@{MaitreD}!MaitreD@{MaitreD}}
+\index{MaitreD@{MaitreD}!MaitreD@{MaitreD}}
+\doxysubsubsection{\texorpdfstring{MaitreD()}{MaitreD()}}
+{\footnotesize\ttfamily Maitre\+D\+::\+MaitreD (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFloor}{Floor}} $\ast$}]{myF,  }\item[{int}]{tables }\end{DoxyParamCaption})}
+
+
+
+constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em myF} & is the floor that the maitreD will be working on \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMaitreD_ad695bff1263fc8a87b80609dbd4d2ee3}\label{classMaitreD_ad695bff1263fc8a87b80609dbd4d2ee3}} 
+\index{MaitreD@{MaitreD}!````~MaitreD@{$\sim$MaitreD}}
+\index{````~MaitreD@{$\sim$MaitreD}!MaitreD@{MaitreD}}
+\doxysubsubsection{\texorpdfstring{$\sim$MaitreD()}{~MaitreD()}}
+{\footnotesize\ttfamily Maitre\+D\+::$\sim$\+MaitreD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMaitreD_afa04cc5ba3eabfde7bf2139b34e1ebd2}\label{classMaitreD_afa04cc5ba3eabfde7bf2139b34e1ebd2}} 
+\index{MaitreD@{MaitreD}!addGroupToFloor@{addGroupToFloor}}
+\index{addGroupToFloor@{addGroupToFloor}!MaitreD@{MaitreD}}
+\doxysubsubsection{\texorpdfstring{addGroupToFloor()}{addGroupToFloor()}}
+{\footnotesize\ttfamily void Maitre\+D\+::add\+Group\+To\+Floor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+this method seats the group to the floor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMaitreD_acfb93542581d7b56746e3d42ca5ce1b5}\label{classMaitreD_acfb93542581d7b56746e3d42ca5ce1b5}} 
+\index{MaitreD@{MaitreD}!addGroupToWaitingGroups@{addGroupToWaitingGroups}}
+\index{addGroupToWaitingGroups@{addGroupToWaitingGroups}!MaitreD@{MaitreD}}
+\doxysubsubsection{\texorpdfstring{addGroupToWaitingGroups()}{addGroupToWaitingGroups()}}
+{\footnotesize\ttfamily void Maitre\+D\+::add\+Group\+To\+Waiting\+Groups (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})}
+
+
+
+this method adds a group to the waiting queue of groups that are waiting to be seated in the floor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & that wants to be added to the waiting queue to enter the floor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMaitreD_a7613b78e81f8f3fd257d4145d16cfedb}\label{classMaitreD_a7613b78e81f8f3fd257d4145d16cfedb}} 
+\index{MaitreD@{MaitreD}!calculateTablesNeeded@{calculateTablesNeeded}}
+\index{calculateTablesNeeded@{calculateTablesNeeded}!MaitreD@{MaitreD}}
+\doxysubsubsection{\texorpdfstring{calculateTablesNeeded()}{calculateTablesNeeded()}}
+{\footnotesize\ttfamily int Maitre\+D\+::calculate\+Tables\+Needed (\begin{DoxyParamCaption}\item[{int}]{group\+Size }\end{DoxyParamCaption})}
+
+
+
+This method calculates how many tables are needed for the group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em groupsize} & is the size of the group that wants to be seated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMaitreD_aa9c3b237392aa90209b011fd8c660fb1}\label{classMaitreD_aa9c3b237392aa90209b011fd8c660fb1}} 
+\index{MaitreD@{MaitreD}!checkAvailability@{checkAvailability}}
+\index{checkAvailability@{checkAvailability}!MaitreD@{MaitreD}}
+\doxysubsubsection{\texorpdfstring{checkAvailability()}{checkAvailability()}}
+{\footnotesize\ttfamily bool Maitre\+D\+::check\+Availability (\begin{DoxyParamCaption}\item[{int}]{group\+Size }\end{DoxyParamCaption})}
+
+
+
+this method checks if there are enough tables for the current group to be seated 
+
+
+\begin{DoxyParams}{Parameters}
+{\em groupsize} & is the size of the group that wants to be seated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMaitreD_a55d7e5683e7e099913c5563c067a1349}\label{classMaitreD_a55d7e5683e7e099913c5563c067a1349}} 
+\index{MaitreD@{MaitreD}!checkCurrentFloorState@{checkCurrentFloorState}}
+\index{checkCurrentFloorState@{checkCurrentFloorState}!MaitreD@{MaitreD}}
+\doxysubsubsection{\texorpdfstring{checkCurrentFloorState()}{checkCurrentFloorState()}}
+{\footnotesize\ttfamily bool Maitre\+D\+::check\+Current\+Floor\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFloorState}{Floor\+State}} $\ast$}]{curr\+State }\end{DoxyParamCaption})}
+
+
+
+This method checks if the state of the floor is \mbox{\hyperlink{classFull}{Full}} or \mbox{\hyperlink{classSpaceAvailable}{Space\+Available}} if full it returns false otherwise true. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+State} & of the floor (full or space available) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMaitreD_a3cb6325937d562cfe9bb235ab391ca7a}\label{classMaitreD_a3cb6325937d562cfe9bb235ab391ca7a}} 
+\index{MaitreD@{MaitreD}!getAwaitingGroup@{getAwaitingGroup}}
+\index{getAwaitingGroup@{getAwaitingGroup}!MaitreD@{MaitreD}}
+\doxysubsubsection{\texorpdfstring{getAwaitingGroup()}{getAwaitingGroup()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classGroup}{Group}} $\ast$ $>$ Maitre\+D\+::get\+Awaiting\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method returns the groups waiting to enter the floor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Group$\ast$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMaitreD_a903d0f3fabf199c4ed283540488f3d51}\label{classMaitreD_a903d0f3fabf199c4ed283540488f3d51}} 
+\index{MaitreD@{MaitreD}!getFloor@{getFloor}}
+\index{getFloor@{getFloor}!MaitreD@{MaitreD}}
+\doxysubsubsection{\texorpdfstring{getFloor()}{getFloor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFloor}{Floor}} $\ast$ Maitre\+D\+::get\+Floor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method returns floor that the maitreD is on. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Floor$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMaitreD_a1d7a363ae269b23b966483c692ce3845}\label{classMaitreD_a1d7a363ae269b23b966483c692ce3845}} 
+\index{MaitreD@{MaitreD}!removeGroupFromFloor@{removeGroupFromFloor}}
+\index{removeGroupFromFloor@{removeGroupFromFloor}!MaitreD@{MaitreD}}
+\doxysubsubsection{\texorpdfstring{removeGroupFromFloor()}{removeGroupFromFloor()}}
+{\footnotesize\ttfamily void Maitre\+D\+::remove\+Group\+From\+Floor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})}
+
+
+
+this method removes the group from the floor letting those tables open up for the next group 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & that wants to leave the floor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMaitreD_a8b38e9e556f8e52e39da76101d7327ab}\label{classMaitreD_a8b38e9e556f8e52e39da76101d7327ab}} 
+\index{MaitreD@{MaitreD}!setWaiterList@{setWaiterList}}
+\index{setWaiterList@{setWaiterList}!MaitreD@{MaitreD}}
+\doxysubsubsection{\texorpdfstring{setWaiterList()}{setWaiterList()}}
+{\footnotesize\ttfamily void Maitre\+D\+::set\+Waiter\+List (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classWaiter}{Waiter}} $\ast$ $>$}]{W }\end{DoxyParamCaption})}
+
+
+
+This method is used to set the waiter\+List vector that holds all the waiters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em W} & is a vector of waiters that holds all waiters that will be working between the floor and the kitchen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMaitreD_a308f6efe43d9955433524807232183e6}\label{classMaitreD_a308f6efe43d9955433524807232183e6}} 
+\index{MaitreD@{MaitreD}!tableChecker@{tableChecker}}
+\index{tableChecker@{tableChecker}!MaitreD@{MaitreD}}
+\doxysubsubsection{\texorpdfstring{tableChecker()}{tableChecker()}}
+{\footnotesize\ttfamily void Maitre\+D\+::table\+Checker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method checks if tables are available if not it sets the floor state to full. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Maitre\+D.\+h\item 
+Maitre\+D.\+cpp\end{DoxyCompactItemize}

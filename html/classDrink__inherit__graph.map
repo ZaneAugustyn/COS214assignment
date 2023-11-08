@@ -1,0 +1,7 @@
+<map id="Drink" name="Drink">
+<area shape="rect" id="node1" title="This class inherits from OrderItem and represents a drink that a guest can have with their burger." alt="" coords="69,155,126,181"/>
+<area shape="rect" id="node4" href="$classMilkshake.html" title="This class inherits from Drink and represents a milkshake." alt="" coords="5,229,93,256"/>
+<area shape="rect" id="node5" href="$classSoda.html" title="This class inherits from Drink and represents a soda." alt="" coords="118,229,173,256"/>
+<area shape="rect" id="node2" href="$classOrderItem.html" title="This class acts as the (concrete) Leaf of the Composite design pattern and represents an actual food ..." alt="" coords="53,80,141,107"/>
+<area shape="rect" id="node3" href="$classOrderComponent.html" title="This class acts as the (abstract) Component participant of the Composite design pattern,..." alt="" coords="31,5,164,32"/>
+</map>

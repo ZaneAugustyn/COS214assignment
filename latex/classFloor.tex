@@ -1,0 +1,229 @@
+\hypertarget{classFloor}{}\doxysection{Floor Class Reference}
+\label{classFloor}\index{Floor@{Floor}}
+
+
+This class represents the floor of the restaurant.  
+
+
+
+
+{\ttfamily \#include $<$Floor.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFloor_af54aee372639bc176f4507ab0d481246}{Floor}} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFloor_ae1b805579f18a76fe2754a3601202e80}{$\sim$\+Floor}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFloorState}{Floor\+State}} $\ast$ \mbox{\hyperlink{classFloor_a5047672e61da8566d13041d69fed1797}{get\+Current\+State}} ()
+\begin{DoxyCompactList}\small\item\em this method gets the current state of the floor \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classGroup}{Group}} $\ast$ $>$ \mbox{\hyperlink{classFloor_a1b1a1954a33b3fffda0e02db517b41e2}{get\+Groups}} ()
+\begin{DoxyCompactList}\small\item\em this method gets the std\+::vector$<$\+Group$\ast$$>$ groups\+\_\+ of the floor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFloor_a8e7fb4a2002be32ddbaed91de090be7b}{set\+Groups}} (std\+::vector$<$ \mbox{\hyperlink{classGroup}{Group}} $\ast$ $>$ g)
+\begin{DoxyCompactList}\small\item\em this method sets the std\+::vector$<$\+Group$\ast$$>$ groups\+\_\+ of the floor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFloor_a04d4af711cd9d9bd0307b56f28c16782}{set\+Current\+State}} (\mbox{\hyperlink{classFloorState}{Floor\+State}} $\ast$state)
+\begin{DoxyCompactList}\small\item\em this method sets the current state of the floor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFloor_afb8e2ae21714c1f0922c2f6e88fd60ed}{seat\+Group}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em this method seats a group to the floor by adding it to the groups vector \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFloor_aa9917a47b77dfd780bc7a03d0a8e1dbb}{excuse\+Group}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em this method removes a group to the floor by adding it to the groups vector \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFloor_a1209dc0b147a33be1edcb9a767f9b48d}{set\+Full}} ()
+\begin{DoxyCompactList}\small\item\em this method sets the current state of the floor to \mbox{\hyperlink{classFull}{Full}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFloor_a3466bfbe484c2109ecf50a38e7c5f55b}{set\+Space\+Available}} ()
+\begin{DoxyCompactList}\small\item\em this method sets the current state of the floor to \mbox{\hyperlink{classSpaceAvailable}{Space\+Available}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the floor of the restaurant. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFloor_af54aee372639bc176f4507ab0d481246}\label{classFloor_af54aee372639bc176f4507ab0d481246}} 
+\index{Floor@{Floor}!Floor@{Floor}}
+\index{Floor@{Floor}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{Floor()}{Floor()}}
+{\footnotesize\ttfamily Floor\+::\+Floor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFloor_ae1b805579f18a76fe2754a3601202e80}\label{classFloor_ae1b805579f18a76fe2754a3601202e80}} 
+\index{Floor@{Floor}!````~Floor@{$\sim$Floor}}
+\index{````~Floor@{$\sim$Floor}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{$\sim$Floor()}{~Floor()}}
+{\footnotesize\ttfamily Floor\+::$\sim$\+Floor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFloor_aa9917a47b77dfd780bc7a03d0a8e1dbb}\label{classFloor_aa9917a47b77dfd780bc7a03d0a8e1dbb}} 
+\index{Floor@{Floor}!excuseGroup@{excuseGroup}}
+\index{excuseGroup@{excuseGroup}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{excuseGroup()}{excuseGroup()}}
+{\footnotesize\ttfamily void Floor\+::excuse\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})}
+
+
+
+this method removes a group to the floor by adding it to the groups vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & that will be removed to the floor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFloor_a5047672e61da8566d13041d69fed1797}\label{classFloor_a5047672e61da8566d13041d69fed1797}} 
+\index{Floor@{Floor}!getCurrentState@{getCurrentState}}
+\index{getCurrentState@{getCurrentState}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{getCurrentState()}{getCurrentState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFloorState}{Floor\+State}} $\ast$ Floor\+::get\+Current\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+this method gets the current state of the floor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Floor\+State$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFloor_a1b1a1954a33b3fffda0e02db517b41e2}\label{classFloor_a1b1a1954a33b3fffda0e02db517b41e2}} 
+\index{Floor@{Floor}!getGroups@{getGroups}}
+\index{getGroups@{getGroups}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{getGroups()}{getGroups()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classGroup}{Group}} $\ast$ $>$ Floor\+::get\+Groups (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+this method gets the std\+::vector$<$\+Group$\ast$$>$ groups\+\_\+ of the floor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Group$\ast$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFloor_afb8e2ae21714c1f0922c2f6e88fd60ed}\label{classFloor_afb8e2ae21714c1f0922c2f6e88fd60ed}} 
+\index{Floor@{Floor}!seatGroup@{seatGroup}}
+\index{seatGroup@{seatGroup}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{seatGroup()}{seatGroup()}}
+{\footnotesize\ttfamily void Floor\+::seat\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})}
+
+
+
+this method seats a group to the floor by adding it to the groups vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & that will be seated to the floor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFloor_a04d4af711cd9d9bd0307b56f28c16782}\label{classFloor_a04d4af711cd9d9bd0307b56f28c16782}} 
+\index{Floor@{Floor}!setCurrentState@{setCurrentState}}
+\index{setCurrentState@{setCurrentState}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{setCurrentState()}{setCurrentState()}}
+{\footnotesize\ttfamily void Floor\+::set\+Current\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFloorState}{Floor\+State}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+
+
+this method sets the current state of the floor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & of the floor to which floor must be updated to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFloor_a1209dc0b147a33be1edcb9a767f9b48d}\label{classFloor_a1209dc0b147a33be1edcb9a767f9b48d}} 
+\index{Floor@{Floor}!setFull@{setFull}}
+\index{setFull@{setFull}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{setFull()}{setFull()}}
+{\footnotesize\ttfamily void Floor\+::set\+Full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+this method sets the current state of the floor to \mbox{\hyperlink{classFull}{Full}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFloor_a8e7fb4a2002be32ddbaed91de090be7b}\label{classFloor_a8e7fb4a2002be32ddbaed91de090be7b}} 
+\index{Floor@{Floor}!setGroups@{setGroups}}
+\index{setGroups@{setGroups}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{setGroups()}{setGroups()}}
+{\footnotesize\ttfamily void Floor\+::set\+Groups (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classGroup}{Group}} $\ast$ $>$}]{g }\end{DoxyParamCaption})}
+
+
+
+this method sets the std\+::vector$<$\+Group$\ast$$>$ groups\+\_\+ of the floor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$\+Group$\ast$$>$} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFloor_a3466bfbe484c2109ecf50a38e7c5f55b}\label{classFloor_a3466bfbe484c2109ecf50a38e7c5f55b}} 
+\index{Floor@{Floor}!setSpaceAvailable@{setSpaceAvailable}}
+\index{setSpaceAvailable@{setSpaceAvailable}!Floor@{Floor}}
+\doxysubsubsection{\texorpdfstring{setSpaceAvailable()}{setSpaceAvailable()}}
+{\footnotesize\ttfamily void Floor\+::set\+Space\+Available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+this method sets the current state of the floor to \mbox{\hyperlink{classSpaceAvailable}{Space\+Available}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Floor.\+h\item 
+Floor.\+cpp\end{DoxyCompactItemize}

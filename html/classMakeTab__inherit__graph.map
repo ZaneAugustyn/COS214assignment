@@ -1,0 +1,4 @@
+<map id="MakeTab" name="MakeTab">
+<area shape="rect" id="node1" title="A class for handling tab payments in a group." alt="" coords="16,80,95,107"/>
+<area shape="rect" id="node2" href="$classBillPayment.html" title="Represents a method of payment for a bill." alt="" coords="5,5,105,32"/>
+</map>

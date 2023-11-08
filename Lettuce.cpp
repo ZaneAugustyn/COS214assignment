@@ -1,6 +1,6 @@
 #include "Lettuce.h"
 
-Lettuce::Lettuce(/* args */)
+Lettuce::Lettuce():Garnish(5, "Lettuce")
 {
 }
 

@@ -1,0 +1,6 @@
+<map id="EmotionalState" name="EmotionalState">
+<area shape="rect" id="node1" title="This class represents the group&#39;s emotional state." alt="" coords="68,5,191,32"/>
+<area shape="rect" id="node2" href="$classHappy.html" title="This class is represents the group&#39;s happy state." alt="" coords="5,80,69,107"/>
+<area shape="rect" id="node3" href="$classNeutral.html" title="This class is represent the neutral state of the group." alt="" coords="94,80,165,107"/>
+<area shape="rect" id="node4" href="$classUnhappy.html" title="This class represents a type of state of the group&#45;that they are currently unhappy with the service." alt="" coords="189,80,269,107"/>
+</map>

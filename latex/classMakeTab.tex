@@ -1,0 +1,131 @@
+\hypertarget{classMakeTab}{}\doxysection{Make\+Tab Class Reference}
+\label{classMakeTab}\index{MakeTab@{MakeTab}}
+
+
+A class for handling tab payments in a group.  
+
+
+
+
+{\ttfamily \#include $<$Make\+Tab.\+h$>$}
+
+
+
+Inheritance diagram for Make\+Tab\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{classMakeTab__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Make\+Tab\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{classMakeTab__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMakeTab_a213eb4c681c97e7cb7e02d2c1d37e697}{Make\+Tab}} (float t)
+\begin{DoxyCompactList}\small\item\em Constructor for creating a \mbox{\hyperlink{classMakeTab}{Make\+Tab}} instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMakeTab_a738ab6d1c19c31e923848dfb13c1bb40}\label{classMakeTab_a738ab6d1c19c31e923848dfb13c1bb40}} 
+\mbox{\hyperlink{classMakeTab_a738ab6d1c19c31e923848dfb13c1bb40}{$\sim$\+Make\+Tab}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classMakeTab}{Make\+Tab}} instance. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTab}{Tab}} $\ast$ \mbox{\hyperlink{classMakeTab_a288235d1f62cbe44434d6066aae96d75}{create\+Tab}} (float t)
+\begin{DoxyCompactList}\small\item\em Create a tab with the specified total amount. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMakeTab_a173fa71dfc3a2211dacaa341bba7a8c4}{Pay}} (\mbox{\hyperlink{classGroup}{Group}} $\ast$group)
+\begin{DoxyCompactList}\small\item\em Handle the tab payment for a group. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMakeTab_aa0bc3896f79e569383f2ad01a3b573be}{set\+Tab}} (\mbox{\hyperlink{classTab}{Tab}} $\ast$tab)
+\begin{DoxyCompactList}\small\item\em Set the tab amount to a specified \mbox{\hyperlink{classTab}{Tab}} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class for handling tab payments in a group. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMakeTab_a213eb4c681c97e7cb7e02d2c1d37e697}\label{classMakeTab_a213eb4c681c97e7cb7e02d2c1d37e697}} 
+\index{MakeTab@{MakeTab}!MakeTab@{MakeTab}}
+\index{MakeTab@{MakeTab}!MakeTab@{MakeTab}}
+\doxysubsubsection{\texorpdfstring{MakeTab()}{MakeTab()}}
+{\footnotesize\ttfamily Make\+Tab\+::\+Make\+Tab (\begin{DoxyParamCaption}\item[{float}]{t }\end{DoxyParamCaption})}
+
+
+
+Constructor for creating a \mbox{\hyperlink{classMakeTab}{Make\+Tab}} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The total amount for the tab. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMakeTab_a288235d1f62cbe44434d6066aae96d75}\label{classMakeTab_a288235d1f62cbe44434d6066aae96d75}} 
+\index{MakeTab@{MakeTab}!createTab@{createTab}}
+\index{createTab@{createTab}!MakeTab@{MakeTab}}
+\doxysubsubsection{\texorpdfstring{createTab()}{createTab()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTab}{Tab}} $\ast$ Make\+Tab\+::create\+Tab (\begin{DoxyParamCaption}\item[{float}]{t }\end{DoxyParamCaption})}
+
+
+
+Create a tab with the specified total amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The total amount for the tab. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created \mbox{\hyperlink{classTab}{Tab}} instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMakeTab_a173fa71dfc3a2211dacaa341bba7a8c4}\label{classMakeTab_a173fa71dfc3a2211dacaa341bba7a8c4}} 
+\index{MakeTab@{MakeTab}!Pay@{Pay}}
+\index{Pay@{Pay}!MakeTab@{MakeTab}}
+\doxysubsubsection{\texorpdfstring{Pay()}{Pay()}}
+{\footnotesize\ttfamily void Make\+Tab\+::\+Pay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGroup}{Group}} $\ast$}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Handle the tab payment for a group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & The group for which the tab is being created. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBillPayment_a4639b657d7b5346a907ea2e1c0b4b4a0}{Bill\+Payment}}.
+
+\mbox{\Hypertarget{classMakeTab_aa0bc3896f79e569383f2ad01a3b573be}\label{classMakeTab_aa0bc3896f79e569383f2ad01a3b573be}} 
+\index{MakeTab@{MakeTab}!setTab@{setTab}}
+\index{setTab@{setTab}!MakeTab@{MakeTab}}
+\doxysubsubsection{\texorpdfstring{setTab()}{setTab()}}
+{\footnotesize\ttfamily void Make\+Tab\+::set\+Tab (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTab}{Tab}} $\ast$}]{tab }\end{DoxyParamCaption})}
+
+
+
+Set the tab amount to a specified \mbox{\hyperlink{classTab}{Tab}} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & The \mbox{\hyperlink{classTab}{Tab}} instance to set the total amount for the tab. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Make\+Tab.\+h\item 
+Make\+Tab.\+cpp\end{DoxyCompactItemize}

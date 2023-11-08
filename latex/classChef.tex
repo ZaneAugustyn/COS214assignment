@@ -1,0 +1,188 @@
+\hypertarget{classChef}{}\doxysection{Chef Class Reference}
+\label{classChef}\index{Chef@{Chef}}
+
+
+This class is a concrete colleague of the Mediator design and the Handler participant of the Chain of Responsibility Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Chef.\+h$>$}
+
+
+
+Inheritance diagram for Chef\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classChef__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Chef\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=161pt]{classChef__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classChef_ad0c323baebe44970f64d824aa7f20d35}{Chef}} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classChef_a2c00dc58f7235bee426de56f9b8d4b22}{Chef}} (\mbox{\hyperlink{classPass}{Pass}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classChef_a01e11f9b766172fc8099573a01990386}{$\sim$\+Chef}} ()
+\begin{DoxyCompactList}\small\item\em virtual destructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChef_a9fa1f9c45c1abb9c788c03b7973faa99}{changed}} ()
+\begin{DoxyCompactList}\small\item\em part of the mediator design pattern to delegate the appropriate notify method \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classChef_a07f0cc4acdbe7c1ac9996eac15aabbb8}{handle\+Order}} (\mbox{\hyperlink{classPlate}{Plate}} $\ast$plate, vector$<$ \mbox{\hyperlink{classOrderComponent}{Order\+Component}} $\ast$ $>$ order\+Comp)
+\begin{DoxyCompactList}\small\item\em part of the chain of responsibility design pattern to delegate to handle the order \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChef_a9398c6e4fc3b3da9cd814b4118525a80}{add}} (\mbox{\hyperlink{classChef}{Chef}} $\ast$next\+Chef)
+\begin{DoxyCompactList}\small\item\em part of the mediator design pattern to add a specific chef to the chain of responsibility \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChef_aee359e7e299c1670f689cf6c6cdd837c}{create\+Group\+Order}} (\mbox{\hyperlink{classOrder}{Order}} $\ast$order)
+\begin{DoxyCompactList}\small\item\em is being used as the start and the end of the chain of responsibility \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classChef_a2a0ff8532ecad06f1414ffff242af091}\label{classChef_a2a0ff8532ecad06f1414ffff242af091}} 
+vector$<$ \mbox{\hyperlink{classPlate}{Plate}} $\ast$ $>$ {\bfseries tray\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is a concrete colleague of the Mediator design and the Handler participant of the Chain of Responsibility Pattern. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classChef_ad0c323baebe44970f64d824aa7f20d35}\label{classChef_ad0c323baebe44970f64d824aa7f20d35}} 
+\index{Chef@{Chef}!Chef@{Chef}}
+\index{Chef@{Chef}!Chef@{Chef}}
+\doxysubsubsection{\texorpdfstring{Chef()}{Chef()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Chef\+::\+Chef (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+default constructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classChef_a2c00dc58f7235bee426de56f9b8d4b22}\label{classChef_a2c00dc58f7235bee426de56f9b8d4b22}} 
+\index{Chef@{Chef}!Chef@{Chef}}
+\index{Chef@{Chef}!Chef@{Chef}}
+\doxysubsubsection{\texorpdfstring{Chef()}{Chef()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Chef\+::\+Chef (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPass}{Pass}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the shared pass member variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classChef_a01e11f9b766172fc8099573a01990386}\label{classChef_a01e11f9b766172fc8099573a01990386}} 
+\index{Chef@{Chef}!````~Chef@{$\sim$Chef}}
+\index{````~Chef@{$\sim$Chef}!Chef@{Chef}}
+\doxysubsubsection{\texorpdfstring{$\sim$Chef()}{~Chef()}}
+{\footnotesize\ttfamily Chef\+::$\sim$\+Chef (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+virtual destructor 
+
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classChef_a9398c6e4fc3b3da9cd814b4118525a80}\label{classChef_a9398c6e4fc3b3da9cd814b4118525a80}} 
+\index{Chef@{Chef}!add@{add}}
+\index{add@{add}!Chef@{Chef}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Chef\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChef}{Chef}} $\ast$}]{next\+Chef }\end{DoxyParamCaption})}
+
+
+
+part of the mediator design pattern to add a specific chef to the chain of responsibility 
+
+
+\begin{DoxyParams}{Parameters}
+{\em next\+Chef} & pointer to the next chef in the chain of responsibility \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classChef_a9fa1f9c45c1abb9c788c03b7973faa99}\label{classChef_a9fa1f9c45c1abb9c788c03b7973faa99}} 
+\index{Chef@{Chef}!changed@{changed}}
+\index{changed@{changed}!Chef@{Chef}}
+\doxysubsubsection{\texorpdfstring{changed()}{changed()}}
+{\footnotesize\ttfamily void Chef\+::changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+part of the mediator design pattern to delegate the appropriate notify method 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classColleague_a9608c7993f3aee136ec79247b268969a}{Colleague}}.
+
+\mbox{\Hypertarget{classChef_aee359e7e299c1670f689cf6c6cdd837c}\label{classChef_aee359e7e299c1670f689cf6c6cdd837c}} 
+\index{Chef@{Chef}!createGroupOrder@{createGroupOrder}}
+\index{createGroupOrder@{createGroupOrder}!Chef@{Chef}}
+\doxysubsubsection{\texorpdfstring{createGroupOrder()}{createGroupOrder()}}
+{\footnotesize\ttfamily void Chef\+::create\+Group\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOrder}{Order}} $\ast$}]{order }\end{DoxyParamCaption})}
+
+
+
+is being used as the start and the end of the chain of responsibility 
+
+
+\begin{DoxyParams}{Parameters}
+{\em order} & holds the pointer to the group order \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classChef_a07f0cc4acdbe7c1ac9996eac15aabbb8}\label{classChef_a07f0cc4acdbe7c1ac9996eac15aabbb8}} 
+\index{Chef@{Chef}!handleOrder@{handleOrder}}
+\index{handleOrder@{handleOrder}!Chef@{Chef}}
+\doxysubsubsection{\texorpdfstring{handleOrder()}{handleOrder()}}
+{\footnotesize\ttfamily void Chef\+::handle\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlate}{Plate}} $\ast$}]{plate,  }\item[{vector$<$ \mbox{\hyperlink{classOrderComponent}{Order\+Component}} $\ast$ $>$}]{order\+Comp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+part of the chain of responsibility design pattern to delegate to handle the order 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plate} & pass the plate object to which the food will be added \\
+\hline
+{\em order\+Comp} & hold one of the group member\textquotesingle{}s group order \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classHeadChef_aa7fa73357a731b404e8ffc98637ff463}{Head\+Chef}}, \mbox{\hyperlink{classSidesChef_a1cea0bf720666d4ac07a6279b0ff5834}{Sides\+Chef}}, \mbox{\hyperlink{classMeatChef_a207a7408f9b3f826204dbdacce8ad1d9}{Meat\+Chef}}, \mbox{\hyperlink{classGarnishChef_af825f93d4373a6508c7703dde9655686}{Garnish\+Chef}}, and \mbox{\hyperlink{classDrinkChef_ad3872ced6ef68712bc0af7ea106e6ade}{Drink\+Chef}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Chef.\+h\item 
+Chef.\+cpp\end{DoxyCompactItemize}
