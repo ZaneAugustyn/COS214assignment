@@ -59,8 +59,6 @@ jobs:
 
     - name: Configure and build with CMake
       run: |
-        # mkdir build
-        # cd build
         cmake ..
         make
       working-directory: COS214assignment  # Specify the working directory
