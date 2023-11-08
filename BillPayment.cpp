@@ -1,6 +1,6 @@
 #include "BillPayment.h"
 
-BillPayment::BillPayment(float t): Total(t)
+BillPayment::BillPayment(float t): total_(t)
 {
 }
 

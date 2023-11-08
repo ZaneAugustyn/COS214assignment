@@ -12,7 +12,7 @@ class Group;
 class BillPayment
 {
 private:
-    float Total; 
+    float total_; 
 
 public:
     /**
@@ -36,13 +36,13 @@ public:
      * @brief Get the total amount of the bill payment.
      * @return The total amount of the bill payment.
      */
-    float GetTotal() { return Total; }
+    float GetTotal() { return total_; }
 
     /**
      * @brief Set the total amount of the bill payment.
      * @param t The new total amount for the bill payment.
      */
-    void SetTotal(float t) { Total = t; }
+    void SetTotal(float t) { total_ = t; }
 };
 
 #endif

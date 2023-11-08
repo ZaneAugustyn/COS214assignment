@@ -2,7 +2,7 @@
 #include "PayTab.h"
 
 
-Bill::Bill(float t): Total(t)
+Bill::Bill(float t): total_(t)
 {
 }
 
